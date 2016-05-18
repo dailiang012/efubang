@@ -1,0 +1,150 @@
+@charset "UTF-8";
+::-webkit-input-placeholder {
+  color: #8d8b8b; }
+
+::-moz-placeholder {
+  color: #8d8b8b; }
+
+:-moz-placeholder {
+  color: #8d8b8b; }
+
+:-ms-input-placeholder {
+  color: #8d8b8b; }
+
+html, body {
+  height: 100%; }
+
+#doc-container {
+  height: 100%;
+  background-color: #f5f5f5;
+  position: relative; }
+
+/*main开始*/
+#main {
+  padding-top: 60px; }
+
+.enter-form {
+  width: 964px;
+  margin: 0 auto;
+  padding: 40px 30px 25px 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+
+.form-title {
+  margin-bottom: 35px; }
+  .form-title .left {
+    width: 102px;
+    height: 20px;
+    text-align: center;
+    float: left;
+    font-size: 20px;
+    color: #666;
+    line-height: 100%;
+    border-left: 3px solid #f53030;
+    font-weight: bold; }
+  .form-title .right a {
+    float: right;
+    font-size: 16px;
+    color: red;
+    line-height: 24px;
+    vertical-align: bottom; }
+    .form-title .right a:hover {
+      text-decoration: underline; }
+
+/*user-enter用户登录开始*/
+.enter-container {
+  width: 390px;
+  margin: 0 auto; }
+  .enter-container input {
+    width: 372px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 1px;
+    font-size: 16px;
+    color: #666;
+    padding: 0 8px;
+    margin-bottom: 20px; }
+
+.code input {
+  width: 207px;
+  float: left; }
+.code .code-img {
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px; }
+  .code .code-img img {
+    width: 100px;
+    height: 40px; }
+.code .click-change-text {
+  float: left;
+  cursor: pointer;
+  width: 53px;
+  text-align: right;
+  font-size: 16px;
+  color: #8d8b8b;
+  line-height: 50px;
+  text-decoration: underline; }
+
+.forget {
+  text-align: right; }
+  .forget a {
+    font-size: 16px;
+    color: #8d8b8b;
+    line-height: 100%; }
+    .forget a:hover {
+      text-decoration: underline; }
+
+.btn [type="submit"] {
+  width: 390px;
+  background: #4cb0ae;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 35px;
+  height: 50px; }
+
+.prompt {
+  height: 20px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #8d8b8b;
+  line-height: 20px; }
+  .prompt img {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; }
+
+/*user-enter用户登录结束*/
+/*copy开始*/
+.copy {
+  text-align: center;
+  padding-bottom: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%); }
+  .copy a {
+    font-size: 12px;
+    color: #666;
+    line-height: 100%; }
+    .copy a:hover {
+      text-decoration: underline; }
+  .copy span {
+    margin: 0 20px;
+    width: 1px;
+    height: 12px;
+    background-color: #8d8b8b;
+    display: inline-block; }
+  .copy .btm {
+    font-size: 12px;
+    color: #666;
+    line-height: 46px; }
+
+/*copy结束*/
+
+/*# sourceMappingURL=style-enter.css.map */

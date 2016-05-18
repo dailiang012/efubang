@@ -1,0 +1,117 @@
+/*公共样式开始*/
+*{
+    vertical-align:baseline;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    padding:0;
+    margin:0;
+    border:none;
+    font-family:Arial,"Microsoft YaHei", Helvetica, sans-serif;
+}
+html{
+    -webkit-text-size-adjust:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+    text-decoration:none;
+    display:block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+a img, :link img, :visited img{
+    border:0;
+}
+.clear {
+    clear:both;
+}
+
+input,textarea,select{
+    outline:none;
+}
+textarea{
+    resize:none;
+}
+/*公共样式结束*/
+
+/*bang-bar开始*/
+#header{
+    background-color: #fff;
+}
+#bang-bar{
+    padding-top: 6px;
+    font-size: 12px;
+    line-height: 24px;
+    color: #a3a3a3;
+    background-color: #fff;
+}
+.bang-bar-container{
+    height: 38px;
+    width: 1024px;
+    margin: 0 auto;
+}
+.left-content{
+    float: left;
+}
+.right-content{
+    float: right;
+}
+#bang-bar .mobile{
+    float: left;
+    padding-left: 30px;
+    padding-right: 17px;
+    background: url("../images/public-head/telephone.png") no-repeat left top;
+}
+#bang-bar .weChat{
+    float: left;
+    padding-left: 30px;
+    background: url("../images/public-head/wechat.png") no-repeat left top;
+}
+#login-register{
+    float:left;
+}
+#login-register a{
+    color: #a3a3a3;
+    padding-left:20px;
+}
+#login-register a:hover{
+    text-decoration: underline;
+}
+/*bang-bar结束*/
+/*header开始*/
+.header-container{
+    height: 88px;
+    width: 1024px;
+    margin: 0 auto;
+}
+#bang-log{
+    float: left;
+    margin-top: 14px;
+}
+#bang-nav{
+    float: right;
+}
+#bang-nav li{
+    float: left;
+    list-style: none;
+}
+#bang-nav li a{
+    display: block;
+    color: #585858;
+    font-size: 16px;
+    line-height: 88px;
+    margin-left: 50px;
+    text-decoration: none;
+}
+#bang-nav li .nav-active{
+    color: #4cb0ae;
+}
+/*header结束*/
