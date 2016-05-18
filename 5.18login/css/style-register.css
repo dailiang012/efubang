@@ -159,8 +159,11 @@ label[for="user-password"], label[for="password-again"] {
     .copy a:hover {
       text-decoration: underline; }
   .copy span {
-    padding: 0 20px;
-    color: #666; }
+    margin: 0 20px;
+    width: 1px;
+    height: 12px;
+    background-color: #8d8b8b;
+    display: inline-block; }
   .copy .btm {
     font-size: 12px;
     color: #666;

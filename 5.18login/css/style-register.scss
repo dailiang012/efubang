@@ -178,8 +178,11 @@ label[for="user-password"],label[for="password-again"]{
     }
   }
   span{
-    padding: 0 20px;
-    color: $color-first;
+    margin: 0 20px;
+    width: 1px;
+    height: 12px;
+    background-color: $color-second;
+    display: inline-block;
   }
   .btm{
     @include font(12px,#{$color-first},46px);
