@@ -1,0 +1,171 @@
+@charset "UTF-8";
+::-webkit-input-placeholder {
+  color: #8d8b8b; }
+
+::-moz-placeholder {
+  color: #8d8b8b; }
+
+:-moz-placeholder {
+  color: #8d8b8b; }
+
+:-ms-input-placeholder {
+  color: #8d8b8b; }
+
+#doc-container {
+  background-color: #f5f5f5; }
+
+/*main开始*/
+#main {
+  padding-top: 60px; }
+
+.register-form {
+  width: 964px;
+  margin: 0 auto;
+  padding: 40px 30px 0 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); }
+
+.form-title {
+  margin-bottom: 35px; }
+  .form-title .left {
+    width: 102px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    font-size: 20px;
+    color: #666;
+    line-height: 100%;
+    border-left: 3px solid #f53030; }
+  .form-title .right {
+    float: right;
+    font-size: 16px;
+    color: #666;
+    line-height: 24px; }
+    .form-title .right a {
+      color: #f53030;
+      vertical-align: bottom; }
+      .form-title .right a:hover {
+        text-decoration: underline; }
+
+/*register-start*/
+.register-container {
+  width: 490px;
+  margin: 0 auto; }
+  .register-container label {
+    float: left;
+    width: 80px;
+    white-space: nowrap;
+    font-size: 16px;
+    color: #666;
+    line-height: 50px; }
+  .register-container input {
+    width: 372px;
+    height: 50px;
+    border: 1px solid #e3e3e3;
+    border-radius: 1px;
+    font-size: 16px;
+    color: #666;
+    padding: 0 8px;
+    float: right; }
+
+label[for="user-phone"], label[for="verification-code"], label[for="who"] {
+  letter-spacing: 16px; }
+
+label[for="user-password"], label[for="password-again"] {
+  letter-spacing: 48px; }
+
+.code .right {
+  float: right; }
+.code input {
+  width: 207px;
+  float: left; }
+.code .code-img {
+  float: left;
+  margin-top: 5px;
+  margin-left: 10px; }
+  .code .code-img img {
+    width: 100px;
+    height: 40px; }
+.code .click-change-text {
+  float: left;
+  cursor: pointer;
+  width: 55px;
+  text-align: right;
+  font-size: 16px;
+  color: #8d8b8b;
+  line-height: 50px;
+  text-decoration: underline; }
+
+.phone-node .right {
+  float: right; }
+.phone-node input[type="text"] {
+  width: 207px;
+  float: left;
+  margin-right: 10px; }
+.phone-node input[type="button"] {
+  width: 155px;
+  height: 52px;
+  background-color: #f5f5f5;
+  float: left; }
+
+.agreement {
+  margin-top: 20px; }
+  .agreement .right {
+    width: 390px;
+    float: right; }
+  .agreement input {
+    width: 14px;
+    height: 14px;
+    float: left; }
+  .agreement p {
+    font-size: 16px;
+    color: #666;
+    line-height: 100%; }
+
+.prompt {
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  font-size: 14px;
+  color: #8d8b8b;
+  line-height: 20px; }
+  .prompt img {
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px; }
+
+.btn [type="submit"] {
+  width: 390px;
+  background: #4cb0ae;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 35px;
+  margin-top: 50px;
+  height: 50px; }
+
+/*register-end*/
+/*copy开始*/
+.copy {
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 60px; }
+  .copy a {
+    font-size: 12px;
+    color: #666;
+    line-height: 100%; }
+    .copy a:hover {
+      text-decoration: underline; }
+  .copy span {
+    padding: 0 20px;
+    color: #666; }
+  .copy .btm {
+    font-size: 12px;
+    color: #666;
+    line-height: 46px; }
+
+/*copy结束*/
+
+/*# sourceMappingURL=style-register.css.map */

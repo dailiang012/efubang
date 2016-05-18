@@ -1,0 +1,188 @@
+@charset "UTF-8";
+//字体主色
+$color-first:#666;
+$color-second:#8d8b8b;
+//字体的三个样式
+@mixin font($size,$color,$height){
+  font-size: $size;
+  color: $color;
+  line-height: $height;
+};
+//标准输入框
+@mixin input($width:372px,$height:50px,$border:1px solid #e3e3e3,$radius:1px,$font:16px,$color-input:#666,$padding:0 8px){
+  width: $width;
+  height: $height;
+  border: $border;
+  border-radius: $radius;
+  font-size: $font;
+  color: $color-input;
+  padding: $padding;
+};
+@mixin placeholder-input($color:#8d8b8b){
+  ::-webkit-input-placeholder{color:$color};
+  ::-moz-placeholder{color:$color};
+  :-moz-placeholder{color:$color};
+  :-ms-input-placeholder{color:$color};
+};
+@include placeholder-input;
+//标准按钮
+
+#doc-container{
+  background-color: #f5f5f5;
+}
+/*main开始*/
+#main{
+  padding-top: 60px;
+}
+.register-form{
+  width: 964px;
+  margin: 0 auto;
+  padding: 40px 30px 0 30px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.form-title{
+  $red:#f53030;
+  margin-bottom: 35px;
+  .left{
+    width: 102px;
+    height: 20px;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+    @include font(20px,#{$color-first},100%);
+    border-left: 3px solid #{$red};
+  }
+  .right{
+    float: right;
+    @include font(16px,#{$color-first},24px);
+    a{
+      color: $red;
+    &:hover{
+      text-decoration: underline;
+    }
+    vertical-align: bottom;
+  }
+}
+}
+/*register-start*/
+.register-container{
+  width: 490px;
+  margin: 0 auto;
+  label{
+    float: left;
+    width: 80px;
+    white-space: nowrap;
+    @include font(16px,#{$color-first},50px);
+  }
+  input{
+    @include input;
+    float: right;
+  }
+}
+label[for="user-phone"],label[for="verification-code"],label[for="who"]{
+  letter-spacing: 16px;
+}
+label[for="user-password"],label[for="password-again"]{
+  letter-spacing: 48px;
+}
+.code{
+  .right{
+    float: right;
+  }
+  input{
+    width: 207px;
+    float: left;
+  }
+  .code-img{
+    float: left;
+    margin-top: 5px;
+    margin-left: 10px;
+    img{
+      width: 100px;
+      height: 40px;
+    }
+  }
+  .click-change-text{
+    float: left;
+    cursor: pointer;
+    width: 55px;
+    text-align: right;
+    @include font(16px,#{$color-second},50px);
+    text-decoration: underline;
+  }
+}
+.phone-node{
+  .right{
+    float: right;
+  }
+  input[type="text"]{
+    width: 207px;
+    float: left;
+    margin-right: 10px;
+  }
+  input[type="button"]{
+    width: 155px;
+    height: 52px;
+    background-color: #f5f5f5;
+    float: left;
+  }
+}
+.agreement{
+  margin-top: 20px;
+  .right{
+    width: 390px;
+    float: right;
+  }
+  input{
+    width: 14px;
+    height: 14px;
+    float: left;
+  }
+  p{
+    @include font(16px,#{$color-first},100%);
+  }
+}
+.prompt {
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  @include font(14px,#{$color-second},20px);
+  img{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+  }
+}
+.btn [type="submit"]{
+  width: 390px;
+  background: #4cb0ae;
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 35px;
+  margin-top: 50px;
+  height: 50px;
+}
+/*register-end*/
+/*copy开始*/
+.copy{
+  text-align: center;
+  padding-bottom: 40px;
+  padding-top: 60px;
+  a{
+    @include font(12px,#{$color-first},100%);
+    &:hover{
+      text-decoration: underline;
+    }
+  }
+  span{
+    padding: 0 20px;
+    color: $color-first;
+  }
+  .btm{
+    @include font(12px,#{$color-first},46px);
+  }
+}
+/*copy结束*/
