@@ -66,8 +66,8 @@
         <option value="$PROJECT_DIR$/css/style-enter.scss" />
         <option value="$PROJECT_DIR$/css/style-register.scss" />
         <option value="$PROJECT_DIR$/register.html" />
-        <option value="$PROJECT_DIR$/js/active-login.js" />
         <option value="$PROJECT_DIR$/enter.html" />
+        <option value="$PROJECT_DIR$/js/active-login.js" />
       </list>
     </option>
   </component>
