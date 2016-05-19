@@ -189,3 +189,43 @@ label[for="user-password"],label[for="password-again"]{
   }
 }
 /*copy结束*/
+/*输入框效果开始*/
+input[type="text"]{
+  &:hover{
+    border-color: #47c6c3;
+  }
+  &:focus{
+    border-color: #47c6c3;
+  }
+}
+input[type="password"]{
+  &:hover{
+    border-color: #47c6c3;
+  }
+  &:focus{
+    border-color: #47c6c3;
+  }
+}
+/*密码提示开始*/
+.password-progress{
+  height: 20px;
+  margin-bottom: 5px;
+  margin-left: 100px;
+  font-size: 14px;
+  color: #8d8b8b;
+  line-height: 20px;
+  .text{
+    float: left;
+  }
+  .pic{
+    @extend .text;
+    td{
+      width: 67px;
+      height: 8px;
+      border-radius: 1px;
+      border: 1px solid #dedede;
+      margin-right: 5px;
+      display: inline-block;
+    }
+  }
+}
