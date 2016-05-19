@@ -1,0 +1,157 @@
+@charset "utf-8";
+/*公共代码开始*/
+*{ vertical-align:baseline;  font-weight:inherit;  font-style:inherit;  padding:0;  margin:0;  border:none}
+body{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+html{ -webkit-text-size-adjust:none}
+li{ list-style:none}
+img{ border:none;  text-decoration:none;  display:block}
+h1, h2, h3, h4, h5, h6{ font-weight:normal}
+a{ text-decoration:none}
+a img, :link img, :visited img{ border:0}
+input, textarea, select{ outline:none; font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;}
+textarea{ resize:none}
+.clear{ clear:both}
+/*公共代码结束*/
+
+html {font-size:10px}
+
+@media screen and (min-width:480px) and (max-width:639px) {
+    html {
+        font-size: 15px
+    }
+}
+
+@media screen and (min-width:640px) and (max-width:719px) {
+    html {
+        font-size: 20px
+    }
+}
+
+@media screen and (min-width:720px) and (max-width:749px) {
+    html {
+        font-size: 22.5px
+    }
+}
+
+@media screen and (min-width:750px) and (max-width:799px) {
+    html {
+        font-size: 23.5px
+    }
+}
+
+@media screen and (min-width:800px) and (max-width:959px) {
+    html {
+        font-size: 25px
+    }
+}
+
+@media screen and (min-width:960px) and (max-width:1079px) {
+    html {
+        font-size: 30px
+    }
+}
+
+@media screen and (min-width:1080px) {
+    html {
+        font-size: 32px
+    }
+}
+
+
+
+
+/*header开始*/
+html{
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+body{
+    overflow: hidden;
+    margin: 0 auto;
+    background: #f0f0f0;
+}
+.navbar{
+    width: 100%;
+    background-color: #4cb0ae;
+    height: 5.5rem;
+    border-bottom: 1px solid #C8C8C8;
+}
+.nav-return{
+    float: left;
+    position: absolute;
+    height: inherit;
+}
+.nav-return img{
+    height: 100%;
+    width: auto;
+}
+.nav-header{
+    text-align: center;
+    color: #fff;
+    font-size: 2.250rem;
+    line-height: 5.5rem;
+}
+/*header结束*/
+/*main开始*/
+.company-icon{
+    text-align: center;
+    padding: 3.75rem 0;
+}
+.company-icon img{
+    width: 9.875rem;
+    height: 9.875rem;
+    display: inline-block;
+}
+#main form{
+    padding-top: 2.5em;
+}
+#main input{
+    line-height: 5.5rem;
+    border: none;
+    border-bottom: 1px solid #f6f6f6;
+    outline: none;
+    width: 94%;
+    padding: 0 3%;
+    font-size: 1.875rem;
+}
+.button-input{
+    width: 96%;
+    margin: 0 auto;
+}
+#main input[type="submit"]{
+    width: 100%;
+    background: #4cb0ae;
+    border-radius: 4px;
+    border:none;
+    outline: none;
+    color: #fff;
+    margin-top: 3rem;
+}
+.help{
+    width: 94%;
+    margin: 0 auto;
+}
+.help a[name="forget"]{
+    float: left;
+}
+.help a[name="new-user"]{
+    float: right;
+}
+.help a{
+    display: block;
+    font-size: 1.5rem;
+    line-height: 3.75rem;
+    color: #4cb0ae;
+}
+.prompt-text{
+    padding-left: 3%;
+    font-size: 1.5rem;
+    color: #e84a4a;
+    line-height: 100%;
+    padding-top: 0.938rem;
+    height: 1.6rem;
+}
+.prompt-text i{
+    margin-right: 5px;
+}
