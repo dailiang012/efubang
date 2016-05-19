@@ -78,6 +78,7 @@ $color-second:#8d8b8b;
   input{
     @include input;
     float: right;
+    line-height: 50px;
   }
 }
 label[for="user-phone"],label[for="verification-code"],label[for="who"]{

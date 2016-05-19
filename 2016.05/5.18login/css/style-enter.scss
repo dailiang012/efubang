@@ -69,7 +69,6 @@ html,body{
     vertical-align: bottom;
   }
 }
-
 /*user-enter用户登录开始*/
 .enter-container{
   width: 390px;
@@ -77,6 +76,7 @@ html,body{
   input{
     @include input;
     margin-bottom: 20px;
+    line-height: 50px;
   }
 }
 .code{
