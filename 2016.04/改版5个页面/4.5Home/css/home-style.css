@@ -1,0 +1,649 @@
+/*banner开始*/
+#banner{
+    height: 727px;
+}
+.flexslider .slides li{
+    height: 727px;
+}
+.flexslider{
+    border:none;
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    box-shadow: none;
+    z-index: 100;
+    border-radius: 0;
+}
+.flexslider li{
+    width: auto;
+    margin-right: 0;
+}
+.flex-control-nav{
+    bottom: 30px;
+    z-index: 1000;
+}
+.flex-control-paging li a{
+    background: rgba(0,0,0,0);
+}
+.flex-control-paging li a:hover {
+    background: #fff;
+}
+.flex-control-paging li a.flex-active {
+    background: #fff;
+    cursor: default;
+}
+/*user-login用户登录开始*/
+.login-box{
+    height: 0;
+    margin: 0 auto;
+    width: 1024px;
+    position: relative;
+    z-index: 100;
+}
+.login-container{
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin-bottom: 146px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 50px 50px 46px 50px;
+}
+.login-container h1{
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    line-height: 100%;
+    padding-bottom: 58px;
+}
+.name-password,.code{
+    padding: 0 17px;
+    background: #fff;
+    border-radius: 6px;
+}
+.login-container input{
+    float: left;
+    height: 45px;
+    font-size:14px;
+}
+.login-container label{
+    float: left;
+    width: 26px;
+    height: 45px;
+    display: block;
+}
+.name-password p{
+    height: 45px;
+    border-bottom: 1px solid #e5e5e5;
+}
+.name-password input{
+    width: 222px;
+}
+.code{
+    height: 45px;
+    margin-bottom: 45px;
+}
+.code p{
+    height: 45px;
+    float: left;
+}
+.code input{
+    width: 143px;
+}
+.code-img{
+    float: left;
+    width: 54px;
+    padding-left: 24px;
+    height: 25px;
+    margin-top: 8px;
+    border-left: 1px solid #e5e5e5;
+    padding-top: 8px;
+}
+label[for="user-name"]{
+    background: url("../images/user-login-icon01.png") no-repeat 0 14px;
+}
+label[for="user-password"]{
+    background: url("../images/user-login-icon02.png") no-repeat 0 14px;
+}
+label[for="verification-code"]{
+    background: url("../images/user-login-icon03.png") no-repeat 0 14px;
+}
+.btn{
+    width: 282px;
+    height: 43px;
+}
+.login-container [type="button"]{
+    width: 282px;
+    border-radius: 6px;
+    background: #4cb0ae;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 35px;
+    height: 43px;
+}
+.login-links{
+    text-align: center;
+    color: #fff;
+    width: 282px;
+}
+.login-links a{
+    font-size: 12px;
+    line-height: 100%;
+    color: #fff;
+}
+.login-links a:hover{
+    text-decoration: underline;
+}
+.login-links span{
+    padding: 0 10px;
+}
+/*user-login用户登录结束*/
+/*enter-yet开始*/
+.enter-yet{
+    position: absolute;
+    bottom:0;
+    right:0;
+    margin-bottom: 146px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 12px;
+    padding: 90px 20px 55px 20px;
+    display: none;                                              /*隐藏*/
+}
+.user-photo{
+    width: 110px;
+    height: 110px;
+    margin: 0 auto;
+    border-radius: 55px;
+    background: red;
+}
+.user-photo img{
+    width: 110px;
+    height: 110px;
+    border-radius: 55px;
+}
+.enter-yet-links{
+    padding: 88px 0 44px 0;
+    width: 205px;
+    margin: 0 auto;
+}
+.enter-yet-links a{
+    display: inline-block;
+    font-size: 13px;
+    color: #fefefe;
+    line-height: 100%;
+    padding: 0 5px;
+}
+.enter-yet-links a:hover{
+    text-decoration: underline;
+}
+.button-group button{
+    width: 159px;
+    height: 35px;
+    border-radius: 9px;
+    background: #499392;
+    font-size: 14px;
+    color: #fff;
+    border:none;
+    outline: none;
+}
+.button-group button[name="join-money"]{
+    margin-right: 17px;
+}
+/*enter-yet结束*/
+/*banner结束*/
+/*company-data开始*/
+.data{
+    width: 1024px;
+    margin: 0 auto;
+}
+.company-data{
+    display: table;
+    padding-top: 50px;
+}
+.company-data li{
+    display: table-cell;
+    width: 284px;
+}
+.data-pic{
+    float: left;
+    padding-right: 7px;
+}
+.data-information{
+    float: left;
+}
+.data-information h1{
+    font-size: 30px;
+    line-height: 100%;
+    color: #f53030;
+}
+.data-information h1 span{
+    font-size: 14px;
+}
+.data-information h3{
+    padding-top: 12px;
+    font-size: 18px;
+    line-height: 100%;
+    color: #8d8d8d;
+}
+.company-information{
+    padding-top: 50px;
+}
+.company-information img{
+    float: left;
+}
+.company-information p{
+    padding-left: 36px;
+    padding-top: 57px;
+    float: left;
+    width: 636px;
+    font-size: 14px;
+    line-height: 26px;
+    color: #000;
+    text-indent:24px;
+}
+/*company-data结束*/
+/*project项目开始*/
+.project{
+    background-color: #f5f5f5;
+}
+.project-container{
+    width: 1024px;
+    margin: 0 auto;
+}
+/*project-title开始*/
+.title{
+    padding-top: 58px;
+}
+.title-chinese{
+    width: 180px;
+    height: 20px;
+    border:1px solid #d1d1d1;
+    margin:0 auto;
+}
+.title-chinese p{
+    line-height: 40px;
+    text-align: center;
+    width: 103px;
+    color: #4cb0ae;
+    font-size: 18px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+.title-english{
+    text-align: center;
+    font-size: 30px;
+    line-height: 100%;
+    color: #545454;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 9px;
+}
+.bang-url{
+    text-align: center;
+}
+.bang-url a{
+    border-top: 1px solid #494949;
+    color: #545454;
+}
+/*project-title结束*/
+/*project-data开始*/
+.project-recommend,.project-bank{
+    width: 1024px;
+    margin: 0 auto;
+}
+.project-data{
+    margin-top: 24px;
+}
+.project-data .project-left{
+    float: left;
+    width: 820px;
+    background-color: #fff;
+}
+.project-data .project-right a{
+    display: block;
+    float: left;
+    width: 204px;
+    background-color: #f53030;
+    font-size: 30px;
+    line-height: 150px;
+    color: #fff;
+    text-align: center;
+}
+.project-left h2{
+    font-size: 24px;
+    color: #353535;
+    line-height: 50px;
+    padding-left: 50px;
+    border-bottom: 1px solid #f1e5d4;
+}
+.data-left{
+    float: left;
+}
+.data-left dl{
+    text-align: center;
+    float: left;
+    padding: 0 40px;
+}
+.data-left dl dt{
+    font-size: 18px;
+    color: #a3a3a3;
+    padding-top: 18px;
+    line-height: 100%;
+}
+.data-left dl dd{
+    font-size: 30px;
+    color: #f53030;
+    padding-top: 20px;
+    line-height: 100%;
+    padding-bottom: 13px;
+}
+/*进度条开始*/
+.data-progress-long{
+    float: left;
+}
+.data-progress-long .bars{
+    margin-top:40px;
+    width:300px;
+}
+.bi-hor-topLeft .bi-label, .bi-hor-left .bi-label {
+    float: right;
+}
+.bi-wrp.bi-default-theme .bi-bar{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.bi-wrp.bi-default-theme .bi-barInner {
+    background-color: red;
+    border-radius: 10px;
+}
+.data-progress-long .bi-label {
+     padding-left: 10px;
+    font-size: 18px;
+    color: #a3a3a3;
+}
+/*进度条结束*/
+/*project-data结束*/
+/*.project-list开始*/
+.project-list{
+    width: 1080px;
+    margin: 0 auto;
+}
+.project-list li{
+    float: left;
+    background: #fff;
+    width: 264px;
+    border: 2px solid #f5f5f5;
+    padding: 20px 12px 12px 12px;
+    margin: 0 34px 26px 34px;
+}
+.project-list li:hover{
+    border: 2px solid #cfa972;
+}
+.data-title{
+    text-align: center;
+    font-size: 18px;
+    color: #343434;
+    line-height: 20px;
+    position: relative;
+    width: 190px;
+    margin: 0 auto;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.data-title .data-icon{
+    position: absolute;
+    top: 0;
+    left: -30px;
+}
+.data-icon img{
+    padding-bottom: 6px;
+}
+.year-rate dt{
+    padding-top: 72px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #a3a3a3;
+    line-height: 100%;
+}
+.year-rate dd{
+     text-align: center;
+     font-size: 36px;
+     line-height: 100%;
+     color: #f53030;
+    padding-bottom: 70px;
+ }
+.invest-money,.deadline{
+    height: 26px;
+    line-height: 26px;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+.invest-money dt,.deadline dt{
+    float: left;
+}
+.invest-money dd,.deadline dd{
+    float: right;
+}
+.data-progress-short{
+    height:40px;
+}
+.data-progress-short .bars{
+    margin-top:26px;
+    width:264px;
+}
+.data-progress-short .bi-label {
+    padding-left: 26px;
+    font-size: 14px;
+    color: #a3a3a3;
+}
+.project-data button{
+    width: 100%;
+    font-size: 14px;
+    line-height: 36px;
+    color: #fff;
+    background-color:#f53030;
+    border-radius: 4px;
+    outline: none;
+}
+button[disabled="disabled"]{
+    background-color:#b6b5b5 ;
+}
+.project-list li:last-of-type{
+    height: 396px;
+}
+.project-list li:last-of-type a{
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    color: #b6b5b5;
+    margin-top: 188px;
+}
+.project-list li:last-of-type a:hover{
+    text-decoration: underline;
+}
+/*.project-list开始*/
+/*project项目结束*/
+/*优势开始*/
+.advantage{
+    background: #f5f5f5;
+    padding-bottom: 45px;
+}
+.advantage-inner{
+    width: 1024px;
+    margin: 0 auto;
+}
+.advantage-list{
+    padding-top: 60px;
+}
+.advantage-list li{
+    float: left;
+    width: 220px;
+    padding: 0 60px;
+    text-align: center;
+}
+.advantage-list .pic{
+    width: 219px;
+    height: 219px;
+    border-radius: 109px;
+    border:2px solid #c4c4c4;
+}
+.advantage-list .pic img{
+    width: 102%;                  /*滤镜效果部分浏览器不支持*/
+    -webkit-filter: grayscale(1);
+    -moz-filter: grayscale(1);
+    -ms-filter: grayscale(1);
+    -o-filter: grayscale(1);
+    filter: grayscale(1);
+}
+.advantage-list .pic:hover img{                          /*滤镜效果部分浏览器不支持*/
+    -webkit-filter: grayscale(0);
+    -moz-filter: grayscale(0);
+    -ms-filter: grayscale(0);
+    -o-filter: grayscale(0);
+    filter: grayscale(0);
+}
+.advantage-list h2{
+    font-size: 18px;
+    color: #323232;
+    line-height:42px;
+    font-weight: bold;
+}
+.advantage-list p{
+    font-size: 14px;
+    color: #9c9c9c;
+    line-height:24px;
+}
+/*优势结束*/
+/*新闻动态开始*/
+.notice{
+    padding-top: 30px;
+}
+.news-inner{
+    width: 1024px;
+    margin: 0  auto;
+}
+.news .title-chinese p{
+    background-color:#fff;
+}
+.news .pic{
+    width: 319px;
+    height: 197px;
+}
+.news .news-text{
+    width: 683px;
+    height: 197px;
+}
+.notice .pic{
+    float: left;
+    padding-right: 22px;
+}
+.notice .news-text{
+    float: left;
+}
+.notice, .company-condition{
+    padding-bottom: 40px;
+}
+.company-condition .pic{
+    float: left;
+    padding-left: 22px;
+}
+.industry-news .news-text{
+    float: left;
+}
+.industry-news .pic{
+    float: left;
+    padding-right: 22px;
+}
+.company-condition .news-text{
+    float: left;
+}
+.news-name h3{
+    font-size: 20px;
+    line-height: 74px;
+    color: #343434;
+    float: left;
+    font-weight: bold;
+    background: url("../images/earth-icon.png") no-repeat 0 27px;
+    padding-left: 30px;
+}
+.news-name p a{
+    display: block;
+    float: right;
+    font-size: 14px;
+    color: #b4dad9;
+    line-height: 74px;
+}
+.news-name p a:hover{
+    text-decoration: underline;
+}
+.news-information li{
+    list-style-image: url("../images/li-icon.png");
+    list-style-position:inside;
+}
+.news-information li{
+    height: 40px;
+    background-color:#fff;
+    border-bottom: 1px solid #e5e5e5;
+}
+.news-information li:hover{
+    background-color: #f5f5f5;
+}
+.news-information li a{
+    font-size: 16px;
+    line-height: 40px;
+    color: #585858;
+}
+/*新闻动态结束*/
+/*合作机构开始*/
+.cooperation-inner{
+    width: 1024px;
+    margin: 0 auto;
+}
+.cooperation .title-chinese p {
+    background-color: #fff;
+}
+.bank{
+    height: 244px;
+    background: url("../images/bank-bj.png") no-repeat left top;
+    position: relative;
+    margin-top: 27px;
+    margin-bottom: 60px;
+}
+.bank01{
+    position: absolute;
+    top: 40px;
+    left:45px;
+}
+.bank02{
+    position: absolute;
+    top: 40px;
+    left:327px;
+}
+.bank03{
+    position: absolute;
+    top: 40px;
+    left:588px;
+}
+.bank04{
+    position: absolute;
+    top: 40px;
+    left:876px;
+}
+.bank05{
+    position: absolute;
+    top: 144px;
+    left:170px;
+}
+.bank06{
+    position: absolute;
+    top: 144px;
+    left:448px;
+}
+.bank07{
+    position: absolute;
+    top: 144px;
+    left:721px;
+}
+/*合作机构结束*/
+

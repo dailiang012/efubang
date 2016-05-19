@@ -1,0 +1,58 @@
+<!doctype html>
+<html class="no-js" lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>注册</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/register-style.css">
+    <script src="js/modernizr-2.8.3.min.js"></script>
+</head>
+<body>
+<div id="doc-container">
+    <div class="bj"></div>
+    <div class="container-inner">
+        <div class="logo"><img src="images/register-logo.png" alt="e富邦标志"/></div>
+        <form action="" method="post" enctype="multipart/form-data">
+            <div>
+                <label for="phone"></label>
+                <input type="text" name="phone" id="phone" maxlength="11" placeholder="请输入手机号">
+            </div>
+            <div class="pic-code-input">
+                <label for="pic-code"></label>
+                <input type="text" name="pic-code" id="pic-code" maxlength="4" placeholder="请输入验证码">
+                <span class="code-img"><img src="images/code-pic.jpg" alt="验证码"/></span>
+            </div>
+            <div class="phone-code-input">
+                <label for="phone-code"></label>
+                <input type="text" name="phone-code" id="phone-code" maxlength="4" placeholder="请输入手机校验码">
+                <span role="button">获取短信验证码</span>
+            </div>
+            <div>
+                <label for="password-first"></label>
+                <input type="password" name="password-first" id="password-first" placeholder="请输入密码">
+            </div>
+            <div>
+                <label for="password-again"></label>
+                <input type="password" name="password-again" id="password-again" placeholder="请再次输入密码">
+            </div>
+            <div>
+                <label for="referrer-name"></label>
+                <input type="text" name="referrer-name" id="referrer-name" placeholder="推荐人用户名 / 没有可不填">
+            </div>
+            <div class="check-input">
+                <input type="checkbox" id="check">
+                <label for="check">我已阅读并同意《e富邦网站服务协议》</label>
+            </div>
+            <p class="prompt-text">提示：密码错误(假文字)</p>
+            <input type="button" value="立即注册">
+        </form>
+    </div>
+</div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/plugins.js"></script>
+</body>
+</html>
