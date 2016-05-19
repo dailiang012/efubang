@@ -1,0 +1,342 @@
+@charset "utf-8";
+/*CSS Document*/
+/*banner开始*/
+#banner{
+    height: 450px;
+    background: url("../images/banner-bj.jpg") no-repeat center top;
+}
+/*banner结束*/
+/*main开始*/
+.about-inner,.player-inner,.what-happen-inner,.map-inner{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+}
+/*title开始*/
+.title-chinese{
+    width: 180px;
+    height: 20px;
+    border:1px solid #d1d1d1;
+    margin:0 auto;
+}
+.title-chinese p{
+    line-height: 40px;
+    text-align: center;
+    width: 109px;
+    color: #4cb0ae;
+    font-size: 18px;
+    background: #f5f5f5;
+    margin: 0 auto;
+}
+.title-english{
+    text-align: center;
+    font-size: 30px;
+    line-height: 100%;
+    color: #545454;
+    text-transform: uppercase;
+    padding-top: 15px;
+    padding-bottom: 9px;
+}
+.bang-url{
+    text-align: center;
+}
+.bang-url a{
+    border-top: 1px solid #494949;
+    color: #545454;
+}
+/*title结束*/
+.about-us{
+    padding-top: 70px;
+}
+.box-rotate{
+    position: absolute;
+    bottom: -25px;
+    left:50%;
+    width: 30px;
+    height: 30px;
+    -webkit-transform: rotate(45deg)  translateX(-50%);
+    -moz-transform: rotate(45deg)  translateX(-50%);
+    -ms-transform: rotate(45deg)  translateX(-50%);
+    -o-transform: rotate(45deg)  translateX(-50%);
+    transform: rotate(45deg)  translateX(-50%);
+}
+.about-us .box-rotate{
+    background-color: #fff;
+}
+.about-us .title-chinese p{
+    background-color: #fff;
+}
+.us-content{
+    padding: 95px 0 140px 0;
+}
+.us-right{
+    float: right;
+    width: 600px;
+    position: relative;
+}
+.us-right .idea{
+    width: 566px;
+    height: 94px;
+    position: absolute;
+    right: -20px;
+    top: -30px;
+    background-color: #cfebeb;
+}
+.idea-text{
+    width: 617px;
+    position: absolute;
+    right: 20px;
+    top:30px;
+}
+.us-right h1{
+    float: left;
+    text-align: left;
+    font-size: 24px;
+    line-height: 42px;
+    color: #3b3b3b;
+    font-family: "SimSun";
+    font-weight: bold;
+    margin:0;
+}
+.us-right span{
+    display: block;
+    float: left;
+    width: 70px;
+    text-align: left;
+    font-size: 80px;
+    line-height: 80px;
+    font-family: "SimSun";
+    vertical-align: bottom;
+    color: #3b3b3b;
+}
+.us-right h1+span{
+    padding-top: 40px;
+}
+.idea-content{
+    padding-top: 122px;
+}
+.idea-content p{
+    font-size: 14px;
+    line-height: 24px;
+    color: #3b3b3b;
+    text-indent: 28px;
+}
+/*轮播图开始*/
+.us-left{
+    float: left;
+    height: 320px;
+    width: 386px;
+    background-color: #f0f0f0;
+}
+/* 本例子css */
+.slideBox{
+    width:386px;
+    height: 290px;
+    position:relative;
+    padding-top: 30px;
+    border:1px solid #dedede;
+    border-bottom:0;
+    }
+.slideBox .hd{height:8px;overflow:hidden;position:absolute;right:5px;bottom: 12px;z-index:1;border-radius: 8px;}
+.slideBox .hd ul{ overflow:hidden; zoom:1; float:left;  }
+.slideBox .hd ul li{ float:left; margin-right:5px;  width:8px; height:8px; border-radius:4px; line-height:14px; text-align:center; background:#c9c9c9; cursor:pointer; }
+.slideBox .hd ul li.on{ background:#535353; color:#fff; }
+.slideBox .bd{ position:relative; height:100%; z-index:0;}
+.slideBox .bd li{ zoom:1; vertical-align:middle;}
+.slideBox .bd img{ width:384px; height:256px; display:block;}
+.bd h4{
+    font-size: 16px;
+    color:#fff;
+    line-height: 40px;
+    padding-left:14px;
+    position: relative;
+    margin-top: 34px;
+}
+#pic-title{
+    height:40px;
+    width: 388px;
+    background-color: #909090;
+}
+/* 下面是前/后按钮代码，如果不需要删除即可 */
+.slideBox .prev,
+.slideBox .next{ position:absolute; left:3%; top:50%; margin-top:-25px; display:block; width:32px; height:40px; background:url(../images/slider-arrow.png) -110px 5px no-repeat; filter:alpha(opacity=50);opacity:0.5;   }
+.slideBox .next{ left:auto; right:3%; background-position:8px 5px; }
+.slideBox .prev:hover,
+.slideBox .next:hover{ filter:alpha(opacity=100);opacity:1;  }
+.slideBox .prevStop{ display:none;  }
+.slideBox .nextStop{ display:none;  }
+/*轮播图结束*/
+/*player开始*/
+.player{
+    padding-top:70px ;
+    background-color: #f5f5f5;
+}
+.player-pic{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    margin:  0 auto;
+}
+.player-pic img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+.player-about li{
+    padding-top: 60px;
+}
+.player-name{
+    text-align: center;
+    font-size: 18px;
+    color: #3b3b3b;
+    line-height: 30px;
+    margin-top: 24px;
+}
+.player-name span{
+    color:#999;
+}
+.player-data{
+    text-align: center;
+    font-size: 14px;
+    line-height: 30px;
+    color:#3b3b3b;
+    margin-top: 16px;
+}
+.law{
+    margin-top: 60px;
+    padding-bottom: 128px;
+}
+.law .bang-url{
+    margin-top: 20px;
+}
+.law .player-pic{
+    margin-top: 30px;
+}
+.player .box-rotate{
+    background-color: #f5f5f5;
+}
+
+/*player结束*/
+/*great-day开始*/
+.great-day{
+    background-color: #55c7c5;
+    padding-top: 70px;
+}
+.great-day .title-chinese p{
+    background-color: #55c7c5;
+    color: #ffec8c;
+}
+.great-day .title-english{
+    color: #fff;
+}
+.great-day .title-chinese{
+    border: 1px solid #fff;
+}
+.great-day .bang-url a {
+    border-top: 1px solid #fff;
+    color: #fff;
+}
+.what-happen-inner{
+    margin-top:20px ;
+    width: 1024px;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+    padding-bottom: 20px;
+}
+.time-line{
+    width: 2px;
+    height: 100%;
+    background-color: #ffec8c;
+    position: absolute;
+    top:0;
+    left:50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    z-index: 10;
+}
+.TNT-news{
+    position: relative;
+    padding-top: 46px;
+}
+.news .year{
+    text-align: center;
+    width: 100px;
+    height: 38px;
+    margin-left:auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 38px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #55c7c5;
+    margin-bottom: 20px;
+    z-index: 20;
+    position: relative;
+}
+.news .left{
+    margin-right:523px ;
+    padding-right: 30px;
+    text-align: right;
+    background: url("../images/left-to.png") no-repeat right top;
+}
+.news .right{
+    text-align: left;
+    margin-left:523px ;
+    background: url("../images/right-to.png") no-repeat left top;
+    padding-left: 30px;
+}
+.news-time{
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: bold;
+    color: #fff;
+}
+.news-content{
+    height: 48px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #fff;
+}
+.news .right .news-time{
+    padding-bottom: 4px;
+}
+.news>div{
+    margin-bottom: 10px;
+}
+.what-happen{
+    padding-bottom: 60px;
+}
+.what-happen .box-rotate{
+    background-color: #55c7c5;
+    bottom: -85px;
+}
+/*great-day结束*/
+/*map开始*/
+.map{
+    padding: 70px 0 80px 0;
+}
+.map .title-chinese p{
+    background-color: #fff;
+}
+.map-txt{
+    font-size: 18px;
+    line-height: 120px;
+    color: #474747;
+    text-align: center;
+}
+.map-content{
+    padding-top: 56px;
+}
+.map-baidu{
+    width: 1024px;
+    height: 380px;
+}
+#map{
+    display: block;
+}
+/*map结束*/
+/*main结束*/

@@ -1,0 +1,146 @@
+@charset "utf-8";
+/*CSS Document*/
+/*banner开始*/
+#banner{
+    height: 450px;
+    background: url("../images/banner-bj.jpg") no-repeat center top;
+}
+/*banner结束*/
+
+
+
+
+
+
+/*弹窗开始*/
+html,body{
+    width: 100%;
+    height:100%;
+}
+#pup-up{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+.pup-up-inner{
+    position: relative;
+    width: 24%;
+    height: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    top:-2000px;
+}
+.lace{
+    height: 20%;
+    margin: 0 auto;
+    position: relative;
+}
+.lace-line{
+    width: 9.5%;
+    height: 112%;
+    background: #4cb8c2;
+    margin: 0 auto;
+}
+.lace-w{
+    width: 107px;
+    height: 6px;
+    margin:  0 auto;
+    border-radius: 3px;
+    background: #200b0c;
+}
+.container-inner{
+    width: 80%;
+    border-radius: 8px;
+    background: #fff;
+    padding: 20% 10% 10%;
+}
+#close-pup{
+    width: 42px;
+    height: 42px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    margin-top: 15%;
+}
+/*表单内容开始*/
+.bj{
+    background: rgba(0,0,0,0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+}
+.container-inner input{
+    width: 70%;
+    height: 28px;
+    padding: 0 5px 0 10px;
+    border: none;
+    outline: none;
+    background: none;
+    font-size:14px ;
+    float: left;
+}
+.container-inner form>div{
+    border-bottom: 1px solid #b3b3b3;
+    margin-bottom: 18px;
+}
+.pic-code-input{
+    position: relative;
+}
+.code-img{
+    position: absolute;
+    top:0;
+    right: 5px;
+}
+.container-inner input[type="button"]{
+    background-color:#4cb0ae ;
+    height: 55px;
+    color: #fff;
+    border-bottom: none;
+    border-radius: 4px;
+    width: 100%;
+    font-size: 24px;
+    cursor: pointer;
+}
+.prompt-text{
+    font-size: 12px;
+    line-height: 30px;
+    padding-top: 5%;
+    color: #e7a604;             /*字体的颜色随不同的提示，变化*/
+}
+.container-inner label{
+    width: 36px;
+    height: 28px;
+    display: block;
+    float: left;
+}
+label[for="user-name"]{
+    background: url("../images/pup-user-login-icon01.png") no-repeat center 5px;
+}
+label[for="user-password"]{
+    background: url("../images/pup-user-login-icon02.png") no-repeat center 5px;
+}
+label[for="pic-code"]{
+    background: url("../images/pup-user-login-icon03.png") no-repeat center 5px;
+}
+.enter-links{
+    text-align: center;
+    margin-top: 30%;
+    color: #606060;
+}
+.enter-links a{
+    font-size: 12px;
+    line-height: 100%;
+    color: #606060;
+}
+.enter-links a:hover{
+    text-decoration: underline;
+}
+.enter-links span{
+    padding: 0 10px;
+}
+/*表单内容结束*/
+/*弹窗结束*/

@@ -1,0 +1,196 @@
+@charset "UTF-8";
+/*公共代码开始*/
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  padding: 0;
+  margin: 0;
+  border: none; }
+
+body {
+  font-family: Arial,"微软雅黑", Helvetica, sans-serif; }
+
+html {
+  -webkit-text-size-adjust: none; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  text-decoration: none;
+  display: block; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+a {
+  text-decoration: none; }
+
+a:active {
+  text-decoration: none; }
+
+a img, :link img, :visited img {
+  border: 0; }
+
+input, textarea, select {
+  outline: none;
+  font-family: Arial,"微软雅黑", Helvetica, sans-serif; }
+
+textarea {
+  resize: none; }
+
+.clear {
+  clear: both; }
+
+/*公共代码结束*/
+#banner {
+  height: 484px;
+  background: url("../images/banner_bj.jpg") no-repeat center top;
+  position: relative; }
+  #banner .banner_btn {
+    width: 162px;
+    height: 50px;
+    border: 1px solid #ffd57c;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px;
+    border-radius: 10px; }
+    #banner .banner_btn:hover {
+      background-color: #f9c24c; }
+
+#main {
+  background: #e4f4ff; }
+
+.article_nav {
+  width: 810px;
+  margin: 0 auto;
+  padding-top: 46px;
+  height: 47px; }
+  .article_nav li {
+    float: left;
+    margin: 0 79px;
+    background: url("../images/nav_bj_normal.png") no-repeat center top;
+    width: 112px;
+    height: 47px;
+    text-align: center; }
+    .article_nav li a {
+      display: block;
+      font-size: 18px;
+      line-height: 47px;
+      color: #fff; }
+
+.detail_title {
+  width: 178px;
+  margin: 82px auto 0;
+  height: 42px;
+  font-size: 24px;
+  line-height: 42px;
+  color: #fdc500;
+  text-align: center;
+  background: url("../images/title-bj.png") no-repeat center top; }
+
+.detail_one .content {
+  width: 977px;
+  margin: 0 auto; }
+.detail_one h4 {
+  text-align: center;
+  font-size: 18px;
+  line-height: 108px;
+  color: #353534;
+  font-weight: bold; }
+.detail_one p {
+  font-size: 14px;
+  line-height: 24px;
+  color: #353534; }
+
+.active-flow {
+  width: 932px;
+  height: 164px;
+  margin: 92px auto 0; }
+  .active-flow li {
+    display: table;
+    float: left; }
+    .active-flow li:nth-child(1) .round {
+      background: -webkit-radial-gradient(82px 82px, #ffaf48, #ffa025);
+      background: -moz-radial-gradient(82px 82px, #ffaf48, #ffa025);
+      background: -ms-radial-gradient(82px 82px, #ffaf48, #ffa025);
+      background: -o-radial-gradient(82px 82px, #ffaf48, #ffa025);
+      background: radial-gradient(82px 82px, #ffaf48, #ffa025); }
+    .active-flow li:nth-child(2) .round {
+      background: -webkit-radial-gradient(82px 82px, #749b5c, #59873c);
+      background: -moz-radial-gradient(82px 82px, #749b5c, #59873c);
+      background: -ms-radial-gradient(82px 82px, #749b5c, #59873c);
+      background: -o-radial-gradient(82px 82px, #749b5c, #59873c);
+      background: radial-gradient(82px 82px, #749b5c, #59873c); }
+    .active-flow li:nth-child(3) .round {
+      background: -webkit-radial-gradient(82px 82px, #785d9c, #5d3d89);
+      background: -moz-radial-gradient(82px 82px, #785d9c, #5d3d89);
+      background: -ms-radial-gradient(82px 82px, #785d9c, #5d3d89);
+      background: -o-radial-gradient(82px 82px, #785d9c, #5d3d89);
+      background: radial-gradient(82px 82px, #785d9c, #5d3d89); }
+    .active-flow li:nth-child(4) .round {
+      background: -webkit-radial-gradient(82px 82px, #a76f88, #883d5e);
+      background: -moz-radial-gradient(82px 82px, #a76f88, #883d5e);
+      background: -ms-radial-gradient(82px 82px, #a76f88, #883d5e);
+      background: -o-radial-gradient(82px 82px, #a76f88, #883d5e);
+      background: radial-gradient(82px 82px, #a76f88, #883d5e); }
+
+.detail_two p {
+  padding-top: 40px;
+  text-align: center;
+  font-size: 18px;
+  line-height: 32px;
+  color: #353534; }
+
+.round {
+  width: 164px;
+  height: 164px;
+  border-radius: 50%;
+  background-color: #498ca1;
+  /* 不要删除！！！！这个值是作为后备色，当渐变不能实现的时候，浏览器会使用这个色值*/
+  float: left;
+  text-align: center; }
+  .round h5 {
+    width: 110px;
+    font-size: 18px;
+    line-height: 26px;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    margin: 37px auto 0;
+    font-weight: bold; }
+  .round img {
+    display: inline;
+    padding-top: 22px; }
+
+.flow-icon {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 33px; }
+
+.detail_three .time {
+  background: url("../images/time-bj.jpg") no-repeat center top;
+  width: 961px;
+  height: 251px;
+  margin: 0 auto; }
+
+.detail_four ul {
+  width: 1028px;
+  margin: 0 auto;
+  padding-top: 40px;
+  padding-bottom: 70px; }
+
+.detail_four li {
+  font-size: 18px;
+  line-height: 30px;
+  color: #353534;
+  list-style: outside decimal; }
+
+/*# sourceMappingURL=style_article.css.map */

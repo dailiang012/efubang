@@ -1,0 +1,325 @@
+@charset "utf-8";
+html,body{
+    width: 100%;
+    height: 100%;
+}
+#main{
+    background-color:#f5f5f5;
+    padding-top: 30px;
+    padding-bottom: 100px;
+}
+.project-detail-inner{
+    height: 100%;
+}
+.data-title{
+    width: 250px;
+    text-align: left;
+    font-size: 24px;
+    color: #666;
+    line-height: 100%;
+    position: relative;
+    margin: 0 auto 30px;
+}
+.data-title .data-icon{
+    position: absolute;
+    top: 3px;
+    right:0;
+}
+.data-icon img{
+    float: left;
+    padding-right: 6px;
+}
+.project-detail{
+}
+.project-detail{
+    padding: 60px 40px;
+    width: 944px;
+    margin: 0 auto;
+    background-color: #fff;
+}
+.detail-left{
+    float: left;
+    border-right: 1px solid #d2d2d2;
+    width: 548px;
+}
+.detail-data{
+    padding-bottom: 50px;
+}
+.detail-data dl{
+    float: left;
+}
+.detail-data dl dt{
+    font-size: 36px;
+    color: #4cb0ae;
+    line-height: 100%;
+}
+.detail-data dl dd{
+    font-size: 14px;
+    color: #8d8b8b;
+    padding-top: 20px;
+    line-height: 100%;
+    padding-bottom: 13px;
+}
+.detail-data span{
+    height: 61px;
+    width: 1px;
+    vertical-align: middle;
+    float: left;
+    background-color: #f2f2f2;
+    margin: 5px 50px;
+}
+.money-data{
+    height: 65px;
+}
+.money-data>div{
+    float: left;
+    padding-right: 40px;
+    font-size: 14px;
+    color: #8d8b8b;
+}
+.money-data>div span{
+    color:#4cb0ae;
+}
+.data-progress-long .bars{
+    width:420px;
+}
+.bi-hor-topLeft .bi-label, .bi-hor-left .bi-label {
+    float: right;
+}
+.bi-wrp.bi-default-theme .bi-bar{
+    border-radius: 10px;
+    margin-top: 5px;
+}
+.bi-wrp.bi-default-theme .bi-barInner {
+    background-color: red;
+    border-radius: 10px;
+}
+.data-progress-long .bi-label {
+    padding-left: 10px;
+    font-size: 18px;
+    color: #a3a3a3;
+}
+.project-information{
+    font-size: 14px;
+    color: #666;
+    line-height: 100%;
+    margin-top: 40px;
+    padding-bottom: 20px;
+}
+.invest-money{
+    float: right;
+    position: relative;
+}
+.invest-title{
+    padding-left: 100px;
+    font-size: 24px;
+    line-height: 100%;
+    color: #666;
+}
+.money-information{
+    padding-top: 20px;
+    padding-bottom: 34px;
+}
+.money-information li{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+.money-information li span{
+    color:#4cb0ae;
+}
+.invest-money>p{
+    font-size: 14px;
+    color: #666;
+    line-height: 20px;
+}
+#money {
+    width: 239px;
+    height: 45px;
+    float: left;
+    padding: 0 10px;
+    background-color: #fff;
+    border: 1px solid #d2d2d2;
+    margin-right: 10px;
+}
+.red-packet{
+    float: left;
+    border-radius: 0 6px 6px 0;
+    position: relative;
+}
+.red-packet h3{
+    width: 50px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-top: 20px;
+    font-size: 14px;
+    color:#fdf54c;
+    text-align: center;
+    cursor: pointer;
+}
+.click-text{
+    color: #df3121;
+}
+
+.invest-money input[type="button"]{
+    width: 330px;
+    height: 60px;
+    background-color: #4cb0ae;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+
+.drop-down-packet{
+    float: left;
+    position: relative;
+    margin-left: 25px;
+}
+.drop-down-packet h3{
+    width: 50px;
+    height: 24px;
+    position: absolute;
+    left: 0;
+    top:0;
+    padding-top: 20px;
+    font-size: 14px;
+    color:#fdf54c;
+    text-align: center;
+    cursor: pointer;
+}
+.xiala_hongbao{
+    width:290px;
+    border:1px solid #ccc;
+    border-radius:10px;
+    position:absolute;
+    top: 240px;
+    right: 10px;
+    z-index:1000;
+    background:#fff;
+    display: none;
+}
+.xiala_hongbao li{
+    cursor:pointer;
+}
+.xiala_hongbao li:hover{
+    background:#efefef;
+}
+.xiala_hongbao .biankuang{
+    border-bottom:1px dotted #a0a0a0;
+    padding:15px 10px 5px;
+}
+.xiala_hongbao .left{
+    float:left;
+    width:182px;
+}
+.xiala_hongbao .padleft .time{
+    padding-left:16px;
+}
+.xiala_hongbao .left h2{
+    float:left;
+    font-size:24px;
+    color:#df3121;
+    line-height:26px;
+    padding-right:18px;
+    font-weight:bold;
+}
+.xiala_hongbao .left .time{
+    font-size:12px;
+    color:#333;
+    line-height:14px;
+}
+.xiala_hongbao .p2{
+    line-height:18px;
+    font-size:12px;
+    color:#666;
+}
+.xiala_hongbao .p3{
+    text-align:center;
+    line-height:38px;
+    font-size:12px;
+    color:#333;
+    font-weight:bold;
+}
+.xiala_hongbao .jiantou_pic img{
+    position:absolute;
+    top:-6px;
+    left:255px;
+    z-index:5000;
+}
+.xiala_hongbao .last{
+    border-radius:0 0 10px 10px;
+}
+.xiala_hongbao .first{
+    border-radius:10px 10px 0 0;
+}
+.invest{
+    width: 944px;
+    margin: 93px auto 0;
+    background-color: #fff;
+    padding: 0 40px 140px 40px;
+}
+.invest-list-bj{
+    height: 57px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.invest-list{
+    width: 1024px;
+    margin: 0 auto;
+    height: 100px;
+}
+.invest-list li{
+    height: 77px;
+    float: left;
+    margin-right: 20px;
+}
+.invest-list li a{
+    display: block;
+    font-size: 18px;
+    color: #666;
+    line-height: 57px;
+    width: 107px;
+    height: 77px;
+    text-align: center;
+}
+.invest-list .invest-active{
+    background: url("../images/projec-list-bj.png") no-repeat center top;
+    color: #fff;
+}
+.content-list>div{
+    display: none;
+}
+#project-info{
+    display: block;
+}
+.content-list{
+    padding-top: 60px;
+}
+.content-list dl{
+    padding-bottom: 20px;
+}
+.content-list dt{
+    font-size: 18px;
+    color: #545454;
+    font-weight: bold;
+}
+.content-list dd{
+    font-size: 14px;
+    color: #666;
+    line-height: 30px;
+}
+#money-history table{
+    width: 100%;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    line-height: 50px;
+}
+#money-history thead tr{
+    background-color:#f5f5f5;
+}
+#money-history tr{
+    border-bottom: 1px solid #999;
+}

@@ -1,0 +1,139 @@
+@charset "utf-8";
+/*公共样式开始*/
+*{ vertical-align:baseline;  font-weight:inherit;  font-style:inherit;  font-size:100%;  padding:0;  margin:0;  border:none}
+body{font:normal 100% Arial,"Microsoft YaHei", Helvetica, sans-serif;}
+html{ -webkit-text-size-adjust:none}
+li{ list-style:none}
+img{ border:none;  text-decoration:none;  display:block}
+h1, h2, h3, h4, h5, h6{ font-weight:normal}
+a{ text-decoration:none}
+a img, :link img, :visited img{ border:0}
+input, textarea, select{ outline:none;font:normal 100% Arial,"Microsoft YaHei", Helvetica, sans-serif;}
+textarea{ resize:none}
+.clear{ clear:both}
+/*公共样式结束*/
+#banner{
+    height: 620px;
+    background: url("../images/banner-pic.jpg") no-repeat center top;
+}
+#main{
+    background-color: #eee;
+}
+.main-inner{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 1673px;
+}
+.doing{
+    font-size: 16px;
+    line-height: 20px;
+    color: #434343;
+    padding: 63px 0 40px 0;
+}
+.doing-right{
+    float: right;
+}
+.doing-right>div{
+    margin-left: 30px;
+    float: left;
+}
+.write-again{
+    float: left;
+    padding-left: 22px;
+    background: url("../images/write.png") no-repeat left top;
+    cursor: pointer;
+}
+.great,.message{
+    padding-left: 26px;
+    cursor: pointer;
+}
+.great{
+    background: url("../images/great.png") no-repeat left top;
+}
+.message{
+    background: url("../images/message.png") no-repeat left top;
+}
+.diy-img{
+    width: 677px;
+    margin:0 auto;
+}
+.diy_pic{
+    padding: 6px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.diy_pic img {
+    width: 665px;
+    height: 443px;
+}
+.diy-title{
+    font-size: 24px;
+    line-height: 52px;
+    color: #434343;
+}
+.article{
+    background-color: #F0F0EE;
+    width: 100%;
+    border:6px solid #fdc500 ;
+    border-radius: 10px;
+}
+.article-inner{
+    width: 840px;
+    margin:  0 auto;
+}
+.article-title{
+    text-align: center;
+    line-height: 116px;
+    font-size: 30px;
+    color: #434343;
+}
+.comment-title{
+    font-size: 24px;
+    line-height: 48px;
+    color: #434343;
+    padding-top: 45px;
+    border-top: 1px dashed #ddd;
+}
+.article-text{
+    padding-bottom: 54px;
+    text-indent: 28px;
+    font-size: 14px;
+    line-height: 24px;
+    color: #434343;
+}
+.comment-text{
+    border-radius: 8px;
+    background-color: #f7f0e1;
+    font-size: 16px;
+    line-height: 20px;
+    color: #434343;
+    padding: 20px 20px;
+    margin-bottom: 100px;
+    position: relative;
+}
+.comment-text:before{
+    content: "";
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    background-color: #f7f0e1;
+    left: 50px;
+    top:-6px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+
+/*新加有背景色的标题*/
+.color-title{
+    height: 44px;
+    color: #434343;
+    line-height: 44px;
+    font-size: 18px;
+    padding-left: 26px;
+    background-color:#fdc500;
+}

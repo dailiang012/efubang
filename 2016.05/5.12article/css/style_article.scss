@@ -1,0 +1,207 @@
+@charset "utf-8";
+/*公共代码开始*/
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  padding: 0;
+  margin: 0;
+  border: none
+}
+
+body {
+  font-family:Arial,"微软雅黑", Helvetica, sans-serif;
+}
+
+html {
+  -webkit-text-size-adjust: none;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  border: none;
+  text-decoration: none;
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+a:active{
+  text-decoration: none;
+}
+a img, :link img, :visited img {
+  border: 0
+}
+
+input, textarea, select {
+  outline: none;
+  font-family:Arial,"微软雅黑", Helvetica, sans-serif;
+}
+
+textarea {
+  resize: none;
+}
+
+.clear {
+  clear: both;
+}
+/*公共代码结束*/
+@mixin font($fs,$lih,$color){
+  font-size: $fs;
+  line-height: $lih;
+  color: $color;
+}
+#banner{
+  height: 484px;
+  background: url("../images/banner_bj.jpg") no-repeat center top;
+  position: relative;
+  .banner_btn{
+    width: 162px;
+    height: 50px;
+    border:1px solid #ffd57c;
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size:24px;
+    color: #fff;
+    text-align: center;
+    cursor: pointer;
+    line-height: 50px;
+    border-radius: 10px;
+    &:hover{
+      background-color: #f9c24c;
+    }
+  }
+}
+#main{
+  background: #e4f4ff;
+}
+.article_nav{
+  width: 810px;
+  margin: 0 auto;
+  padding-top: 46px;
+  height: 47px;
+  li{
+    float: left;
+    margin: 0 79px;
+    background: url("../images/nav_bj_normal.png") no-repeat center top;
+    width: 112px;
+    height: 47px;
+    text-align: center;
+    a{
+      display: block;
+      @include font(18px,47px,#fff);
+    }
+  }
+}
+.detail_title{
+  width: 178px;
+  margin:  82px auto 0;
+  height: 42px;
+  @include font(24px,42px,#fdc500);
+  text-align: center;
+  background: url("../images/title-bj.png") no-repeat center top;
+}
+.detail_one {
+  .content{
+    width: 977px;
+    margin: 0 auto;
+  }
+  h4{
+    text-align: center;
+    @include font(18px,108px,#353534);
+    font-weight: bold;
+
+  }
+  p{
+    @include font(14px,24px,#353534);
+  }
+}
+
+//有神路过：将值订好，然后radial-gradient()作为一个函数，给参数传入不同的值，得到不同的样式；
+$radialColor1:(82px 82px, #ffaf48, #ffa025);
+$radialColor2:(82px 82px, #749b5c, #59873c);
+$radialColor3:(82px 82px, #785d9c, #5d3d89);
+$radialColor4:(82px 82px, #a76f88, #883d5e);
+@mixin radial-gradient($radialColor){
+  background: -webkit-radial-gradient(#{$radialColor});
+  background: -moz-radial-gradient(#{$radialColor});
+  background: -ms-radial-gradient(#{$radialColor});
+  background: -o-radial-gradient(#{$radialColor});
+  background: radial-gradient(#{$radialColor});
+}
+.active-flow{
+  width: 932px;
+  height: 164px;
+  margin: 92px auto 0;
+  li{
+  display: table;
+  float: left;
+  &:nth-child(1) .round{
+      @include radial-gradient($radialColor1);
+  }
+    &:nth-child(2) .round{
+      @include radial-gradient($radialColor2);
+    }
+    &:nth-child(3) .round{
+      @include radial-gradient($radialColor3);
+    }
+    &:nth-child(4) .round{
+      @include radial-gradient($radialColor4);
+    }
+  }
+}
+.detail_two p{
+  padding-top: 40px;
+  text-align: center;
+  @include font(18px,32px,#353534);
+}
+.round{
+  width: 164px;
+  height:164px;
+  border-radius: 50%;
+  background-color: #498ca1;  /* 不要删除！！！！这个值是作为后备色，当渐变不能实现的时候，浏览器会使用这个色值*/
+  float: left;
+  text-align: center;
+  h5{
+    width: 110px;
+    @include font(18px,26px,#fff);
+    border-bottom: 1px solid #fff;
+    margin:37px auto 0;
+    font-weight: bold;
+  }
+  img{
+    display: inline;
+    padding-top: 22px;
+  }
+}
+.flow-icon{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 33px;
+}
+.detail_three .time{
+  background: url("../images/time-bj.jpg") no-repeat center top;
+  width: 961px;
+  height: 251px;
+  margin: 0 auto;
+}
+.detail_four ul{
+  width: 1028px;
+  margin:  0 auto;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.detail_four li{
+  @include font(18px,30px,#353534);
+  list-style: outside decimal;
+}
