@@ -1,0 +1,64 @@
+@charset "utf-8";
+/*公共样式开始*/
+*{ vertical-align:baseline;  font-weight:inherit;  font-style:inherit;  font-size:100%;  padding:0;  margin:0;  border:none}
+body{font:normal 100% Arial,"Microsoft YaHei", Helvetica, sans-serif;}
+html{ -webkit-text-size-adjust:none}
+li{ list-style:none}
+img{ border:none;  text-decoration:none;  display:block}
+h1, h2, h3, h4, h5, h6{ font-weight:normal}
+a{ text-decoration:none}
+a img, :link img, :visited img{ border:0}
+input, textarea, select{ outline:none;font:normal 100% Arial,"Microsoft YaHei", Helvetica, sans-serif;}
+textarea{ resize:none}
+.clear{ clear:both}
+/*公共样式结束*/
+#banner{
+    height: 620px;
+    background: url("../images/banner-pic.jpg") no-repeat center top;
+}
+#main{
+    background-color: #eee;
+}
+.main-inner{
+    width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    height: 1673px;
+}
+.article{
+    position: absolute;
+    left: 0;
+    top:-40px;
+    background-color: #F0F0EE;
+    padding-top: 50px;
+    height: 1200px;
+    width: 100%;
+    border:6px solid #d4ccad ;
+    border-radius: 10px;
+    box-shadow: 0 0 80px rgba(0,0,0,0.5);
+}
+.article-title{
+    width: 616px;
+    height: 74px;
+    border-radius: 8px;
+    border: 1px dashed #659bd2;
+    margin: 0 auto;
+}
+.article-title input{
+    text-align: center;
+    width: 596px;
+    height: 74px;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 74px;
+    padding: 0 10px;
+    background-color: #F0F0EE;
+    outline: none;
+}
+::-webkit-input-placeholder{color:#000;}
+::-moz-placeholder{color:#000;}
+:-moz-placeholder{color:#000;}
+.article-write{
+    margin-top: 30px;
+    background-color: red;
+}

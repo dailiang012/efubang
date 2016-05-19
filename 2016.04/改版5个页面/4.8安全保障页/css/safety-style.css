@@ -1,0 +1,352 @@
+*{
+    vertical-align:baseline;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    padding:0;
+    margin:0;
+    border:none;
+    font-family:Arial,"Microsoft YaHei",Helvetica,sans-serif
+}
+html{ -webkit-text-size-adjust:none}
+li{ list-style:none}
+img{ border:none;  text-decoration:none;  display:block}
+h1, h2, h3, h4, h5, h6{ font-weight:normal;  margin:0}
+a{ text-decoration:none}
+a img, :link img, :visited img{ border:0}
+.clear{ clear:both}
+input, textarea, select{ outline:none}
+textarea{ resize:none}
+@font-face {
+    font-family: 'fzdahei-b02sregular';
+    src: url('../fonts/fzdhtjw-webfont.eot');
+    src: url('../fonts/fzdhtjw-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fzdhtjw-webfont.woff2') format('woff2'),
+    url('../fonts/fzdhtjw-webfont.woff') format('woff'),
+    url('../fonts/fzdhtjw-webfont.ttf') format('truetype'),
+    url('../fonts/fzdhtjw-webfont.svg#fzdahei-b02sregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*container开始*/
+.inner-one{
+    width: 980px;
+    margin: 0 auto;
+}
+.company-logo{
+    height: 50px;
+    border-bottom: 1px solid #b9b9b9;
+    padding-top: 60px;
+}
+.company-logo .logo{
+    width: 36px;
+    float: left;
+}
+.company-logo .name{
+    float: left;
+    font-family: 'fzdahei-b02sregular',"Microsoft YaHei";
+    font-size: 30px;
+    line-height: 34px;
+    color: #545454;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.company-data{
+    padding-top: 36px;
+}
+.column{
+    font-size: 18px;
+    color: #6d6d6d;
+    line-height: 100%;
+    text-align: left;
+}
+.data-list{
+    padding-top: 40px;
+    text-align: center;
+    height: 234px;
+}
+.data-list .pic{
+    height: 140px;
+}
+.data-list .pic img{
+    display: inline-block;
+}
+.data-list li{
+    width: 245px;
+    float: left;
+}
+.data-list p{
+    font-size: 14px;
+    color: #999;
+    line-height: 100%;
+}
+.data-list span{
+    font-size: 18px;
+    color: #ff644b;
+    line-height: 34px;
+}
+table{
+    width: 980px;
+    text-align: center;
+    font-size: 16px;
+    color: #6d6d6d;
+    line-height: 50px;
+}
+thead{
+    background-color: #f4f4f4;
+    margin-top: 20px;
+}
+th, td{
+    border: 1px solid #e3e3e3;
+}
+caption[class="column"]{
+    margin-bottom: 20px;
+}
+.company-profile{
+    padding-top:20px;
+}
+.company-profile .column {
+    border-bottom: 1px solid #b9b9b9;
+    line-height: 46px;
+    margin-bottom: 12px;
+}
+.company-profile p{
+    font-size: 14px;
+    line-height: 30px;
+    color: #6d6d6d;
+    text-indent: 28px;
+    text-align: justify;
+}
+#toggle-text{
+    margin-top: 25px;
+    text-align: right;
+    font-size: 14px;
+    color: #ff644b;
+    line-height: 100%;
+    cursor: pointer;
+}
+#toggle-text:hover{
+    text-decoration: underline;
+}
+#special-text{
+    display: none;
+}
+/*图片轮播开始*/
+.company-pic{
+    padding-top: 35px;
+}
+.pic-list{
+    height: 238px;
+    border:1px solid #e0e0e0;
+    margin-top: 20px;
+    position: relative;
+}
+
+#marquee {
+    width:978px;
+    height:218px;
+    overflow:hidden;
+    padding-top: 20px;
+}
+#marquee ul{
+    margin-left: 40px;
+    height: 200px;
+    overflow: hidden;
+}
+#marquee li{float:left;
+    width: 198px;
+    height: 198px;
+    border:1px solid #e3e3e3;
+    margin: 0 10px;
+}
+#marquee li:hover{
+    border:1px solid #ccc;
+}
+#marquee li img{
+    width: 198px;
+    height: 198px;
+}
+#goL{
+    width:39px;
+    height:238px;
+    display:block;
+    background:url(../images/icon.png) no-repeat 0 0;
+    position:absolute;
+    top:0;
+    right:0;
+}
+#goR{
+    width:39px;
+    height:238px;
+    display:block;
+    background:url(../images/icon.png) no-repeat 0 -248px;
+    position:absolute;
+    top:0;
+    left:0;
+}
+/*图片轮播结束*/
+/*项目开始*/
+.project{
+    padding-top: 20px;
+    height: 47px;
+    border-bottom: 1px solid #b9b9b9;
+}
+.project li{
+    float: left;
+    width: 73px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 47px;
+    border-bottom: 3px solid rgba(0,0,0,0);
+    margin-right: 40px;
+}
+.project li a{
+    color: #6d6d6d;
+}
+.project li:hover{
+    border-bottom: 3px solid #ff644b;
+}
+.project .active{
+    border-bottom: 3px solid #ff644b;
+}
+.project-list{
+    margin-top: 20px;
+}
+.project-list>div{
+    display: none;
+    padding-bottom: 100px;
+}
+.project-list #list01{
+    display: block;
+ }
+.inner-two{
+    width: 1002px;
+    margin: 0 auto;
+}
+.project-list li{
+    float: left;
+    width: 308px;
+    border:1px solid #e3e3e3;
+    background-color: #fafafa;
+    margin-right: 12px;
+    margin-left:12px;
+    margin-bottom: 20px;
+}
+.project-list .container{
+    padding: 0 10px;
+}
+.project-list .column {
+    text-align: center;
+    font-size: 16px;
+    line-height: 55px;
+    color: #6d6d6d;
+    border-bottom: 1px solid #e3e3e3;
+}
+.project-list .bond-company{
+    width: 238px;
+    border-bottom: 1px solid #e3e3e3;
+    padding-left: 50px;
+}
+.bond-company h3{
+    float: left;
+    font-size: 16px;
+    line-height: 55px;
+    color: #6d6d6d;
+}
+.bond-company-logo{
+     float: left;
+ }
+.bond-company-logo .logo{
+    width: 24px;
+    float: left;
+    padding-top: 15px;
+    padding-right: 5px;
+}
+.bond-company-logo .logo img{
+    width: 100%;
+}
+.bond-company-logo .name{
+    float: left;
+    font-family: 'fzdahei-b02sregular',"Microsoft YaHei";
+    font-size: 23px;
+    line-height: 56px;
+    color: #555555;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+.project-list .data{
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+}
+.project-list dl{
+    height: 50px;
+    float: left;
+    margin: 15px 0;
+    text-align: center;
+    width: 94px;
+}
+.project-list dt{
+    font-size: 14px;
+    color: #6d6d6d;
+    line-height: 28px;
+}
+.project-list dd{
+    font-size: 18px;
+    color: #ff644b;
+    line-height: 100%;
+}
+.project-list .data-two{
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+}
+/*进度条开始*/
+.bars{
+    height: 34px;
+    padding-top: 20px;
+}
+.bars h3{
+    float: left;
+    width: 83px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 100%;
+    color: #6d6d6d;
+}
+.bars>div{
+    float: left;
+}
+.bi-wrp.bi-horizontal {
+    width: 200px;
+}
+.bi-horizontal .bi-bar {
+    width: 160px;
+    float: left;
+    margin-top: 3px;
+}
+.bi-hor-topLeft .bi-label, .bi-hor-left .bi-label {
+    float: right;
+    font-size: 16px;
+    line-height: 100%;
+    color: #6d6d6d;
+}
+.bi-wrp.bi-default-theme .bi-barInner {
+    background-color: #ff644b;
+}
+/*进度条结束*/
+.project-list p{
+    font-size: 14px;
+    color: #6d6d6d;
+    line-height: 34px;
+    text-align: right;
+    padding-right: 10px;
+}
+.project-list button{
+    width: 100%;
+    height: 50px;
+    font-size: 16px;
+    color: #949393;
+    outline: none;
+}
+/*项目结束*/
+/*container结束*/

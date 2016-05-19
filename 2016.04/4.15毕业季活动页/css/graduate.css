@@ -1,0 +1,132 @@
+/*公共样式开始*/
+*{
+    vertical-align:baseline;
+    font-weight:inherit;
+    font-style:inherit;
+    font-size:100%;
+    padding:0;
+    margin:0;
+    border:none;
+    font-family:Arial,"Microsoft YaHei", Helvetica, sans-serif;
+}
+html{
+    -webkit-text-size-adjust:none;
+}
+li{
+    list-style:none;
+}
+img{
+    border:none;
+    text-decoration:none;
+    display:block;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight:normal;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+a img, :link img, :visited img{
+    border:0;
+}
+.clear {
+    clear:both;
+}
+input,textarea,select{
+    outline:none;
+}
+textarea{
+    resize:none;
+}
+/*公共样式结束*/
+@font-face {
+    font-family: 'FZY4JW';
+    src: url('../fonts/fzy4jw.eot');
+    src: url('../fonts/fzy4jw.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/fzy4jw.woff2') format('woff2'),
+    url('../fonts/fzy4jw.woff') format('woff'),
+    url('../fonts/fzy4jw.ttf') format('truetype'),
+    url('../fonts/fzy4jw.svg#fzcuyuan-m03sregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+#main{
+    height: 3468px;
+    background: url("../images/main-bj.jpg") no-repeat center center;
+}
+.main-inner{
+    width: 986px;
+    margin: 0  auto;
+}
+.activity{
+    padding-top: 1070px;
+}
+.activity-text{
+    font-size: 30px;
+    line-height: 40px;
+    color: #010101;
+    width: 660px;
+    padding-left: 265px;
+    font-family: 'FZY4JW';
+}
+.activity th, .activity td{
+    text-align: center;
+    width: 161px;
+    font-family: 'FZY4JW';
+}
+.activity th{
+    width: 161px;
+}
+.activity thead th{
+    font-size: 20px;
+    line-height: 50px;
+    color: #fff;
+}
+.activity tbody td{
+    font-size: 20px;
+    line-height: 50px;
+    color: #d43838;
+}
+.activity .jd-money{
+    position: absolute;
+    top: 130px;
+    left:550px;
+    font-size: 20px;
+    line-height: 50px;
+    color: #d43838;
+    font-family: 'FZY4JW';
+}
+.phone-name{
+    text-align: center;
+    font-size: 18px;
+    line-height: 32px;
+    color: #e23c3c;
+    position: absolute;
+    font-family: 'FZY4JW';
+    left: -140px;
+    top:255px;
+}
+.iphone6-table{
+    padding-top: 50px;
+}
+.iphoneSE-table{
+    padding-top: 114px;
+}
+.mi-table{
+    padding-top: 122px;
+}
+.container{
+    position: relative;
+    margin-left: 260px;
+}
+.version{
+    margin-top: 260px;
+}
+.version li{
+    font-size: 18px;
+    line-height: 26px;
+    color: #d43838;
+    font-family: 'FZY4JW';
+    padding-bottom: 12px;
+}
