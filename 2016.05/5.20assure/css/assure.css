@@ -1,0 +1,149 @@
+#banner {
+  height: 336px;
+  background: url("../images/banner-bj.jpg") no-repeat center top; }
+
+.section-inner {
+  width: 1024px;
+  margin: 0 auto; }
+
+#assure-main h1 {
+  font-size: 24px;
+  color: #ea4d40;
+  line-height: 100%;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 6px;
+  padding-top: 80px; }
+
+.section-one {
+  background: #fff; }
+
+.idea-text {
+  width: 743px;
+  margin: 0 auto;
+  position: relative; }
+  .idea-text h2 {
+    font-size: 14px;
+    line-height: 24px;
+    color: #8d8b8b;
+    letter-spacing: 1px;
+    padding-top: 52px; }
+  .idea-text span {
+    font-size: 80px;
+    color: #666;
+    line-height: 100%;
+    font-family: "SimSun";
+    position: absolute; }
+  .idea-text .left {
+    left: -77px;
+    top: 32px; }
+  .idea-text .right {
+    right: -66px;
+    bottom: -32px; }
+
+.advantage-list {
+  height: 340px;
+  padding-top: 60px; }
+  .advantage-list li {
+    float: left;
+    width: 270px;
+    text-align: center;
+    margin-right: 104px; }
+  .advantage-list .last {
+    margin: 0; }
+  .advantage-list img {
+    width: 160px;
+    height: 160px;
+    display: inline; }
+  .advantage-list h2 {
+    font-size: 18px;
+    color: #666;
+    line-height: 50px; }
+  .advantage-list p {
+    font-size: 14px;
+    color: #8d8b8b;
+    line-height: 24px;
+    letter-spacing: 1px;
+    text-align: left; }
+
+.section-two {
+  background-color: #f5f5f5;
+  padding-bottom: 78px; }
+  .section-two p {
+    text-align: center;
+    font-size: 14px;
+    color: #8d8b8b;
+    line-height: 24px;
+    padding: 50px 0;
+    letter-spacing: 1px;
+    width: 800px;
+    margin: 0 auto; }
+  .section-two .pic {
+    width: 712px;
+    margin: 0 auto; }
+
+.section-three {
+  width: 1122px;
+  margin: 0 auto; }
+  .section-three ul {
+    padding-top: 60px; }
+  .section-three li {
+    width: 270px;
+    margin: 0 52px;
+    float: left;
+    padding-bottom: 44px;
+    font-size: 14px;
+    color: #8d8b8b;
+    line-height: 24px; }
+    .section-three li span {
+      font-size: 50px;
+      color: #ea4d40;
+      line-height: 100%; }
+
+.question-help {
+  width: 814px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 162px; }
+  .question-help p {
+    background-color: #d04439;
+    border-radius: 8px;
+    letter-spacing: 1px; }
+  .question-help .question p {
+    font-size: 14px;
+    color: #fff;
+    line-height: 52px;
+    padding: 0 30px 0 52px;
+    margin-bottom: 20px;
+    position: relative;
+    display: inline-block; }
+    .question-help .question p:before {
+      content: 'Q';
+      font-size: 80px;
+      color: #fff;
+      line-height: 100%;
+      font-family: "Microsoft YaHei";
+      left: -20px;
+      bottom: 7px;
+      position: absolute; }
+  .question-help .answer {
+    float: right; }
+    .question-help .answer p {
+      font-size: 14px;
+      color: #fff;
+      line-height: 16px;
+      width: 434px;
+      padding: 15px 60px 15px 30px;
+      margin-bottom: 40px;
+      position: relative; }
+      .question-help .answer p:after {
+        content: 'A';
+        font-size: 100px;
+        color: #fff;
+        line-height: 100%;
+        font-family: "Microsoft YaHei";
+        right: -8px;
+        bottom: -12px;
+        position: absolute; }
+
+/*# sourceMappingURL=assure.css.map */

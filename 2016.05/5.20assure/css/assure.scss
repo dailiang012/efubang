@@ -1,0 +1,160 @@
+@charset "UTF-8";
+//字体主色
+$color-first:#666;
+$color-second:#8d8b8b;
+//字体的三个样式
+@mixin font($size,$color,$height){
+  font-size: $size;
+  color: $color;
+  line-height: $height;
+};
+#banner{
+  height: 336px;
+  background: url("../images/banner-bj.jpg") no-repeat center top;
+}
+.section-inner{
+  width: 1024px;
+  margin: 0 auto;
+}
+#assure-main h1{
+  @include font(24px,#ea4d40,100%);
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 6px;
+  padding-top: 80px;
+}
+.section-one{
+  background: #fff;
+}
+.idea-text{
+  width: 743px;
+  margin: 0 auto;
+  position: relative;
+  h2{
+    font-size: 14px;
+    line-height: 24px;
+    color: $color-second;
+    letter-spacing: 1px;
+    padding-top: 52px;
+  }
+  span{
+    @include font(80px,#{$color-first},100%);
+    font-family: "SimSun";
+    position: absolute;
+  }
+  .left{
+    left: -77px;
+    top: 32px;
+  }
+  .right{
+    right: -66px;
+    bottom: -32px;
+  }
+}
+
+
+.advantage-list{
+  height: 340px;
+  padding-top: 60px;
+  li{
+  float: left;
+  width: 270px;
+    text-align: center;
+    margin-right: 104px;
+  }
+  .last{
+    margin: 0;
+  }
+  img{
+      width: 160px;
+      height: 160px;
+      display: inline;
+    }
+  h2{
+    @include font(18px,#{$color-first},50px);
+    }
+  p{
+    @include font(14px,#{$color-second},24px);
+    letter-spacing: 1px;
+    text-align: left;
+  }
+}
+.section-two{
+  background-color: #f5f5f5;
+  padding-bottom:78px ;
+  p{
+    text-align: center;
+    @include font(14px,#{$color-second},24px);
+    padding: 50px 0;
+    letter-spacing: 1px;
+    width: 800px;
+    margin:  0 auto;
+  }
+  .pic{
+    width: 712px;
+    margin: 0 auto;
+  }
+}
+.section-three{
+  width: 1122px;
+  margin: 0 auto;
+  ul{
+    padding-top: 60px;
+  }
+  li{
+    width: 270px;
+    margin: 0 52px;
+    float: left;
+    padding-bottom: 44px;
+    @include font(14px,#{$color-second},24px);
+    span{
+      @include font(50px,#ea4d40,100%)
+    }
+  }
+}
+.question-help {
+  width: 814px;
+  margin: 0 auto;
+  padding-top: 60px;
+  padding-bottom: 162px;
+  p {
+    background-color: #d04439;
+    border-radius: 8px;
+    letter-spacing: 1px;
+  }
+  .question {
+    p {
+      @include font(14px, #fff, 52px);
+      padding: 0 30px 0 52px;
+      margin-bottom: 20px;
+      position: relative;
+      display: inline-block;
+      &:before {
+        content: 'Q';
+        @include font(80px, #fff, 100%);
+        font-family: "Microsoft YaHei";
+        left: -20px;
+        bottom: 7px;
+        position: absolute;
+      }
+    }
+  }
+  .answer {
+    float: right;
+    p {
+      @include font(14px, #fff, 16px);
+      width: 434px;
+      padding: 15px 60px 15px 30px;
+      margin-bottom: 40px;
+      position: relative;
+      &:after {
+        content: 'A';
+        @include font(100px, #fff, 100%);
+        font-family: "Microsoft YaHei";
+        right: -8px;
+        bottom: -12px;
+        position: absolute;
+      }
+    }
+  }
+}
