@@ -108,42 +108,41 @@
   .question-help p {
     background-color: #d04439;
     border-radius: 8px;
-    letter-spacing: 1px; }
-  .question-help .question p {
-    font-size: 14px;
-    color: #fff;
-    line-height: 52px;
-    padding: 0 30px 0 52px;
-    margin-bottom: 20px;
-    position: relative;
+    letter-spacing: 1px;
     display: inline-block; }
-    .question-help .question p:before {
-      content: 'Q';
+  .question-help .question {
+    position: relative; }
+    .question-help .question p {
+      font-size: 14px;
+      color: #fff;
+      line-height: 52px;
+      padding: 0 30px 0 52px;
+      margin-bottom: 20px; }
+    .question-help .question span {
       font-size: 80px;
       color: #fff;
       line-height: 100%;
       font-family: "Microsoft YaHei";
       left: -20px;
-      bottom: 7px;
+      bottom: 26px;
       position: absolute; }
   .question-help .answer {
-    float: right; }
+    float: right;
+    position: relative; }
     .question-help .answer p {
       font-size: 14px;
       color: #fff;
       line-height: 16px;
       width: 434px;
       padding: 15px 60px 15px 30px;
-      margin-bottom: 40px;
-      position: relative; }
-      .question-help .answer p:after {
-        content: 'A';
-        font-size: 100px;
-        color: #fff;
-        line-height: 100%;
-        font-family: "Microsoft YaHei";
-        right: -8px;
-        bottom: -12px;
-        position: absolute; }
+      margin-bottom: 40px; }
+    .question-help .answer span {
+      font-size: 100px;
+      color: #fff;
+      line-height: 100%;
+      font-family: "Microsoft YaHei";
+      right: -9px;
+      bottom: 28px;
+      position: absolute; }
 
 /*# sourceMappingURL=assure.css.map */
