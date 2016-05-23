@@ -121,40 +121,38 @@ $color-second:#8d8b8b;
     background-color: #d04439;
     border-radius: 8px;
     letter-spacing: 1px;
+    display: inline-block;
   }
   .question {
+    position: relative;
     p {
       @include font(14px, #fff, 52px);
       padding: 0 30px 0 52px;
       margin-bottom: 20px;
-      position: relative;
-      display: inline-block;
-      &:before {
-        content: 'Q';
-        @include font(80px, #fff, 100%);
-        font-family: "Microsoft YaHei";
-        left: -20px;
-        bottom: 7px;
-        position: absolute;
-      }
+    }
+    span {
+      @include font(80px, #fff, 100%);
+      font-family: "Microsoft YaHei";
+      left: -20px;
+      bottom: 26px;
+      position: absolute;
     }
   }
   .answer {
     float: right;
+    position: relative;
     p {
       @include font(14px, #fff, 16px);
       width: 434px;
       padding: 15px 60px 15px 30px;
       margin-bottom: 40px;
-      position: relative;
-      &:after {
-        content: 'A';
-        @include font(100px, #fff, 100%);
-        font-family: "Microsoft YaHei";
-        right: -8px;
-        bottom: -12px;
-        position: absolute;
-      }
+    }
+    span {
+      @include font(100px, #fff, 100%);
+      font-family: "Microsoft YaHei";
+      right: -9px;
+      bottom: 28px;
+      position: absolute;
     }
   }
 }
