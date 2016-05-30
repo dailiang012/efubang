@@ -61,14 +61,14 @@
     line-height: 50px; }
   .register-container input {
     width: 372px;
-    height: 50px;
+    height: 16px;
     border: 1px solid #e3e3e3;
     border-radius: 1px;
     font-size: 16px;
     color: #666;
-    padding: 0 8px;
+    padding: 17px 8px;
     float: right;
-    line-height: 50px; }
+    line-height: 100%; }
 
 label[for="user-phone"], label[for="verification-code"], label[for="who"] {
   letter-spacing: 16px; }
@@ -145,7 +145,8 @@ label[for="user-password"], label[for="password-again"] {
   color: #fff;
   margin-bottom: 35px;
   margin-top: 50px;
-  height: 50px; }
+  height: 50px;
+  padding: 0; }
 
 /*register-end*/
 /*copy开始*/

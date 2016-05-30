@@ -75,13 +75,14 @@ html,body{
 }
 .container-inner input{
     width: 70%;
-    height: 28px;
-    padding: 0 5px 0 10px;
+    height: 16px;
     border: none;
     outline: none;
     background: none;
-    font-size:14px ;
+    font-size: 14px;
     float: left;
+    padding: 6px 10px;
+    line-height: 100%;
 }
 .container-inner form>div{
     border-bottom: 1px solid #b3b3b3;

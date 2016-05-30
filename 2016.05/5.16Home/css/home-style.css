@@ -32,6 +32,7 @@
     background: #fff;
     cursor: default;
 }
+
 /*user-login用户登录开始*/
 .login-box{
     height: 0;
@@ -57,11 +58,10 @@
     padding-bottom: 58px;
 }
 .code input{
-    padding: 0 17px;
+    padding: 17px 17px;
 }
 .login-container input{
     float: left;
-    height: 50px;
     font-size:14px;
 }
 .login-container label{
@@ -72,7 +72,7 @@
 }
 .name-box input,.password-box input{
     width: 300px;
-    padding: 0 17px;
+    padding: 17px 17px;
 }
 .name-box,.password-box{
     height: 50px;
@@ -166,10 +166,9 @@ label[for="verification-code"]{
     bottom:0;
     right:0;
     margin-bottom: 146px;
-    background: rgba(255,255,255,0.3);
+    background: rgba(255,255,255,0.7);
     border-radius: 12px;
     padding: 58px 58px 25px 58px;
-    /*display: none;                                              !*隐藏*!*/
 }
 .user-photo{
     width: 110px;
@@ -182,7 +181,7 @@ label[for="verification-code"]{
     font-size: 24px;
     text-align: center;
     line-height: 74px;
-    color: #fff;
+    color: #499392;
 }
 .user-photo img{
     width: 110px;
@@ -195,10 +194,10 @@ label[for="verification-code"]{
 .enter-yet-links a{
     font-size: 18px;
     line-height: 100%;
-    color: #fff;
+    color: #499392;
 }
 .enter-yet-links span{
-    color: #fff;
+    color: #499392;
     vertical-align: top;
     padding:0 20px;
 }

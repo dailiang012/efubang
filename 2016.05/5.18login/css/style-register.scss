@@ -9,7 +9,7 @@ $color-second:#8d8b8b;
   line-height: $height;
 };
 //标准输入框
-@mixin input($width:372px,$height:50px,$border:1px solid #e3e3e3,$radius:1px,$font:16px,$color-input:#666,$padding:0 8px){
+@mixin input($width:372px,$height:16px,$border:1px solid #e3e3e3,$radius:1px,$font:16px,$color-input:#666,$padding:17px 8px){
   width: $width;
   height: $height;
   border: $border;
@@ -78,7 +78,8 @@ $color-second:#8d8b8b;
   input{
     @include input;
     float: right;
-    line-height: 50px;
+    //line-height: 50px;
+    line-height: 100%;
   }
 }
 label[for="user-phone"],label[for="verification-code"],label[for="who"]{
@@ -165,6 +166,7 @@ label[for="user-password"],label[for="password-again"]{
   margin-bottom: 35px;
   margin-top: 50px;
   height: 50px;
+  padding:0;
 }
 /*register-end*/
 /*copy开始*/

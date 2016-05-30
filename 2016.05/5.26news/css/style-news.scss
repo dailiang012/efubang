@@ -1,0 +1,65 @@
+@charset "UTF-8";
+$font-color-first:#666;//黑字色
+$font-color-second:#8d8b8b;//灰字色
+$font-size-normal:14px;//正常字体
+$font-size-title:20px;//标题字体
+
+$blue:#4cb0ae;//蓝色
+$red:#f53030;//红色
+$bj-color:#f5f5f5;//背景色
+$border-color:#e3e3e3;//边框色
+
+#main-news{
+  background-color: $bj-color;
+  .news-inner{
+    width: 1024px;
+    margin:0 auto;
+    padding: 40px 0 100px 0;
+    position: relative;
+  }
+  }
+.news-left{
+  width: 148px;
+  float: left;
+}
+.news-right{
+  width: 875px;
+  float: right;
+}
+.news-content{
+  padding: 18px 48px 100px 48px;
+  background-color: #fff;
+  border: 1px solid #{$border-color};
+  .news-title{
+    font-size: $font-size-title;
+    color: $font-color-first;
+    line-height: 100px;
+  }
+}
+.news-nav{
+  position: relative;
+  left: 0;
+  top:0;
+  border-top:1px solid #{$border-color};
+  width: 150px;
+  li{
+    background-color: $bj-color;
+    height: 55px;
+    line-height: 55px;
+    font-size: 16px;
+    border-left:1px solid #{$border-color};
+    border-bottom:1px solid #{$border-color};
+    border-right:1px solid #{$border-color};
+    a{
+      color:$font-color-first;
+      display: block;
+      padding-left: 22px;
+    }
+  }
+}
+.news-nav .news-nav-active{
+  border-right: 1px solid #fff;
+  border-left: 4px solid #{$blue};
+  color: #{$blue};
+  background-color: #fff;
+}
