@@ -12,21 +12,19 @@
     <meta http-equiv="Cache-Control" content="no-cache">
     <meta http-equiv="Expires" content="0">
     <title>首页</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style-mobile-home.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="./js/flexible_css.debug.js"></script>
     <script src="./js/flexible.debug.js"></script>
     <script src="js/radialIndicator.min.js"></script>
     <script src="js/TouchSlide.1.1.js"></script>
     <script src="js/iscroll.js"></script>
+    <link rel="stylesheet" href="css/style-mobile-home.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
-<body onload="loaded()">
-<div class="tab-side">
+<body>
+<div id="tab-side">
     <div class="close-side font16">
-        <span>点<br/>击<br/>空<br/>白<br/>处<br/>返<br/>回</span><br/><i>
-            class="fa fa-angle-double-left font14"
-            aria-hidden="true"></i>
+        <span>点<br/>击<br/>空<br/>白<br/>处<br/>返<br/>回</span><br/><i class="fa fa-angle-double-left font14" aria-hidden="true"></i>
     </div>
     <div class="side-content">
         <div class="diy-pic">
@@ -36,7 +34,7 @@
         </div>
         <ul class="tab-list">
             <li>
-                <a href="#"><img src="images/home/home.png" alt="首页">
+                <a href="home.html"><img src="images/home/home.png" alt="首页">
                     <span class="font16">首页</span></a>
             </li>
             <li>
@@ -53,181 +51,181 @@
             </li>
             <li>
                 <a href="#"><img src="images/home/about-us.png" alt="关于我们">
-                    <span class="font14">关于我们</span></a>
+                    <span class="font16">关于我们</span></a>
             </li>
         </ul>
     </div>
 </div>
 <div id="header">
     <div class="nav-side"><img src="./images/home/bread.png" alt="侧导航"></div>
-    <div class="nav-title">e富邦</div>修改
-    <div class="my"><a href="#"><img src="./images/home/my-icon.png" alt="个人中心"></a></div>
+    <div class="nav-title">e富邦</div>
+    <div class="my"><a href="login-enter.html"><img src="./images/home/my-icon.png" alt="个人中心"></a></div>
 </div>
 <div id="wrapper">
-    <div id="scroller">
-        <div id="banner">
-            <div id="slideBox" class="slideBox">
-                <div class="bd">
-                    <ul>
-                        <li>
-                            <a class="pic" href="#"><img src="images/home/banner_01.jpg"/></a>
-                        </li>
-                        <li>
-                            <a class="pic" href="#"><img src="images/home/banner_02.jpg"/></a>
-                        </li>
-                        <li>
-                            <a class="pic" href="#"><img src="images/home/banner_03.jpg"/></a>
-                        </li>
-                    </ul>
+    <div id="banner">
+        <div id="slideBox" class="slideBox">
+            <div class="bd">
+                <ul>
+                    <li>
+                        <a class="pic" href="#"><img src="images/home/banner_01.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="images/home/banner_02.jpg"/></a>
+                    </li>
+                    <li>
+                        <a class="pic" href="#"><img src="images/home/banner_03.jpg"/></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="hd">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+    <div id="main">
+        <div class="flex-box">
+            <div class="flex1 flex">
+                <a href="#">
+                    <img src="./images/home/notice.png" alt="网站公告">
+                    <h2>网站公告</h2>
+                </a>
+            </div>
+            <div class="flex2 flex" id="me">
+                <a href="#">
+                    <img src="./images/home/news.png" alt="公司动态">
+                    <h2>公司动态 </h2>
+                </a>
+            </div>
+            <div class="flex3 flex">
+                <a href="#">
+                    <img src="./images/home/information.png" alt="信息中心">
+                    <h2>信息中心</h2>
+                </a>
+            </div>
+        </div>
+        <div class="project">
+            <div class="project-title font14">推荐项目</div>
+            <div class="project-list">
+                <div class="list">
+                    <div class="list-left">
+                        <div class="project-rate">
+                            <div class="rate-number font24">15%</div>
+                            <div class="rate-txt font8">年化收益</div>
+                        </div>
+                        <div class="project-name">
+                            <div class="name font16">e富宝1604012</div>
+                            <div class="time font10">项目期限：7天<br/>一次性还款</div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="prg-cont rad-prg" id="indicatorContainer1"></div>
+                        </div>
+                    </div>
+                    <div class="project-btn  font14"><a href="want_invest.html">立即投资</a></div>
                 </div>
-                <div class="hd">
-                    <ul></ul>
+                <div class="list">
+                    <div class="list-left">
+                        <div class="project-rate">
+                            <div class="rate-number font24">15%</div>
+                            <div class="rate-txt font8">年化收益</div>
+                        </div>
+                        <div class="project-name">
+                            <div class="name font16">e富宝1604012</div>
+                            <div class="time font10">项目期限：7天<br/>一次性还款</div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="prg-cont rad-prg" id="indicatorContainer2"></div>
+                        </div>
+                    </div>
+                    <div class="project-btn  font14"><a href="want_invest.html">立即投资</a></div>
+                </div>
+                <div class="list">
+                    <div class="list-left">
+                        <div class="project-rate">
+                            <div class="rate-number font24">15%</div>
+                            <div class="rate-txt font8">年化收益</div>
+                        </div>
+                        <div class="project-name">
+                            <div class="name font16">e富宝1604012</div>
+                            <div class="time font10">项目期限：7天<br/>一次性还款</div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="prg-cont rad-prg" id="indicatorContainer3"></div>
+                        </div>
+                    </div>
+                    <div class="project-btn  font14"><a href="#">立即投资</a></div>
+                </div>
+                <div class="list">
+                    <div class="list-left">
+                        <div class="project-rate">
+                            <div class="rate-number font24">15%</div>
+                            <div class="rate-txt font8">年化收益</div>
+                        </div>
+                        <div class="project-name">
+                            <div class="name font16">e富宝1604012</div>
+                            <div class="time font10">项目期限：7天<br/>一次性还款</div>
+                        </div>
+                        <div class="project-progress">
+                            <div class="prg-cont rad-prg" id="indicatorContainer4"></div>
+                        </div>
+                    </div>
+                    <div class="project-btn  font14"><a href="#">立即投资</a></div>
                 </div>
             </div>
         </div>
-        <div id="main">
-            <div class="flex-box">
-                <div class="flex1 flex">
-                    <a href="#">
-                        <img src="./images/home/notice.png" alt="网站公告">
-                        <h2>网站公告</h2>
-                    </a>
-                </div>
-                <div class="flex2 flex" id="me">
-                    <a href="#">
-                        <img src="./images/home/news.png" alt="公司动态">
-                        <h2>公司动态 </h2>
-                    </a>
-                </div>
-                <div class="flex3 flex">
-                    <a href="#">
-                        <img src="./images/home/information.png" alt="信息中心">
-                        <h2>信息中心</h2>
-                    </a>
-                </div>
-            </div>
-            <div class="project">
-                <div class="project-title font14">推荐项目</div>
-                <div class="project-list">
-                    <div class="list">
-                        <div class="list-left">
-                            <div class="project-rate">
-                                <div class="rate-number font24">15%</div>
-                                <div class="rate-txt font8">年化收益</div>
-                            </div>
-                            <div class="project-name">
-                                <div class="name font16">e富宝1604012</div>
-                                <div class="time font10">项目期限：7天<br/>一次性还款</div>
-                            </div>
-                            <div class="project-progress">
-                                <div class="prg-cont rad-prg" id="indicatorContainer1"></div>
-                            </div>
-                        </div>
-                        <div class="project-btn  font14"><a href="#">立即投资</a></div>
-                    </div>
-                    <div class="list">
-                        <div class="list-left">
-                            <div class="project-rate">
-                                <div class="rate-number font24">15%</div>
-                                <div class="rate-txt font8">年化收益</div>
-                            </div>
-                            <div class="project-name">
-                                <div class="name font16">e富宝1604012</div>
-                                <div class="time font10">项目期限：7天<br/>一次性还款</div>
-                            </div>
-                            <div class="project-progress">
-                                <div class="prg-cont rad-prg" id="indicatorContainer2"></div>
-                            </div>
-                        </div>
-                        <div class="project-btn  font14"><a href="#">立即投资</a></div>
-                    </div>
-                    <div class="list">
-                        <div class="list-left">
-                            <div class="project-rate">
-                                <div class="rate-number font24">15%</div>
-                                <div class="rate-txt font8">年化收益</div>
-                            </div>
-                            <div class="project-name">
-                                <div class="name font16">e富宝1604012</div>
-                                <div class="time font10">项目期限：7天<br/>一次性还款</div>
-                            </div>
-                            <div class="project-progress">
-                                <div class="prg-cont rad-prg" id="indicatorContainer3"></div>
-                            </div>
-                        </div>
-                        <div class="project-btn  font14"><a href="#">立即投资</a></div>
-                    </div>
-                    <div class="list">
-                        <div class="list-left">
-                            <div class="project-rate">
-                                <div class="rate-number font24">15%</div>
-                                <div class="rate-txt font8">年化收益</div>
-                            </div>
-                            <div class="project-name">
-                                <div class="name font16">e富宝1604012</div>
-                                <div class="time font10">项目期限：7天<br/>一次性还款</div>
-                            </div>
-                            <div class="project-progress">
-                                <div class="prg-cont rad-prg" id="indicatorContainer4"></div>
-                            </div>
-                        </div>
-                        <div class="project-btn  font14"><a href="#">立即投资</a></div>
-                    </div>
-                </div>
-            </div>
-            <div class="company-copy font10">© 2016财富金融All rights reserved<br/>北京财富邦投资服务有限公司</div>
-        </div>
+        <div class="company-copy font10">© 2016财富金融All rights reserved<br/>北京财富邦投资服务有限公司</div>
     </div>
 </div>
 <!--进度条开始-->
 <script>
     $('#indicatorContainer1').radialIndicator({
         percentage: true,
-        initValue:80,
-        fontColor:'#76787d',
-        barColor:'#ff5151'
+        initValue: 80,
+        fontColor: '#76787d',
+        barColor: '#ff5151'
     });
     $('#indicatorContainer2').radialIndicator({
         percentage: true,
-        initValue:20,
-        fontColor:'#76787d',
-        barColor:'#ff5151'
+        initValue: 20,
+        fontColor: '#76787d',
+        barColor: '#ff5151'
     });
     $('#indicatorContainer3').radialIndicator({
         percentage: true,
-        initValue:60,
-        fontColor:'#76787d',
-        barColor:'#ff5151'
+        initValue: 60,
+        fontColor: '#76787d',
+        barColor: '#ff5151'
     });
     $('#indicatorContainer4').radialIndicator({
         percentage: true,
-        initValue:90,
-        fontColor:'#76787d',
-        barColor:'#ff5151'
+        initValue: 90,
+        fontColor: '#76787d',
+        barColor: '#ff5151'
     });
-    $('.prg-cont canvas').css('width','80%');
+    $('.prg-cont canvas').css('width', '80%');
 </script>
 <!--进度条结束-->
 <!--滑屏类开始-->
-<script>
+<!--<script>
     var myScroll;
 
-    function loaded () {
-        myScroll = new IScroll('#wrapper', { mouseWheel: true });
+    function loaded() {
+        myScroll = new IScroll('#wrapper', {mouseWheel: true});
     }
 
-    document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
-</script>
+    document.addEventListener('touchmove', function (e) {
+        e.preventDefault();
+    }, false);
+</script>-->
 <!--滑屏结束-->
 <!--抽屉开始-->
 <script>
     $('.nav-side').click(function () {
-        $('.tab-side').fadeIn(50);
+        $('#tab-side').fadeIn(50);
         $('.side-content').animate({left: '0'}, "50");
     });
     $('.close-side').click(function () {
         $('.side-content').animate({left: '-70%'}, "100");
-        $('.tab-side').fadeOut(200);
+        $('#tab-side').fadeOut(200);
     });
 </script>
 <!--抽屉结束-->

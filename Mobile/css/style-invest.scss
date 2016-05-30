@@ -32,9 +32,11 @@ $normal: #76787d; //正常字体
 $gray: #adb2bf; //辅助字体
 $title-font:#56575b;//标题字体
 $border: 1px solid #ddd; //边框
-/*字体设置*/
+/*字体设置开始*/
 @mixin font-dpr($font-size){
-  font-size: $font-size/2;
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
 
   [data-dpr="2"] & {
     font-size: $font-size;
@@ -44,7 +46,6 @@ $border: 1px solid #ddd; //边框
     font-size: $font-size * 1.5;
   }
 }
-
 /*字体设置结束*/
 /*          整体结构开始          */
 #header {
@@ -76,22 +77,21 @@ $border: 1px solid #ddd; //边框
 }
 
 [data-dpr="1"] #wrapper {
-  margin-top: (88px/2);
-  margin-bottom: (100px/2);
+  padding-top: (88px/2);
+  padding-bottom: (100px/2);
 }
 
 [data-dpr="2"] #wrapper {
-  margin-top: 88px;
-  margin-bottom: 100px;
+  padding-top: 88px;
+  padding-bottom: 100px;
 }
 
 [data-dpr="3"] #wrapper {
-  margin-top: (88px*1.5);
-  margin-bottom: (100px*1.5);
+  padding-top: (88px*1.5);
+  padding-bottom: (100px*1.5);
 }
 
 #footer {
-  background: #ccc;
   position: fixed;
   z-index: 2;
   bottom: 0;
@@ -99,6 +99,7 @@ $border: 1px solid #ddd; //边框
   width: 100%;
   padding: 0;
   border-top: $border;
+  background-color: #fff;
 }
 
 [data-dpr="1"] #footer {
@@ -114,15 +115,54 @@ $border: 1px solid #ddd; //边框
 }
 
 /*          整体结构结束          */
-/*          header开始            */
-.nav-side {
+/*header开始*/
+html {
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  height: 100%;
+  background-color: #f9f9f9;
+}
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-bottom: 1px solid #ddd;
+}
+
+[data-dpr="1"] #header {
+  height: 44px;
+}
+
+[data-dpr="2"] #header {
+  height: 88px;
+}
+
+[data-dpr="3"] #header {
+  height: 132px;
+}
+
+.nav-return {
   position: absolute;
   height: inherit;
   left: 0;
   top: 0;
 }
-
-.nav-side img {
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
   height: 100%;
   width: auto;
 }
@@ -131,17 +171,20 @@ $border: 1px solid #ddd; //边框
   text-align: center;
   color: #fff;
 }
+
 [data-dpr="1"] .nav-title {
-  font-size: (36px/2);
-  line-height: (88px/2);
+  font-size: 18px;
+  line-height: 44px;
 }
+
 [data-dpr="2"] .nav-title {
   font-size: 36px;
   line-height: 88px;
 }
+
 [data-dpr="3"] .nav-title {
-  font-size: (36px*1.5);
-  line-height: (88px*1.5);
+  font-size: 54px;
+  line-height: 132px;
 }
 
 /*header结束*/
@@ -274,7 +317,7 @@ $border: 1px solid #ddd; //边框
 .tabBox .bd {
   .list{
     width: 96%;
-    padding: 0 2%;
+    margin: 0 auto;
     border-bottom: $border;
     .title{
       color: $title-font;
@@ -288,6 +331,10 @@ $border: 1px solid #ddd; //边框
       @include px2rem(line-height,32px,64px,false);
     }
   }
+  img{
+    width: 100%;
+    height: auto;
+  }
 }
 .list .title{
   @include font-dpr(24px);
@@ -295,3 +342,89 @@ $border: 1px solid #ddd; //边框
 .list p{
   @include font-dpr(20px);
 }
+#footer{
+  .left{
+    width: 65%;
+    float: left;
+    padding-left: 3%;
+  }
+  .right{
+    float: right;
+    width: 32%;
+    background-color: $blue;
+  }
+}
+#footer label{
+  float: left;
+  color: $blue;
+  @include font-dpr(30px);
+  @include px2rem(width,140px,64px,false);
+}
+[data-dpr="1"] #footer label {
+  line-height: (100px/2);
+}
+
+[data-dpr="2"] #footer label {
+  line-height: 100px;
+}
+
+[data-dpr="3"] #footer label {
+  line-height: (100px*1.5);
+}
+#footer input{
+  float: right;
+  @include font-dpr(24px);
+  color: $normal;
+  line-height: 100%;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+[data-dpr="1"] #footer input{
+  padding:18px 3%;
+}
+[data-dpr="2"] #footer input{
+  padding:36px 3%;
+}
+[data-dpr="3"] #footer input{
+  padding:(18*3px) 3%;
+}
+
+#footer .right{
+  color: #fff;
+  text-align: center;
+  @include font-dpr(30px);
+  &:active{
+    background-color: #419695;
+  }
+}
+[data-dpr="1"] #footer .right {
+  line-height: (100px/2);
+}
+
+[data-dpr="2"] #footer .right {
+  line-height: 100px;
+}
+
+[data-dpr="3"] #footer .right {
+  line-height: (100px*1.5);
+}
+/*table-start*/
+table{
+  width: 100%;
+  text-align: center;
+  @include px2rem(line-height,60px,64px,false);
+  @include font-dpr(20px);
+  color: $normal;
+  tr{
+    border-bottom:$border;
+  }
+  th{
+    text-align: center;
+  }
+  thead{
+    background-color: #f6f6f6;
+    border-top: $border;
+  }
+}
+/*table-end*/

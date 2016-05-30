@@ -34,7 +34,11 @@ h1, h2, h3, h4, h5, h6 {
 a {
     text-decoration: none
 }
-a:active{
+
+a:active {
+    text-decoration: none;
+}
+a:hover{
     text-decoration: none;
 }
 a img, :link img, :visited img {
@@ -72,64 +76,80 @@ button { /*去掉button在ios上的默认样式*/
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { /*阻止旋转屏幕时自动调整字体大小*/
     -webkit-text-size-adjust: 100%;
 }
+
 ::-webkit-scrollbar { /*去掉webkit的滚动条*/
     display: none;
 }
+
 html {
     outline: 0;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
-html, body{
+
+html, body {
     width: 100%;
-    overflow-x:hidden ;
+    overflow-x: hidden;
 }
+
 /*公共代码结束*/
 /*字体设置开始*/
-.font8{
+.font8 {
     font-size: 8px;
 }
-[data-dpr="2"] .font8{
+
+[data-dpr="2"] .font8 {
     font-size: 16px;
 }
-[data-dpr="3"] .font8{
+
+[data-dpr="3"] .font8 {
     font-size: 24px;
 }
 
-.font10{
+.font10 {
     font-size: 10px;
 }
-[data-dpr="2"] .font10{
+
+[data-dpr="2"] .font10 {
     font-size: 20px;
 }
-[data-dpr="3"] .font10{
+
+[data-dpr="3"] .font10 {
     font-size: 30px;
 }
 
-.font14{
+.font14 {
     font-size: 14px;
 }
-[data-dpr="2"] .font14{
+
+[data-dpr="2"] .font14 {
     font-size: 28px;
 }
-[data-dpr="3"] .font14{
+
+[data-dpr="3"] .font14 {
     font-size: 42px;
 }
-.font16{
+
+.font16 {
     font-size: 16px;
 }
-[data-dpr="2"] .font16{
+
+[data-dpr="2"] .font16 {
     font-size: 32px;
 }
-[data-dpr="3"] .font16{
+
+[data-dpr="3"] .font16 {
     font-size: 48px;
 }
-.font24{
+
+.font24 {
     font-size: 24px;
 }
+
 [data-dpr="2"] .font24 {
     font-size: 48px;
 }
+
 [data-dpr="3"] .font24 {
     font-size: 72px;
 }
@@ -138,68 +158,50 @@ html, body{
 #header {
     width: 100%;
     background-color: #4cb0ae;
-    height: 44px;
-    position: absolute;
-    top:0;
-    left:0;
+    position: fixed;
+    top: 0;
+    left: 0;
     z-index: 2;
 }
+
+[data-dpr="1"] #header {
+    height: 44px;
+}
+
 [data-dpr="2"] #header {
     height: 88px;
 }
+
 [data-dpr="3"] #header {
     height: 132px;
 }
-#wrapper {
-    position: absolute;
-    z-index: 1;
-    top: 44px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
+
+[data-dpr="1"] #wrapper {
+    margin-top: 44px;
+    margin-bottom: 20px;
 }
+
 [data-dpr="2"] #wrapper {
-    top: 88px;
+    margin-top: 88px;
+    margin-bottom: 40px;
 }
+
 [data-dpr="3"] #wrapper {
-    top: 132px;
-}
-#scroller {
-    position: absolute;
-    z-index: 1;
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-    width: 100%;
-    -webkit-transform: translateZ(0);
-    -moz-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    -o-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-text-size-adjust: none;
-    -moz-text-size-adjust: none;
-    -ms-text-size-adjust: none;
-    -o-text-size-adjust: none;
-    text-size-adjust: none;
+    margin-top: 132px;
+    margin-bottom: 60px;
 }
 /*          整体结构结束          */
 /*          header开始            */
 html, body {
     background-color: #f9f9f9;
 }
+
 .nav-side {
     position: absolute;
     height: inherit;
     left: 0;
     top: 0;
 }
-/*.nav-side:active{
-    background-color: #39908e;
-}*/
 .nav-side img {
     height: 100%;
     width: auto;
@@ -221,15 +223,14 @@ html, body {
     font-size: 54px;
     line-height: 132px;
 }
+
 .my {
     position: absolute;
     height: inherit;
     right: 0;
     top: 0;
 }
-/*.my:active{
-    background-color: #39908e;
-}*/
+
 .my img {
     height: 100%;
     width: auto;
@@ -240,11 +241,13 @@ html, body {
 #banner {
     height: 3.859375rem;
 }
+
 .slideBox {
     position: relative;
     overflow: hidden;
     height: inherit;
 }
+
 .slideBox .hd {
     position: absolute;
     height: 0.5rem;
@@ -253,6 +256,7 @@ html, body {
     right: 0;
     z-index: 1;
 }
+
 .slideBox .hd li {
     display: inline-block;
     width: 0.1875rem;
@@ -260,14 +264,14 @@ html, body {
     -webkit-border-radius: 5px;
     -moz-border-radius: 5px;
     border-radius: 6px;
-    background: rgba(0,0,0,0.6);
+    background: rgba(0, 0, 0, 0.6);
     text-indent: -9999px;
     overflow: hidden;
     margin: 0 6px;
 }
 
 .slideBox .hd li.on {
-    background: rgba(255,255,255,0.6);
+    background: rgba(255, 255, 255, 0.6);
 }
 
 .slideBox .bd {
@@ -288,10 +292,11 @@ html, body {
 .slideBox .bd li a {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 /*          banner结束            */
 /*          main开始          */
-.flex-box{
-    height:2.5rem ;
+.flex-box {
+    height: 2.5rem;
     width: 100%;
     display: -webkit-box;
     display: -moz-box;
@@ -306,10 +311,11 @@ html, body {
     -ms-flex-direction: row;
     flex-direction: row;
     box-sizing: border-box;
-    border-bottom: 1px solid #ebebeb ;
+    border-bottom: 1px solid #ebebeb;
     background-color: #fff;
 }
-.flex{
+
+.flex {
     -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1; /* OLD - Firefox 19- */
     -webkit-flex: 1; /* Chrome */
@@ -317,15 +323,14 @@ html, body {
     flex: 1;
     background-color: #fff;
 }
-.flex a{
+.flex:active{
+    background-color: #f9f9f9;
+}
+.flex a {
     display: block;
     text-decoration: none;
 }
-/*.flex:active{
-    background-color: #dcdcdc;
-    text-decoration: none;
-}*/
-.flex2{
+.flex2 {
     -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1; /* OLD - Firefox 19- */
     -webkit-flex: 1; /* Chrome */
@@ -334,27 +339,33 @@ html, body {
     border-left: 1px solid #ebebeb;
     border-right: 1px solid #ebebeb;
 }
-.flex-box img{
+
+.flex-box img {
     display: inline-block;
     height: 0.71875rem;
-    padding-top:0.546875rem ;
+    padding-top: 0.546875rem;
 }
-.flex-box{
+
+.flex-box {
     text-align: center;
 }
-.flex-box h2{
+
+.flex-box h2 {
     font-size: 14px;
     line-height: 0.9375rem;
     color: #4cb0ae;
 }
+
 [data-dpr="2"] .flex-box h2 {
     font-size: 28px;
 }
+
 [data-dpr="3"] .flex-box h2 {
     font-size: 42px;
 }
+
 /*推荐项目开始*/
-.project-title{
+.project-title {
     line-height: 0.90625rem;
     color: #76787d;
     padding-left: 0.3125rem;
@@ -363,27 +374,29 @@ html, body {
 
 /*推荐项目结束*/
 /*          main结束          */
-/*          侧边栏tab-side开始           */
-.tab-side{
+/*          tab-side开始           */
+#tab-side {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(0, 0, 0, 0.8);
     position: fixed;
     z-index: 30;
     display: none;
 }
-.close-side{
+
+.close-side {
     width: 30%;
     height: 100%;
     position: absolute;
-    top:0;
+    top: 0;
     right: 0;
     color: #B5B5B5;
     z-index: 31;
     text-align: center;
     padding-top: 50%;
 }
-.side-content{
+
+.side-content {
     width: 70%;
     height: 100%;
     position: absolute;
@@ -391,54 +404,64 @@ html, body {
     z-index: 33;
     left: -6.65625rem;
 }
-.diy-pic{
+
+.diy-pic {
     padding-top: 0.90625rem;
     padding-bottom: 0.546875rem;
 }
-.my-photo{
+
+.my-photo {
     width: 1.78125rem;
     height: 1.78125rem;
     border-radius: 50%;
     float: left;
     padding-left: 0.671875rem;
 }
-.my-photo img{
+
+.my-photo img {
     width: 1.78125rem;
     height: 1.78125rem;
     border-radius: 50%;
 }
-.welcome-text{
+
+.welcome-text {
     float: left;
     padding-left: 0.46875rem;
     color: #c7c7c7;
     line-height: 0.75rem;
     padding-top: 0.15625rem;
 }
-.tab-list li{
+
+.tab-list li {
     padding-left: 0.46875rem;
     border-bottom: 1px solid #313131;
 }
-.tab-list li:last-child{
-    border-bottom:none;
+
+.tab-list li:last-child {
+    border-bottom: none;
 }
-.tab-list li a{
+
+.tab-list li a {
     display: block;
     text-decoration: none;
 }
-.tab-list li img{
+
+.tab-list li img {
     float: left;
     height: 1.578125rem;
     width: auto;
     padding-right: 0.28125rem;
 }
-.tab-list li span{
+
+.tab-list li span {
     line-height: 1.578125rem;
     color: #c7c7c7;
 }
+
 /*          侧边栏tab-side结束           */
 /*project项目开始*/
-.list{
-    height:2.46875rem ;
+.list {
+    height: 2.46875rem;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -447,14 +470,17 @@ html, body {
     margin-bottom: 0.234375rem;
     background-color: #fff;
 }
-.list-left{
-    border-top:1px solid #ebebeb;
-    border-bottom:1px solid #ebebeb;
+
+.list-left {
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ebebeb;
 }
-.list-left div[class^="project"]{
+
+.list-left div[class^="project"] {
     float: left;
 }
-.project-rate{
+
+.project-rate {
     width: 2.125rem;
     height: 1.875rem;
     border-right: 1px dashed #ebebeb;
@@ -462,22 +488,27 @@ html, body {
     text-align: center;
     line-height: 1.09375rem;
 }
-.rate-number{
+
+.rate-number {
     color: #ff5151;
     line-height: 1.09375rem;
 }
+
 .rate-txt {
     color: #76787d;
     line-height: 100%;
 }
-.project-name{
+
+.project-name {
     width: 3.890625rem;
 }
-.project-progress{
+
+.project-progress {
     width: 1.46875rem;
     padding-top: 0.671875rem;
 }
-.project-btn{
+
+.project-btn {
     -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
     -moz-box-flex: 1; /* OLD - Firefox 19- */
     -webkit-flex: 1; /* Chrome */
@@ -486,27 +517,36 @@ html, body {
     background-color: #4cb0ae;
     text-align: center;
 }
-.project-btn a{
+
+.project-btn a {
     display: block;
     color: #fff;
     line-height: 2.46875rem;
+    text-decoration: none;
 }
-.project-name .name{
+.project-btn a:active{
+    background-color: #419695;
+}
+.project-name .name {
     line-height: 1rem;
     color: #76787d;
 }
-.project-name .time{
+
+.project-name .time {
     line-height: 0.40625rem;
     color: #adb2bf;
 }
-.project-name{
+
+.project-name {
     margin-top: 0.28125rem;
     padding-left: 0.34375rem;
 }
+
 /*project项目结束*/
 /*company-copy开始*/
-.company-copy{
+.company-copy {
     line-height: 0.53125rem;
     text-align: center;
+    padding-top:1.25rem;
 }
 /*company-copy结束*/
