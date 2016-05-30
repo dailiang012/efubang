@@ -13,17 +13,18 @@
     <meta http-equiv="Expires" content="0">
     <title>我要投资</title>
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style-invest.css">
     <script src="js/jquery-1.11.1.min.js"></script>
     <script src="js/flexible_css.debug.js"></script>
     <script src="js/flexible.debug.js"></script>
     <script src="js/TouchSlide.1.1.js"></script>
     <script src="js/radialIndicator.min.js"></script>
-    <!--<script src="js/iscroll.js"></script>-->
+    <link rel="stylesheet" href="css/style-invest.css">
 </head>
 <body>
 <div id="header">
-    <div class="nav-side"><img src="./images/return.png" alt="侧导航"></div>
+    <div class="nav-return">
+        <a href="home.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
     <div class="nav-title">优质散标详情</div>
 </div>
 <div id="wrapper">
@@ -63,21 +64,69 @@
                             <p class="list-text">经e富邦风控部门审核借款人所提供资料真实有效，符合信用借款审
                                 核标准e富邦始终秉持客观公正的原则，严控风险，最大程度的尽力
                                 确保借入者信息的真实性，但不保证审核信息100%无误。 </p>
+                            <img src="images/home/banner_01.jpg" alt="">
                         </div>
                     </li>
                 </ul>
             </div>
             <div class="con"><!-- 高度自适应需添加外层 -->
                 <ul>
-                    <li style="height: 1600px;background: #faa"></li>
+                    <li>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th>投资人</th>
+                                <th>年化收益</th>
+                                <th>投资金额(元)</th>
+                                <th>投资时间</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>123****912</td>
+                                <td>12%</td>
+                                <td>5800.00</td>
+                                <td>今天15:46</td>
+                            </tr>
+                            <tr>
+                                <td>123****912</td>
+                                <td>12%</td>
+                                <td>5800.00</td>
+                                <td>今天15:46</td>
+                            </tr>
+                            <tr>
+                                <td>123****912</td>
+                                <td>12%</td>
+                                <td>5800.00</td>
+                                <td>今天15:46</td>
+                            </tr>
+                            <tr>
+                                <td>123****912</td>
+                                <td>12%</td>
+                                <td>5800.00</td>
+                                <td>今天15:46</td>
+                            </tr>
+                            <tr>
+                                <td>123****912</td>
+                                <td>12%</td>
+                                <td>5800.00</td>
+                                <td>今天15:46</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
-
 <div id="footer">
-
+    <div class="left">
+        <label for="money">投资金额</label>
+        <input type="text" name="number-money" id="money" placeholder="输入金额(100元起)">
+    </div>
+    <div class="right">立即投资</div>
+    <div class="clear"></div>
 </div>
 
 <!--进度条开始-->
@@ -102,17 +151,5 @@
         }
     });
 </script>
-<!--滑屏类开始-->
-<!--<script>
-    var myScroll;
-    function loaded() {
-        myScroll = new IScroll('#wrapper', {});
-
-    }
-    document.addEventListener('touchmove', function (e) {
-        e.preventDefault();
-    }, false);
-</script>-->
-<!--滑屏结束-->
 </body>
 </html>
