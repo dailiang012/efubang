@@ -18,14 +18,14 @@
     <script src="js/flexible.debug.js"></script>
     <script src="js/TouchSlide.1.1.js"></script>
     <script src="js/radialIndicator.min.js"></script>
-    <link rel="stylesheet" href="css/style-invest.css">
+    <link rel="stylesheet" href="css/style-project-list.css">
 </head>
 <body>
 <div id="header">
     <div class="nav-return">
         <a href="home.html"><img src="./images/return.png" alt="<返回"></a>
     </div>
-    <div class="nav-title">优质散标详情</div>
+    <div class="nav-title">我要投资</div>
 </div>
 <div id="wrapper">
     <div class="progress-data">
@@ -41,11 +41,19 @@
             <div class="once flex-box">一次性还款</div>
         </div>
     </div>
+    <div id="set-money">
+        <div class="left">
+            <label for="money">投资金额</label>
+            <input type="text" name="number-money" id="money" placeholder="输入金额(100元起)">
+        </div>
+        <div class="right">立即投资</div>
+        <div class="clear"></div>
+    </div>
     <div id="tabBox1" class="tabBox">
         <div class="hd">
             <ul>
-                <li><a>项目介绍</a></li>
-                <li><a>投资记录</a></li>
+                <li><a href="javascript:void(0)">项目介绍</a></li>
+                <li><a href="javascript:void(0)">投资记录</a></li>
             </ul>
         </div>
         <div class="bd" id="tabBox1-bd">
@@ -120,15 +128,6 @@
         </div>
     </div>
 </div>
-<div id="footer">
-    <div class="left">
-        <label for="money">投资金额</label>
-        <input type="text" name="number-money" id="money" placeholder="输入金额(100元起)">
-    </div>
-    <div class="right">立即投资</div>
-    <div class="clear"></div>
-</div>
-
 <!--进度条开始-->
 <script>
     $('#indicatorContainer1').radialIndicator({
@@ -141,6 +140,7 @@
     $('.prg-cont canvas').css('width', '50%');
 </script>
 <!--进度条结束-->
+<!--Touchsilder-start-->
 <script>
     TouchSlide({
         slideCell: "#tabBox1",
@@ -151,5 +151,27 @@
         }
     });
 </script>
+<!--Touchsilder-end-->
+<!--scollTop-start-->
+<!--<script>
+    $(document).ready(function(){
+        var fixedH=$("#set-money").offset().top;
+        $(window).scroll(function(){
+            var scrlH=$(this).scrollTop();
+            if(fixedH<=scrlH){
+                $("#set-money").css({
+                    "position":"fixed",
+                    "top":"0",
+                    "left":"0"
+                });
+            }else if(fixedH>scrlH){
+                $("#set-money").css({
+                    "position":"relative"
+                });
+            }
+        });
+    })
+</script>-->
+<!--scollTop-end-->
 </body>
 </html>
