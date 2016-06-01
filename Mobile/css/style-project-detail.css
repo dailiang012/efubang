@@ -211,6 +211,8 @@ body {
           color: #76787d; }
       .tabBox .hd ul .on {
         border-bottom: 5px solid #4cb0ae; }
+        .tabBox .hd ul .on a {
+          color: #4cb0ae; }
 
 [data-dpr="1"] .tabBox .hd a {
   font-size: 12px; }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 //px转rem
 @mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
   //Conver the baseline into rems
@@ -74,7 +73,6 @@ $border: 1px solid #ddd; //边框
 #wrapper {
   width: 100%;
   overflow: hidden;
-  //新加
 }
 
 [data-dpr="1"] #wrapper {
@@ -137,8 +135,8 @@ body {
   font-size: 54px;
   line-height: 132px;
 }
-
 /*header结束*/
+
 /*progress-data开始*/
 .progress-data {
   text-align: center;
@@ -261,6 +259,9 @@ body {
       }
       .on {
         border-bottom: 5px solid #{$blue};
+        a{
+          color:$blue;
+        }
       }
     }
   }

@@ -1,0 +1,278 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+//字体设置开始
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+//字体设置结束
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  border-bottom: $border;
+  //新加
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  //新加
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+/*header开始*/
+html {
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  background-color: #f9f9f9;
+  @include px2rem(padding-bottom,60px,64px,false);
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+
+
+/* tabBox开始 */
+.tabBox {
+  background-color: #fff;
+  border-bottom: $border;
+  .hd {
+    outline: $border;
+    @include px2rem(margin-bottom,15px,64px,false);
+    ul {
+      overflow: hidden;
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      box-sizing: border-box;
+      li {
+        color: $normal;
+        -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+        -moz-box-flex: 1; /* OLD - Firefox 19- */
+        -webkit-flex: 1; /* Chrome */
+        -ms-flex: 1; /* IE 10 */
+        flex: 1;
+        text-align: center;
+        @include px2rem(line-height,50px,64px,false);
+        &:first-child a{
+          border-right: $border;
+        }
+        a{
+          display: block;
+          @include px2rem(margin-top,15px,64px,false);
+          @include px2rem(margin-bottom,10px,64px,false);
+          text-decoration: none;
+          color: $normal;
+        }
+      }
+      .on {
+        border-bottom: 5px solid #{$blue};
+        a{
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.tabBox .hd a{
+  @include font-dpr(24px);
+}
+/*project项目开始*/
+.list {
+  height: 2.46875rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 0.234375rem;
+  background-color: #fff;
+}
+
+.list-left {
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.list-left div[class^="project"] {
+  float: left;
+}
+
+.project-rate {
+  width: 2.125rem;
+  height: 1.875rem;
+  border-right: 1px dashed #ebebeb;
+  margin-top: 0.3125rem;
+  text-align: center;
+  line-height: 1.09375rem;
+}
+
+.rate-number {
+  color: #ff5151;
+  line-height: 1.09375rem;
+}
+
+.rate-txt {
+  color: #76787d;
+  line-height: 100%;
+}
+
+.project-name {
+  width: 3.890625rem;
+}
+
+.project-progress {
+  width: 1.46875rem;
+  padding-top: 0.671875rem;
+}
+
+.project-btn {
+  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+  -moz-box-flex: 1; /* OLD - Firefox 19- */
+  -webkit-flex: 1; /* Chrome */
+  -ms-flex: 1; /* IE 10 */
+  flex: 1;
+  background-color: #4cb0ae;
+  text-align: center;
+}
+
+.project-btn a {
+  display: block;
+  color: #fff;
+  line-height: 2.46875rem;
+  text-decoration: none;
+}
+.project-btn a:active{
+  background-color: #419695;
+}
+.project-name .name {
+  line-height: 1rem;
+  color: #76787d;
+}
+
+.project-name .time {
+  line-height: 0.40625rem;
+  color: #adb2bf;
+}
+
+.project-name {
+  margin-top: 0.28125rem;
+  padding-left: 0.34375rem;
+}
+
+/*project项目结束*/
