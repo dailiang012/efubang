@@ -17,7 +17,6 @@
     <script src="./js/flexible.debug.js"></script>
     <script src="js/radialIndicator.min.js"></script>
     <script src="js/TouchSlide.1.1.js"></script>
-    <script src="js/iscroll.js"></script>
     <link rel="stylesheet" href="css/style-home.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
 </head>
@@ -38,7 +37,7 @@
                     <span class="font16">首页</span></a>
             </li>
             <li>
-                <a href="#"><img src="images/home/invest.png" alt="我要投资">
+                <a href="project-list.html"><img src="images/home/invest.png" alt="我要投资">
                     <span class="font16">我要投资</span></a>
             </li>
             <li>
@@ -154,7 +153,7 @@
                     </div>
                     <div class="project-btn  font14"><a href="project-detail.html">立即投资</a></div>
                 </div>
-                <!--<div class="list">
+                <div class="list">
                     <div class="list-left">
                         <div class="project-rate">
                             <div class="rate-number font24">15%</div>
@@ -169,7 +168,7 @@
                         </div>
                     </div>
                     <div class="project-btn  font14"><a href="project-detail.html">立即投资</a></div>
-                </div>-->
+                </div>
             </div>
         </div>
         <div class="company-copy font10">© 2016财富金融All rights reserved<br/>北京财富邦投资服务有限公司</div>
@@ -206,7 +205,6 @@
 <script>
 //    var chartElement=$("div[id^='indicatorContainer']");
     var $chartElement=$(".project-progress>div");
-
 
     $chartElement.each(function(){
         diyChart(this,30);

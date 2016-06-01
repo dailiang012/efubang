@@ -46,6 +46,17 @@ $border: 1px solid #ddd; //边框
   }
 }
 //字体设置结束
+html {
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  height: 100%;
+  background-color: #f9f9f9;
+  @include px2rem(padding-bottom,60px,64px,false);
+}
 .clear{
   clear: both;
 }
@@ -53,7 +64,6 @@ $border: 1px solid #ddd; //边框
   width: 100%;
   background-color: $blue;
   border-bottom: $border;
-  //新加
   position: fixed;
   top:0;
   left:0;
@@ -73,7 +83,6 @@ $border: 1px solid #ddd; //边框
 #wrapper {
   width: 100%;
   overflow: hidden;
-  //新加
 }
 
 [data-dpr="1"] #wrapper {
@@ -87,17 +96,7 @@ $border: 1px solid #ddd; //边框
 [data-dpr="3"] #wrapper {
   padding-top: (88px*1.5);
 }
-/*header开始*/
-html {
-  height: 100%;
-  outline: 0;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  background-color: #f9f9f9;
-  @include px2rem(padding-bottom,60px,64px,false);
-}
+/*header-start*/
 .nav-return {
   position: absolute;
   height: inherit;
@@ -135,7 +134,7 @@ body {
   font-size: 54px;
   line-height: 132px;
 }
-
+/*header-end*/
 
 /* tabBox开始 */
 .tabBox {
@@ -144,6 +143,7 @@ body {
   .hd {
     outline: $border;
     @include px2rem(margin-bottom,15px,64px,false);
+    background-color: #fff;
     ul {
       overflow: hidden;
       width: 100%;

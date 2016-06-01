@@ -1,4 +1,15 @@
 @charset "UTF-8";
+html {
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  height: 100%;
+  background-color: #f9f9f9;
+  padding-bottom: 0.9375rem; }
+
 .clear {
   clear: both; }
 
@@ -33,17 +44,7 @@
 [data-dpr="3"] #wrapper {
   padding-top: 132px; }
 
-/*header开始*/
-html {
-  height: 100%;
-  outline: 0;
-  -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  background-color: #f9f9f9;
-  padding-bottom: 0.9375rem; }
-
+/*header-start*/
 .nav-return {
   position: absolute;
   height: inherit;
@@ -77,13 +78,15 @@ body {
   font-size: 54px;
   line-height: 132px; }
 
+/*header-end*/
 /* tabBox开始 */
 .tabBox {
   background-color: #fff;
   border-bottom: 1px solid #ddd; }
   .tabBox .hd {
     outline: 1px solid #ddd;
-    margin-bottom: 0.23438rem; }
+    margin-bottom: 0.23438rem;
+    background-color: #fff; }
     .tabBox .hd ul {
       overflow: hidden;
       width: 100%;
