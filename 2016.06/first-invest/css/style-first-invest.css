@@ -1,0 +1,44 @@
+#main-first-invest {
+  background: url("../images/main-first-invest-bj.jpg") no-repeat center top;
+  height: 1514px;
+  font-size: 18px;
+  color: #fff; }
+  #main-first-invest .time {
+    text-align: center;
+    padding-top: 477px;
+    font-weight: bold; }
+  #main-first-invest .who {
+    text-align: center;
+    padding-top: 94px;
+    font-weight: bold; }
+  #main-first-invest .rules {
+    width: 720px;
+    margin: 0 auto;
+    padding-top: 80px;
+    line-height: 40px;
+    letter-spacing: 3px;
+    font-weight: bold; }
+    #main-first-invest .rules span {
+      color: #fffd2f; }
+    #main-first-invest .rules strong {
+      font-size: 30px;
+      line-height: 36px;
+      color: #fffd2f; }
+  #main-first-invest .state {
+    width: 922px;
+    margin: 0 auto;
+    padding-top: 332px;
+    color: #9d1d1d; }
+    #main-first-invest .state h1 {
+      text-align: center;
+      font-size: 24px;
+      line-height: 94px;
+      font-weight: bolder;
+      letter-spacing: 3px; }
+    #main-first-invest .state li {
+      font-size: 16px;
+      line-height: 30px;
+      font-weight: bolder;
+      letter-spacing: 1px; }
+
+/*# sourceMappingURL=style-first-invest.css.map */
