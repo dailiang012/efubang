@@ -1,0 +1,70 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>充值投资</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-help-invest.css">
+</head>
+<body>
+<div id="header">
+    <div class="nav-return">
+        <a href="help.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
+    <div class="nav-title">充值投资</div>
+</div>
+<div id="main">
+    <ul class="question">
+        <li class="question-list">
+            <div class="ask">
+                <div class="ask-text">
+                    <span>1.</span>
+                    <p>注册实名的时候提示类型错误是什么意思？</p>
+                    <div class="clear"></div>
+                </div>
+                <div class="ask-icon"><img src="./images/help/question-open.png" alt=">"></div>
+            </div>
+            <div class="answer">君不见黄河之水天上来,奔流到海不复回,君不见高堂明镜悲白发,朝如青丝,暮成雪.....五花马,千金裘,忽而将出唤美酒,与而同销万古愁</div>
+        </li>
+        <li class="question-list">
+            <div class="ask">
+                <div class="ask-text">
+                    <span>2.</span>
+                    <p>注册实名的时候提示类型错误是什么意思？</p>
+                    <div class="clear"></div>
+                </div>
+                <div class="ask-icon"><img src="./images/help/question-open.png" alt=">"></div>
+            </div>
+            <div class="answer">君不见黄河之水天上来,奔流到海不复回,君不见高堂明镜悲白发,朝如青丝,暮成雪.....五花马,千金裘,忽而将出唤美酒,与而同销万古愁</div>
+        </li>
+    </ul>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script>
+$(document).ready(function(){
+    $(".question-list").on("click",function(){
+        var state=$(this).children().find("img");
+        if(state.attr("src").indexOf("open")>0){
+            $(this).children(".answer").css("display","block");
+            $(state).attr("src","./images/help/question-close.png");
+        }else{
+            $(this).children(".answer").css("display","none");
+            $(state).attr("src","./images/help/question-open.png");
+        }
+    });
+})
+</script>
+</body>
+</html>

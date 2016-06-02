@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
+.clear {
+  clear: both; }
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae; }
+
+[data-dpr="1"] #header {
+  height: 44px; }
+
+[data-dpr="2"] #header {
+  height: 88px; }
+
+[data-dpr="3"] #header {
+  height: 132px; }
+
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto; }
+
+.nav-title {
+  text-align: center;
+  color: #fff; }
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px; }
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px; }
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px; }
+
+/*header-end*/
+/*main-start*/
+.question-list {
+  border-bottom: 1px solid #ddd;
+  color: #76787d; }
+  [data-dpr="1"] .question-list {
+    font-size: 14px; }
+  [data-dpr="2"] .question-list {
+    font-size: 28px; }
+  [data-dpr="3"] .question-list {
+    font-size: 42px; }
+  .question-list .ask {
+    background: #fff;
+    width: 96%;
+    padding: 0 2%;
+    position: relative;
+    padding-top: 0.40625rem;
+    padding-bottom: 0.40625rem; }
+    .question-list .ask p {
+      float: left;
+      width: 80%; }
+    .question-list .ask span {
+      height: 100%;
+      float: left; }
+    .question-list .ask .ask-icon {
+      position: absolute;
+      right: 4%;
+      top: 0.40625rem; }
+  .question-list .answer {
+    display: none;
+    /*先隐藏*/
+    width: 94%;
+    margin: 0 3%;
+    background-color: #f9f9f9;
+    padding-top: 0.40625rem;
+    padding-bottom: 0.40625rem; }
+
+/*main-end*/
+
+/*# sourceMappingURL=style-help-invest.css.map */

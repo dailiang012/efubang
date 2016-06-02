@@ -168,12 +168,26 @@ body {
 .rate-number {
   color: #ff5151;
   line-height: 1.09375rem; }
+  [data-dpr="1"] .rate-number {
+    font-size: 24px; }
+  [data-dpr="2"] .rate-number {
+    font-size: 48px; }
+  [data-dpr="3"] .rate-number {
+    font-size: 72px; }
 
 .rate-txt {
   color: #76787d;
   line-height: 100%; }
+  [data-dpr="1"] .rate-txt {
+    font-size: 8px; }
+  [data-dpr="2"] .rate-txt {
+    font-size: 16px; }
+  [data-dpr="3"] .rate-txt {
+    font-size: 24px; }
 
 .project-name {
+  margin-top: 0.28125rem;
+  padding-left: 0.34375rem;
   width: 3.890625rem; }
 
 .project-progress {
@@ -198,6 +212,12 @@ body {
   color: #fff;
   line-height: 2.46875rem;
   text-decoration: none; }
+  [data-dpr="1"] .project-btn a {
+    font-size: 14px; }
+  [data-dpr="2"] .project-btn a {
+    font-size: 28px; }
+  [data-dpr="3"] .project-btn a {
+    font-size: 42px; }
 
 .project-btn a:active {
   background-color: #419695; }
@@ -205,17 +225,25 @@ body {
 .project-name .name {
   line-height: 1rem;
   color: #76787d; }
+  [data-dpr="1"] .project-name .name {
+    font-size: 16px; }
+  [data-dpr="2"] .project-name .name {
+    font-size: 32px; }
+  [data-dpr="3"] .project-name .name {
+    font-size: 48px; }
 
 .project-name .time {
   line-height: 0.40625rem;
   color: #adb2bf; }
-
-.project-name {
-  margin-top: 0.28125rem;
-  padding-left: 0.34375rem; }
+  [data-dpr="1"] .project-name .time {
+    font-size: 10px; }
+  [data-dpr="2"] .project-name .time {
+    font-size: 20px; }
+  [data-dpr="3"] .project-name .time {
+    font-size: 30px; }
 
 /*project项目结束*/
-/*          tab-side开始           */
+/*tab-side-start */
 #tab-side {
   width: 100%;
   height: 100%;
@@ -235,6 +263,20 @@ body {
   text-align: center;
   padding-top: 50%; }
 
+[data-dpr="1"] .close-side span {
+  font-size: 16px; }
+[data-dpr="2"] .close-side span {
+  font-size: 32px; }
+[data-dpr="3"] .close-side span {
+  font-size: 48px; }
+
+[data-dpr="1"] .close-side .fa-angle-double-left {
+  font-size: 14px; }
+[data-dpr="2"] .close-side .fa-angle-double-left {
+  font-size: 28px; }
+[data-dpr="3"] .close-side .fa-angle-double-left {
+  font-size: 42px; }
+
 .side-content {
   width: 70%;
   height: 100%;
@@ -253,11 +295,10 @@ body {
   border-radius: 50%;
   float: left;
   padding-left: 0.671875rem; }
-
-.my-photo img {
-  width: 1.78125rem;
-  height: 1.78125rem;
-  border-radius: 50%; }
+  .my-photo img {
+    width: 1.78125rem;
+    height: 1.78125rem;
+    border-radius: 50%; }
 
 .welcome-text {
   float: left;
@@ -265,28 +306,37 @@ body {
   color: #c7c7c7;
   line-height: 0.75rem;
   padding-top: 0.15625rem; }
+  [data-dpr="1"] .welcome-text {
+    font-size: 16px; }
+  [data-dpr="2"] .welcome-text {
+    font-size: 32px; }
+  [data-dpr="3"] .welcome-text {
+    font-size: 48px; }
 
 .tab-list li {
   padding-left: 0.46875rem;
   border-bottom: 1px solid #313131; }
+  .tab-list li:last-child {
+    border-bottom: none; }
+  .tab-list li a {
+    display: block;
+    text-decoration: none; }
+  .tab-list li img {
+    float: left;
+    height: 1.578125rem;
+    width: auto;
+    padding-right: 0.28125rem; }
+  .tab-list li span {
+    line-height: 1.578125rem;
+    color: #c7c7c7; }
 
-.tab-list li:last-child {
-  border-bottom: none; }
+[data-dpr="1"] .tab-list span {
+  font-size: 16px; }
+[data-dpr="2"] .tab-list span {
+  font-size: 32px; }
+[data-dpr="3"] .tab-list span {
+  font-size: 48px; }
 
-.tab-list li a {
-  display: block;
-  text-decoration: none; }
-
-.tab-list li img {
-  float: left;
-  height: 1.578125rem;
-  width: auto;
-  padding-right: 0.28125rem; }
-
-.tab-list li span {
-  line-height: 1.578125rem;
-  color: #c7c7c7; }
-
-/*          侧边栏tab-side结束           */
+/*tab-side-end*/
 
 /*# sourceMappingURL=style-project-list.css.map */

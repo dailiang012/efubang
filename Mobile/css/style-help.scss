@@ -24,7 +24,7 @@
   }
 }
 
-$background: #f9f9f9;
+$background: #f9f9f9;//背景色
 $blue: #4cb0ae; //蓝色
 $red: #f53030; //红色
 $normal: #76787d; //正常字体
@@ -45,7 +45,6 @@ $border: 1px solid #ddd; //边框
     font-size: $font-size * 1.5;
   }
 }
-
 //字体设置结束
 /*header-start*/
 html {
@@ -152,6 +151,12 @@ body {
   padding-top: 50%;
 }
 
+.close-side span{
+  @include font-dpr(32px)
+}
+.close-side .fa-angle-double-left{
+  @include font-dpr(28px)
+}
 .side-content {
   width: 70%;
   height: 100%;
@@ -185,6 +190,7 @@ body {
   color: #c7c7c7;
   line-height: 0.75rem;
   padding-top: 0.15625rem;
+  @include font-dpr(32px);
 }
 
 .tab-list li {
@@ -208,6 +214,9 @@ body {
     color: #c7c7c7;
   }
 }
+.tab-list span{
+  @include font-dpr(32px)
+}
 
 /*tab-side-end*/
 /*wrapper-start*/
@@ -215,6 +224,7 @@ body {
 #wrapper {
   width: 100%;
   overflow: hidden;
+  background-color: #f9f9f9;
 }
 
 [data-dpr="1"] #wrapper {
@@ -228,5 +238,29 @@ body {
 [data-dpr="3"] #wrapper {
   padding-top: (88px*1.5);
 }
-
+.help-list li {
+  background-color: #fff;
+  @include px2rem(margin-bottom,10px,64px,false);
+  a {
+    display: block;
+    text-decoration: none;
+    border-bottom: $border;
+    border-top: $border;
+  }
+  img {
+    float: left;
+    @include px2rem(height,158px,64px,false);
+    width: auto;
+  }
+  span {
+    @include px2rem(line-height,158px,64px,false);
+    color: #c7c7c7;
+  }
+  &:active{
+    background-color: #f9f9f9;
+  }
+}
+.help-list li span{
+  @include font-dpr(36px)
+}
 /*wrapper-end*/
