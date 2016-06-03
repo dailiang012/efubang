@@ -84,8 +84,7 @@ body {
 /*header-end*/
 /* tabBox开始 */
 .tabBox {
-  background-color: #fff;
-  border-bottom: 1px solid #ddd; }
+  background-color: #fff; }
   .tabBox .hd {
     outline: 1px solid #ddd;
     margin-bottom: 0.23438rem;

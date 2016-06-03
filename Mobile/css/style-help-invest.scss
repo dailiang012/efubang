@@ -71,6 +71,10 @@ body {
 #header {
   width: 100%;
   background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
 }
 [data-dpr="1"] #header {
   height: (88px/2);
@@ -82,6 +86,23 @@ body {
 
 [data-dpr="3"] #header {
   height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+  margin: 0 auto;
+  @include px2rem(padding-bottom,120px,64px,false);
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
 }
 .nav-return {
   position: absolute;
@@ -122,7 +143,7 @@ body {
 }
 /*header-end*/
 
-/*main-start*/
+/*wrapper-start*/
 .question-list{
   border-bottom:$border ;
   @include font-dpr(28px);
@@ -134,6 +155,7 @@ body {
     position: relative;
     @include px2rem(padding-top,26px,64px,false);
     @include px2rem(padding-bottom,26px,64px,false);
+    @include px2rem(line-height,42px,64px,false);
     p{
       float: left;
       width: 80%;
@@ -146,15 +168,19 @@ body {
       position: absolute;
       right: 4%;
       @include px2rem(top,26px,64px,false);
+      img{
+        @include px2rem(width,25px,64px,false);
+        @include px2rem(height,15px,64px,false);
+      }
     }
   }
   .answer{
     display: none;   /*先隐藏*/
     width: 94%;
-    margin: 0 3%;
+    padding: 0 3%;
     background-color: $background;
     @include px2rem(padding-top,26px,64px,false);
     @include px2rem(padding-bottom,26px,64px,false);
   }
 }
-/*main-end*/
+/*wrapper-end*/

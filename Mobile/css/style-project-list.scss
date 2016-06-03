@@ -143,7 +143,6 @@ body {
 /* tabBox开始 */
 .tabBox {
   background-color: #fff;
-  border-bottom: $border;
   .hd {
     outline: $border;
     @include px2rem(margin-bottom,15px,64px,false);
