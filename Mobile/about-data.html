@@ -15,7 +15,6 @@
     <script src="./js/flexible_css.debug.js"></script>
     <script src="./js/flexible.debug.js"></script>
     <link rel="stylesheet" href="css/style-about-data.css">
-    <link href="css/dataPage_style.css" rel="stylesheet">
 </head>
 <body>
 <div id="header">
@@ -28,35 +27,148 @@
     <div class="data-banner">
         <img src="./images/about_us/data-banner.jpg" alt="banner">
     </div>
-    <div id="list01">
+    <div class="choice">
+        <span>
+            <label for="choice-year"></label>
+            <select name="year" id="choice-year">
+                <option value="2015">2015年</option>
+                <option value="2016">2016年</option>
+            </select>
+         </span>
+        <span>
+            <label for="choice-month"></label>
+            <select name="month" id="choice-month">
+                <option value="1">1月</option>
+                <option value="2">2月</option>
+                <option value="3">3月</option>
+                <option value="4">4月</option>
+                <option value="5">5月</option>
+                <option value="6">6月</option>
+                <option value="7">7月</option>
+                <option value="8">8月</option>
+                <option value="9">9月</option>
+                <option value="10">10月</option>
+                <option value="11">11月</option>
+                <option value="12">12月</option>
+            </select>
+         </span>
+        <div class="clear"></div>
+    </div>
+    <div id="charts">
         <div class="chart01">
+            <div class="about-us-title-text">
+                <h2>交易总金额</h2>
+            </div>
+            <p>2016年2月，平台总交易额 ：<span>1847.51</span>万元，截至到2016年2月29日，平台累计交易总额达<span>191,121</span>万元。</p>
             <div id="total_money"></div>
-        </div><!--
+        </div>
         <div class="chart02">
+            <div class="about-us-title-text">
+                <h2>成交总金额</h2>
+            </div>
+            <div class="number_list">
+                <p>七天标总笔数<span>335</span>笔。</p>
+                <p>一月标总笔数<span>310</span>笔。</p>
+                <p>三月标总笔数<span>234</span>笔。</p>
+                <p>六月标总笔数<span>135</span>笔。</p>
+            </div>
             <div id="total_number"></div>
         </div>
         <div class="chart03">
+            <div class="about-us-title-text">
+                <h2>投资总人数</h2>
+            </div>
+            <p>截止到2016年2月，<br/>投资人数共<span>21,882</span>人</p>
             <div id="total_people"></div>
         </div>
         <div class="chart04">
+            <div class="about-us-title-text">
+                <h2>注册总人数</h2>
+            </div>
+            <p>截止到2016年2月，<br/>注册人数累计突破<span>21,882</span>人</p>
             <div id="total_register"></div>
         </div>
         <div class="chart05">
+            <div class="about-us-title-text">
+                <h2>投资人区域分布</h2>
+            </div>
+            <div class="citys_people">
+                <div class="city">
+                    <h2>1.吉林</h2>
+                    <p>32.5% <br/><span>536,985笔<br/>1,222,333元</span></p>
+                </div>
+                <div class="city">
+                    <h2>2.山东</h2>
+                    <p>32.5% <br/><span>536,985笔<br/>1,222,333元</span></p>
+                </div>
+                <div class="city">
+                    <h2>3.辽宁</h2>
+                    <p>32.5% <br/><span>536,985笔<br/>1,222,333元</span></p>
+                </div>
+                <div class="city">
+                    <h2>3.辽宁</h2>
+                    <p>32.5% <br/><span>536,985笔<br/>1,222,333元</span></p>
+                </div>
+                <div class="clear"></div>
+            </div>
             <div id="total_map"></div>
-            <div class="clear"></div>
         </div>
         <div class="chart06">
+            <div class="about-us-title-text">
+                <h2>投资人年龄分布</h2>
+            </div>
+            <div class="age_list">
+                <table>
+                    <thead>
+                    <tr>
+                        <td>年龄</td>
+                        <td>人数</td>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><20</td>
+                        <td class="age01">800</td>
+                    </tr>
+                    <tr>
+                        <td>20-29</td>
+                        <td class="age02">11,123</td>
+                    </tr>
+                    <tr>
+                        <td>30-39</td>
+                        <td class="age03">9,216</td>
+                    </tr>
+                    <tr>
+                        <td>40-49</td>
+                        <td class="age04">6,131</td>
+                    </tr>
+                    <tr>
+                        <td>50-59</td>
+                        <td class="age05">8,131</td>
+                    </tr>
+                    <tr>
+                        <td>≥60</td>
+                        <td class="age06">7,466</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
             <div id="total_age"></div>
-            <div class="clear"></div>
         </div>
         <div class="chart07">
+            <div class="about-us-title-text">
+                <h2>违约率</h2>
+            </div>
+            <p>e富邦自2014年3月上线以来，<br/>违约率为<span>0</span></p>
             <div id="total_break"></div>
-        </div>-->
-        <!--<div class="chart08">
-            <h1>人均累计投资额</h1>
-            <div class="pic"><img src="images/pig_pic_03.jpg" alt="pic_pig"></div>
+        </div>
+        <div class="chart08">
+            <div class="about-us-title-text">
+                <h2>人均累计投资额</h2>
+            </div>
+            <div class="pic"><img src="images/about_us/pig_pic_03.jpg" alt="pic_pig"></div>
             <p>截止至2016年2月，人均累计投资额<br/>已达<span>3495</span>万元。</p>
-        </div>-->
+        </div>
     </div>
 </div>
 <script src="js/jquery-1.11.1.min.js"></script>

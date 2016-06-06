@@ -1,17 +1,6 @@
 /**
  * Created by pc on 2016/3/16.
  */
-/*菜单动效开始*/
-$('.year_now').click(function(){
-    $('.subnav').toggle();
-});
-
-/*$('.mouth li a').click(function(e) {<!--点击导航-->
-    $('.main_inner>div').hide();
-    $($(this).attr('href')).show();
-    return false
-});*/
-/*菜单动效结束*/
 
 /*chart01开始*/
 // 基于准备好的dom，初始化echarts实例
@@ -29,8 +18,8 @@ var option01 = {
     toolbox: {
         show : true,
         feature : {
-            magicType : {show: true, type: ['line', 'bar']},
-            /*restore : {show: true},
+            /*magicType : {show: true, type: ['line', 'bar']},
+            restore : {show: true},
             saveAsImage : {show: true}*/
         }
     },
@@ -50,7 +39,7 @@ var option01 = {
         {
             name:'交易总额',
             type:'bar',
-            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 500.7, 48.7, 18.8, 6.0, 2.3],
+            data:[2, 9, 10, 26, 28, 70, 175, 182, 48, 18, 6, 3],
             markPoint : {
                 data : [
                     {name : '年最高', value : 182.2, xAxis: 7, yAxis: 183},
@@ -128,9 +117,9 @@ var option03 = {
     toolbox: {
         show : true,
         feature : {
-            magicType : {show: true, type: ['line', 'bar']},
+            /*magicType : {show: true, type: ['line', 'bar']},
             restore : {show: true},
-            saveAsImage : {show: true}
+            saveAsImage : {show: true}*/
         }
     },
     calculable : true,
@@ -179,9 +168,9 @@ var option04 = {
     toolbox: {
         show : true,
         feature : {
-            magicType : {show: true, type: ['line', 'bar']},
+            /*magicType : {show: true, type: ['line', 'bar']},
             restore : {show: true},
-            saveAsImage : {show: true}
+            saveAsImage : {show: true}*/
         }
     },
     calculable : true,

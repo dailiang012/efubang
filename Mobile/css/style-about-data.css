@@ -90,238 +90,288 @@ body {
     width: 100%;
     height: auto; }
 
-/*图表公共样式*/
-.main_inner h1 {
+.choice {
+  width: 70%;
+  margin: 0 auto;
+  padding-bottom: 0.9375rem; }
+  .choice select {
+    color: #76787d;
+    border: none;
+    background-color: #fff; }
+    [data-dpr="1"] .choice select {
+      font-size: 14px; }
+    [data-dpr="2"] .choice select {
+      font-size: 28px; }
+    [data-dpr="3"] .choice select {
+      font-size: 42px; }
+  .choice option {
+    color: #76787d; }
+    [data-dpr="1"] .choice option {
+      font-size: 14px; }
+    [data-dpr="2"] .choice option {
+      font-size: 28px; }
+    [data-dpr="3"] .choice option {
+      font-size: 42px; }
+  .choice #choice-year {
+    float: left; }
+  .choice #choice-month {
+    float: right; }
+
+/*图表开始*/
+#charts {
+  width: 96%;
+  margin: 0 auto; }
+
+.about-us-title-text h2 {
+  display: inline-block;
+  background: #fff;
+  padding: 0 20px;
+  line-height: 100%;
+  height: 0.5rem; }
+  [data-dpr="1"] .about-us-title-text h2 {
+    font-size: 16px; }
+  [data-dpr="2"] .about-us-title-text h2 {
+    font-size: 32px; }
+  [data-dpr="3"] .about-us-title-text h2 {
+    font-size: 48px; }
+
+.about-us-title-text {
+  width: 100%;
+  height: 0.3125rem;
+  text-align: center; }
+
+#charts p {
   text-align: center;
-  font-size: 30px;
-  line-height: 100%; }
+  color: #76787d;
+  line-height: 0.625rem; }
+  [data-dpr="1"] #charts p {
+    font-size: 12px; }
+  [data-dpr="2"] #charts p {
+    font-size: 24px; }
+  [data-dpr="3"] #charts p {
+    font-size: 36px; }
 
 /*chart01开始*/
-.chart01 {
-  padding-bottom: 100px; }
+#total_money {
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 .chart01 p {
-  padding-top: 93px;
-  padding-bottom: 30px;
-  text-align: center;
-  font-size: 18px;
-  color: #626566;
-  line-height: 50px; }
+  padding-top: 0.78125rem; }
 
 .chart01 p span {
-  font-size: 30px;
-  line-height: 40px;
   color: #f67027; }
 
-.chart01 h1 {
-  color: #48cfd7;
-  background: url("../images/align_line_blue.png") no-repeat center center; }
+.chart01 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
 
-#total_money {
-  width: 700px;
-  height: 600px;
-  margin: 0 auto; }
+.chart01 .about-us-title-text h2 {
+  color: #48cfd7; }
 
 /*chart01结束*/
 /*chart02开始*/
-.chart02 {
-  padding-bottom: 100px; }
-
 #total_number {
-  width: 600px;
-  height: 500px;
-  margin-top: 60px;
-  float: left;
-  margin-left: 150px; }
-
-.chart02 h1 {
-  color: #f67027;
-  background: url("../images/align_line_orange.png") no-repeat center center; }
-
-.chart02 p {
-  font-size: 18px;
-  color: #626566;
-  line-height: 50px; }
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 .chart02 p span {
-  font-size: 30px;
-  line-height: 40px;
   color: #f67027; }
 
 .number_list {
-  float: left;
-  padding-left: 80px;
-  padding-top: 230px; }
+  padding-top: 0.46875rem; }
+
+.chart02 .about-us-title-text {
+  border-bottom: 1px dashed #f67027; }
+
+.chart02 .about-us-title-text h2 {
+  color: #f67027; }
 
 /*chart02结束*/
 /*chart03和chart04开始*/
-.chart03, .chart04 {
-  padding-bottom: 100px; }
-
 #total_people, #total_register {
-  width: 700px;
-  height: 600px;
-  margin: 0 auto; }
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 .chart03 h1 {
-  color: #48cfd7;
-  background: url("../images/align_line_blue.png") no-repeat center center; }
+  color: #48cfd7; }
 
 .chart03 p, .chart04 p {
-  padding-top: 50px;
-  padding-bottom: 30px;
-  text-align: center;
-  font-size: 18px;
-  color: #626566;
-  line-height: 50px; }
+  padding-top: 0.78125rem; }
 
 .chart03 p span, .chart04 p span {
-  font-size: 30px;
-  line-height: 40px;
   color: #f67027; }
 
-.chart04 h1 {
-  color: #f67027;
-  background: url("../images/align_line_orange.png") no-repeat center center; }
+.chart03 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
+
+.chart03 .about-us-title-text h2 {
+  color: #48cfd7; }
+
+.chart04 .about-us-title-text {
+  border-bottom: 1px dashed #f67027; }
+
+.chart04 .about-us-title-text h2 {
+  color: #f67027; }
 
 /*chart03和chart04结束*/
 /*chart05开始*/
-.chart05 {
-  padding-bottom: 100px; }
+.chart05 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
 
-.chart05 h1 {
-  color: #48cfd7;
-  background: url("../images/align_line_blue.png") no-repeat center center;
-  margin-bottom: 60px; }
+.chart05 .about-us-title-text h2 {
+  color: #48cfd7; }
 
 #total_map {
-  width: 600px;
-  height: 500px;
-  float: left; }
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 .citys_people {
-  width: 250px;
-  float: left;
-  padding-left: 150px;
-  padding-right: 50px; }
+  padding-left: 1.25rem;
+  padding-top: 0.9375rem; }
 
 .citys_people h2 {
-  font-size: 30px;
   line-height: 100%;
   color: #48cfd7;
   float: left;
-  padding-right: 10px; }
+  padding-right: 0.3125rem; }
+  [data-dpr="1"] .citys_people h2 {
+    font-size: 12px; }
+  [data-dpr="2"] .citys_people h2 {
+    font-size: 24px; }
+  [data-dpr="3"] .citys_people h2 {
+    font-size: 36px; }
 
 .citys_people p {
-  font-size: 24px;
   color: #9b9fa1;
   line-height: 100%;
   float: left; }
+  [data-dpr="1"] .citys_people p {
+    font-size: 12px; }
+  [data-dpr="2"] .citys_people p {
+    font-size: 24px; }
+  [data-dpr="3"] .citys_people p {
+    font-size: 36px; }
 
 .citys_people p span {
-  font-size: 16px;
   color: #bcc0c2;
-  line-height: 20px; }
+  line-height: 0.46875rem; }
+  [data-dpr="1"] .citys_people p span {
+    font-size: 9px; }
+  [data-dpr="2"] .citys_people p span {
+    font-size: 18px; }
+  [data-dpr="3"] .citys_people p span {
+    font-size: 27px; }
 
 .city {
-  margin-bottom: 25px; }
+  padding-right: 0.78125rem;
+  margin-bottom: 0.3125rem;
+  float: left; }
 
 /*chart05结束*/
 /*chart06开始*/
-.chart06 {
-  padding-bottom: 100px; }
+.chart06 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
 
-.chart06 h1 {
-  color: #f67027;
-  background: url("../images/align_line_orange.png") no-repeat center center;
-  margin-bottom: 80px; }
+.chart06 .about-us-title-text h2 {
+  color: #48cfd7; }
 
 table {
-  width: 260px;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0; }
 
 .age_list {
-  padding-left: 150px;
-  float: left;
-  padding-right: 80px; }
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 0.9375rem; }
 
 .age_list thead {
   background: #f4f4f4; }
 
 .age_list tr {
-  height: 46px;
+  height: 0.65625rem;
   text-align: center; }
 
 .age_list thead td {
   color: #f67027;
-  font-size: 24px;
-  line-height: 46px; }
+  line-height: 0.65625rem; }
+  [data-dpr="1"] .age_list thead td {
+    font-size: 12px; }
+  [data-dpr="2"] .age_list thead td {
+    font-size: 24px; }
+  [data-dpr="3"] .age_list thead td {
+    font-size: 36px; }
 
 .age_list tbody td {
   color: #969a9c;
-  font-size: 24px;
-  line-height: 46px; }
+  line-height: 0.65625rem; }
+  [data-dpr="1"] .age_list tbody td {
+    font-size: 12px; }
+  [data-dpr="2"] .age_list tbody td {
+    font-size: 24px; }
+  [data-dpr="3"] .age_list tbody td {
+    font-size: 36px; }
 
 #total_age {
-  width: 600px;
-  height: 500px;
-  float: left; }
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 /*chart06结束*/
 /*chart07开始*/
-.chart07 {
-  padding-bottom: 100px; }
+.chart07 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
 
-.chart07 h1 {
-  color: #48cfd7;
-  background: url("../images/align_line_blue.png") no-repeat center center;
-  margin-bottom: 80px; }
+.chart07 .about-us-title-text h2 {
+  color: #48cfd7; }
 
 .chart07 p {
-  text-align: center;
-  font-size: 18px;
-  color: #626566;
-  line-height: 50px; }
+  padding-top: 0.9375rem; }
 
 .chart07 p span {
-  font-size: 30px;
-  line-height: 40px;
   color: #f67027; }
 
 #total_break {
-  width: 600px;
-  height: 500px;
-  margin: 0 auto; }
+  width: 80%;
+  height: 5.46875rem;
+  margin: 0 auto;
+  padding-bottom: 1.5625rem; }
 
 /*chart07结束*/
 /*chart08开始*/
 .chart08 {
   padding-bottom: 100px; }
 
-.chart08 h1 {
-  color: #f67027;
-  background: url("../images/align_line_orange.png") no-repeat center center;
-  margin-bottom: 80px; }
+.chart08 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7; }
 
-.chart08 p {
-  padding-top: 70px;
-  text-align: center;
-  font-size: 18px;
-  color: #626566;
-  line-height: 50px; }
-
-.chart08 p span {
-  font-size: 30px;
-  line-height: 40px;
-  color: #f67027; }
+.chart08 .about-us-title-text h2 {
+  color: #48cfd7; }
 
 .chart08 .pic {
-  width: 460px;
-  height: 460px;
+  width: 3.98438rem;
+  padding-top: 0.9375rem;
+  height: 3.98438rem;
   margin: 0 auto; }
 
+.chart08 .pic img {
+  width: 3.98438rem;
+  height: 3.98438rem; }
+
+.chart08 p {
+  padding-top: 0.9375rem; }
+
 /*chart08结束*/
+/*图表结束*/
 /*wrapper-end*/
 
 /*# sourceMappingURL=style-about-data.css.map */
