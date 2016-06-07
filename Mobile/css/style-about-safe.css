@@ -141,10 +141,12 @@ body {
     text-align: center;
     width: 100%;
     border-bottom: 1px solid #ddd;
-    background-color: #f9f9f9;
-    height: 0.9375rem; }
+    background-color: #f9f9f9; }
     .together-company .company:last-child {
       border: none; }
+    .together-company .company a {
+      display: block;
+      height: 0.9375rem; }
     .together-company .company img {
       height: inherit; }
 

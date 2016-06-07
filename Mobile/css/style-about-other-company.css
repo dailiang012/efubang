@@ -1,0 +1,184 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+/*整体结构开始*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  background-color: #fff; }
+
+.clear {
+  clear: both; }
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[data-dpr="1"] #header {
+  height: 44px; }
+
+[data-dpr="2"] #header {
+  height: 88px; }
+
+[data-dpr="3"] #header {
+  height: 132px; }
+
+#wrapper {
+  width: 96%;
+  margin: 0 auto; }
+
+[data-dpr="1"] #wrapper {
+  padding-top: 44px; }
+
+[data-dpr="2"] #wrapper {
+  padding-top: 88px; }
+
+[data-dpr="3"] #wrapper {
+  padding-top: 132px; }
+
+/*整体结构开始*/
+/*header-start*/
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto; }
+
+.nav-title {
+  text-align: center;
+  color: #fff; }
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px; }
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px; }
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px; }
+
+/*header-end*/
+/*wrapper-start*/
+/*about-us-title-start*/
+.about-us-title {
+  padding-top: 0.625rem;
+  text-align: center; }
+
+.about-us-title-text {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+  height: 0.3125rem; }
+
+.about-us-title-text h2 {
+  display: inline-block;
+  background: #fff;
+  padding: 0 20px;
+  line-height: 100%;
+  color: #4cb0ae;
+  height: 0.5rem; }
+  [data-dpr="1"] .about-us-title-text h2 {
+    font-size: 16px; }
+  [data-dpr="2"] .about-us-title-text h2 {
+    font-size: 32px; }
+  [data-dpr="3"] .about-us-title-text h2 {
+    font-size: 48px; }
+
+.title-english {
+  line-height: 0.9375rem;
+  color: #76787d;
+  text-transform: uppercase; }
+  [data-dpr="1"] .title-english {
+    font-size: 10px; }
+  [data-dpr="2"] .title-english {
+    font-size: 20px; }
+  [data-dpr="3"] .title-english {
+    font-size: 30px; }
+
+/*about-us-title-end*/
+.data {
+  padding-bottom: 0.3125rem;
+  text-align: center; }
+  .data .data-title {
+    color: #76787d;
+    font-weight: bold;
+    line-height: 0.625rem; }
+    [data-dpr="1"] .data .data-title {
+      font-size: 12px; }
+    [data-dpr="2"] .data .data-title {
+      font-size: 24px; }
+    [data-dpr="3"] .data .data-title {
+      font-size: 36px; }
+  .data .data-content {
+    color: #adb2bf;
+    line-height: 100%; }
+    [data-dpr="1"] .data .data-content {
+      font-size: 12px; }
+    [data-dpr="2"] .data .data-content {
+      font-size: 24px; }
+    [data-dpr="3"] .data .data-content {
+      font-size: 36px; }
+
+/*company-book-start*/
+.company-book {
+  width: 84%;
+  margin: 0 auto;
+  padding-top: 0.3125rem;
+  padding-bottom: 1.25rem; }
+
+.book-list {
+  width: 43%; }
+
+.book-list {
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 0.23438rem;
+  margin-bottom: 0.23438rem;
+  border: 1px solid #ddd; }
+  .book-list .book-pic {
+    text-align: center;
+    height: 3.125rem; }
+    .book-list .book-pic img {
+      max-width: 100%;
+      height: 100%; }
+  .book-list .book-text {
+    height: 0.625rem;
+    line-height: 0.625rem;
+    color: #fff;
+    padding-left: 0.3125rem;
+    background-color: #ababab; }
+    [data-dpr="1"] .book-list .book-text {
+      font-size: 10px; }
+    [data-dpr="2"] .book-list .book-text {
+      font-size: 20px; }
+    [data-dpr="3"] .book-list .book-text {
+      font-size: 30px; }
+
+/*company-book-end*/
+/*wrapper-end*/
+
+/*# sourceMappingURL=style-about-other-company.css.map */

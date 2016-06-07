@@ -56,7 +56,7 @@ html {
 }
 body {
   width: 100%;
-  height: 100%;
+ // height: 100%;
   background-color: #fff;
 }
 .clear{
@@ -82,7 +82,8 @@ body {
   height: (88px*1.5);
 }
 #wrapper{
-  width: 100%;
+  width: 96%;
+  margin: 0 auto;
 }
 
 [data-dpr="1"] #wrapper {
@@ -136,64 +137,89 @@ body {
   line-height: 132px;
 }
 /*header-end*/
+
 /*wrapper-start*/
-.safe-banner{
+/*about-us-title-start*/
+.about-us-title{
+  @include px2rem(padding-top,40px,64px,false);
+  text-align: center;
+}
+.about-us-title-text{
   width: 100%;
-  img{
-    width: 100%;
-    height: auto;
-  }
+  border-bottom: $border;
+  @include px2rem(height,20px,64px,false);
 }
-.safe-list{
-  width: 96%;
-  margin: 0 auto;
-  .pic{
-    width: 25%;
-    margin: 0 auto;
-    @include px2rem(margin-top,50px,64px,false);
-    text-align: center;
-    img{
-      width: 100%;
-    }
-  }
+.about-us-title-text h2{
+  display: inline-block;
+  background: #fff;
+  padding:0 20px;
+  line-height: 100%;
+  color: $blue;
+  @include  font-dpr(32px);
+  @include px2rem(height,32px,64px,false);
 }
-.safe-title{
-  text-align: center;
-  @include font-dpr(36px);
-  color: $normal;
-  font-weight: bolder;
-  @include px2rem(line-height,90px,64px,false);
-}
-.safe-text p{
-    @include font-dpr(24px);
-    @include px2rem(line-height,40px,64px,false);
-    @include px2rem(text-indent,60px,64px,false);
-    color:$normal;
-}
-.safe-text h2{
-  text-align: center;
-  @include font-dpr(24px);
+.title-english{
+  @include font-dpr(20px);
   @include px2rem(line-height,60px,64px,false);
-  color:$normal;
-  font-weight: bold;
+  color: $normal;
+  text-transform: uppercase;
 }
-.together-company{
-  @include px2rem(padding-top,50px,64px,false);
-  .company{
-    text-align: center;
-    width: 100%;
-    border-bottom: $border;
-    background-color: #f9f9f9;
-    &:last-child{
-      border:none;
-    }
-    a{
-      display: block;
-      @include px2rem(height,60px,64px,false);
-    }
-    img{
-      height: inherit;
-    }
+/*about-us-title-end*/
+.basic{
+  //@include px2rem(padding-bottom,50px,64px,false);
+}
+.basic .about-us-title{
+  //@include px2rem(padding-bottom,30px,64px,false);
+}
+.data{
+  @include px2rem(padding-bottom,20px,64px,false);
+  text-align: center;
+  .data-title{
+    @include font-dpr(24px);
+    color: $normal;
+    font-weight: bold;
+    @include px2rem(line-height,40px,64px,false);
+  }
+  .data-content{
+    @include font-dpr(24px);
+    color: $gray;
+    line-height: 100%;
   }
 }
+
+/*company-book-start*/
+.company-book{
+  width: 84%;
+  margin: 0 auto;
+  @include px2rem(padding-top,20px,64px,false);
+  @include px2rem(padding-bottom,80px,64px,false);
+}
+.book-list{
+  width: 43%;
+}
+.book-list{
+  float: left;
+  margin-left: 3%;
+  margin-right: 3%;
+  @include  px2rem(margin-top,15px,64px,false);
+  @include  px2rem(margin-bottom,15px,64px,false);
+  border: $border;
+  .book-pic{
+    text-align: center;
+    @include px2rem(height,200px,64px,false);
+    img{
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+  .book-text{
+    @include font-dpr(20px);
+    @include px2rem(height,40px,64px,false);
+    @include px2rem(line-height,40px,64px,false);
+    color: #fff;
+    @include px2rem(padding-left,20px,64px,false);
+    background-color: #ababab;
+  }
+}
+/*company-book-end*/
 /*wrapper-end*/
