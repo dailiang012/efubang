@@ -87,7 +87,10 @@ body {
   position: relative;
   border-bottom: 1px solid #ddd;
   background: #fff;
-  margin-bottom: 0.15625rem; }
+  margin-bottom: 0.15625rem;
+  /*.project-progress{
+    @include px2rem(height,380px,64px,false);
+  }*/ }
   .progress-data .information {
     width: 100%;
     position: absolute;
@@ -199,8 +202,7 @@ body {
         -ms-flex: 1;
         /* IE 10 */
         flex: 1;
-        text-align: center;
-        line-height: 0.78125rem; }
+        text-align: center; }
         .tabBox .hd ul li:first-child a {
           border-right: 1px solid #ddd; }
         .tabBox .hd ul li a {
@@ -208,7 +210,8 @@ body {
           margin-top: 0.23438rem;
           margin-bottom: 0.15625rem;
           text-decoration: none;
-          color: #76787d; }
+          color: #76787d;
+          line-height: 0.78125rem; }
       .tabBox .hd ul .on {
         border-bottom: 5px solid #4cb0ae; }
         .tabBox .hd ul .on a {

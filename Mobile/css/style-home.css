@@ -119,6 +119,8 @@ html, body {
         vertical-align: top;
         width: 100%;
         /* 图片宽度100%，达到自适应效果 */ }
+  .slideBox .hd .on {
+    background-color: rgba(255, 255, 255, 0.5); }
 
 /*          banner结束            */
 /*          main开始          */
