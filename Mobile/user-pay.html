@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>充值</title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-user-pay.css">
+</head>
+<body>
+<div id="header">
+    <div class="nav-return">
+        <a href="user.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
+    <div class="nav-title">充值</div>
+</div>
+<div id="wrapper">
+    <div class="prompt-money">e富邦年化收益率最高达18%</div>
+    <div class="money-company">
+        <div class="left"><img src="./images/user/moneymany-icon.png" alt="乾多多"></div>
+        <div class="right"><a href="#">查看银行限额</a></div>
+        <div class="clear"></div>
+        <p>支持10多家银行，快捷方便</p>
+    </div>
+    <div class="invest-money">
+        <label for="money">充值金额</label>
+        <input type="text" name="money" id="money" placeholder="请输入充值金额(至少2元)">
+    </div>
+    <div class="log">
+        <div class="left">可用金额:<span>0</span>元</div>
+        <div class="right"><a href="user-money_log.html">充值记录</a></div>
+        <div class="clear"></div>
+    </div>
+    <div class="rule-text">
+        <div class="agree-rule">
+            <label for="agree"></label>
+            <input type="checkbox" id="agree" name="agree">
+            <span>我已仔细阅读下方提示</span>
+            <div class="clear"></div>
+        </div>
+        <div class="agree-text">使用快捷支付的用户需遵循同卡进出的规则。同卡进出是指使用快捷支付的用户，如果用本人的X行卡充值，只能用同一张X行卡提现。用非本人的卡充值，提现时需要提交充值卡持卡人持身份证及银行卡的照片。</div>
+        <div>
+            <label for="invest"></label>
+            <input type="submit" name="invest-money" id="invest" value="充值">
+        </div>
+        <p>目前快捷支付仅支持储蓄卡，请合理安排资金。使用快捷支付的用户需遵循同卡进出的规则。如有疑问请致电：400-6336-838。</p>
+    </div>
+</div>
+</body>
+</html>

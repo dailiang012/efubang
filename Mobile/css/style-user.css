@@ -30,13 +30,20 @@ body {
 
 .nav-return {
   position: absolute;
-  height: 1.375rem;
   left: 0;
   top: 0; }
 
 .nav-return a {
-  display: block;
-  height: 1.375rem; }
+  display: block; }
+
+[data-dpr="1"] .nav-return a {
+  height: 44px; }
+
+[data-dpr="2"] .nav-return a {
+  height: 88px; }
+
+[data-dpr="3"] .nav-return a {
+  height: 132px; }
 
 .nav-return a:active {
   background: #419695; }

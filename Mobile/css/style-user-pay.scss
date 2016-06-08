@@ -1,0 +1,299 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+/*字体设置开始*/
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.clear{
+  clear: both;
+}
+
+a, button, input { /*去掉手持设备点击是出现的透明层*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉点击时候的透明层*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+input { /*去掉input在ios下的默认效果*/
+  resize: none; /*禁止调整元素的尺寸*/
+  /*-webkit-appearance: none;*/
+  background: none;
+}
+
+button { /*去掉button在ios上的默认样式*/
+  -webkit-appearance: none;
+  border-radius: 0
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header-end*/
+/*wrapper-start*/
+.prompt-money{
+  width: 98%;
+  background-color: #4b4c4f;
+  @include font-dpr(24px);
+  @include px2rem(line-height,60px,64px,false);
+  padding-left:2%;
+  color: #f2f2f2;
+}
+.money-company{
+  width: 96%;
+  margin: 0 auto;
+  @include px2rem(padding-top,48px,64px,false);
+  @include px2rem(padding-bottom,40px,64px,false);
+  .left{
+    float: left;
+    img{
+      @include px2rem(height,50px,64px,false);
+    }
+  }
+  .right a{
+    float: right;
+    display: block;
+    line-height: 100%;
+    @include font-dpr(20px);
+    color: $normal;
+    text-decoration: none;
+  }
+  p{
+    @include font-dpr(20px);
+    color: $gray;
+    @include px2rem(line-height,28px,64px,false);
+  }
+}
+
+.invest-money {
+  padding: 0 3%;
+  border-bottom: $border;
+  border-top: $border;
+  background: #fff;
+  text-align: left;
+}
+.invest-money input {
+  border: none;
+  outline: none;
+  background: #fff;
+  line-height: 100%;
+  width: 75%;
+  @include font-dpr(30px);
+  @include px2rem(padding-top,30px,64px,false);
+  @include px2rem(padding-bottom,30px,64px,false);
+  @include px2rem(height,30px,64px,false);
+}
+.invest-money label {
+  float: left;
+  width: 25%;
+  color: #76787d;
+  @include font-dpr(30px);
+  line-height: 100%;
+  @include px2rem(padding-top,30px,64px,false);
+  @include px2rem(padding-bottom,30px,64px,false);
+  @include px2rem(height,30px,64px,false);
+}
+.log{
+  width: 96%;
+  margin: 0 auto;
+  @include px2rem(line-height,60px,64px,false);
+  @include font-dpr(20px);
+  .left{
+    float: left;
+    color: $normal;
+    span{
+      color: $red;
+    }
+  }
+  .right{
+    float: right;
+    a{
+      display: block;
+      color: $blue;
+      text-decoration: none;
+    }
+  }
+}
+.rule-text{
+  width: 96%;
+  margin: 0 auto;
+  .agree-rule{
+    span{
+      float: left;
+      display: block;
+      @include font-dpr(24px);
+      color: $normal;
+      @include px2rem(line-height,30px,64px,false);
+      @include px2rem(padding-left,10px,64px,false);
+    }
+  }
+  #agree{
+    @include px2rem(width,30px,64px,false);
+    @include px2rem(height,30px,64px,false);
+    border-radius: 4px;
+    float: left;
+    border: $border;
+  }
+
+  .agree-text{
+    @include font-dpr(20px);
+    @include px2rem(line-height,34px,64px,false);
+    @include px2rem(padding,15px,64px,false);
+    @include px2rem(margin-top,20px,64px,false);
+    background-color: #fff8f1;
+    color: $normal;
+    border:$border;
+  }
+  input[type="submit"]{
+    width: 100%;
+    @include px2rem(height,90px,64px,false);
+    color: #fff;
+    @include font-dpr(28px);
+    background-color: $blue;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    @include px2rem(margin-top,20px,64px,false);
+    -webkit-appearance: none;
+  }
+  p{
+    @include font-dpr(24px);
+    color: $normal;
+    @include px2rem(line-height,35px,64px,false);
+    @include px2rem(padding-top,12px,64px,false);
+    @include px2rem(padding-bottom,30px,64px,false);
+  }
+}
+::-webkit-input-placeholder {
+  color: #d1d1d1;
+  line-height: 100%;
+  @include font-dpr(30px);
+}
+/*wrapper-end*/

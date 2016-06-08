@@ -75,14 +75,23 @@ body {
 }
 .nav-return {
   position: absolute;
-  @include px2rem(height,88px,64px,false);
   left: 0;
   top: 0;
 }
 .nav-return a{
   display: block;
-  @include px2rem(height,88px,64px,false);
+  //@include px2rem(height,88px,64px,false);
 }
+[data-dpr="1"] .nav-return a{
+  height:(88px/2);
+}
+[data-dpr="2"] .nav-return a{
+  height:88px;
+}
+[data-dpr="3"] .nav-return a{
+  height:(88px*1.5);
+}
+
 .nav-return a:active{
   background: #419695;
 }
@@ -113,9 +122,6 @@ body {
     color: #fff;
     @include px2rem(line-height,60px,64px,false)
   }
-}
-.top-list01{
-  //height: 70%;
 }
 .get-money{
   text-align: center;

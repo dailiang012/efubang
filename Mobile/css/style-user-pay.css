@@ -1,0 +1,287 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
+.clear {
+  clear: both; }
+
+a, button, input {
+  /*去掉手持设备点击是出现的透明层*/
+  -webkit-tap-highlight-color: transparent;
+  /*去掉点击时候的透明层*/
+  -webkit-tap-highlight-color: transparent; }
+
+input {
+  /*去掉input在ios下的默认效果*/
+  resize: none;
+  /*禁止调整元素的尺寸*/
+  /*-webkit-appearance: none;*/
+  background: none; }
+
+button {
+  /*去掉button在ios上的默认样式*/
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[data-dpr="1"] #header {
+  height: 44px; }
+
+[data-dpr="2"] #header {
+  height: 88px; }
+
+[data-dpr="3"] #header {
+  height: 132px; }
+
+#wrapper {
+  width: 100%;
+  margin: 0 auto; }
+
+[data-dpr="1"] #wrapper {
+  padding-top: 44px; }
+
+[data-dpr="2"] #wrapper {
+  padding-top: 88px; }
+
+[data-dpr="3"] #wrapper {
+  padding-top: 132px; }
+
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto; }
+
+.nav-title {
+  text-align: center;
+  color: #fff; }
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px; }
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px; }
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px; }
+
+/*header-end*/
+/*wrapper-start*/
+.prompt-money {
+  width: 98%;
+  background-color: #4b4c4f;
+  line-height: 0.9375rem;
+  padding-left: 2%;
+  color: #f2f2f2; }
+  [data-dpr="1"] .prompt-money {
+    font-size: 12px; }
+  [data-dpr="2"] .prompt-money {
+    font-size: 24px; }
+  [data-dpr="3"] .prompt-money {
+    font-size: 36px; }
+
+.money-company {
+  width: 96%;
+  margin: 0 auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.625rem; }
+  .money-company .left {
+    float: left; }
+    .money-company .left img {
+      height: 0.78125rem; }
+  .money-company .right a {
+    float: right;
+    display: block;
+    line-height: 100%;
+    color: #76787d;
+    text-decoration: none; }
+    [data-dpr="1"] .money-company .right a {
+      font-size: 10px; }
+    [data-dpr="2"] .money-company .right a {
+      font-size: 20px; }
+    [data-dpr="3"] .money-company .right a {
+      font-size: 30px; }
+  .money-company p {
+    color: #adb2bf;
+    line-height: 0.4375rem; }
+    [data-dpr="1"] .money-company p {
+      font-size: 10px; }
+    [data-dpr="2"] .money-company p {
+      font-size: 20px; }
+    [data-dpr="3"] .money-company p {
+      font-size: 30px; }
+
+.invest-money {
+  padding: 0 3%;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  background: #fff;
+  text-align: left; }
+
+.invest-money input {
+  border: none;
+  outline: none;
+  background: #fff;
+  line-height: 100%;
+  width: 75%;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  height: 0.46875rem; }
+  [data-dpr="1"] .invest-money input {
+    font-size: 15px; }
+  [data-dpr="2"] .invest-money input {
+    font-size: 30px; }
+  [data-dpr="3"] .invest-money input {
+    font-size: 45px; }
+
+.invest-money label {
+  float: left;
+  width: 25%;
+  color: #76787d;
+  line-height: 100%;
+  padding-top: 0.46875rem;
+  padding-bottom: 0.46875rem;
+  height: 0.46875rem; }
+  [data-dpr="1"] .invest-money label {
+    font-size: 15px; }
+  [data-dpr="2"] .invest-money label {
+    font-size: 30px; }
+  [data-dpr="3"] .invest-money label {
+    font-size: 45px; }
+
+.log {
+  width: 96%;
+  margin: 0 auto;
+  line-height: 0.9375rem; }
+  [data-dpr="1"] .log {
+    font-size: 10px; }
+  [data-dpr="2"] .log {
+    font-size: 20px; }
+  [data-dpr="3"] .log {
+    font-size: 30px; }
+  .log .left {
+    float: left;
+    color: #76787d; }
+    .log .left span {
+      color: #f53030; }
+  .log .right {
+    float: right; }
+    .log .right a {
+      display: block;
+      color: #4cb0ae;
+      text-decoration: none; }
+
+.rule-text {
+  width: 96%;
+  margin: 0 auto; }
+  .rule-text .agree-rule span {
+    float: left;
+    display: block;
+    color: #76787d;
+    line-height: 0.46875rem;
+    padding-left: 0.15625rem; }
+    [data-dpr="1"] .rule-text .agree-rule span {
+      font-size: 12px; }
+    [data-dpr="2"] .rule-text .agree-rule span {
+      font-size: 24px; }
+    [data-dpr="3"] .rule-text .agree-rule span {
+      font-size: 36px; }
+  .rule-text #agree {
+    width: 0.46875rem;
+    height: 0.46875rem;
+    border-radius: 4px;
+    float: left;
+    border: 1px solid #ddd; }
+  .rule-text .agree-text {
+    line-height: 0.53125rem;
+    padding: 0.23438rem;
+    margin-top: 0.3125rem;
+    background-color: #fff8f1;
+    color: #76787d;
+    border: 1px solid #ddd; }
+    [data-dpr="1"] .rule-text .agree-text {
+      font-size: 10px; }
+    [data-dpr="2"] .rule-text .agree-text {
+      font-size: 20px; }
+    [data-dpr="3"] .rule-text .agree-text {
+      font-size: 30px; }
+  .rule-text input[type="submit"] {
+    width: 100%;
+    height: 1.40625rem;
+    color: #fff;
+    background-color: #4cb0ae;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    margin-top: 0.3125rem;
+    -webkit-appearance: none; }
+    [data-dpr="1"] .rule-text input[type="submit"] {
+      font-size: 14px; }
+    [data-dpr="2"] .rule-text input[type="submit"] {
+      font-size: 28px; }
+    [data-dpr="3"] .rule-text input[type="submit"] {
+      font-size: 42px; }
+  .rule-text p {
+    color: #76787d;
+    line-height: 0.54688rem;
+    padding-top: 0.1875rem;
+    padding-bottom: 0.46875rem; }
+    [data-dpr="1"] .rule-text p {
+      font-size: 12px; }
+    [data-dpr="2"] .rule-text p {
+      font-size: 24px; }
+    [data-dpr="3"] .rule-text p {
+      font-size: 36px; }
+
+::-webkit-input-placeholder {
+  color: #d1d1d1;
+  line-height: 100%; }
+  [data-dpr="1"] ::-webkit-input-placeholder {
+    font-size: 15px; }
+  [data-dpr="2"] ::-webkit-input-placeholder {
+    font-size: 30px; }
+  [data-dpr="3"] ::-webkit-input-placeholder {
+    font-size: 45px; }
+
+/*wrapper-end*/
+
+/*# sourceMappingURL=style-user-pay.css.map */

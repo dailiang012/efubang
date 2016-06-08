@@ -1,0 +1,151 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
+.clear {
+  clear: both; }
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[data-dpr="1"] #header {
+  height: 44px; }
+
+[data-dpr="2"] #header {
+  height: 88px; }
+
+[data-dpr="3"] #header {
+  height: 132px; }
+
+#wrapper {
+  width: 100%; }
+
+[data-dpr="1"] #wrapper {
+  padding-top: 44px; }
+
+[data-dpr="2"] #wrapper {
+  padding-top: 88px; }
+
+[data-dpr="3"] #wrapper {
+  padding-top: 132px; }
+
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto; }
+
+.nav-title {
+  text-align: center;
+  color: #fff; }
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px; }
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px; }
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px; }
+
+/*header-end*/
+/*wrapper-start*/
+.log {
+  background-color: #fff;
+  margin-bottom: 0.21875rem; }
+
+.log-index {
+  padding: 0 2%;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  line-height: 1.0625rem; }
+  [data-dpr="1"] .log-index {
+    font-size: 12px; }
+  [data-dpr="2"] .log-index {
+    font-size: 24px; }
+  [data-dpr="3"] .log-index {
+    font-size: 36px; }
+  .log-index .left {
+    float: left;
+    color: #76787d; }
+  .log-index .right {
+    float: right;
+    color: #adb2bf; }
+
+.log-content {
+  padding: 0 2%;
+  border-bottom: 1px solid #ddd;
+  padding-top: 0.375rem;
+  padding-bottom: 0.375rem; }
+  .log-content .left {
+    float: left; }
+    .log-content .left .top {
+      line-height: 0.78125rem;
+      font-weight: bold;
+      color: #76787d; }
+      [data-dpr="1"] .log-content .left .top {
+        font-size: 16px; }
+      [data-dpr="2"] .log-content .left .top {
+        font-size: 32px; }
+      [data-dpr="3"] .log-content .left .top {
+        font-size: 48px; }
+    .log-content .left .bottom {
+      line-height: 0.625rem;
+      color: #adb2bf; }
+      [data-dpr="1"] .log-content .left .bottom {
+        font-size: 12px; }
+      [data-dpr="2"] .log-content .left .bottom {
+        font-size: 24px; }
+      [data-dpr="3"] .log-content .left .bottom {
+        font-size: 36px; }
+  .log-content .right {
+    float: right;
+    line-height: 1.40625rem;
+    color: #4cb0ae; }
+    [data-dpr="1"] .log-content .right {
+      font-size: 24px; }
+    [data-dpr="2"] .log-content .right {
+      font-size: 48px; }
+    [data-dpr="3"] .log-content .right {
+      font-size: 72px; }
+
+/*wrapper-end*/
+
+/*# sourceMappingURL=style-user-money_log.css.map */
