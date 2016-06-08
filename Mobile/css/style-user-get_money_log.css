@@ -138,7 +138,7 @@ body {
   .log-content .right {
     float: right;
     line-height: 1.40625rem;
-    color: #4cb0ae; }
+    color: #f53030; }
     [data-dpr="1"] .log-content .right {
       font-size: 24px; }
     [data-dpr="2"] .log-content .right {
@@ -148,4 +148,4 @@ body {
 
 /*wrapper-end*/
 
-/*# sourceMappingURL=style-user-money_log.css.map */
+/*# sourceMappingURL=style-user-get_money_log.css.map */
