@@ -1,0 +1,385 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+/*字体设置开始*/
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+/*字体设置结束*/
+
+a, button, input,select { /*去掉手持设备点击是出现的透明层*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉点击时候的透明层*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+input { /*去掉input在ios下的默认效果*/
+  resize: none; /*禁止调整元素的尺寸*/
+  -webkit-appearance: none;
+  background: none;
+}
+
+button { /*去掉button在ios上的默认样式*/
+  -webkit-appearance: none;
+  border-radius: 0
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { /*阻止旋转屏幕时自动调整字体大小*/
+  -webkit-text-size-adjust: 100%;
+}
+
+element::-webkit-scrollbar { /*去掉webkit的滚动条*/
+  display: none;
+}
+
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color:#f9f9f9;
+}
+body {
+  width: 100%;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+  @include px2rem(padding-bottom,50px,64px,false);
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header-end*/
+
+/* tabBox开始 */
+.tabBox {
+  .hd {
+    outline: $border;
+    background-color: #fff;
+    @include px2rem(height,80px,64px,false);
+    ul {
+      overflow: hidden;
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      box-sizing: border-box;
+      li {
+        color: $normal;
+        -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+        -moz-box-flex: 1; /* OLD - Firefox 19- */
+        -webkit-flex: 1; /* Chrome */
+        -ms-flex: 1; /* IE 10 */
+        flex: 1;
+        text-align: center;
+        &:last-child a{
+          border-right: none;
+        }
+        a{
+          border-right: $border;
+          display: block;
+          @include px2rem(margin-top,15px,64px,false);
+          @include px2rem(margin-bottom,10px,64px,false);
+          text-decoration: none;
+          color: $normal;
+          @include px2rem(line-height,50px,64px,false);
+        }
+      }
+      .on {
+        border-bottom: 5px solid #{$blue};
+        a{
+          color: $blue;
+        }
+      }
+    }
+  }
+}
+.tabBox .hd a{
+  @include font-dpr(24px);
+}
+
+/* tabBox结束 */
+/*log-start*/
+.log {
+  background-color: #fff;
+  @include px2rem(margin-bottom, 14px, 64px, false);
+}
+.log-index {
+  padding: 0 2%;
+  border-bottom: $border;
+  border-top: $border;
+  @include font-dpr(24px);
+  @include px2rem(line-height, 68px, 64px, false);
+  .left {
+    float: left;
+    color: $normal;
+  }
+  .right {
+    float: right;
+    color: $gray;
+  }
+}
+
+.log-content {
+  padding: 0 2%;
+  border-bottom: $border;
+  @include px2rem(padding-top, 24px, 64px, false);
+  @include px2rem(padding-bottom, 24px, 64px, false);
+  .left {
+    float: left;
+    .top {
+      @include font-dpr(32px);
+      @include px2rem(line-height, 50px, 64px, false);
+      font-weight: bold;
+      color: $normal;
+    }
+    .bottom span{
+      @include font-dpr(24px);
+      @include px2rem(line-height, 40px, 64px, false);
+      color: $gray;
+      float: left;
+    }
+  }
+  .right {
+    float: right;
+    @include font-dpr(48px);
+    @include px2rem(line-height, 100px, 64px, false);
+    color: $blue;
+  }
+  .remark {
+    @include font-dpr(24px);
+    @include px2rem(line-height, 40px, 64px, false);
+    color: $gray;
+  }
+}
+.progressDiv{
+  float: left;
+  @include px2rem(width,270px,64px,false);
+  @include px2rem(height,40px,64px,false);
+  @include px2rem(margin-left,10px,64px,false);
+  .progressBarBg{
+    @include px2rem(margin-top,14px,64px,false);
+    @include px2rem(width,200px,64px,false);
+    @include px2rem(height,12px,64px,false);
+    background-color: #eee;
+    .progressBar{
+      background-color: $red;
+      @include px2rem(height,12px,64px,false);
+    }
+  }
+  .progressNum{
+    float: right;
+    @include font-dpr(24px);
+    @include px2rem(line-height,40px,64px,false);
+    color: $normal;
+  }
+}
+/*log-end*/
+/*money-log-start*/
+.money-log{
+  background-color: #fff;
+  @include px2rem(margin-bottom,15px,64px,false);
+  .status{
+    padding:0 2%;
+    @include px2rem(padding-top,12px,64px,false);
+    @include px2rem(padding-bottom,12px,64px,false);
+    @include font-dpr(24px);
+    border-bottom: $border;
+    border-top: $border;
+    .left{
+      float: left;
+      .project-name{
+        @include px2rem(line-height,36px,64px,false);
+        color: $normal;
+      }
+      .time{
+        @include px2rem(line-height,36px,64px,false);
+        color: $gray;
+      }
+    }
+    .right{
+      float: right;
+      color: $gray;
+      @include px2rem(line-height,38px,64px,false);
+    }
+  }
+  .money{
+    width: 100%;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    box-sizing: border-box;
+    border-bottom: $border;
+    .now-money{
+      //float: left;
+      width: 58%;
+      border-right: $border;
+      text-align: center;
+      @include px2rem(padding-top,42px,64px,false);
+      @include px2rem(height,146px,64px,false);
+      .what-money{
+        @include font-dpr(24px);
+        @include px2rem(line-height,42px,64px,false);
+      }
+      .how-money{
+        @include font-dpr(48px);
+        @include px2rem(line-height,54px,64px,false);
+      }
+    }
+    .ago-money{
+      //float: right;
+      width: 42%;
+      text-align: center;
+      .you-money{
+        @include px2rem(height,82px,64px,false);
+        border-bottom: $border;
+      }
+      .you-money,.give-money{
+        @include px2rem(padding-top,15px,64px,false);
+        @include font-dpr(24px);
+        @include px2rem(line-height,32px,64px,false);
+      }
+    }
+    .what-money{
+      color: $normal;
+    }
+    .how-money{
+      color: $blue;
+    }
+  }
+}
+/*money-log-end*/

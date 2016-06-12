@@ -163,7 +163,8 @@ form {
   border-top: 1px solid #ddd;
   background: #fff;
   text-align: left;
-  height: 1.34375rem; }
+  height: 1.34375rem;
+  position: relative; }
   .bank label {
     float: left;
     width: 25%;
@@ -179,13 +180,15 @@ form {
       font-size: 45px; }
   .bank select {
     border: none;
-    background: none;
     outline: none;
     color: #76787d;
     width: 75%;
+    background-color: transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     height: 1.34375rem;
-    /*@include px2rem(padding-top, 30px, 64px, false);
-    @include px2rem(padding-bottom, 30px, 64px, false);*/ }
+    line-height: 1.34375rem; }
     [data-dpr="1"] .bank select {
       font-size: 15px; }
     [data-dpr="2"] .bank select {
@@ -193,9 +196,6 @@ form {
     [data-dpr="3"] .bank select {
       font-size: 45px; }
     .bank select option {
-      /*@include px2rem(padding-top, 30px, 64px, false);
-      @include px2rem(padding-bottom, 30px, 64px, false);
-      @include font-dpr(30px);*/
       line-height: 1.34375rem; }
       [data-dpr="1"] .bank select option {
         font-size: 15px; }
@@ -203,6 +203,17 @@ form {
         font-size: 30px; }
       [data-dpr="3"] .bank select option {
         font-size: 45px; }
+
+.pic-select {
+  position: absolute;
+  right: 1.34375rem;
+  top: 0.54688rem;
+  width: 0.3125rem;
+  height: 0.1875rem; }
+  .pic-select img {
+    display: block;
+    width: 0.3125rem;
+    height: 0.1875rem; }
 
 .log {
   width: 96%;

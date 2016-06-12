@@ -1,0 +1,279 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+/*字体设置开始*/
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header-end*/
+/*wrapper-start*/
+.color1{
+  background:#d95a6c ;
+  background:-webkit-linear-gradient(top,#f56c90,#c64e55);
+}
+.color2{
+  background:#d95a6c ;
+  background:-webkit-linear-gradient(top,#43c4d0,#00b79a);
+}
+.color3{
+  background:#d95a6c ;
+  background:-webkit-linear-gradient(top,#576eb3,#0264af);
+}
+.card-group{
+  @include px2rem(padding-top,20px,64px,false);
+}
+.card-list{
+  width: 94%;
+  margin-left: auto;
+  margin-right: auto;
+  @include px2rem(margin-bottom,20px,64px,false);
+  @include px2rem(height,200px,64px,false);
+  @include px2rem(padding-top,30px,64px,false);
+  @include px2rem(border-top-left-radius,20px,64px,false);
+  @include px2rem(border-top-right-radius,20px,64px,false);
+  .bank-pic{
+    float: left;
+    @include px2rem(height,62px,64px,false);
+    @include px2rem(width,62px,64px,false);
+    @include px2rem(padding,8px,64px,false);
+    border-radius: 50%;
+    background-color: #fff;
+    @include px2rem(margin-left,30px,64px,false);
+    img{
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .bank-information{
+    float: left;
+    @include px2rem(margin-left,30px,64px,false);
+    .bank-name{
+      @include font-dpr(36px);
+      color: #fff;
+    }
+    .bank-style{
+      @include font-dpr(24px);
+      color: #fff;
+      @include px2rem(line-height,42px,64px,false);
+    }
+    .bank-number{
+      @include font-dpr(36px);
+      color: #fff;
+      @include px2rem(padding-top,42px,64px,false);
+    }
+  }
+  .status{
+    float: right;
+    @include px2rem(margin-right,30px,64px,false);
+    a{
+      display: block;
+      @include font-dpr(24px);
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+}
+/*popup-start*/
+.popup{
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  display: none;
+}
+.popup-content{
+  @include px2rem(width,400px,64px,false);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  /*-webkit-transform:translateY(40%);*/
+  position: absolute;
+  @include px2rem(left,113px,64px,false);
+  top:40%;
+  z-index: 10000;
+  .sure{
+    @include font-dpr(36px);
+    color: $normal;
+    @include px2rem(line-height,160px,64px,false);
+  }
+  .choice{
+    border-top: $border;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    @include font-dpr(24px);
+    @include px2rem(line-height,60px,64px,false);
+  }
+  .yes{
+    border-right: $border;
+    a{
+      display: block;
+      color: $normal;
+      text-decoration: none;
+      &:active{
+        background-color: $background;
+      }
+    }
+  }
+  .yes,.no{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    color: $normal;
+  }
+}
+/*popup-end*/
+/*wrapper-end*/

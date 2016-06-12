@@ -1,0 +1,290 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+/*字体设置开始*/
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+/*字体设置结束*/
+
+a, button, input,select { /*去掉手持设备点击是出现的透明层*/
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉点击时候的透明层*/
+  -webkit-tap-highlight-color: transparent;
+}
+
+input { /*去掉input在ios下的默认效果*/
+  resize: none; /*禁止调整元素的尺寸*/
+  -webkit-appearance: none;
+  background: none;
+}
+
+button { /*去掉button在ios上的默认样式*/
+  -webkit-appearance: none;
+  border-radius: 0
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { /*阻止旋转屏幕时自动调整字体大小*/
+  -webkit-text-size-adjust: 100%;
+}
+
+element::-webkit-scrollbar { /*去掉webkit的滚动条*/
+  display: none;
+}
+
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header-end*/
+/*wrapper-start*/
+/*filtrate-start*/
+.filtrate{
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -moz-box-orient: horizontal;
+  -moz-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  box-sizing: border-box;
+  border-top: $border;
+  background: #fff;
+  @include px2rem(height,77px,64px,false);
+}
+.money-time,.money-type {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -ms-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  text-align: center;
+  position: relative;
+  @include px2rem(height, 77px, 64px, false);
+  select {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    @include px2rem(height, 77px, 64px, false);
+    @include px2rem(line-height, 77px, 64px, false);
+    @include font-dpr(24px);
+    color: $normal;
+    @include px2rem(width, 100px, 64px, false);
+    overflow: hidden;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉点击时候的透明层*/
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+
+  .pic-select {
+    position: absolute;
+    @include px2rem(right, 86px, 64px, false);
+    @include px2rem(top, 30px, 64px, false);
+    @include px2rem(width, 20px, 64px, false);
+    @include px2rem(height, 12px, 64px, false);
+    img {
+      display: block;
+      @include px2rem(width, 20px, 64px, false);
+      @include px2rem(height, 12px, 64px, false);
+    }
+  }
+
+
+  .money-time {
+    border-right: $border;
+  }
+  /*filtrate-end*/
+  .log {
+    background-color: #fff;
+    @include px2rem(margin-bottom, 14px, 64px, false);
+  }
+  .log-index {
+    padding: 0 2%;
+    border-bottom: $border;
+    border-top: $border;
+    @include font-dpr(24px);
+    @include px2rem(line-height, 68px, 64px, false);
+    .left {
+      float: left;
+      color: $normal;
+    }
+    .right {
+      float: right;
+      color: $gray;
+    }
+  }
+
+  .log-content {
+    padding: 0 2%;
+    border-bottom: $border;
+    @include px2rem(padding-top, 24px, 64px, false);
+    @include px2rem(padding-bottom, 24px, 64px, false);
+    .left {
+      float: left;
+      .top {
+        @include font-dpr(32px);
+        @include px2rem(line-height, 50px, 64px, false);
+        font-weight: bold;
+        color: $normal;
+      }
+      .bottom {
+        @include font-dpr(24px);
+        @include px2rem(line-height, 40px, 64px, false);
+        color: $gray;
+      }
+    }
+    .right {
+      float: right;
+      @include font-dpr(48px);
+      @include px2rem(line-height, 100px, 64px, false);
+      color: $blue;
+    }
+    .remark {
+      @include font-dpr(24px);
+      @include px2rem(line-height, 40px, 64px, false);
+      color: $gray;
+    }
+  }
+/*wrapper-end*/

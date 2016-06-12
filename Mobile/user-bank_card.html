@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>银行账户</title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-user-bank_card.css">
+</head>
+<body>
+<div class="popup">
+    <div class="popup-content">
+        <div class="sure">确认取消绑定</div>
+        <div class="choice">
+            <div class="yes"><a href="#">确认取消</a></div>
+            <div class="no">返回</div>
+        </div>
+    </div>
+</div>
+<div id="header">
+    <div class="nav-return">
+        <a href="user-get_money.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
+    <div class="nav-title">银行账户</div>
+</div>
+<div id="wrapper">
+    <div class="card-group">
+        <div class="card-list color1">
+            <div class="bank-pic"><img src="images/user/bank01.jpg" alt=""></div>
+            <div class="bank-information">
+                <div class="bank-name">中国工商银行</div>
+                <div class="bank-style">借记卡</div>
+                <div class="bank-number">*** **** **** 5988</div>
+            </div>
+            <div class="status"><a href="#">解除绑定</a></div>
+        </div>
+        <div class="card-list color2">
+            <div class="bank-pic"><img src="images/user/bank02.jpg" alt=""></div>
+            <div class="bank-information">
+                <div class="bank-name">中国农业银行</div>
+                <div class="bank-style">借记卡</div>
+                <div class="bank-number">*** **** **** 5988</div>
+            </div>
+            <div class="status"><a href="#">解除绑定</a></div>
+        </div>
+        <div class="card-list color3">
+            <div class="bank-pic"><img src="images/user/bank03.jpg" alt=""></div>
+            <div class="bank-information">
+                <div class="bank-name">中国建设银行</div>
+                <div class="bank-style">借记卡</div>
+                <div class="bank-number">*** **** **** 5988</div>
+            </div>
+            <div class="status"><a href="#">解除绑定</a></div>
+        </div>
+    </div>
+</div>
+
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script>
+    $(document).ready(function(){
+        $('.status').click(function(){
+            $('.popup').css('display','block')
+        });
+        $('.no').add('.yes').click(function(){
+            $('.popup').css('display','none')
+        });
+    })
+</script>
+</body>
+</html>

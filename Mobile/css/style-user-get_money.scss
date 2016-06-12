@@ -204,6 +204,7 @@ form{
   background: #fff;
   text-align: left;
   @include px2rem(height,86px,64px,false);
+  position: relative;
   label {
     float: left;
     width: 25%;
@@ -215,22 +216,32 @@ form{
   }
   select{
     border:none;
-    background: none;
     outline: none;
     color: $normal;
-    //line-height: 100%;
     width: 75%;
+    background-color: transparent;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
     @include font-dpr(30px);
     @include px2rem(height,86px,64px,false);
-    /*@include px2rem(padding-top, 30px, 64px, false);
-    @include px2rem(padding-bottom, 30px, 64px, false);*/
+    @include px2rem(line-height,86px,64px,false);
     option{
       @include font-dpr(30px);
-      /*@include px2rem(padding-top, 30px, 64px, false);
-      @include px2rem(padding-bottom, 30px, 64px, false);
-      @include font-dpr(30px);*/
       @include px2rem(line-height,86px,64px,false);
     }
+  }
+}
+.pic-select {
+  position: absolute;
+  @include px2rem(right, 86px, 64px, false);
+  @include px2rem(top, 35px, 64px, false);
+  @include px2rem(width, 20px, 64px, false);
+  @include px2rem(height, 12px, 64px, false);
+  img {
+    display: block;
+    @include px2rem(width, 20px, 64px, false);
+    @include px2rem(height, 12px, 64px, false);
   }
 }
 .log{
