@@ -1,0 +1,167 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+/*header-start*/
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column; }
+
+.clear {
+  clear: both; }
+
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+[data-dpr="1"] #header {
+  height: 44px; }
+
+[data-dpr="2"] #header {
+  height: 88px; }
+
+[data-dpr="3"] #header {
+  height: 132px; }
+
+#wrapper {
+  width: 100%;
+  margin-bottom: 0.9375rem; }
+
+[data-dpr="1"] #wrapper {
+  padding-top: 44px; }
+
+[data-dpr="2"] #wrapper {
+  padding-top: 88px; }
+
+[data-dpr="3"] #wrapper {
+  padding-top: 132px; }
+
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto; }
+
+.nav-title {
+  text-align: center;
+  color: #fff; }
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px; }
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px; }
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px; }
+
+/*header-end*/
+/*wrapper-start*/
+.red-packet {
+  padding-left: 4%;
+  padding-right: 4%; }
+  .red-packet .red-list {
+    width: 100%;
+    height: 3.65625rem;
+    margin-top: 0.28125rem;
+    background-size: 100% 100%;
+    text-align: center; }
+    .red-packet .red-list .left {
+      float: left;
+      width: 4.375rem;
+      color: #76787d;
+      line-height: 100%;
+      padding-top: 0.5rem; }
+      [data-dpr="1"] .red-packet .red-list .left {
+        font-size: 12px; }
+      [data-dpr="2"] .red-packet .red-list .left {
+        font-size: 24px; }
+      [data-dpr="3"] .red-packet .red-list .left {
+        font-size: 36px; }
+    .red-packet .red-list .right {
+      float: left;
+      padding-left: 0.46875rem;
+      padding-top: 0.78125rem;
+      color: #76787d;
+      line-height: 0.5rem; }
+      [data-dpr="1"] .red-packet .red-list .right {
+        font-size: 12px; }
+      [data-dpr="2"] .red-packet .red-list .right {
+        font-size: 24px; }
+      [data-dpr="3"] .red-packet .red-list .right {
+        font-size: 36px; }
+
+.red-true {
+  background: url("../images/user/red-true.png") no-repeat center top; }
+  .red-true .left span {
+    color: #4cb0ae;
+    line-height: 1.5625rem; }
+    [data-dpr="1"] .red-true .left span {
+      font-size: 40px; }
+    [data-dpr="2"] .red-true .left span {
+      font-size: 80px; }
+    [data-dpr="3"] .red-true .left span {
+      font-size: 120px; }
+
+.red-false {
+  background: url("../images/user/red-false.png") no-repeat center top; }
+  .red-false .left span {
+    color: #76787d;
+    line-height: 1.5625rem; }
+    [data-dpr="1"] .red-false .left span {
+      font-size: 40px; }
+    [data-dpr="2"] .red-false .left span {
+      font-size: 80px; }
+    [data-dpr="3"] .red-false .left span {
+      font-size: 120px; }
+
+.red-log {
+  padding: 0 4%; }
+  .red-log a {
+    text-align: right;
+    display: block;
+    color: #4cb0ae;
+    line-height: 100%;
+    padding-top: 0.4375rem;
+    text-decoration: none; }
+    [data-dpr="1"] .red-log a {
+      font-size: 12px; }
+    [data-dpr="2"] .red-log a {
+      font-size: 24px; }
+    [data-dpr="3"] .red-log a {
+      font-size: 36px; }
+
+/*wrapper-end*/
+
+/*# sourceMappingURL=style-user-red_packet.css.map */

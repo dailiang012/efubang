@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>账户设置</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-setting.css">   <!--和about.html共用一个css-->
+</head>
+<body>
+<div id="tab-side">
+    <div class="close-side">
+        <span>点<br/>击<br/>空<br/>白<br/>处<br/>返<br/>回</span><br/><i class="fa fa-angle-double-left"
+                                                                  aria-hidden="true"></i>
+    </div>
+    <div class="side-content">
+        <div class="diy-pic">
+            <div class="my-photo"><img src="images/home/banner_01.jpg" alt="我的头像"></div>
+            <div class="welcome-text font16"><span>女妖</span>，<br/>欢迎回来！</div>
+            <div class="clear"></div>
+        </div>
+        <ul class="tab-list">
+            <li>
+                <a href="home.html"><img src="images/home/home.png" alt="首页">
+                    <span>首页</span></a>
+            </li>
+            <li>
+                <a href="project-list.html"><img src="images/home/invest.png" alt="我要投资">
+                    <span>我要投资</span></a>
+            </li>
+            <li>
+                <a href="setting.html"><img src="images/home/set.png" alt="账户设置">
+                    <span>账户设置</span></a>
+            </li>
+            <li>
+                <a href="help.html"><img src="images/home/help.png" alt="帮助中心">
+                    <span>帮助中心</span></a>
+            </li>
+            <li>
+                <a href="about_us.html"><img src="images/home/about-us.png" alt="关于我们">
+                    <span>关于我们</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="header">
+    <div class="nav-side"><img src="./images/home/bread.png" alt="侧导航"></div>
+    <div class="nav-title">账户设置</div>
+    <div class="my"><a href="user.html"><img src="./images/home/my-icon.png" alt="个人中心"></a></div>
+</div>
+<div id="wrapper">
+    <div class="setting person-setting">
+        <div class="title">个人设置</div>
+        <div class="photo">
+            <div class="photo-left">头像</div>
+            <div class="photo-right"><img src="./images/home/banner_01.jpg" alt=""></div>
+        </div>
+        <div class="name">
+            <div class="left">用户名</div>
+            <div class="right">我从2046来</div>
+        </div>
+        <div class="sex">
+            <label for="which-sex">性别</label>
+            <select name="" id="which-sex">
+                <option value="1">男</option>
+                <option value="1">女</option>
+            </select>
+            <div class="pic-select"><img src="./images/user/select-bj.png" alt=""></div>
+        </div>
+        <div class="time">
+            <label for="change-time">生日</label>
+            <div id="change-time">
+                <p class="year select-box">
+                    <select name="" id="province-name">
+                        <option value="1">2015年</option>
+                        <option value="1">2016年</option>
+                        <option value="2">2017年</option>
+                    </select>
+                    <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+                </p>
+                <p class="month select-box">
+                    <select name="" id="city-name">
+                        <option value="1">1月</option>
+                        <option value="1">2月</option>
+                        <option value="2">3月</option>
+                    </select>
+                    <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+                </p>
+                <p class="day select-box">
+                    <select name="" id="town-name">
+                        <option value="1">1日</option>
+                        <option value="1">2日</option>
+                        <option value="2">3日</option>
+                    </select>
+                    <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+                </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="tell">
+            <div class="left">手机号</div>
+            <div class="right">136****5488</div>
+        </div>
+        <div class="email">
+            <div class="left">邮箱</div>
+            <div class="right">338492201@qq.com</div>
+        </div>
+    </div>
+    <div class="setting self-setting">
+        <div class="title">安全设置</div>
+        <div class="change-password"><a href="setting-change_password.html">更改密码</a></div>
+        <div class="real-name"><a href="setting-real_name.html">实名认证</a></div>
+    </div>
+    <div id="quit-change">退出账号</div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<!--抽屉开始-->
+<script>
+    $('.nav-side').click(function () {
+        $('#tab-side').fadeIn(50);
+        $('.side-content').animate({left: '0'}, "50");
+    });
+    $('.close-side').click(function () {
+        $('.side-content').animate({left: '-70%'}, "100");
+        $('#tab-side').fadeOut(200);
+    });
+</script>
+<!--抽屉结束-->
+<script>
+    $(document).ready(function(){
+        $("select").change(function(){
+            $('#quit-change').text('确认修改');
+        });
+    })
+</script>
+</body>
+</html>

@@ -208,7 +208,10 @@ body {
 }
 .add-card{
   width: 94%;
-  margin: 0 auto;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:auto;
+  @include px2rem(margin-bottom,60px,64px,false);
   a{
     display: block;
     background: #ebebeb;

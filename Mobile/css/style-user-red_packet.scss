@@ -29,11 +29,11 @@ $blue: #4cb0ae; //蓝色
 $red: #f53030; //红色
 $normal: #76787d; //正常字体
 $gray: #adb2bf; //辅助字体
-$title-font:#56575b;//标题字体
+$title-font: #56575b; //标题字体
 $border: 1px solid #ddd; //边框
 /*字体设置开始*/
-@mixin font-dpr($font-size){
-  [data-dpr="1"] &{
+@mixin font-dpr($font-size) {
+  [data-dpr="1"] & {
     font-size: $font-size/2;
   }
 
@@ -45,8 +45,9 @@ $border: 1px solid #ddd; //边框
     font-size: $font-size * 1.5;
   }
 }
+
 /*字体设置结束*/
-/*整体结构开始*/
+/*header-start*/
 html {
   height: 100%;
   width: 100%;
@@ -54,22 +55,32 @@ html {
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
+
 body {
   width: 100%;
   height: 100%;
-  background-color: #fff;
+  background-color: #f9f9f9;
+  /*flex布局,主流浏览器都支持,可能在少数不支持*/
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
 }
-.clear{
+
+.clear {
   clear: both;
 }
+
 #header {
   width: 100%;
   background-color: $blue;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 2;
 }
+
 [data-dpr="1"] #header {
   height: (88px/2);
 }
@@ -81,8 +92,10 @@ body {
 [data-dpr="3"] #header {
   height: (88px*1.5);
 }
-#wrapper{
+
+#wrapper {
   width: 100%;
+  @include px2rem(margin-bottom,60px,64px,false);
 }
 
 [data-dpr="1"] #wrapper {
@@ -96,21 +109,23 @@ body {
 [data-dpr="3"] #wrapper {
   padding-top: (88px*1.5);
 }
-/*整体结构开始*/
-/*header-start*/
+
 .nav-return {
   position: absolute;
   height: inherit;
   left: 0;
   top: 0;
 }
-.nav-return a{
+
+.nav-return a {
   height: inherit;
   display: block;
 }
-.nav-return a:active{
+
+.nav-return a:active {
   background: #419695;
 }
+
 .nav-return img {
   height: 100%;
   width: auto;
@@ -135,65 +150,62 @@ body {
   font-size: 54px;
   line-height: 132px;
 }
+
 /*header-end*/
 /*wrapper-start*/
-.safe-banner{
-  width: 100%;
-  img{
+.red-packet {
+  padding-left: 4%;
+  padding-right: 4%;
+  .red-list {
     width: 100%;
-    height: auto;
-  }
-}
-.safe-list{
-  width: 96%;
-  margin: 0 auto;
-  .pic{
-    width: 25%;
-    margin: 0 auto;
-    @include px2rem(margin-top,50px,64px,false);
+    @include px2rem(height, 234px, 64px, false);
+    @include px2rem(margin-top, 18px, 64px, false);
+    background-size: 100% 100%;
     text-align: center;
-    img{
-      width: 100%;
+    .left {
+      float: left;
+      @include px2rem(width, 280px, 64px, false);
+      @include font-dpr(24px);
+      color: $normal;
+      line-height: 100%;
+      @include px2rem(padding-top, 32px, 64px, false);
+    }
+    .right {
+      float: left;
+      @include px2rem(padding-left, 30px, 64px, false);
+      @include px2rem(padding-top, 50px, 64px, false);
+      @include font-dpr(24px);
+      color: $normal;
+      @include px2rem(line-height, 32px, 64px, false);
     }
   }
 }
-.safe-title{
-  text-align: center;
-  @include font-dpr(36px);
-  color: $normal;
-  font-weight: bolder;
-  @include px2rem(line-height,90px,64px,false);
+.red-true {
+  background: url("../images/user/red-true.png") no-repeat center top;
+  .left span{
+    color: $blue;
+    @include font-dpr(80px);
+    @include px2rem(line-height, 100px, 64px, false);
+  }
 }
-.safe-text p{
+.red-false {
+  background: url("../images/user/red-false.png") no-repeat center top;
+  .left span{
+    color: $normal;
+    @include font-dpr(80px);
+    @include px2rem(line-height, 100px, 64px, false);
+  }
+}
+.red-log {
+  padding: 0 4%;
+  a {
+    text-align: right;
+    display: block;
+    color: $blue;
     @include font-dpr(24px);
-    @include px2rem(line-height,40px,64px,false);
-    @include px2rem(text-indent,60px,64px,false);
-    color:$normal;
-}
-.safe-text h2{
-  text-align: center;
-  @include font-dpr(24px);
-  @include px2rem(line-height,60px,64px,false);
-  color:$normal;
-  font-weight: bold;
-}
-.together-company{
-  @include px2rem(padding-top,50px,64px,false);
-  .company{
-    text-align: center;
-    width: 100%;
-    border-bottom: $border;
-    background-color: #f9f9f9;
-    &:last-child{
-      border:none;
-    }
-    a{
-      display: block;
-      @include px2rem(height,120px,64px,false);
-    }
-    img{
-      height: inherit;
-    }
+    line-height: 100%;
+    @include px2rem(padding-top, 28px, 64px, false);
+    text-decoration: none;
   }
 }
 /*wrapper-end*/
