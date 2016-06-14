@@ -159,19 +159,14 @@ button { /*去掉button在ios上的默认样式*/
 /*header-end*/
 /*wrapper-start*/
 .prompt-money{
+  width: 98%;
   background-color: #4b4c4f;
   @include font-dpr(24px);
-  @include px2rem(line-height,30px,64px,false);
-  @include px2rem(padding-top,14px,64px,false);
-  @include px2rem(padding-bottom,14px,64px,false);
+  @include px2rem(line-height,60px,64px,false);
   padding-left:2%;
-  padding-right: 2%;
   color: #f2f2f2;
 }
-form{
-  @include px2rem(margin-top,20px,64px,false);
-}
-.invest-money,.bank-card{
+.who-name,.bank-card,.again-card{
   padding: 0 3%;
   border-bottom: $border;
   background: #fff;
@@ -196,13 +191,11 @@ form{
     @include px2rem(padding-top,30px,64px,false);
     @include px2rem(padding-bottom,30px,64px,false);
     @include px2rem(height,30px,64px,false);
-
   }
 }
 .bank{
   padding: 0 3%;
   border-bottom: $border;
-  border-top: $border;
   background: #fff;
   text-align: left;
   @include px2rem(height,86px,64px,false);
@@ -212,8 +205,6 @@ form{
     width: 25%;
     color: #76787d;
     @include font-dpr(30px);
-    /*@include px2rem(padding-top,30px,64px,false);
-    @include px2rem(padding-bottom,30px,64px,false);*/
     @include px2rem(line-height,86px,64px,false);
   }
   select{
@@ -233,41 +224,96 @@ form{
       @include px2rem(line-height,86px,64px,false);
     }
   }
-}
-.pic-select {
-  position: absolute;
-  @include px2rem(right, 86px, 64px, false);
-  @include px2rem(top, 35px, 64px, false);
-  @include px2rem(width, 20px, 64px, false);
-  @include px2rem(height, 12px, 64px, false);
-  img {
-    display: block;
+  .pic-select {
+    position: absolute;
+    @include px2rem(right, 86px, 64px, false);
+    @include px2rem(top, 35px, 64px, false);
     @include px2rem(width, 20px, 64px, false);
     @include px2rem(height, 12px, 64px, false);
-  }
-}
-.log{
-  width: 96%;
-  margin: 0 auto;
-  @include px2rem(line-height,60px,64px,false);
-  @include font-dpr(20px);
-  .left{
-    float: left;
-    color: $normal;
-    span{
-      color: $red;
-    }
-  }
-  .right{
-    float: right;
-    a{
+    img {
       display: block;
-      color: $blue;
-      text-decoration: none;
+      @include px2rem(width, 20px, 64px, false);
+      @include px2rem(height, 12px, 64px, false);
     }
   }
 }
-.get-money{
+
+.where{
+  padding: 0 3%;
+  border-bottom: $border;
+  background: #fff;
+  text-align: left;
+  @include px2rem(height,86px,64px,false);
+  .select-box{
+    float: left;
+    position: relative;
+    @include px2rem(margin-right,20px,64px,false);
+    &:last-child{
+      margin-right:0;
+    }
+    .pic-select {
+      position: absolute;
+      @include px2rem(right, 20px, 64px, false);
+      @include px2rem(top, 38px, 64px, false);
+      @include px2rem(width, 20px, 64px, false);
+      @include px2rem(height, 12px, 64px, false);
+      img {
+        display: block;
+        @include px2rem(width, 20px, 64px, false);
+        @include px2rem(height, 12px, 64px, false);
+      }
+    }
+  }
+  label{
+    float: left;
+    width: 25%;
+    color: #76787d;
+    @include font-dpr(30px);
+    @include px2rem(line-height,86px,64px,false);
+  }
+  #change-where{
+    float: left;
+    select{
+      border:none;
+      outline: none;
+      color: $normal;
+      background-color: transparent;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      @include font-dpr(30px);
+      @include px2rem(height,86px,64px,false);
+      @include px2rem(line-height,86px,64px,false);
+      @include px2rem(padding-right,50px,64px,false);
+      @include px2rem(width,120px,64px,false);
+      overflow: hidden;
+      option{
+        @include font-dpr(30px);
+        @include px2rem(line-height,86px,64px,false);
+      }
+    }
+  }
+}
+.agree-rule {
+  padding: 0 2%;
+  @include px2rem(padding-top,76px,64px,false);
+  span {
+    float: left;
+    display: block;
+    @include font-dpr(24px);
+    color: $normal;
+    @include px2rem(line-height, 30px, 64px, false);
+    @include px2rem(padding-left, 10px, 64px, false);
+  }
+  #agree {
+    @include px2rem(width, 30px, 64px, false);
+    @include px2rem(height, 30px, 64px, false);
+    border-radius: 4px;
+    float: left;
+    border: $border;
+  }
+}
+.sure-btn{
   padding: 0 2%;
   input[type="submit"] {
     width: 100%;
@@ -293,4 +339,6 @@ form{
   line-height: 100%;
   @include font-dpr(30px);
 }
+
+
 /*wrapper-end*/

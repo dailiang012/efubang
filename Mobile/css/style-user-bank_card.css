@@ -115,7 +115,6 @@ body {
     float: left;
     height: 0.96875rem;
     width: 0.96875rem;
-    padding: 0.125rem;
     border-radius: 50%;
     background-color: #fff;
     margin-left: 0.46875rem; }
@@ -164,6 +163,23 @@ body {
         font-size: 24px; }
       [data-dpr="3"] .card-list .status a {
         font-size: 36px; }
+
+.add-card {
+  width: 94%;
+  margin: 0 auto; }
+  .add-card a {
+    display: block;
+    background: #ebebeb;
+    border: 1px dashed #ccc;
+    text-align: center;
+    color: #d1d1d1;
+    line-height: 1.375rem; }
+    [data-dpr="1"] .add-card a {
+      font-size: 18px; }
+    [data-dpr="2"] .add-card a {
+      font-size: 36px; }
+    [data-dpr="3"] .add-card a {
+      font-size: 54px; }
 
 /*popup-start*/
 .popup {

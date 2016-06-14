@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>富邦会员</title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-user-vip.css">
+</head>
+<body>
+<div class="popup">
+    <div class="popup-content">
+        <div class="tell"><a href="tel:4000-33-7997">电话联系E富邦客服</a></div>
+        <div class="qq"><a href="mqqwpa://im/chat?chat_type=wpa&uin=3252730453&version=1&src_type=web&web_src=oicqzone.com">QQ联系E富邦客服</a></div>
+        <div class="yes">取消</div>
+    </div>
+</div>
+<div id="header">
+    <div class="nav-return">
+        <a href="user.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
+    <div class="nav-title">富邦会员</div>
+</div>
+<div id="wrapper">
+    <div class="user-vip vip-false">     <!--"vip-false"或者"vip-true"-->
+        <div class="card-pic">
+            <div class="user-name">关羽</div>
+            <div class="ip-name">efb15201623271</div>
+            <div class="vip-status">普通会员</div>
+        </div>
+        <div class="vip-list">
+            <div class="list-title">富邦VIP特权:</div>
+            <div class="list list01">
+                <img src="./images/user/vip-list01.png" alt="">
+                <p>提现免手续费</p>
+            </div>
+            <div class="list list02">
+                <img src="./images/user/vip-list02.png" alt="">
+                <p>提现免手续费</p>
+            </div>
+            <div class="list list03">
+                <img src="./images/user/vip-list03.png" alt="">
+                <p>提现免手续费</p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <p class="vip-rule">申请vip会员,将扣除vip管理费用100元。</p>
+        <div class="vip-btn">立即点亮富邦VIP</div>    <!--如果是vip的文字    "您已经是尊贵的VIP用户"  -->
+    </div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script>
+    $(document).ready(function () {
+        $('.vip-false .vip-btn').click(function(){
+            $('.popup').css('display','block')
+        });
+        $('.no').add('.yes').click(function(){
+            $('.popup').css('display','none')
+        });
+    })
+</script>
+</body>
+</html>

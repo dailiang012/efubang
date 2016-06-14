@@ -107,12 +107,10 @@ button {
 /*header-end*/
 /*wrapper-start*/
 .prompt-money {
+  width: 98%;
   background-color: #4b4c4f;
-  line-height: 0.46875rem;
-  padding-top: 0.21875rem;
-  padding-bottom: 0.21875rem;
+  line-height: 0.9375rem;
   padding-left: 2%;
-  padding-right: 2%;
   color: #f2f2f2; }
   [data-dpr="1"] .prompt-money {
     font-size: 12px; }
@@ -121,15 +119,12 @@ button {
   [data-dpr="3"] .prompt-money {
     font-size: 36px; }
 
-form {
-  margin-top: 0.3125rem; }
-
-.invest-money, .bank-card {
+.who-name, .bank-card, .again-card {
   padding: 0 3%;
   border-bottom: 1px solid #ddd;
   background: #fff;
   text-align: left; }
-  .invest-money input, .bank-card input {
+  .who-name input, .bank-card input, .again-card input {
     border: none;
     outline: none;
     line-height: 100%;
@@ -138,13 +133,13 @@ form {
     padding-bottom: 0.46875rem;
     height: 0.46875rem;
     background: none; }
-    [data-dpr="1"] .invest-money input, [data-dpr="1"] .bank-card input {
+    [data-dpr="1"] .who-name input, [data-dpr="1"] .bank-card input, [data-dpr="1"] .again-card input {
       font-size: 15px; }
-    [data-dpr="2"] .invest-money input, [data-dpr="2"] .bank-card input {
+    [data-dpr="2"] .who-name input, [data-dpr="2"] .bank-card input, [data-dpr="2"] .again-card input {
       font-size: 30px; }
-    [data-dpr="3"] .invest-money input, [data-dpr="3"] .bank-card input {
+    [data-dpr="3"] .who-name input, [data-dpr="3"] .bank-card input, [data-dpr="3"] .again-card input {
       font-size: 45px; }
-  .invest-money label, .bank-card label {
+  .who-name label, .bank-card label, .again-card label {
     float: left;
     width: 25%;
     color: #76787d;
@@ -152,17 +147,16 @@ form {
     padding-top: 0.46875rem;
     padding-bottom: 0.46875rem;
     height: 0.46875rem; }
-    [data-dpr="1"] .invest-money label, [data-dpr="1"] .bank-card label {
+    [data-dpr="1"] .who-name label, [data-dpr="1"] .bank-card label, [data-dpr="1"] .again-card label {
       font-size: 15px; }
-    [data-dpr="2"] .invest-money label, [data-dpr="2"] .bank-card label {
+    [data-dpr="2"] .who-name label, [data-dpr="2"] .bank-card label, [data-dpr="2"] .again-card label {
       font-size: 30px; }
-    [data-dpr="3"] .invest-money label, [data-dpr="3"] .bank-card label {
+    [data-dpr="3"] .who-name label, [data-dpr="3"] .bank-card label, [data-dpr="3"] .again-card label {
       font-size: 45px; }
 
 .bank {
   padding: 0 3%;
   border-bottom: 1px solid #ddd;
-  border-top: 1px solid #ddd;
   background: #fff;
   text-align: left;
   height: 1.34375rem;
@@ -171,8 +165,6 @@ form {
     float: left;
     width: 25%;
     color: #76787d;
-    /*@include px2rem(padding-top,30px,64px,false);
-    @include px2rem(padding-bottom,30px,64px,false);*/
     line-height: 1.34375rem; }
     [data-dpr="1"] .bank label {
       font-size: 15px; }
@@ -205,43 +197,105 @@ form {
         font-size: 30px; }
       [data-dpr="3"] .bank select option {
         font-size: 45px; }
-
-.pic-select {
-  position: absolute;
-  right: 1.34375rem;
-  top: 0.54688rem;
-  width: 0.3125rem;
-  height: 0.1875rem; }
-  .pic-select img {
-    display: block;
+  .bank .pic-select {
+    position: absolute;
+    right: 1.34375rem;
+    top: 0.54688rem;
     width: 0.3125rem;
     height: 0.1875rem; }
-
-.log {
-  width: 96%;
-  margin: 0 auto;
-  line-height: 0.9375rem; }
-  [data-dpr="1"] .log {
-    font-size: 10px; }
-  [data-dpr="2"] .log {
-    font-size: 20px; }
-  [data-dpr="3"] .log {
-    font-size: 30px; }
-  .log .left {
-    float: left;
-    color: #76787d; }
-    .log .left span {
-      color: #f53030; }
-  .log .right {
-    float: right; }
-    .log .right a {
+    .bank .pic-select img {
       display: block;
-      color: #4cb0ae;
-      text-decoration: none; }
+      width: 0.3125rem;
+      height: 0.1875rem; }
 
-.get-money {
+.where {
+  padding: 0 3%;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  text-align: left;
+  height: 1.34375rem; }
+  .where .select-box {
+    float: left;
+    position: relative;
+    margin-right: 0.3125rem; }
+    .where .select-box:last-child {
+      margin-right: 0; }
+    .where .select-box .pic-select {
+      position: absolute;
+      right: 0.3125rem;
+      top: 0.59375rem;
+      width: 0.3125rem;
+      height: 0.1875rem; }
+      .where .select-box .pic-select img {
+        display: block;
+        width: 0.3125rem;
+        height: 0.1875rem; }
+  .where label {
+    float: left;
+    width: 25%;
+    color: #76787d;
+    line-height: 1.34375rem; }
+    [data-dpr="1"] .where label {
+      font-size: 15px; }
+    [data-dpr="2"] .where label {
+      font-size: 30px; }
+    [data-dpr="3"] .where label {
+      font-size: 45px; }
+  .where #change-where {
+    float: left; }
+    .where #change-where select {
+      border: none;
+      outline: none;
+      color: #76787d;
+      background-color: transparent;
+      appearance: none;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      height: 1.34375rem;
+      line-height: 1.34375rem;
+      padding-right: 0.78125rem;
+      width: 1.875rem;
+      overflow: hidden; }
+      [data-dpr="1"] .where #change-where select {
+        font-size: 15px; }
+      [data-dpr="2"] .where #change-where select {
+        font-size: 30px; }
+      [data-dpr="3"] .where #change-where select {
+        font-size: 45px; }
+      .where #change-where select option {
+        line-height: 1.34375rem; }
+        [data-dpr="1"] .where #change-where select option {
+          font-size: 15px; }
+        [data-dpr="2"] .where #change-where select option {
+          font-size: 30px; }
+        [data-dpr="3"] .where #change-where select option {
+          font-size: 45px; }
+
+.agree-rule {
+  padding: 0 2%;
+  padding-top: 1.1875rem; }
+  .agree-rule span {
+    float: left;
+    display: block;
+    color: #76787d;
+    line-height: 0.46875rem;
+    padding-left: 0.15625rem; }
+    [data-dpr="1"] .agree-rule span {
+      font-size: 12px; }
+    [data-dpr="2"] .agree-rule span {
+      font-size: 24px; }
+    [data-dpr="3"] .agree-rule span {
+      font-size: 36px; }
+  .agree-rule #agree {
+    width: 0.46875rem;
+    height: 0.46875rem;
+    border-radius: 4px;
+    float: left;
+    border: 1px solid #ddd; }
+
+.sure-btn {
   padding: 0 2%; }
-  .get-money input[type="submit"] {
+  .sure-btn input[type="submit"] {
     width: 100%;
     height: 1.40625rem;
     color: #fff;
@@ -251,11 +305,11 @@ form {
     border-radius: 4px;
     margin-top: 0.3125rem;
     -webkit-appearance: none; }
-    [data-dpr="1"] .get-money input[type="submit"] {
+    [data-dpr="1"] .sure-btn input[type="submit"] {
       font-size: 14px; }
-    [data-dpr="2"] .get-money input[type="submit"] {
+    [data-dpr="2"] .sure-btn input[type="submit"] {
       font-size: 28px; }
-    [data-dpr="3"] .get-money input[type="submit"] {
+    [data-dpr="3"] .sure-btn input[type="submit"] {
       font-size: 42px; }
 
 .help-text {
@@ -281,4 +335,4 @@ form {
 
 /*wrapper-end*/
 
-/*# sourceMappingURL=style-user-get_money.css.map */
+/*# sourceMappingURL=style-user-bank-add.css.map */

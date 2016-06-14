@@ -107,10 +107,12 @@ button {
 /*header-end*/
 /*wrapper-start*/
 .prompt-money {
-  width: 98%;
   background-color: #4b4c4f;
-  line-height: 0.9375rem;
+  line-height: 0.46875rem;
+  padding-top: 0.21875rem;
+  padding-bottom: 0.21875rem;
   padding-left: 2%;
+  padding-right: 2%;
   color: #f2f2f2; }
   [data-dpr="1"] .prompt-money {
     font-size: 12px; }

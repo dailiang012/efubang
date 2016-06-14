@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>添加银行卡</title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-user-bank-add.css">
+</head>
+<body>
+<div id="header">
+    <div class="nav-return">
+        <a href="user.html"><img src="./images/return.png" alt="<返回"></a>
+    </div>
+    <div class="nav-title">添加银行卡</div>
+</div>
+<div id="wrapper">
+    <div class="prompt-money">请确保绑定的银行卡和您的开户名一致。</div>
+    <form action="" method="post" enctype="multipart/form-data">
+        <div class="who-name">
+            <label for="name">开户名</label>
+            <input type="text" name="money" id="name" placeholder="开户名">
+        </div>
+        <div class="bank">
+            <label for="bank-name">银行</label>
+            <select name="" id="bank-name">
+                <option value="1">中国建设银行</option>
+                <option value="1">中国邮政银行</option>
+                <option value="2">中国商业银行</option>
+                <option value="3">中国农业银行</option>
+                <option value="4">中国工业银行</option>
+            </select>
+            <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+        </div>
+        <div class="bank-card">
+            <label for="card">卡号</label>
+            <input type="text" name="money" id="card" placeholder="请输入银行卡号">
+        </div>
+        <div class="again-card">
+            <label for="card-sure">确认卡号</label>
+            <input type="text" name="money" id="card-sure" placeholder="请再次输入银行卡号">
+        </div>
+        <div class="where">
+            <label for="change-where">办卡地</label>
+            <div id="change-where">
+            <p class="province select-box">
+                <select name="" id="province-name">
+                    <option value="1">河南</option>
+                    <option value="1">河北河北河北</option>
+                    <option value="2">江苏</option>
+                    <option value="3">上海</option>
+                    <option value="4">云南</option>
+                </select>
+                <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+            </p>
+            <p class="city select-box">
+                <select name="" id="city-name">
+                    <option value="1">建安市建安市</option>
+                    <option value="1">临安市</option>
+                    <option value="2">信阳市</option>
+                    <option value="1">建安市</option>
+                    <option value="1">临安市</option>
+                    <option value="2">信阳市</option>
+                </select>
+                <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+            </p>
+            <p class="town select-box">
+                <select name="" id="town-name">
+                    <option value="1">江家集江家集</option>
+                    <option value="1">普塔集</option>
+                    <option value="2">上油岗</option>
+                </select>
+                <span class="pic-select"><img src="./images/user/select-bj.png" alt=""></span>
+            </p>
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div class="agree-rule">
+            <label for="agree"></label>
+            <input type="checkbox" id="agree" name="agree">
+            <span>我已仔细阅读下方提示</span>
+            <div class="clear"></div>
+        </div>
+        <div class="sure-btn">
+            <label for="sure"></label>
+            <input type="submit" name="sure" id="sure" value="确认绑定">
+        </div>
+    </form>
+    <div class="help-text">如有疑问请致电：400-6336-838</div>
+</div>
+</body>
+</html>

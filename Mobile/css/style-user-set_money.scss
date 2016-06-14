@@ -159,11 +159,13 @@ button { /*去掉button在ios上的默认样式*/
 /*header-end*/
 /*wrapper-start*/
 .prompt-money{
-  width: 98%;
   background-color: #4b4c4f;
   @include font-dpr(24px);
-  @include px2rem(line-height,60px,64px,false);
+  @include px2rem(line-height,30px,64px,false);
+  @include px2rem(padding-top,14px,64px,false);
+  @include px2rem(padding-bottom,14px,64px,false);
   padding-left:2%;
+  padding-right: 2%;
   color: #f2f2f2;
 }
 .money-company{
