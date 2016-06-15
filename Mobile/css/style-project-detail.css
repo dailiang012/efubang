@@ -7,7 +7,6 @@
 #header {
   width: 100%;
   background-color: #4cb0ae;
-  border-bottom: 1px solid #ddd;
   position: fixed;
   top: 0;
   left: 0;
@@ -24,7 +23,8 @@
 
 #wrapper {
   width: 100%;
-  overflow: hidden; }
+  overflow: hidden;
+  padding-bottom: 0.9375rem; }
 
 [data-dpr="1"] #wrapper {
   padding-top: 44px; }
@@ -40,11 +40,8 @@ html {
   height: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  background-color: #f9f9f9;
-  padding-bottom: 0.9375rem; }
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f9f9f9; }
 
 .nav-return {
   position: absolute;
@@ -171,10 +168,10 @@ body {
 /* tabBox开始 */
 .tabBox {
   margin-top: 0.15625rem;
-  background-color: #fff;
   border-bottom: 1px solid #ddd; }
   .tabBox .hd {
-    outline: 1px solid #ddd; }
+    outline: 1px solid #ddd;
+    background: #fff; }
     .tabBox .hd ul {
       overflow: hidden;
       width: 100%;
@@ -224,10 +221,13 @@ body {
 [data-dpr="3"] .tabBox .hd a {
   font-size: 36px; }
 
+.tabBox .bd li {
+  background: #fff; }
 .tabBox .bd .list {
   width: 96%;
   margin: 0 auto;
-  border-bottom: 1px solid #ddd; }
+  border-bottom: 1px solid #ddd;
+  margin-top: 1px; }
   .tabBox .bd .list .title {
     color: #56575b;
     line-height: 100%;
@@ -368,5 +368,16 @@ table {
     border-top: 1px solid #ddd; }
 
 /*table-end*/
+.click-more {
+  text-align: center;
+  color: #76787d;
+  line-height: 1.5625rem;
+  background: #f9f9f9; }
+  [data-dpr="1"] .click-more {
+    font-size: 12px; }
+  [data-dpr="2"] .click-more {
+    font-size: 24px; }
+  [data-dpr="3"] .click-more {
+    font-size: 36px; }
 
 /*# sourceMappingURL=style-project-detail.css.map */

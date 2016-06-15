@@ -52,7 +52,6 @@ $border: 1px solid #ddd; //边框
 #header {
   width: 100%;
   background-color: $blue;
-  border-bottom: $border;
   position: fixed;
   top:0;
   left:0;
@@ -72,6 +71,7 @@ $border: 1px solid #ddd; //边框
 #wrapper {
   width: 100%;
   overflow: hidden;
+  @include px2rem(padding-bottom,60px,64px,false);
 }
 
 [data-dpr="1"] #wrapper {
@@ -91,11 +91,7 @@ html {
   outline: 0;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  //height: 100%;
   background-color: #f9f9f9;
-  @include px2rem(padding-bottom,60px,64px,false);
 }
 .nav-return {
   position: absolute;
@@ -219,10 +215,10 @@ body {
 /* tabBox开始 */
 .tabBox {
   @include px2rem(margin-top,10px,64px,false);
-  background-color: #fff;
   border-bottom: $border;
   .hd {
     outline: $border;
+    background: #fff;
     ul {
       overflow: hidden;
       width: 100%;
@@ -272,10 +268,14 @@ body {
   @include font-dpr(24px);
 }
 .tabBox .bd {
+  li{
+    background: #fff;
+  }
   .list{
     width: 96%;
     margin: 0 auto;
     border-bottom: $border;
+    margin-top: 1px;
     .title{
       color: $title-font;
       line-height: 100%;
@@ -405,3 +405,10 @@ table{
   }
 }
 /*table-end*/
+.click-more{
+  text-align: center;
+  @include font-dpr(24px);
+  color: $normal;
+  @include px2rem(line-height,100px,64px,false);
+  background: #f9f9f9;
+}

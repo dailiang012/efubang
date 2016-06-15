@@ -73,21 +73,11 @@ element::-webkit-scrollbar { /*去掉webkit的滚动条*/
 
 /*header-start*/
 html {
-  height: 100%;
   width: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color:#f9f9f9;
-}
-body {
-  width: 100%;
-  /*flex布局,主流浏览器都支持,可能在少数不支持*/
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
+  background-color: #f9f9f9;
 }
 .clear{
   clear: both;
@@ -319,3 +309,10 @@ body {
   }
 }
 /*money-log-end*/
+.click-more{
+  text-align: center;
+  @include font-dpr(24px);
+  color: $normal;
+  @include px2rem(line-height,100px,64px,false);
+  background: #f9f9f9;
+}

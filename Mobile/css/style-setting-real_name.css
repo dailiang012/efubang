@@ -79,17 +79,11 @@ element::-webkit-scrollbar { /*去掉webkit的滚动条*/
 /*公共代码结束*/
 /*header开始*/
 html {
-    height: 100%;
     outline: 0;
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-body {
-    height: 100%;
     background-color: #f9f9f9;
 }
-
 #header {
     width: 100%;
     background-color: #4cb0ae;

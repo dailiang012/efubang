@@ -674,3 +674,6 @@ button[disabled="disabled"]{
 }
 /*合作机构结束*/
 
+::-webkit-input-placeholder{
+    color: red;
+}

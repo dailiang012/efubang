@@ -98,7 +98,6 @@ body {
     top: 0;
     left: 0;
     z-index: 2;
-    border-bottom: 1px solid #ddd;
 }
 
 [data-dpr="1"] #header {

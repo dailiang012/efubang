@@ -1,12 +1,9 @@
 /*header-start*/
 html {
-  height: 100%;
   outline: 0;
+  background-color: #f9f9f9;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: transparent; }
-
-body {
-  background-color: #f9f9f9; }
 
 .clear {
   clear: both; }
@@ -354,6 +351,8 @@ body {
           font-size: 30px; }
         [data-dpr="3"] .time #change-time select option {
           font-size: 45px; }
+    .time #change-time .year select {
+      width: 2.34375rem; }
 
 .self-setting .change-password {
   border-top: 1px solid #ddd; }
@@ -394,6 +393,8 @@ body {
     font-size: 28px; }
   [data-dpr="3"] #quit-change {
     font-size: 42px; }
+  #quit-change:active {
+    background-color: #419695; }
 
 /*wrapper-end*/
 

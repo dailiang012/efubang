@@ -3,15 +3,10 @@
 /*字体设置结束*/
 /*整体结构开始*/
 html {
-  height: 100%;
   width: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  width: 100%;
-  height: 100%;
+  -webkit-tap-highlight-color: transparent;
   background-color: #fff; }
 
 .clear {

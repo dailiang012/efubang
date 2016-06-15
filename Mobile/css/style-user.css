@@ -2,22 +2,11 @@
 /*字体设置开始*/
 /*字体设置结束*/
 html {
-  height: 100%;
   width: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #f9f9f9;
-  /*flex布局,主流浏览器都支持,可能在少数不支持*/
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column; }
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f9f9f9; }
 
 .clear {
   clear: both; }
@@ -54,8 +43,9 @@ body {
 
 .user-top {
   width: 100%;
-  background-color: #4cb0ae;
-  border-bottom: 1px solid #ddd; }
+  background: url("../images/user/user-bj.jpg") no-repeat center top;
+  border-bottom: 1px solid #ddd;
+  background-size: 100% 100%; }
 
 .user-bottom {
   width: 100%;

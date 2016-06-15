@@ -29,11 +29,11 @@ $blue: #4cb0ae; //蓝色
 $red: #f53030; //红色
 $normal: #76787d; //正常字体
 $gray: #adb2bf; //辅助字体
-$title-font:#56575b;//标题字体
+$title-font: #56575b; //标题字体
 $border: 1px solid #ddd; //边框
 /*字体设置开始*/
-@mixin font-dpr($font-size){
-  [data-dpr="1"] &{
+@mixin font-dpr($font-size) {
+  [data-dpr="1"] & {
     font-size: $font-size/2;
   }
 
@@ -45,31 +45,30 @@ $border: 1px solid #ddd; //边框
     font-size: $font-size * 1.5;
   }
 }
+
 /*字体设置结束*/
 /*整体结构开始*/
 html {
-  height: 100%;
   width: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  width: 100%;
-  height: 100%;
   background-color: #fff;
 }
-.clear{
+
+.clear {
   clear: both;
 }
+
 #header {
   width: 100%;
   background-color: $blue;
   position: fixed;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   z-index: 2;
 }
+
 [data-dpr="1"] #header {
   height: (88px/2);
 }
@@ -81,7 +80,8 @@ body {
 [data-dpr="3"] #header {
   height: (88px*1.5);
 }
-#wrapper{
+
+#wrapper {
   width: 100%;
 }
 
@@ -96,6 +96,7 @@ body {
 [data-dpr="3"] #wrapper {
   padding-top: (88px*1.5);
 }
+
 /*整体结构开始*/
 /*header-start*/
 .nav-return {
@@ -104,13 +105,16 @@ body {
   left: 0;
   top: 0;
 }
-.nav-return a{
+
+.nav-return a {
   height: inherit;
   display: block;
 }
-.nav-return a:active{
+
+.nav-return a:active {
   background: #419695;
 }
+
 .nav-return img {
   height: 100%;
   width: auto;
@@ -135,262 +139,311 @@ body {
   font-size: 54px;
   line-height: 132px;
 }
+
 /*header-end*/
 /*wrapper-start*/
-.data-banner{
+.data-banner {
   width: 100%;
-  img{
+  img {
     display: block;
     width: 100%;
     height: auto;
   }
 }
-.choice{
+
+.choice {
   width: 70%;
   margin: 0 auto;
-  @include px2rem(padding-bottom,60px,64px,false);
-  select{
+  @include px2rem(padding-bottom, 60px, 64px, false);
+  select {
     @include font-dpr(28px);
     color: $normal;
     border: none;
     background-color: #fff;
   }
-  option{
+  option {
     @include font-dpr(28px);
     color: $normal;
   }
-  #choice-year{
+  #choice-year {
     float: left;
   }
-  #choice-month{
+  #choice-month {
     float: right;
   }
 }
+
 /*图表开始*/
-#charts{
+#charts {
   width: 96%;
   margin: 0 auto;
 }
-.about-us-title-text h2{
+
+.about-us-title-text h2 {
   display: inline-block;
   background: #fff;
-  padding:0 20px;
+  padding: 0 20px;
   line-height: 100%;
-  @include  font-dpr(32px);
-  @include px2rem(height,32px,64px,false);
+  @include font-dpr(32px);
+  @include px2rem(height, 32px, 64px, false);
 }
-.about-us-title-text{
+
+.about-us-title-text {
   width: 100%;
-  @include px2rem(height,20px,64px,false);
+  @include px2rem(height, 20px, 64px, false);
   text-align: center;
 }
-#charts p{
-  text-align:center;
+
+#charts p {
+  text-align: center;
   @include font-dpr(24px);
-  color:$normal;
-  @include px2rem(line-height,40px,64px,false);
+  color: $normal;
+  @include px2rem(line-height, 40px, 64px, false);
 }
+
 /*chart01开始*/
 
-#total_money{
+#total_money {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
 
-.chart01 p{
-  @include px2rem(padding-top,50px,64px,false);
+.chart01 p {
+  @include px2rem(padding-top, 50px, 64px, false);
 }
-.chart01 p span{
-  color:#f67027;
+
+.chart01 p span {
+  color: #f67027;
 }
-.chart01 .about-us-title-text{
+
+.chart01 .about-us-title-text {
   border-bottom: 1px dashed #48cfd7;
 }
-.chart01 .about-us-title-text h2{
+
+.chart01 .about-us-title-text h2 {
   color: #48cfd7;
 }
+
 /*chart01结束*/
 /*chart02开始*/
-#total_number{
+#total_number {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
-}
-.chart02 p span{
-  color:#f67027;
-}
-.number_list{
-  @include px2rem(padding-top,30px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
 
-.chart02 .about-us-title-text{
-  border-bottom: 1px dashed #f67027;
-}
-.chart02 .about-us-title-text h2{
+.chart02 p span {
   color: #f67027;
 }
+
+.number_list {
+  @include px2rem(padding-top, 30px, 64px, false);
+}
+
+.chart02 .about-us-title-text {
+  border-bottom: 1px dashed #f67027;
+}
+
+.chart02 .about-us-title-text h2 {
+  color: #f67027;
+}
+
 /*chart02结束*/
 /*chart03和chart04开始*/
-#total_people,#total_register{
+#total_people, #total_register {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
-.chart03 h1{
+
+.chart03 h1 {
   color: #48cfd7;
 }
-.chart03 p, .chart04 p{
-  @include px2rem(padding-top,50px,64px,false);
+
+.chart03 p, .chart04 p {
+  @include px2rem(padding-top, 50px, 64px, false);
 }
-.chart03 p span, .chart04 p span{
-  color:#f67027;
- }
-.chart03 .about-us-title-text{
-  border-bottom: 1px dashed #48cfd7;
-}
-.chart03 .about-us-title-text h2{
-  color: #48cfd7;
-}
-.chart04 .about-us-title-text{
-  border-bottom: 1px dashed #f67027;
-}
-.chart04 .about-us-title-text h2{
+
+.chart03 p span, .chart04 p span {
   color: #f67027;
 }
-/*chart03和chart04结束*/
-/*chart05开始*/
-.chart05 .about-us-title-text{
+
+.chart03 .about-us-title-text {
   border-bottom: 1px dashed #48cfd7;
 }
-.chart05 .about-us-title-text h2{
+
+.chart03 .about-us-title-text h2 {
   color: #48cfd7;
 }
-#total_map{
+
+.chart04 .about-us-title-text {
+  border-bottom: 1px dashed #f67027;
+}
+
+.chart04 .about-us-title-text h2 {
+  color: #f67027;
+}
+
+/*chart03和chart04结束*/
+/*chart05开始*/
+.chart05 .about-us-title-text {
+  border-bottom: 1px dashed #48cfd7;
+}
+
+.chart05 .about-us-title-text h2 {
+  color: #48cfd7;
+}
+
+#total_map {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
-.citys_people{
-  @include px2rem(padding-left,80px,64px,false);
-  @include px2rem(padding-top,60px,64px,false);
+
+.citys_people {
+  @include px2rem(padding-left, 80px, 64px, false);
+  @include px2rem(padding-top, 60px, 64px, false);
 }
-.citys_people h2{
+
+.citys_people h2 {
   @include font-dpr(24px);
   line-height: 100%;
   color: #48cfd7;
   float: left;
-  @include px2rem(padding-right,20px,64px,false);
+  @include px2rem(padding-right, 20px, 64px, false);
 }
-.citys_people p{
+
+.citys_people p {
   @include font-dpr(24px);
   color: #9b9fa1;
   line-height: 100%;
   float: left;
 }
-.citys_people p span{
+
+.citys_people p span {
   @include font-dpr(18px);
   color: #bcc0c2;
-  @include px2rem(line-height,30px,64px,false);
+  @include px2rem(line-height, 30px, 64px, false);
 }
-.city{
-  @include px2rem(padding-right,50px,64px,false);
-  @include px2rem(margin-bottom,20px,64px,false);
+
+.city {
+  @include px2rem(padding-right, 50px, 64px, false);
+  @include px2rem(margin-bottom, 20px, 64px, false);
   float: left;
 }
+
 /*chart05结束*/
 /*chart06开始*/
 
-.chart06 .about-us-title-text{
+.chart06 .about-us-title-text {
   border-bottom: 1px dashed #48cfd7;
 }
-.chart06 .about-us-title-text h2{
+
+.chart06 .about-us-title-text h2 {
   color: #48cfd7;
 }
-table{
+
+table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 }
+
 .age_list {
   width: 60%;
   margin: 0 auto;
-  @include px2rem(padding-top,60px,64px,false);
+  @include px2rem(padding-top, 60px, 64px, false);
 }
 
-.age_list thead{
+.age_list thead {
   background: #f4f4f4;
 }
-.age_list tr{
-  @include px2rem(height,42px,64px,false);
+
+.age_list tr {
+  @include px2rem(height, 42px, 64px, false);
   text-align: center;
 }
-.age_list thead td{
+
+.age_list thead td {
   color: #f67027;
   @include font-dpr(24px);
-  @include px2rem(line-height,42px,64px,false);
+  @include px2rem(line-height, 42px, 64px, false);
 }
-.age_list tbody td{
+
+.age_list tbody td {
   color: #969a9c;
   @include font-dpr(24px);
-  @include px2rem(line-height,42px,64px,false);
+  @include px2rem(line-height, 42px, 64px, false);
 }
-#total_age{
+
+#total_age {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
+
 /*chart06结束*/
 /*chart07开始*/
-.chart07 .about-us-title-text{
+.chart07 .about-us-title-text {
   border-bottom: 1px dashed #48cfd7;
 }
-.chart07 .about-us-title-text h2{
+
+.chart07 .about-us-title-text h2 {
   color: #48cfd7;
 }
-.chart07 p{
-  @include px2rem(padding-top,60px,64px,false);
+
+.chart07 p {
+  @include px2rem(padding-top, 60px, 64px, false);
 }
-.chart07 p span{
-  color:#f67027;
+
+.chart07 p span {
+  color: #f67027;
 }
-#total_break{
+
+#total_break {
   width: 80%;
-  @include px2rem(height,350px,64px,false);
+  @include px2rem(height, 350px, 64px, false);
   margin: 0 auto;
-  @include px2rem(padding-bottom,100px,64px,false);
+  @include px2rem(padding-bottom, 100px, 64px, false);
 }
+
 /*chart07结束*/
 
-
 /*chart08开始*/
-.chart08{
+.chart08 {
   padding-bottom: 100px;
 }
-.chart08 .about-us-title-text{
+
+.chart08 .about-us-title-text {
   border-bottom: 1px dashed #48cfd7;
 }
-.chart08 .about-us-title-text h2{
+
+.chart08 .about-us-title-text h2 {
   color: #48cfd7;
 }
-.chart08 .pic{
-  @include px2rem(width,255px,64px,false);
-  @include px2rem(padding-top,60px,64px,false);
-  @include px2rem(height,255px,64px,false);
+
+.chart08 .pic {
+  @include px2rem(width, 255px, 64px, false);
+  @include px2rem(padding-top, 60px, 64px, false);
+  @include px2rem(height, 255px, 64px, false);
   margin: 0 auto;
 }
-.chart08 .pic img{
-  @include px2rem(width,255px,64px,false);
-  @include px2rem(height,255px,64px,false);
+
+.chart08 .pic img {
+  @include px2rem(width, 255px, 64px, false);
+  @include px2rem(height, 255px, 64px, false);
 }
-.chart08 p{
-   @include px2rem(padding-top,60px,64px,false);
- }
+
+.chart08 p {
+  @include px2rem(padding-top, 60px, 64px, false);
+}
+
 /*chart08结束*/
 /*图表结束*/
 /*wrapper-end*/

@@ -3,22 +3,11 @@
 /*字体设置结束*/
 /*header-start*/
 html {
-  height: 100%;
   width: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
-  -webkit-tap-highlight-color: transparent; }
-
-body {
-  width: 100%;
-  height: 100%;
-  background-color: #f9f9f9;
-  /*flex布局,主流浏览器都支持,可能在少数不支持*/
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column; }
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f9f9f9; }
 
 .clear {
   clear: both; }
@@ -210,7 +199,8 @@ button {
     .log .right a {
       display: block;
       color: #4cb0ae;
-      text-decoration: none; }
+      text-decoration: none;
+      text-align: right; }
 
 .rule-text {
   width: 96%;
@@ -262,6 +252,8 @@ button {
       font-size: 28px; }
     [data-dpr="3"] .rule-text input[type="submit"] {
       font-size: 42px; }
+    .rule-text input[type="submit"]:active {
+      background-color: #419695; }
   .rule-text p {
     color: #76787d;
     line-height: 0.54688rem;

@@ -46,15 +46,10 @@ $border: 1px solid #ddd; //边框
 }
 //字体设置结束
 html {
-  height: 100%;
   outline: 0;
   -webkit-text-size-adjust: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-body {
-  height: 100%;
-  background-color: #f9f9f9;
-  @include px2rem(padding-bottom,60px,64px,false);
+  background: #f9f9f9;
 }
 .clear{
   clear: both;
@@ -62,7 +57,6 @@ body {
 #header {
   width: 100%;
   background-color: $blue;
-  border-bottom: $border;
   position: fixed;
   top:0;
   left:0;
@@ -82,6 +76,7 @@ body {
 #wrapper {
   width: 100%;
   overflow: hidden;
+  @include px2rem(padding-bottom,60px,64px,false);
 }
 
 [data-dpr="1"] #wrapper {
@@ -142,7 +137,6 @@ body {
 
 /* tabBox开始 */
 .tabBox {
-  background-color: #fff;
   .hd {
     outline: $border;
     @include px2rem(margin-bottom,15px,64px,false);
@@ -197,19 +191,22 @@ body {
 }
 /*project项目开始*/
 .list {
-  height: 2.46875rem;
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
+  width: 100%;
+  overflow: hidden;
   margin-bottom: 0.234375rem;
   background-color: #fff;
+  @include px2rem(height,158px,64px,false);
 }
 
 .list-left {
+  width: 75%;
+  height: 100%;
+  float: left;
   border-top: 1px solid #ebebeb;
   border-bottom: 1px solid #ebebeb;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .list-left div[class^="project"] {
@@ -218,11 +215,9 @@ body {
 
 .project-rate {
   width: 2.125rem;
-  height: 1.875rem;
   border-right: 1px dashed #ebebeb;
-  margin-top: 0.3125rem;
+  @include px2rem(margin-top,25px,64px,false);
   text-align: center;
-  line-height: 1.09375rem;
 }
 
 .rate-number {
@@ -240,7 +235,7 @@ body {
 .project-name {
   margin-top: 0.28125rem;
   padding-left: 0.34375rem;
-  width: 3.890625rem;
+  @include px2rem(width,220px,64px,false);
 }
 
 .project-progress {
@@ -248,18 +243,18 @@ body {
   padding-top: 0.671875rem;
 }
 .project-btn {
-  -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-flex: 1; /* OLD - Firefox 19- */
-  -webkit-flex: 1; /* Chrome */
-  -ms-flex: 1; /* IE 10 */
-  flex: 1;
+  float: left;
+  width: 25%;
   background-color: #4cb0ae;
   text-align: center;
+  height: 2.46875rem;
+  line-height: 2.46875rem;
 }
 .project-btn a {
   display: block;
   color: #fff;
   line-height: 2.46875rem;
+  height: 2.46875rem;
   text-decoration: none;
   @include font-dpr(28px);
 }
@@ -276,7 +271,6 @@ body {
   color: #adb2bf;
   @include font-dpr(20px);
 }
-
 /*project项目结束*/
 
 /*tab-side-start */
@@ -366,5 +360,10 @@ body {
 .tab-list span{
   @include font-dpr(32px)
 }
-
 /*tab-side-end*/
+.click-more{
+  text-align: center;
+  @include font-dpr(24px);
+  color: $normal;
+  @include px2rem(line-height,100px,64px,false);
+}
