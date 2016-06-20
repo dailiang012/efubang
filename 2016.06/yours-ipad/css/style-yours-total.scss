@@ -1,0 +1,133 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+//字体设置开始
+@mixin font-dpr($font-size) {
+  [data-dpr="1"] & {
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+@font-face {
+  font-family: "WenYue";
+  src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
+  url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
+  url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
+  url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');
+}
+.clear{
+  clear:both;
+}
+#yours-main {
+  background: url("../images/yours-bj.jpg") no-repeat center top;
+  background-size: 100% 100%;
+}
+
+/*list01-start*/
+.list-title {
+  text-align: center;
+  margin: 0 auto;
+  @include px2rem(width, 390px, 64px, false);
+  @include px2rem(height, 500px, 64px, false);
+  //height: auto;
+  @include font-dpr(30px);
+  font-family: "WenYue";
+  line-height: 100%;
+  font-weight: bolder;
+  color: #0e1a18;
+  background: url("../images/list01.png") no-repeat center bottom;
+  background-size: 100% auto;
+}
+/*table-start*/
+
+.ranking-border{
+  @include px2rem(width,591px,64px,false);
+  margin: 0 auto;
+  height: 1px;
+  background: url("../images/border-bj.jpg") no-repeat center top;
+  background-size: 100% auto;
+}
+.total-data{
+  @include px2rem(padding-left,15px,64px,false);
+  @include px2rem(padding-bottom,50px,64px,false);
+  span{
+    display: inline-block;
+    text-align: center;
+    @include font-dpr(24px);
+    color: #eb3811;
+  }
+  .title{
+    span{
+      @include px2rem(padding-top,20px,64px,false);
+      line-height: 100%;
+    }
+  }
+  .total-content{
+    span{
+      @include px2rem(padding-top,20px,64px,false);
+      @include px2rem(line-height,50px,64px,false);
+    }
+  }
+  .ranking{
+    @include px2rem(width,85px,64px,false);
+  }
+  .name{
+    @include px2rem(width,163px,64px,false);
+  }
+  .phone{
+    @include px2rem(width,225px,64px,false);
+  }
+  .number{
+    @include px2rem(width,113px,64px,false);
+  }
+}
+
+.return{
+  float: right;
+  @include px2rem(padding-bottom,53px,64px,false);
+  a{
+    display: block;
+    @include font-dpr(25px);
+    @include px2rem(line-height,28px,64px,false);
+    border-bottom: 1px solid #eb3811;
+    color: #eb3811;
+    font-weight: bolder;
+    @include px2rem(padding-right,20px,64px,false);
+    @include px2rem(margin-right,56px,64px,false);
+    @include px2rem(margin-top,40px,64px,false);
+    background: url("../images/more.png") no-repeat right top;
+    background-size: auto 100%;
+  }
+}
+/*table-end*/

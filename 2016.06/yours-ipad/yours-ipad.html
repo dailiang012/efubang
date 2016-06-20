@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title></title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-yours-ipad.css">
+</head>
+<body>
+<div id="yours-popup">
+    <div class="popup-content">
+        <div class="add-number">+500<span>分</span></div>
+        <div class="box-padding"><div class="btn">我也要玩</div></div>
+        <div class="close"></div>
+    </div>
+</div>
+<div id="yours-main">
+    <div class="list01">
+        <div class="list-title">目前分数:<span>2000</span></div>
+        <div class="status">???</div>
+        <div class="btn-list">
+            <div id="others" class="btn">邦TA加分</div>
+            <div id="myself" class="btn">我也要玩</div>
+            <div class="share"><img src="./images/share.png" alt=""></div>
+        </div>
+    </div>
+    <div class="list02">
+        <div class="list-title"></div>
+        <div class="prize">
+            <ul>
+                <li>
+                    <div class="left">第一名 <span>ipad</span></div>
+                    <div class="right">1名</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="left">第二名 <span>1000元红包</span></div>
+                    <div class="right">5名</div>
+                    <div class="clear"></div>
+                </li>
+                <li>
+                    <div class="left">第三名 <span>500元红包</span></div>
+                    <div class="right">10名</div>
+                    <div class="clear"></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="list03">
+        <div class="list-title">已有<span>4</span>位同志帮你加分</div>
+        <div class="ranking">
+            <div class="ranking01 ranking-list">
+                <div class="content">
+                    <div class="list-number">1</div>
+                    <div class="user-data">
+                        <div class="photo"><img src="./images/list01.png" alt=""></div>
+                        <div class="name-time">
+                            <div class="name">女妖</div>
+                            <div class="time">2016-6-17 10:53</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="content-status">+500</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="ranking-border"></div>
+            </div>
+            <div class="ranking02 ranking-list">
+                <div class="content">
+                    <div class="list-number">2</div>
+                    <div class="user-data">
+                        <div class="photo"><img src="./images/list02.png" alt=""></div>
+                        <div class="name-time">
+                            <div class="name">女妖</div>
+                            <div class="time">2016-6-17 10:53</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="content-status">+500</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="ranking-border"></div>
+            </div>
+            <div class="ranking03 ranking-list">
+                <div class="content">
+                    <div class="list-number">3</div>
+                    <div class="user-data">
+                        <div class="photo"><img src="./images/list03.png" alt=""></div>
+                        <div class="name-time">
+                            <div class="name">女妖</div>
+                            <div class="time">2016-6-17 10:53</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="content-status">+500</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="ranking-border"></div>
+            </div>
+            <div class="ranking04 ranking-list">
+                <div class="content">
+                    <div class="list-number">4</div>
+                    <div class="user-data">
+                        <div class="photo"><img src="./images/list04.png" alt=""></div>
+                        <div class="name-time">
+                            <div class="name">女妖</div>
+                            <div class="time">2016-6-17 10:53</div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="content-status">+500</div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+            <div class="total"><a href="#">查看活动总排名</a></div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="list04">
+        <div class="bj">
+        <div class="list-title"></div>
+        <ul>
+            <li>1、每有一个用户通过微信分享到自己的朋友圈的加200分。</li>
+            <li>如：A用户分享B用户的链接，B用户加200分。</li>
+            <li>2、加分区间100-1000，减分区间1-500。</li>
+            <li>3、每投资一个标的（一个标的仅限第一次投资）金额大于等于300，加1000分。</li>
+        </ul>
+        </div>
+    </div>
+</div>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+<script>
+$(function(){
+    $('#others').click(function(){
+        $('#yours-popup').css('display','block');
+    })
+    $('.close').click(function(){
+        $('#yours-popup').css('display','none');
+    })
+})
+</script>
+</body>
+</html>
