@@ -1,12 +1,23 @@
-@font-face {
+/*@font-face {
   font-family: "WenYue";
-  src: url("../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff"), url("../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff"), url("../fonts/WenYue-XinQingNianTi-NC-W8.ttf"), url("../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF"); }
+  src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
+  url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
+  url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
+  url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');
+}*/
 .clear {
   clear: both; }
 
 #yours-main {
   background: url("../images/yours-bj.jpg") no-repeat center top;
   background-size: 100% 100%; }
+
+.banner {
+  width: 9.57813rem;
+  height: 7.59375rem;
+  margin: 0 auto;
+  background: url("../images/banner-bj.png") no-repeat center top;
+  background-size: 101% auto; }
 
 /*list01-start*/
 .list-title {
@@ -26,7 +37,7 @@
     font-size: 45px; }
 
 .list01 {
-  padding-top: 8.625rem; }
+  padding-top: 1.04688rem; }
   .list01 .list-title {
     color: #0e1a18;
     background: url("../images/list01.png") no-repeat center top;
@@ -196,7 +207,8 @@
     line-height: 0.4375rem;
     border-bottom: 1px solid #eb3811;
     color: #eb3811;
-    font-weight: bolder; }
+    font-weight: bolder;
+    text-decoration: none; }
     [data-dpr="1"] .total a {
       font-size: 12.5px; }
     [data-dpr="2"] .total a {
@@ -264,7 +276,6 @@ body {
     text-align: center;
     padding-top: 3.71875rem;
     color: #1f2615;
-    text-shadow: 0 6px 0px #c04311;
     font-weight: bolder;
     line-height: 100%; }
     [data-dpr="1"] .popup-content .add-number {
@@ -273,14 +284,20 @@ body {
       font-size: 112px; }
     [data-dpr="3"] .popup-content .add-number {
       font-size: 168px; }
+    [data-dpr="1"] .popup-content .add-number {
+      font-size: 20px; }
+    [data-dpr="2"] .popup-content .add-number {
+      font-size: 40px; }
+    [data-dpr="3"] .popup-content .add-number {
+      font-size: 60px; }
     .popup-content .add-number span {
-      text-shadow: none; }
+      text-shadow: 0 6px 0 #c04311; }
       [data-dpr="1"] .popup-content .add-number span {
-        font-size: 20px; }
+        font-size: 56px; }
       [data-dpr="2"] .popup-content .add-number span {
-        font-size: 40px; }
+        font-size: 112px; }
       [data-dpr="3"] .popup-content .add-number span {
-        font-size: 60px; }
+        font-size: 168px; }
   .popup-content .btn {
     margin: 0 auto;
     width: 3.39063rem;

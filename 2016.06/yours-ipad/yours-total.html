@@ -18,22 +18,14 @@
 </head>
 <body>
 <div id="yours-main">
+    <div class="banner"></div>
     <div class="list-title"></div>
     <div class="total-data">
-            <div class="title">
-                <span class="ranking">排名</span>
-                <span class="name">用户名</span>
-                <span class="phone">手机号</span>
-                <span class="number">得分</span>
-            </div>
-        <div class="list">
-            <div class="total-content">
-                <span class="ranking">1</span>
-                <span class="name">efb5288846</span>
-                <span class="phone">157****8865</span>
-                <span class="number">55545</span>
-            </div>
-            <div class="ranking-border"></div>
+        <div class="title">
+            <span class="ranking">排名</span>
+            <span class="name">用户名</span>
+            <span class="phone">手机号</span>
+            <span class="number">得分</span>
         </div>
         <div class="list">
             <div class="total-content">
@@ -204,9 +196,26 @@
                 <span class="phone">157****8865</span>
                 <span class="number">55545</span>
             </div>
+            <div class="ranking-border"></div>
         </div>
-        <div class="return"><a href="#">返回活动主页</a></div>
+        <div class="list one">
+            <div class="total-content">
+                <span class="ranking">1</span>
+                <span class="name">efb5288846</span>
+                <span class="phone">157****8865</span>
+                <span class="number">55545</span>
+            </div>
+        </div>
+        <div class="return"><a href="yours-ipad.html">返回活动主页</a></div>
+        <div class="clear"></div>
     </div>
 </div>
+<script>
+    var list=document.getElementsByClassName('list');/*IE9以上,手机端没有问题*/
+    for(var i=0;i<list.length;i++){
+        var ranking=list[i].getElementsByClassName('ranking')[0];
+        ranking.innerHTML=i+1;
+    }
+</script>
 </body>
 </html>

@@ -39,13 +39,13 @@
   }
 }
 
-@font-face {
+/*@font-face {
   font-family: "WenYue";
   src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
   url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
   url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
   url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');
-}
+}*/
 .clear{
   clear:both;
 }
@@ -53,7 +53,13 @@
   background: url("../images/yours-bj.jpg") no-repeat center top;
   background-size: 100% 100%;
 }
-
+.banner{
+  @include px2rem(width,613px,64px,false);
+  @include px2rem(height,486px,64px,false);
+  margin: 0 auto;
+  background: url("../images/banner-bj.png") no-repeat center top;
+  background-size: 101% auto;
+}
 /*list01-start*/
 .list-title {
   text-align: center;
@@ -69,7 +75,7 @@
 }
 
 .list01 {
-  @include px2rem(padding-top, 552px, 64px, false);
+  @include px2rem(padding-top, 67px, 64px, false);
   .list-title{
     color: #0e1a18;
     background: url("../images/list01.png") no-repeat center top;
@@ -231,6 +237,7 @@
     border-bottom: 1px solid #eb3811;
     color: #eb3811;
     font-weight: bolder;
+    text-decoration: none;
   }
 }
 /*list03-end*/
@@ -294,12 +301,12 @@ body{
     @include px2rem(padding-top,238px,64px,false);
     @include font-dpr(112px);
     color: #1f2615;
-    text-shadow: 0 6px 0px #c04311;
     font-weight: bolder;
     line-height: 100%;
+    @include font-dpr(40px);
     span{
-      @include font-dpr(40px);
-      text-shadow: none;
+      @include font-dpr(112px);
+      text-shadow: 0 6px 0 #c04311;
     }
   }
   .btn{

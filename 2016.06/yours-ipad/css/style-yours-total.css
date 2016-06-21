@@ -1,6 +1,12 @@
+/*
 @font-face {
   font-family: "WenYue";
-  src: url("../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff"), url("../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff"), url("../fonts/WenYue-XinQingNianTi-NC-W8.ttf"), url("../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF"); }
+  src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
+  url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff');
+  !*url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
+  url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');*!
+}
+*/
 .clear {
   clear: both; }
 
@@ -8,18 +14,25 @@
   background: url("../images/yours-bj.jpg") no-repeat center top;
   background-size: 100% 100%; }
 
-/*list01-start*/
+.banner {
+  width: 9.57813rem;
+  height: 7.59375rem;
+  margin: 0 auto;
+  background: url("../images/banner-bj.png") no-repeat center top;
+  background-size: 101% auto; }
+
 .list-title {
   text-align: center;
   margin: 0 auto;
   width: 6.09375rem;
-  height: 7.8125rem;
+  height: 1.76563rem;
   font-family: "WenYue";
   line-height: 100%;
   font-weight: bolder;
   color: #0e1a18;
-  background: url("../images/list01.png") no-repeat center bottom;
-  background-size: 100% auto; }
+  background: url("../images/list04.png") no-repeat center bottom;
+  background-size: 100% auto;
+  padding-top: 1.04688rem; }
   [data-dpr="1"] .list-title {
     font-size: 15px; }
   [data-dpr="2"] .list-title {
@@ -65,18 +78,19 @@
 
 .return {
   float: right;
-  padding-bottom: 0.82813rem; }
+  padding-right: 0.3125rem;
+  margin-right: 0.875rem;
+  margin-top: 0.3125rem;
+  margin-bottom: 0.3125rem;
+  background: url("../images/more.png") no-repeat right top;
+  background-size: auto 100%; }
   .return a {
     display: block;
     line-height: 0.4375rem;
     border-bottom: 1px solid #eb3811;
     color: #eb3811;
     font-weight: bolder;
-    padding-right: 0.3125rem;
-    margin-right: 0.875rem;
-    margin-top: 0.625rem;
-    background: url("../images/more.png") no-repeat right top;
-    background-size: auto 100%; }
+    text-decoration: none; }
     [data-dpr="1"] .return a {
       font-size: 12.5px; }
     [data-dpr="2"] .return a {
