@@ -238,12 +238,13 @@ body {
     font-size: 36px;
 }
 
+/*2016.6.22-change*/
 .prompt-text {
     padding-left: 3%;
     color: #e84a4a;
     line-height: 100%;
-    padding-top: 0.3125rem;
-    height: 0.5rem;
+    padding-top: 0.15625rem;
+    height: 0.46875rem;
 }
 [data-dpr="1"] .prompt-text {
     font-size: 12px;
@@ -255,10 +256,30 @@ body {
 [data-dpr="3"] .prompt-text {
     font-size: 36px;
 }
-
-.prompt-text i {
-    margin-right: 5px;
+.prompt-img{
+    float: left;
 }
+.prompt-img img{
+    width:100%;
+    height: 100%;
+}
+[data-dpr="1"] .prompt-img {
+    width: 12px;
+    height: 12px;
+}
+[data-dpr="2"] .prompt-img {
+    width: 24px;
+    height: 24px;
+}
+
+[data-dpr="3"] .prompt-img {
+    width: 36px;
+    height: 36px;
+}
+.prompt{
+    padding-left:0.15625rem;
+}
+/*2016.6.22-change*/
 
 ::-webkit-input-placeholder {
     color: #d1d1d1;
@@ -273,4 +294,74 @@ body {
 
 [data-dpr="3"] ::-webkit-input-placeholder {
     font-size: 45px;
+}
+
+
+
+/*2015.06.22-add*/
+.code-input {
+    position: relative;
+    border-bottom: 1px solid #f6f6f6;
+    border-top: 1px solid #f6f6f6;
+    background: #fff;
+    text-align: left;
+    margin-top: 0.40625rem;
+}
+
+.get-code-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 3%;
+    margin-top: 0.15575rem;
+}
+[data-dpr="1"] .get-code-img {
+    height: 34px;
+}
+[data-dpr="2"] .get-code-img {
+    height: 68px;
+}
+[data-dpr="3"] .get-code-img {
+    height: 102px;
+}
+
+.change-pic{
+    float: right;
+    border-bottom: 1px solid #c2c3c4;
+    color: #76787d;
+}
+[data-dpr="1"] .change-pic {
+    font-size: 10px;
+    margin-top: 10px;
+}
+[data-dpr="2"] .change-pic {
+    font-size: 20px;
+    margin-top: 20px;
+}
+[data-dpr="3"] .change-pic {
+    font-size: 30px;
+    margin-top: 30px;
+}
+
+.code-pic{
+    float: left;
+}
+.code-pic img{
+    width: 100%;
+    height: 100%;
+}
+[data-dpr="1"] .code-pic {
+    width: 44px;
+    height: 34px;
+    margin:0 8px;
+}
+[data-dpr="2"] .code-pic {
+    width: 88px;
+    height: 68px;
+    margin:0 16px;
+}
+[data-dpr="3"] .code-pic {
+    width: 132px;
+    height: 102px;
+    margin:0 24px;
 }

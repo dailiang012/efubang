@@ -1,12 +1,3 @@
-/*
-@font-face {
-  font-family: "WenYue";
-  src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
-  url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff');
-  !*url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
-  url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');*!
-}
-*/
 .clear {
   clear: both; }
 
@@ -26,11 +17,10 @@
   margin: 0 auto;
   width: 6.09375rem;
   height: 1.76563rem;
-  font-family: "WenYue";
   line-height: 100%;
   font-weight: bolder;
   color: #0e1a18;
-  background: url("../images/list04.png") no-repeat center bottom;
+  background: url("../images/list03.png") no-repeat center bottom;
   background-size: 100% auto;
   padding-top: 1.04688rem; }
   [data-dpr="1"] .list-title {
@@ -50,7 +40,8 @@
 
 .total-data {
   padding-left: 0.23438rem;
-  padding-bottom: 0.78125rem; }
+  padding-bottom: 0.78125rem;
+  font-weight: bolder; }
   .total-data span {
     display: inline-block;
     text-align: center;
@@ -78,25 +69,15 @@
 
 .return {
   float: right;
-  padding-right: 0.3125rem;
   margin-right: 0.875rem;
-  margin-top: 0.3125rem;
-  margin-bottom: 0.3125rem;
-  background: url("../images/more.png") no-repeat right top;
-  background-size: auto 100%; }
+  margin-top: 0.3125rem; }
   .return a {
     display: block;
-    line-height: 0.4375rem;
-    border-bottom: 1px solid #eb3811;
-    color: #eb3811;
-    font-weight: bolder;
-    text-decoration: none; }
-    [data-dpr="1"] .return a {
-      font-size: 12.5px; }
-    [data-dpr="2"] .return a {
-      font-size: 25px; }
-    [data-dpr="3"] .return a {
-      font-size: 37.5px; }
+    width: 2.67188rem;
+    height: 0.40625rem; }
+  .return img {
+    width: 100%;
+    height: 100%; }
 
 /*table-end*/
 

@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/*字体设置开始*/
+/*字体设置结束*/
+html {
+  width: 100%;
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  background-color: #f9f9f9; }
+
+body {
+  width: 100%;
+  height: 100%; }
+
+button {
+  /*去掉button在ios上的默认样式*/
+  -webkit-appearance: none;
+  border-radius: 0; }
+
+.start-top {
+  height: 80%; }
+  .start-top .pic {
+    height: 70%;
+    padding-top: 10%;
+    width: 8.23438rem;
+    margin: 0 auto;
+    text-align: center; }
+    .start-top .pic img {
+      max-width: 100%;
+      height: 100%; }
+  .start-top .text {
+    height: 20%;
+    text-align: center;
+    line-height: 0.96875rem;
+    color: #76787d; }
+    [data-dpr="1"] .start-top .text {
+      font-size: 18px; }
+    [data-dpr="2"] .start-top .text {
+      font-size: 36px; }
+    [data-dpr="3"] .start-top .text {
+      font-size: 54px; }
+
+.start-bot {
+  height: 20%;
+  text-align: center; }
+  .start-bot button {
+    width: 4.5625rem;
+    height: 0.95313rem;
+    border: 2px solid #4cb0ae;
+    border-radius: 0.40625rem; }
+    [data-dpr="1"] .start-bot button {
+      font-size: 14px; }
+    [data-dpr="2"] .start-bot button {
+      font-size: 28px; }
+    [data-dpr="3"] .start-bot button {
+      font-size: 42px; }
+    .start-bot button[name="real-name"] {
+      color: #f0f4fe;
+      background: #4cb0ae;
+      margin-bottom: 0.46875rem; }
+    .start-bot button[name="return"] {
+      color: #4cb0ae;
+      background: #fff; }
+
+/*# sourceMappingURL=style-start-page.css.map */

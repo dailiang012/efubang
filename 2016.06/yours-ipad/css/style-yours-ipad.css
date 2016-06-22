@@ -1,10 +1,3 @@
-/*@font-face {
-  font-family: "WenYue";
-  src: url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
-  url('../fonts/wenyue-xinqingnianti-nc-w8-webfont.woff'),
-  url('../fonts/WenYue-XinQingNianTi-NC-W8.ttf'),
-  url('../fonts/WENYUE-XINQINGNIANTI-NC-W8.OTF');
-}*/
 .clear {
   clear: both; }
 
@@ -24,7 +17,6 @@
   text-align: center;
   width: 6.09375rem;
   height: 0.42188rem;
-  font-family: "WenYue";
   padding-top: 1.4375rem;
   line-height: 100%;
   margin: 0 auto;
@@ -46,8 +38,7 @@
     height: 4.23438rem;
     text-align: center;
     line-height: 4.23438rem;
-    font-family: WenYue;
-    text-shadow: 0 6px 0px #c04311; }
+    text-shadow: 0 6px 0 #c04311; }
     [data-dpr="1"] .list01 .status {
       font-size: 107px; }
     [data-dpr="2"] .list01 .status {
@@ -62,18 +53,7 @@
       width: 5.09375rem;
       height: 1.35938rem;
       margin: 0 auto;
-      margin-bottom: 0.65625rem;
-      background: url("../images/btn-bj.png") no-repeat center top;
-      background-size: 100% 100%;
-      text-align: center;
-      color: #fff;
-      line-height: 1.35938rem; }
-      [data-dpr="1"] .list01 .btn-list .btn {
-        font-size: 22px; }
-      [data-dpr="2"] .list01 .btn-list .btn {
-        font-size: 44px; }
-      [data-dpr="3"] .list01 .btn-list .btn {
-        font-size: 66px; }
+      margin-bottom: 0.65625rem; }
     .list01 .btn-list .share {
       width: 4.35938rem;
       height: 1.5625rem;
@@ -83,6 +63,14 @@
       .list01 .btn-list .share img {
         width: 100%;
         height: 100%; }
+
+#others {
+  background: url("../images/help-btn.png") no-repeat center top;
+  background-size: 100% 100%; }
+
+#myself {
+  background: url("../images/my-play-btn.png") no-repeat center top;
+  background-size: 100% 100%; }
 
 /*list01-end*/
 /*list02-start*/
@@ -197,24 +185,15 @@
 
 .total {
   float: right;
-  padding-right: 0.3125rem;
   margin-right: 0.875rem;
-  margin-top: 0.15625rem;
-  background: url("../images/more.png") no-repeat right top;
-  background-size: auto 100%; }
+  margin-top: 0.15625rem; }
   .total a {
     display: block;
-    line-height: 0.4375rem;
-    border-bottom: 1px solid #eb3811;
-    color: #eb3811;
-    font-weight: bolder;
-    text-decoration: none; }
-    [data-dpr="1"] .total a {
-      font-size: 12.5px; }
-    [data-dpr="2"] .total a {
-      font-size: 25px; }
-    [data-dpr="3"] .total a {
-      font-size: 37.5px; }
+    width: 2.67188rem;
+    height: 0.40625rem; }
+  .total img {
+    width: 100%;
+    height: 100%; }
 
 /*list03-end*/
 /*list04-start*/
@@ -272,7 +251,6 @@ body {
     right: 0;
     top: 0; }
   .popup-content .add-number {
-    font-family: "WenYue";
     text-align: center;
     padding-top: 3.71875rem;
     color: #1f2615;
@@ -302,7 +280,7 @@ body {
     margin: 0 auto;
     width: 3.39063rem;
     height: 0.9375rem;
-    background: url("../images/btn-bj.png") no-repeat center top;
+    background: url("../images/my-play-btn.png") no-repeat center top;
     background-size: 100% 100%;
     text-align: center;
     color: #fff;
