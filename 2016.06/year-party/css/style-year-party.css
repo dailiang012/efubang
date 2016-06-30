@@ -1,3 +1,12 @@
+@charset "UTF-8";
+/*黑字色*/
+/*灰字色*/
+/*正常字体*/
+/*标题字体*/
+/*蓝色*/
+/*红色*/
+/*背景色*/
+/*边框色*/
 .party-group {
   height: 4841px;
   background: url("../images/content-bj.jpg") no-repeat center top; }
@@ -15,14 +24,12 @@
 
 .box-pic {
   width: 184px;
-  height: 116px; }
-
-.close .box-pic {
+  height: 116px;
   background: url("../images/close.png") no-repeat center top; }
 
-.open .box-pic {
-  background: url("../images/open.png") no-repeat center top; }
-
+/* .open .box-pic {
+  background: url("../images/open.png") no-repeat center top;
+} */
 .box-text {
   text-align: center;
   padding-left: 40px; }
@@ -53,24 +60,36 @@
 
 .popup-content {
   width: 661px;
-  height: 691px;
+  height: 720px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 120px;
   background: url("../images/popup-bj.png") no-repeat center top;
+  background-size: 100% 100%;
   position: relative;
   font-weight: bolder; }
   .popup-content .name {
     text-align: center;
-    font-size: 30px;
-    padding-top: 274px;
-    font-weight: bolder;
-    color: #fff; }
+    padding-top: 274px; }
+    .popup-content .name span {
+      background: url("../images/active-name.png") no-repeat center top;
+      background-size: 100% 100%;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: bolder;
+      line-height: 60px;
+      color: #fff;
+      padding: 0 40px; }
   .popup-content .time {
-    font-size: 16px;
-    color: #762617;
     text-align: center;
     padding-top: 25px; }
+    .popup-content .time span {
+      font-size: 16px;
+      color: #762617;
+      background: url("../images/time-bj.png") no-repeat center top;
+      background-size: 100% 100%;
+      padding: 0 40px;
+      line-height: 14px; }
   .popup-content .popup-rule {
     padding-top: 48px;
     width: 500px;
@@ -86,6 +105,11 @@
     right: 0;
     top: 0;
     cursor: pointer; }
+  .popup-content .get-detail {
+    text-align: center;
+    padding-top: 60px; }
+    .popup-content .get-detail img {
+      display: inline; }
 
 .party01 {
   left: 219px;

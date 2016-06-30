@@ -1,0 +1,152 @@
+#banner {
+  height: 726px;
+  background: url("../images/hongkong-banner.jpg") no-repeat center top; }
+
+#main-travel {
+  background: url("../images/main-bj.jpg") no-repeat center top; }
+
+.little-pic-border {
+  padding: 9px;
+  border: 1px solid #357383;
+  background-color: #fff; }
+  .little-pic-border img {
+    width: 100%;
+    height: 100%; }
+
+.big-pic-border {
+  width: 1023px;
+  height: 418px;
+  padding: 23px;
+  border: 2px solid #357383;
+  background-color: #fff;
+  border-radius: 26px;
+  margin-bottom: 20px; }
+  .big-pic-border img {
+    width: 100%;
+    height: 100%; }
+
+.a-b-plan {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 133px; }
+  .a-b-plan .choose-pic {
+    padding-top: 80px; }
+
+.plan-text {
+  width: 50%;
+  float: left;
+  text-align: center; }
+  .plan-text .content-text {
+    font-size: 16px;
+    line-height: 45px;
+    color: #666;
+    font-weight: bold; }
+    .plan-text .content-text strong {
+      font-size: 20px; }
+    .plan-text .content-text span {
+      color: #ff6920; }
+  .plan-text .title-name {
+    width: 138px;
+    height: 38px; }
+
+.where-title {
+  width: 1024px;
+  margin: 0 auto;
+  text-align: center;
+  padding-bottom: 17px; }
+  .where-title .where-name {
+    width: 100%;
+    border-bottom: 1px solid #08313f;
+    padding-bottom: 18px; }
+  .where-title p {
+    color: #08313f;
+    line-height: 30px;
+    font-size: 14px;
+    font-weight: bold; }
+
+.detail-text {
+  width: 390px;
+  float: left;
+  padding-left: 50px; }
+  .detail-text .btn {
+    width: 139px;
+    height: 51px;
+    margin-bottom: 46px;
+    margin-left: 27px; }
+    .detail-text .btn img {
+      width: 100%;
+      height: 100%; }
+  .detail-text .text {
+    font-size: 14px;
+    color: #666;
+    line-height: 17px;
+    font-weight: bold; }
+    .detail-text .text p {
+      text-indent: 27px; }
+  .detail-text span a {
+    display: block;
+    text-align: right;
+    font-size: 14px;
+    line-height: 40px;
+    color: #8d8b8b;
+    font-weight: bold;
+    padding-right: 20px; }
+
+.hong-kong {
+  width: 1078px;
+  margin: 0 auto;
+  padding-top: 90px; }
+  .hong-kong .detail-pic {
+    padding-left: 177px;
+    float: left; }
+    .hong-kong .detail-pic .slash {
+      float: left;
+      width: 26px;
+      padding-top: 14px; }
+      .hong-kong .detail-pic .slash img {
+        width: 100%; }
+    .hong-kong .detail-pic .little-pic-border {
+      float: left;
+      width: 160px;
+      height: 240px; }
+  .hong-kong .detail-text {
+    padding-left: 50px; }
+
+.nine {
+  width: 1078px;
+  margin: 0 auto;
+  padding-top: 50px; }
+  .nine .detail-pic {
+    padding-left: 32px;
+    float: left; }
+    .nine .detail-pic .slash {
+      float: left;
+      width: 28px;
+      padding-top: 14px; }
+      .nine .detail-pic .slash img {
+        width: 100%; }
+    .nine .detail-pic .little-pic-border {
+      float: left;
+      width: 240px;
+      height: 150px; }
+  .nine .detail-text {
+    padding-left: 50px;
+    padding-top: 13px; }
+
+.rule {
+  padding-top: 90px;
+  padding-bottom: 516px;
+  width: 1024px;
+  margin: 0 auto;
+  font-weight: bold; }
+  .rule h2 {
+    font-size: 30px;
+    color: #08313f;
+    line-height: 103px;
+    font-weight: bolder; }
+  .rule li {
+    font-size: 18px;
+    line-height: 45px;
+    color: #08313f; }
+
+/*# sourceMappingURL=style-hongkong.css.map */

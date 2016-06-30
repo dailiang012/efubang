@@ -21,7 +21,7 @@
     <div class="banner"></div>
     <div class="list-title"></div>
     <div class="total-data">
-        <div class="title">
+        <div class="title">     
             <span class="ranking">排名</span>
             <span class="name">用户名</span>
             <span class="phone">手机号</span>
@@ -209,9 +209,13 @@
         <div class="return"><a href="yours-ipad.html"><img src="./images/return-text.png" alt=""></a></div>
         <div class="clear"></div>
     </div>
+    <div>
+        
+    </div>
 </div>
 <script>
-    var list=document.getElementsByClassName('list');/*IE9以上,手机端没有问题*/
+    /*控制1-20的数字递增*/
+    var list=document.getElementsByClassName('list');    /*getElementsByClassName，使用于IE9以上,这里手机端没有问题*/
     for(var i=0;i<list.length;i++){
         var ranking=list[i].getElementsByClassName('ranking')[0];
         ranking.innerHTML=i+1;
@@ -219,3 +223,4 @@
 </script>
 </body>
 </html>
+            
