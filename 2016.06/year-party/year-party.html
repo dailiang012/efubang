@@ -224,7 +224,7 @@
                 var partyBox=document.getElementsByClassName('party-box');
                 for(var i=0;i<partyBox.length;i++){
                     var attr=partyBox[i].getAttribute('index');
-                    if(day>parseInt(attr)){
+                    if(day>=parseInt(attr)){
                         partyBox[i].firstElementChild.style.backgroundImage='url("./images/open.png")';
                     }
                 }
