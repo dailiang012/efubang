@@ -1,0 +1,466 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+    } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+/*字体设置开始*/
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+/*字体设置结束*/
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper {
+  width: 100%;
+  overflow: hidden;
+  @include px2rem(padding-bottom,60px,64px,false);
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+/*header开始*/
+html {
+  height: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #f9f9f9;
+}
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header结束*/
+
+/*progress-data开始*/
+.progress-data {
+  text-align: center;
+  @include px2rem(padding-top, 58px, 64px, false);
+  position: relative;
+  border-bottom: $border;
+  background: #fff;
+  @include px2rem(margin-bottom,10px,64px,false);
+  /*.project-progress{
+    @include px2rem(height,380px,64px,false);
+    }*/
+    .information {
+      width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      p {
+        @include px2rem(padding-top, 160px, 64px, false);
+        @include px2rem(font-size, 20px, 64px, false);
+        line-height: 100%;
+      }
+      span {
+        color: $red;
+        @include px2rem(font-size, 72px, 64px, false);
+        @include px2rem(line-height, 94px, 64px, false);
+      }
+    }
+    .project-list {
+      @include px2rem(padding-bottom, 20px, 64px, false);
+      @include px2rem(padding-top, 40px, 64px, false);
+      width: 100%;
+      display: -webkit-box;
+      display: -moz-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -moz-box-orient: horizontal;
+      -moz-box-direction: normal;
+      -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      box-sizing: border-box;
+      .flex-box{
+        -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+        -moz-box-flex: 1; /* OLD - Firefox 19- */
+        -webkit-flex: 1; /* Chrome */
+        -ms-flex: 1; /* IE 10 */
+        flex: 1;
+        color: $normal;
+        @include px2rem(line-height, 30px, 64px, false);
+        span {
+          color: $red;
+        }
+      }
+      .time {
+        border: {
+          left: $border;
+          right: $border;
+        }
+      }
+    }
+  }
+  .project-list .flex-box{
+    @include font-dpr(24px);
+  }
+  .progress-data .name {
+    color: $normal;
+    @include px2rem(line-height, 56px, 64px, false);
+    @include px2rem(padding-top, 20px, 64px, false);
+    @include font-dpr(28px);
+  }
+  .progress-data  .number {
+    color: $gray;
+    line-height: 100%;
+    @include font-dpr(20px);
+  }
+  /*progress-data结束*/
+
+  /* tabBox开始 */
+  .tabBox {
+    @include px2rem(margin-top,10px,64px,false);
+    border-bottom: $border;
+    .hd {
+      outline: $border;
+      background: #fff;
+      ul {
+        overflow: hidden;
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-orient: horizontal;
+        -moz-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        box-sizing: border-box;
+        li {
+          color: $normal;
+          -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
+          -moz-box-flex: 1; /* OLD - Firefox 19- */
+          -webkit-flex: 1; /* Chrome */
+          -ms-flex: 1; /* IE 10 */
+          flex: 1;
+          text-align: center;
+          &:first-child a{
+            border-right: $border;
+          }
+          a{
+            display: block;
+            @include px2rem(margin-top,15px,64px,false);
+            @include px2rem(margin-bottom,10px,64px,false);
+            text-decoration: none;
+            color: $normal;
+            @include px2rem(line-height,50px,64px,false);
+          }
+        }
+        .on {
+          border-bottom: 5px solid #{$blue};
+          a{
+            color:$blue;
+          }
+        }
+      }
+    }
+  }
+  .tabBox .hd a{
+    @include font-dpr(24px);
+  }
+  .tabBox .bd {
+    li{
+      background: #fff;
+    }
+    .list{
+      width: 96%;
+      margin: 0 auto;
+      border-bottom: $border;
+      margin-top: 1px;
+      .title{
+        color: $title-font;
+        line-height: 100%;
+        @include px2rem(padding-top,18px,64px,false);
+      }
+      p{
+        color: $normal;
+        @include px2rem(padding-top,22px,64px,false);
+        @include px2rem(padding-bottom,22px,64px,false);
+        @include px2rem(line-height,32px,64px,false);
+      }
+      &:last-child{
+        border:none;
+      }
+    }
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+  .list .title{
+    @include font-dpr(24px);
+  }
+  .list p{
+    @include font-dpr(20px);
+  }
+  .fixed-box{
+    background-color: #f9f9f9;
+  }
+  [data-dpr="1"] .fixed-box{
+    height: (100px/2);
+  }
+  [data-dpr="2"] .fixed-box{
+    height: 100px;
+  }
+  [data-dpr="3"] .fixed-box{
+    height: 100px*1.5;
+  }
+  #set-money{
+    background-color: #fff;
+    border-top: $border;
+    border-bottom: $border;
+    width: 100%;
+    @include px2rem(height,102px,64px,false);
+  .left{
+    width: 65%;
+    float: left;
+    padding-left: 3%;
+  }
+}
+#set-money label{
+  float: left;
+  color: $blue;
+  @include font-dpr(30px);
+  @include px2rem(width,140px,64px,false);
+  @include px2rem(line-height,100px,64px,false);
+}
+#set-money input{
+  float: right;
+  @include font-dpr(24px);
+  color: $normal;
+  line-height: 100%;
+  border: none;
+  outline: none;
+  width: 60%;
+}
+[data-dpr="1"] #set-money input{
+  padding:18px 3%;
+}
+[data-dpr="2"] #set-money input{
+  padding:36px 3%;
+}
+[data-dpr="3"] #set-money input{
+  padding:(18*3px) 3%;
+}
+#set-money .right {
+  float:left;
+  height:100%;
+  width:32%;
+#right-center{
+  @include px2rem(width,160px,64px,false);
+  @include px2rem(height,40px,64px,false);
+  background:url("../images/invest/popup-right.png") no-repeat right top;
+  border-left:$border;
+  @include px2rem(margin-top,30px,64px,false);
+  text-align:center;
+  @include font-dpr(24px);
+  @include px2rem(line-height,40px,64px,false);
+  color:$normal;
+}
+}
+.invest-money button[type="button"]{
+  color: #fff;
+  @include font-dpr(30px);
+  &:active{
+    background-color: #419695;
+  }
+  @include px2rem(height,100px,64px,false);
+  width:100%;
+  background-color:$blue;
+  border:none;
+  outline:none;
+  border-bottom: $border;
+}
+/*table-start*/
+table{
+  width: 100%;
+  text-align: center;
+  @include px2rem(line-height,60px,64px,false);
+  @include font-dpr(20px);
+  color: $normal;
+  tr{
+    border-bottom:$border;
+  }
+  th{
+    text-align: center;
+  }
+  thead{
+    background-color: #f6f6f6;
+    border-top: $border;
+  }
+}
+/*table-end*/
+.click-more{
+  text-align: center;
+  @include font-dpr(24px);
+  color: $normal;
+  @include px2rem(line-height,100px,64px,false);
+  background:#f9f9f9;
+}
+
+
+// red-popup-start
+#red-popup{
+  position:relative;
+  @include px2rem(width,560px,64px,false);
+  margin:0 auto;
+}
+#popup-center{
+  position:absolute;
+  @include px2rem(width,520px,64px,false);
+  @include px2rem(padding,20px,64px,false);
+  @include px2rem(padding-bottom,30px,64px,false);
+  background-color:$background;
+  z-index:10;
+  border:$border;
+  box-shadow:1px 1px 2px rgba(0,0,0,0.3); 
+  @include px2rem(margin-top,369px,64px,false);
+    #close-popup{
+      float:right;
+    @include px2rem(width,20px,64px,false);
+    @include px2rem(height,20px,64px,false);
+    }
+}
+.popup-title{
+  width:100%;
+  text-align:center;
+  @include px2rem(line-height,40px,64px,false);
+  @include font-dpr(30px);
+  color:$blue;
+  background:url("../images/invest/text-bj.png") no-repeat left center;
+  background-size:100% 100%;
+  @include px2rem(margin-top,20px,64px,false);
+}
+#no-use{
+  border:$border;
+  width:100%;
+  background-color:#fff;
+  @include px2rem(margin-top,30px,64px,false);
+}
+.choice{
+    @include px2rem(width,152px,64px,false);
+    @include px2rem(height,24px,64px,false);
+    @include px2rem(padding-top,28px,64px,false);
+    @include px2rem(padding-bottom,28px,64px,false);
+    margin:0 auto;
+    #choice-text{
+      float:left;
+     @include font-dpr(24px);
+    @include px2rem(line-height,24px,64px,false);
+    }
+    img{
+      float:right;
+      height:100%;
+    }
+
+}
+
