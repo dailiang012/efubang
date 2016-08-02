@@ -1,0 +1,207 @@
+<!DOCTYPE HTML>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>红包</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style-user-red_packet02.css"></head>
+<body>
+    <div id="header">
+        <div class="nav-return">
+            <a href="user.html">
+                <img src="./images/return.png" alt="<返回"></a>
+        </div>
+        <div class="nav-title">红包</div>
+    </div>
+    <div id="wrapper">
+        <div id="tabBox1" class="tabBox">
+            <div class="hd">
+                <ul>
+                    <li>
+                        <a href="javascript:void(0)">未使用红包</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">已使用红包</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0)">过期红包</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bd" id="tabBox1-bd">
+                <div class="con">
+                    <ul>
+                        <li>
+                            <div class="log">
+                                <div class="red-list red-true">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+                                <div class="red-list red-true">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="click-more">点击加载更多</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li>
+
+                            <div class="log">
+                                <div class="red-list red-false">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+                                <div class="red-list red-false">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="click-more">点击加载更多</div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="con">
+                    <ul>
+                        <li>
+
+                            <div class="log">
+                                <div class="red-list red-false">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+                                <div class="red-list red-false">
+                                    <div class="left">
+                                        <span>&yen;10</span>
+                                        <br/>
+                                        单笔投资100元可用
+                                    </div>
+                                    <div class="right">
+                                        有效期:
+                                        <br/>
+                                        2016-03-31 20:29:53
+                                        <br/>
+                                        至
+                                        <br/>
+                                        2016-04-15 20:29:53
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="click-more">点击加载更多</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/TouchSlide.1.1.js"></script>
+<!--Touchsilder-start-->
+<script>
+    TouchSlide({
+        slideCell: "#tabBox1",
+        endFun: function (i) { //高度自适应
+            var bd = document.getElementById("tabBox1-bd");
+            bd.parentNode.style.height = bd.children[i].children[0].offsetHeight + "px";
+            if (i > 0)bd.parentNode.style.transition = "200ms";//添加动画效果
+        }
+    });
+</script>
+<!--Touchsilder-end-->
+<!--进度条开始-->
+<script>
+    window.onload=function(){
+        showProgressBar('progressIndex1','100','40');
+    };
+    function showProgressBar(parentPro,num1,num2){
+        //num1是总容量，num2是占比量,parentPro父节点区分标记
+        var percent=(num2*100/num1)+"%";
+        var pa=$("."+parentPro);
+        var proBgW=pa.find("div.progressBarBg").width();
+        pa.find("label.progressNum").text(percent);
+        percent=parseFloat(percent);
+        var proW=Number(proBgW*(percent/100));
+        var tipPosLeft=percent-9;
+        pa.find("div.progressBar").css("width",proW+"px");
+        pa.find("div.progressTip").css("left",tipPosLeft+"%");
+    }
+</script>
+<!--进度条开始-->
+</body>
+</html>
