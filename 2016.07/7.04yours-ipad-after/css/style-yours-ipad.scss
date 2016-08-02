@@ -1,0 +1,583 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+    } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+//字体设置开始
+@mixin font-dpr($font-size) {
+  [data-dpr="1"] & {
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+.clear {
+  clear: both;
+}
+#yours-main {
+  background: url("../images/yours-bj.jpg") no-repeat center top;
+  background-size: 100% 100%;
+}
+
+.banner {
+  @include px2rem(width, 613px, 64px, false);
+  @include px2rem(height, 486px, 64px, false);
+  margin: 0 auto;
+  background: url("../images/banner-bj.png") no-repeat center top;
+  background-size: 101% auto;
+}
+
+/*list01-start*/
+.list-title {
+  text-align: center;
+  @include px2rem(width, 390px, 64px, false);
+
+  @include px2rem(height, 30px, 64px, false);     
+
+  @include font-dpr(30px);
+  @include px2rem(padding-top, 103px, 64px, false);
+  line-height: 100%;
+  margin: 0 auto;
+  font-weight: bolder;
+}
+
+.list01 {
+  @include px2rem(padding-top, 67px, 64px, false);
+
+  .list-title {
+    color: #0e1a18;
+    background: url("../images/list01.png") no-repeat center top;
+    background-size: 100% auto;
+    text-align: center;
+    @include px2rem(width, 390px, 64px, false);
+
+    @include px2rem(height, 174px, 64px, false);    
+
+    @include font-dpr(30px);
+    @include px2rem(padding-top, 86px, 64px, false);
+    line-height: 100%;
+    margin: 0 auto;
+    font-weight: bolder;
+
+
+    .photo {    
+      @include px2rem(padding-bottom,30px,64px,false);
+      @include px2rem(width,95px,64px,false);
+      @include px2rem(height,95px,64px,false);
+      margin:0 auto;
+      img{
+        @include px2rem(width,95px,64px,false);
+        @include px2rem(height,95px,64px,false);
+        border-radius: 50%;
+        border: 1px solid #eb3811;
+      }
+    }
+
+  }
+
+  .status {
+    @include px2rem(height, 271px, 64px, false);
+    text-align: center;
+    @include font-dpr(214px);
+    @include px2rem(line-height, 271px, 64px, false);
+    text-shadow: 0 6px 0 #c04311;
+    font-weight: bolder;
+
+    img {
+      height: 100%;
+      max-width: 100%;
+    }
+
+  }
+
+  .btn-list {
+    width: 90%;
+    margin: 0  auto;
+    @include px2rem(margin-bottom, 120px, 64px, false);
+    position: relative;
+
+    .btn {
+      @include px2rem(width, 326px, 64px, false);
+      @include px2rem(height, 87px, 64px, false);
+      margin: 0 auto;
+      @include px2rem(margin-bottom, 42px, 64px, false);
+    }
+
+    .share {
+      @include px2rem(width, 279px, 64px, false);
+      @include px2rem(height, 100px, 64px, false);
+      position: absolute;
+      right: 0;
+      @include px2rem(bottom, -100px, 64px, false);
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+
+    }
+
+  }
+
+}
+
+#others {
+  background-image: url("../images/help-btn.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%;
+}
+
+#myself {
+  background: url("../images/my-play-btn.png") no-repeat center top;
+  background-size: 100% 100%;
+}
+
+#my-home {
+  background: url("../images/my-home-page.png") no-repeat center top;
+  background-size: 100% 100%;
+  display:none;
+}
+
+
+/*list01-end*/
+
+/*list02-start*/
+.list02 {
+  .list-title {
+    background: url("../images/list02.png") no-repeat center top;
+    background-size: 100% auto;
+  }
+
+  @include px2rem(padding-top, 50px, 64px, false);
+
+  .prize {
+    margin: 0 auto;
+    @include px2rem(margin-top, 24px, 64px, false);
+    @include px2rem(width, 530px, 64px, false);
+    @include px2rem(height, 214px, 64px, false);
+    background: url("../images/prize.png") no-repeat center top;
+    background-size: 100% 100%;
+
+    ul {
+      @include px2rem(padding-top, 27px, 64px, false);
+      @include px2rem(width, 412px, 64px, false);
+      @include px2rem(line-height, 54px, 64px, false);
+      margin: 0 auto;
+      @include font-dpr(24px);
+      font-weight: bolder;
+      color: #eb3f19;
+
+      .left {
+        float: left;
+        text-align: left;
+
+        span {
+          @include px2rem(padding-left, 35px, 64px, false);
+        }
+
+      }
+
+      .right {
+        float: right;
+        text-align: right;
+      }
+
+    }
+
+  }
+
+}
+
+/*list02-end*/
+
+/*list03-start*/
+.list03 {
+  @include px2rem(padding-top, 80px, 64px, false);
+
+  .list-title {
+    color: #eb3811;
+    background: url("../images/list03.png") no-repeat center top;
+    background-size: 100% auto;
+  }
+
+}
+
+.ranking {
+  @include px2rem(padding-top, 15px, 64px, false);
+}
+
+.ranking-list {
+  @include px2rem(height, 119px, 64px, false);
+
+  .ranking-border {
+    @include px2rem(width, 591px, 64px, false);
+    margin: 0 auto;
+    height: 1px;
+    background: url("../images/border-bj.jpg") no-repeat center top;
+    background-size: 100% auto;
+  }
+
+  .content {
+    @include px2rem(width, 526px, 64px, false);
+    margin: 0 auto;
+    font-weight: bolder;
+    color: #eb3811;
+  }
+
+  .list-number {
+    float: left;
+    @include px2rem(line-height, 119px, 64px, false);
+    @include font-dpr(35px);
+  }
+
+  .user-data {
+    float: left;
+    @include px2rem(margin-left, 24px, 64px, false);
+    @include px2rem(margin-top, 23px, 64px, false);
+  }
+
+  .content-status {
+    float: right;
+    @include px2rem(line-height, 119px, 64px, false);
+    @include font-dpr(40px);
+  }
+
+}
+
+.user-data {
+  .photo {
+    float: left;
+  }
+
+  .name-time {
+    float: left;
+    @include px2rem(margin-left, 13px, 64px, false);
+
+    .name {
+      @include px2rem(line-height, 46px, 64px, false);
+      @include font-dpr(30px);
+    }
+
+    .time {
+      @include font-dpr(20px);
+      line-height: 100%;
+    }
+
+  }
+
+  img {
+    @include px2rem(width, 70px, 64px, false);
+    @include px2rem(height, 70px, 64px, false);
+    border-radius: 50%;
+    border: 1px solid #eb3811;
+  }
+
+}
+
+.total {
+  float: right;
+  @include px2rem(margin-right, 56px, 64px, false);
+  @include px2rem(margin-top, 10px, 64px, false);
+
+  a {
+    display: block;
+    @include px2rem(width, 171px, 64px, false);
+    @include px2rem(height, 26px, 64px, false);
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/*list03-end*/
+
+/*list04-start*/
+.list04 {
+  .list-title {
+    background: url("../images/list04.png") no-repeat center top;
+    background-size: 100% auto;
+  }
+
+  margin: 0 auto;
+  @include px2rem(padding-top, 100px, 64px, false);
+  @include px2rem(padding-bottom, 30px, 64px, false);
+  @include px2rem(width, 591px, 64px, false);
+
+  .bj {
+    background: url("../images/list04-bj.png") no-repeat center bottom;
+    background-size: 100% auto;
+  }
+
+  ul {
+    @include px2rem(margin-top, 15px, 64px, false);
+    @include px2rem(padding-bottom, 100px, 64px, false);
+    @include px2rem(padding-top, 20px, 64px, false);
+    @include px2rem(width, 372px, 64px, false);
+    margin: 0 auto;
+  }
+
+  li {
+    @include font-dpr(24px);
+    @include px2rem(line-height, 35px, 64px, false);
+    color: #eb3811;
+    font-weight: bolder;
+  }
+
+}
+
+/*list04-end*/
+
+/*yours-popup-start*/
+body {
+  position: relative;
+}
+
+#yours-popup {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  @include px2rem(top, 687px, 64px, false);
+  z-index: 3;
+  display: none;
+}
+
+.popup-content {
+  @include px2rem(width, 519px, 64px, false);
+  margin: 0 auto;
+  position: relative;
+
+  .close {
+    @include px2rem(width, 60px, 64px, false);
+    @include px2rem(height, 60px, 64px, false);
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 4;
+  }
+
+  .btn {
+    margin: 0 auto;
+    @include px2rem(width, 217px, 64px, false);
+    @include px2rem(height, 60px, 64px, false);
+    @include font-dpr(30px);
+    text-align: center;
+    color: #fff;
+    @include px2rem(line-height, 60px, 64px, false);
+  }
+
+  .box-padding {
+    @include px2rem(margin-top, 40px, 64px, false);
+    @include px2rem(padding-bottom, 60px, 64px, false);
+  }
+
+}
+
+/*帮他加分弹窗*/
+#help-content {
+  display: none;/*隐藏状态*/
+  background: url("../images/yours-pupop-bj.jpg") no-repeat center top;
+  background-size: 100% 100%;
+
+  .add-number {
+    text-align: center;
+    @include px2rem(padding-top, 250px, 64px, false);
+    @include font-dpr(112px);
+    color: #1f2615;
+    font-weight: bolder;
+    line-height: 100%;
+    @include font-dpr(40px);
+
+    span {
+      @include font-dpr(112px);
+      text-shadow: 0 6px 0 #c04311;
+    }
+
+  }
+
+  .btn {
+    background: url("../images/my-play-btn.png") no-repeat center top;
+    background-size: 100% 100%;
+  }
+
+}
+
+/*登录弹窗*/
+#my-login {
+  display: none;/*隐藏状态*/
+  background: url("../images/login-popup.jpg") no-repeat center top;
+  background-size: 100% 100%;
+
+  form {
+    @include px2rem(padding-top, 150px, 64px, false);
+
+    p {
+      @include px2rem(width, 289px, 64px, false);
+      margin: 0 auto;
+      @include px2rem(padding-bottom, 26px, 64px, false);
+    }
+
+    .get-code,
+    .prompt {
+      padding: 0;
+      position: relative;
+    }
+
+    input {
+      @include px2rem(width, 256px, 64px, false);
+      @include px2rem(height, 54px, 64px, false);
+      @include px2rem(padding-left, 30px, 64px, false);
+      @include px2rem(border-radius, 30px, 64px, false);
+      outline: none;
+      border: 2px solid #b25613;
+      background: #ffeca9;
+      margin: 0 auto;
+    }
+
+  }
+
+  .prompt {
+    @include px2rem(margin-top, 10px, 64px, false);
+
+    span {
+      display: block;
+      @include px2rem(margin-left, 5px, 64px, false);
+      @include px2rem(height, 16px, 64px, false);
+      float: left;
+      @include font-dpr(16px);
+      @include px2rem(line-height, 16px, 64px, false);
+      color: #f25a18;
+
+      img {
+        height: 100%;
+        max-width: 100%;
+      }
+
+    }
+
+  }
+
+  .btn {
+    background: url("../images/login-btn.png") no-repeat center top;
+    background-size: 100% 100%;
+  }
+
+  .new-code {
+    display: block;
+    position: absolute;
+    @include px2rem(top, 13px, 64px, false);
+    @include px2rem(right, 17px, 64px, false);
+    @include px2rem(width, 85px, 64px, false);
+    @include px2rem(height, 34px, 64px, false);
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+  }
+
+}
+
+/*登录成功*/
+#login-true {
+  display: none;/*隐藏状态*/
+  background: url("../images/login-popup-true.jpg") no-repeat center top;
+  background-size: 100% 100%;
+
+  p {
+    @include px2rem(padding-top, 209px, 64px, false);
+    @include font-dpr(24px);
+    color: #0e1a18;
+    @include px2rem(width, 367px, 64px, false);
+    margin: 0 auto;
+    @include px2rem(line-height, 30px, 64px, false);
+    font-weight: bolder;
+  }
+
+  .btn {
+    background: url("../images/share-btn.png") no-repeat center top;
+    background-size: 100% 100%;
+  }
+
+}
+
+/*分享背景*/
+html body {
+  height: 100%;
+  width: 100%;
+}
+
+#share-bj {
+  display: none;/*隐藏状态*/
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  z-index: 6;
+}
+
+.share-pic-box {
+  @include px2rem(width, 251px, 64px, false);
+  @include px2rem(height, 172px, 64px, false);
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+/*yours-popup-end*/
+
+/*设置placeholder属性样式*/::-webkit-input-placeholder {
+  color: #e4c679;
+  @include font-dpr(24px);
+}
+
+
+/* 添加注册 */
+.register{ 
+  @include px2rem(margin-top,16px,64px,false);
+  text-align:center;
+  a{
+    @include font-dpr(20px);
+    color:#f25a18;
+    line-height:100%;
+    text-decoration:underline;
+  }
+}

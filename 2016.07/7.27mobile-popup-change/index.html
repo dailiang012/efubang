@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>手机版红包弹窗</title>
+<link  rel="stylesheet" type="text/css" href="css/mobile_popup.css">
+<script src="js/flexible.debug.js"></script>
+<script src="js/flexible_css.debug.js"></script>
+<script src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div id="box"></div>
+<div class="pop_up">
+	<div class="pop_inner">
+		<div class="main_bj"><img src="images/main_bj.png" alt="00"></div>
+		<ul class="red_list">
+			<li>
+				<div class="red_money">
+					<div class="pic"><img src="images/redmoney_bj.png" alt="00"></div>
+					<div class="red_ture"><img src="images/red_true.png" alt="00"></div>
+					<h3>&yen;10</h3>
+				</div>
+				<h4>单笔投资100元可用<br/>有效期至：2016-03-02  14:42:42</h4>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="red_money">
+					<div class="pic"><img src="images/redmoney_bj.png" alt="00"></div>
+					<div class="red_ture"><img src="images/red_true.png" alt="00"></div>
+					<h3>&yen;20</h3>
+				</div>
+				<h4>单笔投资100元可用<br/>有效期至：2016-03-02  14:42:42</h4>
+				<div class="clear"></div>
+			</li>
+			<li>
+				<div class="red_money">
+					<div class="pic"><img src="images/redmoney_bj.png" alt="00"></div>
+					<div class="red_ture"><img src="images/red_true.png" alt="00"></div>
+					<h3>&yen;50</h3>
+				</div>
+				<h4>单笔投资100元可用<br/>有效期至：2016-03-02  14:42:42</h4>
+				<div class="clear"></div>
+			</li>
+			<li class="last">
+				<div class="red_money">
+					<div class="pic"><img src="images/redmoney_bj.png" alt="00"></div>
+					<div class="red_ture"><img src="images/red_true.png" alt="00"></div>
+					<h3>不用红包</h3>
+				</div>
+				<div class="clear"></div>
+			</li>
+		</ul>
+		<div class="main_b">
+			<h3>确定投标5800元，确定了将不能取消。</h3>
+			<div class="button">
+				<div class="false_moy input">取消投资</div>
+				<div class="true_moy input"><a href="#">确认投资</a></div>
+				<div class="clear"></div>
+			</div>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+$('.red_list li').click(function(){
+	$('.red_ture').css('opacity','0');
+	$(this).children().find('.red_ture').css('opacity','1');
+});
+$('.false_moy').click(function(){
+	$('.pop_up').css('display','none');
+});
+</script>
+</body>
+</html>

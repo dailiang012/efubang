@@ -1,0 +1,333 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="pragma" content="no-cache" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
+<meta content="telephone=no,email=no" name="format-detection" />
+<title>数据图</title>
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<style type="text/css">
+html, body, h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	padding: 0;
+}
+.container {
+	max-width: 1000px;      /*修改表格的宽度*/
+	margin: 0px auto;
+	margin-bottom: 80px;
+}
+.chart-wrapper {
+	background: #fff;
+	padding: 15px;
+	max-width: 1020px;
+	margin: 0px auto 0px auto;
+	box-sizing: border-box;
+	overflow: hidden;
+	overflow-scrolling: touch;
+	-webkit-overflow-scrolling: touch;
+}
+h2 {
+	margin: 20px 0px;
+}
+.chart-wrapper canvas {
+	min-width: 100%;
+	height: 360px;     /*修改表格的高度*/
+}
+.chart-title, .chart-wrapper + small {
+	margin-left: 15px;
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-bar-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-doughnut-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-pie-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-PolarArea-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+<div class="container">
+	<h2 class="chart-title">某品牌汽车销量走势</h2>
+	<div class="chart-wrapper">
+		<canvas id="sales-volume-radar-chart"></canvas>
+	</div>
+	<small>单位：万辆</small> </div>
+</body>
+下面是核心的javascript代码：
+<script>
+
+function lineChart() {
+
+        var ctx = document.getElementById('sales-volume-chart').getContext("2d")
+
+        var data = {
+
+            labels: ["2014-10", "2014-11", "2014-12", "2015-1", "2015-2", "2015-3"],
+
+            datasets: [{
+
+                label: "",
+
+                fillColor: "rgba(220,220,220,0.2)",
+
+                strokeColor: "rgba(0,102,51,1)",
+
+                pointColor: "rgba(220,220,220,1)",
+
+                pointStrokeColor: "#339933",
+
+                pointHighlightFill: "#339933",
+
+                pointHighlightStroke: "rgba(220,220,220,1)",
+
+                data: [1.27, 1.30, 1.30, 1.41, 1.04, 1.29]
+
+            }]
+
+        };
+
+        var salesVolumeChart = new Chart(ctx).Line(data);
+
+}
+
+function barChart() {
+
+        var ctx = document.getElementById('sales-volume-bar-chart').getContext("2d")
+
+        var data = {
+
+            labels: ["2014-10", "2014-11", "2014-12", "2015-1", "2015-2", "2015-3"],
+
+            datasets: [{
+
+                label: "",
+
+                fillColor: "rgba(153,204,153,0.5)",
+
+                strokeColor: "rgba(0,102,51,1)",
+
+                pointColor: "rgba(220,220,220,1)",
+
+                pointStrokeColor: "#338033",
+
+                pointHighlightFill: "#338033",
+
+                pointHighlightStroke: "rgba(220,220,220,1)",
+
+                data: [1.27, 1.30, 1.30, 1.41, 1.04, 1.29]
+
+            }]
+
+        };
+
+        var salesVolumeChart = new Chart(ctx).Bar(data, {
+
+            // 点击的小提示
+
+            tooltipTemplate: "<%if (label){%><%=label%> 销量：<%}%><%= value %>万辆"
+
+        });
+
+}
+	
+function doughnutChart() {	
+var ctx = document.getElementById('sales-volume-doughnut-chart').getContext("2d")
+		var data = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+			
+        var salesVolumeChart = new Chart(ctx).Doughnut(data,{});
+}
+function pieChart() {	
+var ctx = document.getElementById('sales-volume-pie-chart').getContext("2d")
+		var data = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+			
+        var salesVolumeChart = new Chart(ctx).Pie(data,{});
+}
+function PolarAreaChart() {	
+var ctx = document.getElementById('sales-volume-PolarArea-chart').getContext("2d")
+		var data = [
+				{
+					value: 300,
+					color:"#F7464A",
+					highlight: "#FF5A5E",
+					label: "Red"
+				},
+				{
+					value: 50,
+					color: "#46BFBD",
+					highlight: "#5AD3D1",
+					label: "Green"
+				},
+				{
+					value: 100,
+					color: "#FDB45C",
+					highlight: "#FFC870",
+					label: "Yellow"
+				},
+				{
+					value: 40,
+					color: "#949FB1",
+					highlight: "#A8B3C5",
+					label: "Grey"
+				},
+				{
+					value: 120,
+					color: "#4D5360",
+					highlight: "#616774",
+					label: "Dark Grey"
+				}
+
+			];
+			
+        var salesVolumeChart = new Chart(ctx).PolarArea(data,{});
+}
+function RadarChart() {	
+var ctx = document.getElementById('sales-volume-radar-chart').getContext("2d")
+		var data = {
+			labels : ["Eating","Drinking","Sleeping","Designing","Coding","Partying","Running"],
+			datasets : [
+				{
+					fillColor : "rgba(220,220,220,0.5)",
+					strokeColor : "rgba(220,220,220,1)",
+					pointColor : "rgba(220,220,220,1)",
+					pointStrokeColor : "#fff",
+					data : [65,59,90,81,56,55,40]
+				},
+				{
+					fillColor : "rgba(151,187,205,0.5)",
+					strokeColor : "rgba(151,187,205,1)",
+					pointColor : "rgba(151,187,205,1)",
+					pointStrokeColor : "#fff",
+					data : [28,48,40,19,96,27,100]
+				}
+			]
+			
+		}
+			
+        var salesVolumeChart = new Chart(ctx).Radar(data,{});
+}
+
+
+
+
+    // 启动
+
+    setTimeout(function() {
+
+        // 避免IE7-8 调用getContext报错，使用setTimeout
+
+        lineChart()
+        barChart()
+		doughnutChart()
+		pieChart()
+		PolarAreaChart()
+		RadarChart()
+    }, 0)
+
+    // 在手机测试，canvas中的动画看起来很卡，性能很差
+
+    // PC上还不错
+
+    if (/Mobile/i.test(navigator.userAgent)) {
+
+        //针对手机，性能做一些降级，看起来就不会那么卡了
+
+        Chart.defaults.global.animationSteps = Chart.defaults.global.animationSteps / 6
+
+        Chart.defaults.global.animationEasing = "linear"
+
+    }
+
+    </script>
+</html>

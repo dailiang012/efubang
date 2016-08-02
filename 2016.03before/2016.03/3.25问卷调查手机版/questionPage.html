@@ -1,0 +1,220 @@
+﻿<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>问卷调查手机版</title>
+    <link href="css/questionPage.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<!--弹窗开始-->
+<div class="popup">
+    <div class="popup_inner">
+        <div  class="how_money">
+            <img src="images/popup_red_packet.png" class="popup_red_packet">
+            <h3>120元<br/><span>红包</span></h3>
+            <img src="images/popup_close.png" class="close-popup">
+        </div>
+        <p>恭喜您获得<span>120</span>元红包此红包可投1月标或3月标</p>
+        <div class="popup_button">
+            <button type="button" value="立即使用">立即使用</button>
+        </div>
+    </div>
+</div>
+<!--弹窗结束-->
+
+<!--代码开始-->
+
+<div class="banner"><img src="images/banner_bj.jpg" ></div>
+<div id="main">
+
+
+    <div class="activity_notes">
+        <div class="register">亲爱的用户请<span><a href="#">[登录]</a></span></div>
+        <div class="guild">
+            <div class="list">活动方式</div>
+            <p>通过填问卷送红包的方式促使目标人群填写问卷调查，提供较为准确的数据为毕业季活动提供支持。</p>
+        </div>
+    </div>
+    <div class="question_page">
+        <div class="list">用户调查</div>
+        <div class="question_content">
+            <form action=" " method="post" enctype="multipart/form-data">
+                <div>
+                    <p>您的性别是：</p>
+                    <ul class="sex change">
+                        <li><input type="radio" name="sex" value="男" id="man"><label for="man">男</label></li>
+                        <li><input type="radio" name="sex" value="女" id="woman"><label for="woman">女</label></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>您的年龄是：</p>
+                    <ul class="age change">
+                        <li><input type="radio" name="age" value="18岁-24岁" id="age1"><label for="age1">18岁-24岁</label>
+                        </li>
+                        <li><input type="radio" name="age" value="25岁-30岁" id="age2"><label for="age2">25岁-30岁</label>
+                        </li>
+                        <li><input type="radio" name="age" value="31岁-40岁" id="age3"><label for="age3">31岁-40岁</label>
+                        </li>
+                        <li><input type="radio" name="age" value="41岁-50岁" id="age4"><label for="age4">41岁-50岁</label>
+                        </li>
+                        <li><input type="radio" name="age" value="51岁以上" id="age5"><label for="age5">51岁以上</label></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>您的职业是：</p>
+                    <ul class="job change">
+                        <li><input type="radio" name="job" value="高中在校学生" id="job1"><label for="job1">高中在校学生</label>
+                        </li>
+                        <li><input type="radio" name="job" value="大学在校学生" id="job2"><label for="job2">大学在校学生</label>
+                        </li>
+                        <li><input type="radio" name="job" value="金融从业人员" id="job3"><label for="job3">金融从业人员</label>
+                        </li>
+                        <li><input type="radio" name="job" value="公务员" id="job4"><label for="job4">公务员</label></li>
+                        <li><input type="radio" name="job" value="普通职员" id="job5"><label for="job5">普通职员</label></li>
+                        <li><input type="radio" name="job" value="企业高管" id="job6"><label for="job6">企业高管</label></li>
+                        <li><input type="radio" name="job" value="私企老板" id="job7"><label for="job7">私企老板</label></li>
+                        <li><input type="radio" name="job" value="自由职业" id="job8"><label for="job8">自由职业</label></li>
+                        <li style=""><label for="job9">其他：</label><input type="text" name="other-job"
+                                                                                     id="job9" value=""/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>手机投资与电脑投资，您更倾向于：</p>
+                    <ul class="pc-phone change">
+                        <li><input type="radio" name="pc-phone" value="手机投资" id="phone"><label for="phone">手机投资</label>
+                        </li>
+                        <li><input type="radio" name="pc-phone" value="电脑投资" id="pc"><label for="pc">电脑投资</label></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>您是从什么渠道知道e富邦平台的：</p>
+                    <ul class="where-know change">
+                        <li><input type="radio" name="know" value="朋友介绍" id="know1"><label for="know1">朋友介绍</label></li>
+                        <li><input type="radio" name="know" value="网络广告" id="know2"><label for="know2">网络广告</label></li>
+                        <li><input type="radio" name="know" value="行业活动" id="know3"><label for="know3">行业活动</label></li>
+                        <li><input type="radio" name="know" value="户外广告" id="know4"><label for="know4">户外广告</label></li>
+                        <li style=""><label for="know5">其他：</label><input type="text" name="other-know"
+                                                                                      id="know5" value=""/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>在投资平台时您更注重：</p>
+                    <ul class="y-attention change">
+                        <li><input type="radio" name="attention" value="风险控制" id="attention1"><label for="attention1">风险控制</label>
+                        </li>
+                        <li><input type="radio" name="attention" value="平台收益" id="attention2"><label for="attention2">平台收益</label>
+                        </li>
+                        <li><input type="radio" name="attention" value="经营团队" id="attention3"><label for="attention3">经营团队</label>
+                        </li>
+                        <li><input type="radio" name="attention" value="商业模式" id="attention4"><label for="attention4">商业模式</label>
+                        </li>
+                        <li><input type="radio" name="attention" value="网站活动" id="attention5"><label for="attention5">网站活动</label>
+                        </li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>在选择投资活动时，您更倾向于：（多选）</p>
+                    <ul class="y-trend change">
+                        <li><input type="checkbox" name="trend" value="现金红包活动" id="trend1"><label
+                                for="trend1">现金红包活动</label></li>
+                        <li><input type="checkbox" name="trend" value="实物礼品" id="trend2"><label
+                                for="trend2">实物礼品</label></li>
+                        <li><input type="checkbox" name="trend" value="线下活动" id="trend3"><label
+                                for="trend3">线下活动</label></li>
+                        <li><input type="checkbox" name="trend" value="加息活动" id="trend4"><label
+                                for="trend4">加息活动</label></li>
+                        <li style=""><label for="trend5">其他：</label><input type="text" name="other-trend"
+                                                                                       id="trend5" value=""/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>实物礼品中，您更倾向于：（多选）</p>
+                    <ul class="y-gift change">
+                        <li><input type="checkbox" name="gift" value="手机" id="gift1"><label for="gift1">手机</label></li>
+                        <li><input type="checkbox" name="gift" value="iPad" id="gift2"><label for="gift2">iPad</label>
+                        </li>
+                        <li><input type="checkbox" name="gift" value="iWatch" id="gift3"><label
+                                for="gift3">iWatch</label></li>
+                        <li><input type="checkbox" name="gift" value="U盘" id="gift4"><label for="gift4">U盘</label></li>
+                        <li><input type="checkbox" name="gift" value="充电宝杯子" id="gift5"><label for="gift5">充电宝杯子</label>
+                        </li>
+                        <li><input type="checkbox" name="gift" value="充电宝杯子" id="gift6"><label for="gift6">杯子</label>
+                        </li>
+                        <li><input type="checkbox" name="gift" value="工艺品" id="gift7"><label for="gift7">工艺品</label>
+                        </li>
+                        <li style=""><label for="gift8">其他：</label><input type="text" name="other-gift" id="gift8" value=""/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>在选择手机品牌的时候，您更喜欢：</p>
+                    <ul class="phone-brand change">
+                        <li><input type="radio" name="brand" value="苹果" id="brand1"><label for="brand1">苹果</label></li>
+                        <li><input type="radio" name="brand" value="三星" id="brand2"><label for="brand2">三星</label></li>
+                        <li><input type="radio" name="brand" value="华为" id="brand3"><label for="brand3">华为</label></li>
+                        <li><input type="radio" name="brand" value="小米" id="brand4"><label for="brand4">小米</label></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div>
+                    <p>如果有投资送手机活动，您更希望获得哪种手机：</p>
+                    <ul class="phone-model change">
+                        <li><input type="radio" name="model" value="iPhone SE（16GB  3288元）" id="model1"><label
+                                for="model1">iPhone SE（16GB 3288元）</label></li>
+                        <li><input type="radio" name="model" value="小米note3（16GB  899元）" id="model2"><label
+                                for="model2">小米note3（16GB 899元）</label></li>
+                        <li><input type="radio" name="model" value="iPhone 6 (16GB  3788元）" id="model3"><label
+                                for="model3">iPhone 6 (16GB 3788元）</label></li>
+                        <li style=""><label for="model5">其他：</label><input type="text" name="other-model"
+                                                                                       id="model5" value=""/></li>
+                        <div class="clear"></div>
+                    </ul>
+                </div>
+                <div class="red-packet"><input type="button" value="领取红包" class="packet"/></div>
+            </form>
+        </div>
+    </div>
+    <div class="explain">
+        <div class="explain_inner">
+            <h3>特别说明</h3>
+            <ul>
+                <li>1.用户需登陆后方可填写问卷，问卷填写完成后直接放入登录用户的账户中，投资任何标的即可使用，不限投资金额，投资时选择红包使用，投资完成后红包即刻发放到e富邦账户。
+                </li>
+                <li>2.红包使用有效期为15天，从获得红包起开始计时，过期不可使用。（红包有效期请到【我的账户】-【我的红包】查询）。
+                </li>
+                <li>3.该活动可与其他活动同时参加。
+                </li>
+                <li>4.活动期间产生的任何提现费用及手续费用由用户自理。
+                </li>
+                <li>5.刷奖、冒用他人身份证、银行卡者一经核实，取消活动资格，e富邦有权在不事前通知的情况下对其所得奖励不予承兑。
+                </li>
+                <li>6.本活动最终解释权归e富邦所有，如有疑问请联系在线客服或拨打4000-33-7997
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--代码结束-->
+
+
+<script>
+    $('.packet').click(function () {
+        $('.popup').css('display', 'block');
+
+    });
+    $('.close-popup').click(function () {
+        $('.popup').css('display', 'none');
+    });
+</script>
+</body>
+</html>

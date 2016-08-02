@@ -1,0 +1,261 @@
+/*公共样式开始*/
+* {
+    border: medium none;
+    font-family:Arial,"微软雅黑", Helvetica, sans-serif;
+    font-size: 100%;
+    font-style: inherit;
+    font-weight: inherit;
+    margin: 0;
+    padding: 0;
+    /*vertical-align: baseline;*/
+}
+body {
+    font:normal 100%  Arial,"微软雅黑", Helvetica, sans-serif;
+}
+ol, ul {
+    list-style: outside none none;
+}
+img {
+    border: medium none;
+    display: block;
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+}
+a img, *:link img, *:visited img {
+    border: 0 none;
+}
+.clear {
+    clear: both;
+}
+.clearfix::after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+* html .clearfix {
+    height: 1%;
+}
+* + html .clearfix {
+    min-height: 1%;
+}
+* html {
+    background-attachment: fixed;
+    background-image: url("about:blank");
+}
+/*公共样式结束*/
+/*banner开始*/
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    max-width: 750px;
+    background:#fbf1db;
+    margin: 0 auto;
+    position: relative;
+}
+#main{
+    width: 100%;
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+/*banner结束*/
+/*活动方式开始*/
+.register{
+    text-align: center;
+    font-size: 1.125em;
+    color: #241e20;
+    line-height:3em;
+}
+.register span a{
+    padding-left: 10px;
+    color: #d23f31;
+}
+.register span a:hover{
+    text-decoration: underline;
+}
+.guild{
+    width: 94%;
+    margin: 0 auto;
+}
+.guild .list{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #009adb;
+    text-align: center;
+    font-weight: bold;
+}
+.guild p{
+    font-size: 1em;
+    line-height: 1.5em;
+    color: #b2893b;
+    text-indent: 2em;
+}
+/*活动方式结束*/
+/*问卷调查开始*/
+.question_page .list{
+    font-size: 1.2em;
+    line-height: 1.8em;
+    color: #009adb;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+.question_content{
+    width: 94%;
+    margin: 0 auto;
+}
+.question_content h2{
+    font-size: 24px;
+    color: #b2893b;
+    line-height: 100%;
+}
+.question_content p{
+    display: block;
+    color: #b2893b;
+    padding-top: 15px;
+    font-size: 1.2em;
+    line-height: 1.8em;
+}
+.question_content label{
+    font-size: 16px;
+    line-height: 100%;
+    color: #444;
+    padding-left: 3px;
+}
+.change{
+    padding-left: 10px;
+}
+/*覆盖样式开始*/
+.change li{
+    padding: 10px 0;
+}
+.phone-model li{
+    width: 295px;
+}
+/*覆盖样式结束*/
+.change [type="text"]{
+    padding: 0 5px;
+    border-bottom: 1px solid #b2893b;
+    font-size: 14px;
+    color: #333;
+    background: none;
+    outline: none;
+    line-height: 16px;
+}
+.red-packet{
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+.packet{
+    width: 100%;
+    font-size: 1.8em;
+    line-height: 1.9em;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+    background: #009adb;
+}
+/*问卷调查结束*/
+/*弹出层开始*/
+.popup{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.8);
+    display: none;
+}
+.popup_inner{
+    width: 60%;
+    margin-left:auto;
+    margin-right: auto;
+    height: 200px;
+    margin-top: 50%;
+}
+
+.how_money{
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+.how_money .popup_red_packet{
+    width: 100%;
+}
+.how_money h3{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    font-size: 1.3em;
+    color: #fffba5;
+    text-align: center;
+    text-shadow:1px 1px 3px  rgba(0,0,0,0.8);
+}
+.how_money h3 span{
+    font-size: 0.8em;
+}
+.popup_inner p{
+    text-align: center;
+    padding-top: 10px;
+    font-size: 1em;
+    color: #823902;
+}
+.popup_inner p span{
+    color: #f32426;
+    letter-spacing: 2px;
+}
+.popup_button{
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+.popup_button button{
+    background: #ffda31;
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #ac4700;
+    outline: none;
+    cursor: pointer;
+    width: 100%;
+    line-height: 1.6em;
+}
+.close-popup{
+    width: 25%;
+    height: 30%;
+    position: absolute;
+    right: -30%;
+    top: -20%;
+}
+/*弹出层结束*/
+/*特别说明开始*/
+.explain{
+    padding-bottom: 30px;
+}
+.explain h3{
+    font-size: 1.2em;
+    line-height: 1.3em;
+    color: #cd5f54;
+}
+.explain_inner{
+    width: 90%;
+    margin: 0 auto;
+}
+.explain li{
+    font-size: 1em;
+    line-height: 1.2em;
+    color: #b2893b;
+}
+.explain li{
+    padding-bottom: 5px;
+}
+/*特别说明结束*/

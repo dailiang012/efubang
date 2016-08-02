@@ -1,0 +1,228 @@
+@charset "utf-8";
+ /*CSS Document*/
+
+/*选中的导航样式*/
+.nav_02 .shezhi{
+	color:#e1d373;
+	background:url(../images/icon04_true.png) no-repeat 28px 60px;
+}
+.nav_02 .shezhi{
+	background-color:#40ace1;
+}
+.renzheng{
+	background:rgba(0,0,0,0.3);
+}
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*提示开始*/
+.tixian{
+	border:1px solid #cfcfcf;
+	background:#fff;
+}
+.tishi{
+	height:113px;
+	background:#f8f2d6;
+	position:relative;
+}
+.tishi .text_l{
+	float:left;
+	padding-left:106px;
+}
+.tishi .text_r{
+	height:81px;
+	width:231px;
+	float: right;
+	padding-top:32px;
+}
+.tishi .pic{
+	position:absolute;
+	top:24px;
+	left:20px;
+}
+.tishi .text_l h2{
+	font-size: 16px;
+	color: #ff6600;
+	line-height: 24px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+.tishi .text_l p{
+	font-size:14px;
+	line-height:24px;
+	padding-left:35px;
+	color: #ff6600;
+	font-weight: bold;
+}
+/*提示结束*/
+/*content开始*/
+.content{
+	padding:50px 0 70px 85px;
+}
+.renzheng_list li{
+	float:left;
+	width:353px;
+	/*height:138px;*/
+	padding-left:20px;
+	padding-right:15px;
+	border:1px solid #eee;
+	border-radius:8px;
+	background:#eff4f8;
+	margin-right:27px;
+	cursor:pointer;
+	margin-bottom:30px;
+	padding-bottom:30px;
+	/*overflow:hidden;*/               /*超出部分隐藏*/
+}
+.renzheng_list h2{
+	float:left;
+	font-size:20px;
+	line-height:50px;
+	color:#227dc5;
+}
+.open_close{
+	padding-top:20px;
+	float:right;
+}
+.renzheng_icon{
+	float:left;
+	margin-right:10px;
+}
+.result_diff>div{
+	padding-top:10px;
+}
+.false_diff{
+	display:none;
+}
+.result_rz span{
+	float:left;
+	font-size:13px;
+	line-height:24px;
+	color:#333;
+}
+.diff_txt, .false_diff p{
+	font-size:12px;
+	color:#666;
+	line-height:16px;
+}
+.danger{
+	padding-left:60px;
+}
+.danger p{
+	float:left;
+	font-size:14px;
+	color:#eb100e;
+	line-height:100%;
+	margin-bottom:22px;
+	padding-left:10px;
+}
+.danger img{
+	float:left;
+}
+.question{
+	padding-top:50px;
+}
+.question form{
+	padding-left:60px;
+	font-size:16px;
+	color:#333;
+	line-height:30px;
+}
+.question input, .question select{
+	margin-bottom:30px;
+	width:148px;
+	padding:0 10px;
+	height:28px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+}
+.question .name{
+	padding-left:75px;
+	font-size:16px;
+	color:#333;
+	line-height:30px;
+	margin-bottom:30px;
+}
+.question .name span{
+	color:#40ace1;
+}
+.question button{
+	width:130px;
+	height:45px;
+	background:#40ace1;
+	font-size:16px;
+	color:#fff;
+	box-shadow:1px 1px 1px 0 rgba(0,0,0,0.5);
+	border:none;
+	border-radius:6px;
+	cursor:pointer;
+	margin-left:118px;
+}
+.question .prompt_txt{
+	width:310px;
+	margin:0 auto;
+	font-size:16px;
+	color:#333;
+	line-height:24px;
+	padding-bottom:45px;
+}
+.email_ing .pic{
+	height:91px;
+	width:107px;
+	margin:0 auto;
+	padding-top:20px;
+}
+.email_ing p{
+	font-size:16px;
+	line-height:96px;
+	color:#333;
+	text-align:center;
+}
+.yanzhenma{
+	padding-left:60px;
+}
+.yanzhenma p{
+	height:30px;
+	float:left;
+	line-height:30px;
+	font-size:16px;
+	color:#333;
+}
+.yanzhenma .yanzhen{
+	float:left;
+}
+.yanzhenma .yanzhenshu{
+	float:left;
+	width:55px;
+	height:28px;
+	padding:0 10px;
+	border:1px solid #c6c6c6;
+	border-radius:4px 0px 0px 4px;
+}
+.yanzhen_pic{
+	float:left;
+	width:76px;
+	height:26px;
+	border:1px solid #c6c6c6;
+	border-radius:0px 4px 4px 0px;
+	border-left:none;
+	text-align:center;
+	padding-top:2px;
+}
+/*content结束*/
+
+
+/*动效样式开始*/
+.xuanxiang .dangqian{
+	background:#40ace1;
+	color:#fff;
+}
+.neirong>div{
+	display:none;
+}
+#list01{
+	display:block;
+}
+/*动效样式结束*

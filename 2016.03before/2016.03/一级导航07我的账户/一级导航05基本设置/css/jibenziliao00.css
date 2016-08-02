@@ -1,0 +1,323 @@
+@charset "utf-8";
+ /*CSS Document*/
+
+/*选中的导航样式*/
+.nav_02 .shezhi{
+	color:#e1d373;
+	background:url(../images/icon04_true.png) no-repeat 28px 60px;
+}
+.nav_02 .shezhi{
+	background-color:#40ace1;
+}
+.information{
+	background:rgba(0,0,0,0.3);
+}
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*提示开始*/
+.tixian{
+	border:1px solid #cfcfcf;
+	background:#fff;
+}
+.tishi{
+	height:113px;
+	background:#f8f2d6;
+	position:relative;
+}
+.tishi .text_l{
+	float:left;
+	padding-left:106px;
+}
+.tishi .text_r{
+	height:81px;
+	width:231px;
+	float: right;
+	padding-top:32px;
+}
+.tishi .pic{
+	position:absolute;
+	top:24px;
+	left:20px;
+}
+.tishi .text_l h2{
+	font-size: 16px;
+	color: #ff6600;
+	line-height: 24px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+.tishi .text_l p{
+	font-size:14px;
+	line-height:24px;
+	padding-left:35px;
+	color: #ff6600;
+	font-weight: bold;
+}
+/*提示结束*/
+/*选项卡开始*/
+.xuanxiang{
+	height: 45px;
+	padding-top:50px;
+	padding-left:26px;
+}
+.xuanxiang  li{
+	width:98px;
+	height:44px;
+	float:left;
+	padding-right:20px;
+	border-bottom: 1px solid #40ace1;
+}
+.xuanxiang  li a{
+	display:block;
+	text-align:center;
+	border:1px solid #d1d1d1;
+	cursor:pointer;
+	color:#999;
+	font-size:16px;
+	line-height:44px;
+	border-bottom:none;
+}
+.xuanxiang  li:last-child{          /*ie8以下不支持*/
+	padding-right:0;
+}
+/*选项卡结束*/
+
+/*选卡内容公共样式*/
+.neirong{
+	padding:70px 0;
+}
+.neirong input{
+	height:28px;
+}
+.neirong select{
+	height:30px;
+}
+.neirong input, .neirong select, .neirong textarea{
+	margin-bottom:30px;
+	margin-right:10px;
+	border:1px solid #c6c6c6;
+	border-radius:4px;
+	font-size:14px;
+	color:#666;
+	padding:0 10px;
+}
+.neirong .tijiao_niu{
+	width: 130px;
+	height: 44px;
+	border-radius:6px;
+	background: #40ace1;
+	font-size: 16px;
+	color: #fff;
+	text-align: center;
+	border: none;
+	cursor:pointer;
+}
+.tijiao_niu:hover{
+	background:#FF7F00;
+}
+/*选卡内容公共样式结束*/
+/*选卡1内容开始*/
+#list01 .list_l{
+	float:left;
+	width:278px;
+}
+#list01 .list_r{
+	float:left;
+	padding-left:20px;
+	width:680px;
+}
+#list01 .jine{
+	width:138px;
+}
+.list_l p{
+	float:right;
+	clear:both;
+	margin-bottom:30px;
+	font-size:16px;
+	line-height:100%;
+	padding:7px 0;
+	color:#333;
+}
+.list_r .where{
+	width:138px;
+	margin-right:10px;
+}
+.list_r .select_two{
+	width:98px;
+}
+.gender{
+	clear:both;
+	vertical-align:top;
+	margin-right:5px;
+}
+label{
+	font-size:16px;
+	color:#3c8eb7;
+	line-height:30px;
+}
+/*选卡1内容结束*/
+/*选卡2内容开始*/
+
+#list02 .list_l{
+	float:left;
+	width:389px;
+}
+#list02 .list_r{
+	float:left;
+	width:569px;
+	padding-left:20px;
+}
+#list02 input{
+	margin-right:20px;
+}
+#list02 .ownership{
+	width:78px;
+}
+#list02 .list_r{
+	font-size:16px;
+	line-height:30px;
+	color:#333;
+}
+#list02 .list_r p{
+	font-size:16px;
+	color:#333;
+	line-height:100%;
+}
+/*选卡2内容结束*/
+/*选卡3内容开始*/
+#list03 .list_l{
+	float:left;
+	width:366px;
+}
+#list03 .list_r{
+	float:left;
+	width:592px;
+	padding-left:20px;
+}
+#list03 .company_name{
+	width:298px;
+}
+#list03 .company02,#list03 .time{
+	width:98px;
+}
+#list03 .company03,#list03 .worker{
+	width:258px;
+}
+#list03 .company04{
+	width:88px;
+}
+#list03 input{
+	margin-right:20px;
+}
+#list03 .ownership{
+	width:98px;
+}
+#list03 .tell_phone{width:158px;
+}
+#list03 .company_where{
+	width:298px;
+}
+#list03 .company_web{
+	width:158px;
+}
+#list03 .remark{
+	width:300px;
+	height:100px;
+	border-radius:4px;
+	border:1px solid #bdbdbd;
+}
+/*选卡3内容结束*/
+/*选卡4内容开始*/
+#list04 .list_l{
+	float:left;
+	width:403px;
+}
+#list04 .list_r{
+	float:left;
+	width:555px;
+	padding-left:20px;
+}
+#list04 .company_type{
+	width:228px;
+}
+/*选卡4内容结束*/
+/*选卡5内容开始*/
+#list05 .list_l{
+	float:left;
+	width:476px;
+}
+#list05 .list_r{
+	float:left;
+	width:482px;
+	padding-left:20px;
+}
+#list05 input{
+	width:153px;
+}
+#list05 select{
+	width:108px;
+}
+/*选卡5内容结束*/
+/*选卡6内容开始*/
+#list06 .list_l{
+	float:left;
+	width:288px;
+}
+#list06 .list_r{
+	float:left;
+	width:670px;
+	padding-left:20px;
+}
+#list06 input, #list06 select{
+	width:158px;
+}
+/*选卡6内容结束*/
+/*选卡7内容开始*/
+#list07 .list_l{
+	float:left;
+	width:385px;
+}
+#list07 .list_r{
+	float:left;
+	width:573px;
+	padding-left:20px;
+}
+#list07 input{
+	width:158px;
+}#list07 select{
+	width:258px;
+}
+/*选卡7内容结束*/
+/*选卡8内容开始*/
+#list08 .list_l{
+	float:left;
+	width:405px;
+}
+#list08 .list_r{
+	float:left;
+	width:553px;
+	padding-left:20px;
+}
+#list08 input{
+	width:158px;
+}
+#list08 select{
+	width:78px;
+}
+/*选卡8内容结束*/
+
+/*动效样式开始*/
+.xuanxiang .dangqian{
+	background:#40ace1;
+	color:#fff;
+}
+.neirong>div{
+	display:none;
+}
+#list01{
+	display:block;
+}
+/*动效样式结束*

@@ -1,0 +1,130 @@
+@charset "utf-8";
+ /*CSS Document*/ 
+#licai{
+	background-color:#fff;
+}
+#xiaxuan2 .licaiguanli{
+	display:block;
+}
+#xiaxuan2 .licaiguanli .jiechu a{
+	display:block;
+	color:#40ace1;
+	border-bottom:1px solid #40ace1;
+}
+
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*biaodan-star*/
+.biaodan{
+	width:978px;
+	border:1px solid #cdcdcd;
+	border-bottom:none;
+}
+.biaodan span{
+	color:#ff6600;
+}
+.biaodan ul{
+	height:45px;
+	background:#40ace1;
+	border-bottom:1px solid #cdcdcd;
+}
+.biaotou li{
+	float:left;
+	width:194px;
+	font-size:16px;
+	color:#fff;
+	text-align:center;
+	line-height:45px;
+}
+.biaodan .xinxi .toubiaoj{
+	color:#2a7d31;
+}
+.biaodan .xinxi .youxiaoj{
+	color:#40ace1;
+}
+.biaotou .jindu,.biaotou .zhuangtai{
+	width:99px;
+}
+.biaodan .xinxi{
+	height:53px;
+	background:#fff;
+}
+.biaodan .xinxi li{
+	color:#666;
+	font-size:12px;
+	line-height:53px;
+}
+.jiechumingxi .biaodan .xinxi2{
+	background:#efefef;
+	font-size:12px;
+	line-height:53px;
+}
+.biaodan .xinxi .jindu{
+	width:99px;
+	border-left:1px solid #ccc;
+	color:#ff6600;
+}
+.biaodan .xinxi .zhuangtai{
+	width:99px;
+	border-left:1px solid #ccc;
+}
+.biaodan .xinxi .yanse1{
+	color:#666;
+}
+.biaodan .xinxi .yanse2{
+	color:#999;
+}
+.biaodan .xinxi .yanse3{
+	color:#333;
+}
+.biaodan .xinxi .yanse4{
+	color:#ff6600;
+}
+
+/*xiayiye-star*/
+.xiayiye{
+	padding-top:100px;
+	padding-left:194px;
+}
+.xiayiye a{
+	display:block;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+}
+.xiayiye li{
+	float:left;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+	padding-right:5px;
+}
+.xiayiye .one{
+	color:#484848;
+}
+.xiayiye .shuru{
+	padding:0 6px;
+	width:18px;
+	height:23px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	margin:3px 13px 3px 9px;
+}
+.xiayiye .last{
+	text-align:center;
+	width:73px;
+	height:28px;
+	margin-left:17px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	background:#40ace1;
+	color:#fff;
+	cursor:pointer;
+}
+.xiayiye .last:hover{
+	background:#FF7F00;
+	border:#FF7F00;
+}

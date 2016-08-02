@@ -1,0 +1,116 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+	margin: 0;
+	padding: 0;
+}
+li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-weight: normal;
+}
+input, textarea, select {
+	outline: none;
+}
+textarea {
+	resize: none;
+}
+img {
+	border: none;
+}
+.clear {
+	clear: both;
+}
+body {
+	font-family: Arial, "微软雅黑", Helvetica, sans-serif;
+}
+/*样式开始*/
+input {
+	font-family: '微软雅黑';
+}
+#banner{
+	height:930px;
+	background:url(../images/top_bj.jpg) no-repeat center top;
+}
+.main_top{
+	height:1147px;
+	background:url(../images/center_bj.jpg) no-repeat center top;
+}
+.main_bom{
+	height:807px;
+	background:url(../images/bm_bj.jpg) no-repeat center top;
+	padding-top:334px;
+}
+.inner{
+	width:954px;
+	margin:0 auto;
+}
+.regist{
+	padding-top:44px;
+}
+.regist .txt{
+	width:628px;
+	float:left;
+	padding-top:5px;
+	font-size:18px;
+	line-height:24px;
+	color:#fefa5e;
+	text-indent:36px;
+}
+.regist .button{
+	float:right;
+	width:300px;
+	height:76px;
+	border-radius:12px;
+	background:#ffff00;
+	font-size:38px;
+	color:#f20909;
+	border:none;
+	cursor:pointer;
+}
+.main_top h3{
+	padding-top:200px;
+	font-size:30px;
+	color:#ffc59a;
+	text-align:center;
+	line-height:30px;
+	padding-left:70px;
+}
+.detail {
+	padding-top:480px;
+}
+.detail li h5{
+	font-size: 18px;
+	color: #ce9d17;
+	line-height: 31px;
+	width:16px;
+	float:left;
+	font-weight:600;
+}
+.detail li p{
+	font-family:"微软雅黑";
+	font-size: 18px;
+	color:#ce9d17;
+	line-height: 31px;
+	padding-left:20px;
+	font-weight:bold;s
+}
+
+.text_b p{
+	text-align:center;
+	color:#fff;       
+	font-size:30px;
+	line-height:80px;
+	font-weight:300;             
+	padding-bottom:38px;
+	letter-spacing:3px;
+}
+.text_b p span{
+	color:#fff;
+	font-size:48px;
+}
+/*样式结束*/

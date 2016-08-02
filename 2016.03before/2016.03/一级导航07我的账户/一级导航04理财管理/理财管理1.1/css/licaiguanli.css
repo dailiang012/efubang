@@ -1,0 +1,228 @@
+@charset "utf-8";
+ /*CSS Document*/
+
+/*选中的导航样式*/
+.nav_02 .licai{
+	color:#e1d373;
+	background:url(../images/icon03_true.png) no-repeat 28px 60px;
+}
+.nav_02 .licai{
+	background-color:#40ace1;
+}
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*选项卡开始*/
+.xuanxiang{
+	height: 45px;
+	margin:0 auto;
+	padding-top:50px;
+}
+.xuanxiang  li a{
+	margin-right:20px;
+	width:158px;
+	float:left;
+	text-align:center;
+	border:1px solid #d1d1d1;
+	cursor:pointer;
+	color:#999;
+	font-size:16px;
+	line-height:44px;
+	border-bottom:none;
+}
+/*选项卡结束*/
+/*选项卡内容公共样式*/
+#main{
+	background:#f5f6f7;
+	padding:50px 0;
+}
+.neirong {
+	width:980px;
+	margin:0 auto;
+}
+table{
+	width:980px;
+	border-collapse: collapse;
+	border-spacing: 0;
+	border-left:1px solid #ccc;
+	border-right:1px solid #ccc;
+}
+thead tr{
+	height:45px;
+	background:#40ace1;
+	border-bottom:1px solid #cdcdcd;
+}
+td{
+	text-align:center;
+}
+thead td{
+	font-size:16px;
+	color:#fff;
+	line-height:45px;
+}
+tbody tr{
+	height:53px;
+	border-bottom:1px solid #ccc;
+}
+tbody td{
+	font-size:12px;
+	line-height:53px;
+}
+.color02{
+	background:#efefef;
+}
+/*选项卡内容公共样式结束*/
+/*选卡1内容开始*/
+.biaoti, .toubiaosj{
+	color:#666;
+}
+.toubiaoj{
+	color:#2a7d31;
+}
+.youxiaoj{
+	color:#40ace1;
+}
+.jindu{
+	border-left:1px solid #ccc;
+	color:#ff6600;
+}
+.zhuangtai{
+	border-left:1px solid #ccc;
+}
+/*三种不同的招标状态*/
+.manbiao{    /*满标*/
+	color:#666;
+}
+.huankuan_t{    /*还款完*/
+	color:#999;
+}
+.huankuan_ing{   /*还款中*/
+	color:#333;
+}
+.zhaobiao{    /*招标*/
+	color:#ff6600;
+}
+/*三种状态结束*/
+
+/*选项1内容结束*/
+/*选项2内容开始*/
+.getmoney_time{
+	color:#666;
+}
+.total_money{
+	color:#2a7d31;
+}
+.corpus{
+	color: #40ace1;
+}
+.interest{
+	border-left:1px solid #ccc;
+	color: #ff6600;
+}
+.condition{
+	border-left:1px solid #ccc;
+}
+.refund_t{
+	color:#999;
+}
+.refund_ing{
+	color:#333;
+}
+.refund_f{
+	color:#ff6600;
+}
+/*选项2内容结束*/
+/*选项3内容开始*/
+.headline{
+	color:#666;
+}
+.loan_money{
+	color:#40ace1;
+}
+.download a{
+	display:block;
+	border-left:1px solid #ccc;
+	color:#ff6600;
+}
+/*选项3内容结束*/
+/*选项4内容开始*/
+.get_time{
+	color:#666;
+}
+.get_total{
+	color:#40ace1;
+}
+.get_copital, .get_interest, .condition{
+	color:#2a7d31;
+}
+.punish_interest{
+	border-left:1px solid #ccc;
+	color:#ff6600;
+}
+/*选项4内容结束*/
+/*xiayiye-star*/
+.xiayiye{
+	width:605px;
+	margin:0 auto;
+	padding-bottom:40px;
+	padding-top:50px; 
+	height:30px;
+}
+.xiayiye a{
+	display:block;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+}
+.xiayiye a:hover{
+	text-decoration:underline;
+}
+.xiayiye li{
+	float:left;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+	padding-right:5px;
+}
+.xiayiye .one{
+	color:#484848;
+}
+.xiayiye .shuru{
+	padding:0 6px;
+	width:18px;
+	height:23px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	margin:3px 13px 3px 9px;
+}
+.xiayiye .last{
+	text-align:center;
+	width:73px;
+	height:28px;
+	margin-left:17px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	background:#40ace1;
+	color:#fff;
+	cursor:pointer;
+}
+.xiayiye .last:hover{
+	background:#FF7F00;
+	border:1px solid #bdbdbd;
+}
+
+/*xiayiye-end*/
+/*选项卡切换动效开始*/
+.xuanxiang .dangqian{
+	background:#40ace1;
+	color:#fff;
+}
+.neirong>div{
+	display:none;
+}
+#list01{
+	display:block;
+}
+/*选项卡动效样式结束*/

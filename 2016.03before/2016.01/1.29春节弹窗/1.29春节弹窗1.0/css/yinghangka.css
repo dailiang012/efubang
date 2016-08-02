@@ -1,0 +1,336 @@
+@charset "utf-8";
+ /*CSS Document*/ 
+#zhanghao{
+	background-color:#fff;
+}
+#xiaxuan2 .wodezhanghao{
+	display:block;
+}
+#xiaxuan2 .wodezhanghao .yinghangka a{
+	display:block;
+	color:#40ace1;
+	border-bottom:1px solid #40ace1;
+} 
+
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*xiayiye-star*/
+.xiayiye{
+	padding-left:194px;
+	padding-bottom:40px;
+}
+.xiayiye a{
+	display:block;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+}
+.xiayiye li{
+	float:left;
+	color:#666666;
+	line-height:30px;
+	font-size:16px;
+	padding-right:5px;
+}
+.xiayiye .one{
+	color:#484848;
+}
+.xiayiye .shuru{
+	padding:0 6px;
+	width:18px;
+	height:23px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	margin:3px 13px 3px 9px;
+}
+.xiayiye .last{
+	text-align:center;
+	width:73px;
+	height:28px;
+	margin-left:17px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	background:#40ace1;
+	color:#fff;
+	cursor:pointer;
+}
+.xiayiye .last:hover{
+	background:#FF7F00;
+	border:#FF7F00;
+}
+.yinhangka{
+	border:1px solid #cfcfcf;
+	background:#fff;
+}
+.tishi{
+	height:113px;
+	background:#f8f2d6;
+	position:relative;
+}
+.tishi .text_l{
+	float:left;
+	padding-left:106px;
+}
+.tishi .text_r{
+	height:81px;
+	width:231px;
+	float: right;
+	padding-top:32px;
+}
+.tishi .pic{
+	position:absolute;
+	top:24px;
+	left:20px;
+}
+.tishi .text_l h2{
+	font-size: 16px;
+	color: #ff6600;
+	line-height: 24px;
+	padding-top: 17px;
+	font-weight: bold;
+}
+.tishi .text_l p{
+	font-size:14px;
+	line-height:24px;
+	color:#eb843f;
+	padding-left:35px;
+}
+.tishi .text_l p span{
+	color: #ff6600;
+	font-weight: bold;
+}
+.tishi .text_r img{
+	float:left;
+	padding-top:5px;
+	padding-right:18px;
+}
+.tishi .text_r h2{
+	float:left;
+	font-size:16px;
+	color:#ff6600;
+	line-height:24px;
+	font-weight:bold;
+}
+.tishi .text_r h2 span{
+	font-weight:normal;
+	padding-left:36px;
+}
+.neirong{
+	padding-top:50px;
+}
+.neirong .xuanxiang{
+	height: 45px;
+	width: 840px;
+	padding-left: 100px;
+	margin:0 auto;
+	border-bottom: 1px solid #40ace1;
+}
+.xuanxiang  h3{
+	margin-right:20px;
+	width:158px;
+	float:left;
+	text-align:center;
+	border:1px solid #d1d1d1;
+	cursor:pointer;
+	color:#999;
+	font-size:16px;
+	line-height:44px;
+	border-bottom:none;
+}
+.neirong .xuanxiang .lijiquxian{
+	background:#40ace1;
+	color:#fff;
+}
+/*绑定银行卡*/
+.bangdingyinhang{
+	padding-top:80px;
+}
+.bangdingyinhang li{
+	width:750px;
+	font-size:16px;
+	line-height:28px;
+	color:#333;
+	margin-bottom:30px;
+}
+.bangdingyinhang .kaihuyinhang{
+	padding-left:213px;
+}
+.bangdingyinhang .yhkahao{
+	margin-left:213px;
+}
+.bangdingyinhang .queyhkahao{
+	margin-left:181px;
+}
+.bangdingyinhang .bankadi{
+	padding-left:197px;
+}
+.bangdingyinhang .queren_button{
+	margin-left:314px;
+}
+.bangdingyinhang .queren_button:hover{
+	background:#FF7F00;
+}
+.kaihuyinhang select{
+	width:178px;
+	height:28px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	padding-left:10px;
+	margin-left:20px;
+	font-size:14px;
+	color:#666;
+	line-height:28px;
+}
+.kaihuyinhang select option{
+	padding-left:10px;
+}
+.bangdingyinhang .text{
+	margin-left:20px;
+	width:158px;
+	height:28px;
+	padding:0 10px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	font-size:14px;
+	color:#666;
+	line-height:28px;
+
+}
+.bangdingyinhang .bankadi p{
+	float:left;
+	font-size:16px;
+	color:#333;
+	line-height:28px;
+}
+.bangdingyinhang .bankadi select{
+	float:left;
+	height:28px;
+	border:1px solid #bdbdbd;
+	border-radius:4px;
+	padding-left:10px;
+	margin-right:10px;
+	float:left;
+	font-size:14px;
+	color:#666;
+	line-height:28px;
+}
+.bangdingyinhang .bankadi select option{
+	padding-left:10px;
+}
+.bangdingyinhang .shen{
+	margin-left:22px;       /*  设计是20px，可是不能实现对齐 改22px可以  没有给文字加标签？？*/
+	width:148px;
+	
+}
+.bangdingyinhang .shi{
+	width:178px;
+}
+.bangdingyinhang .xian{
+	width:108px;
+}
+.queren_button{
+	text-align:center;
+	width:95px;
+	height:30px;
+	background:#40ace1;
+	font-size:16px;
+	line-height:30px;
+	color:#fff;
+	border:none;
+	border-radius:4px;
+	margin-bottom:70px;
+}
+/*已绑定银行卡*/
+.yibangdin{
+	display:none;          /*              隐藏             */
+}
+.bangdinka{
+	padding-top:80px;
+	padding-left:39px;             
+}
+.bangdinka li{
+	float:left;
+	width:278px;
+	height:188px;
+	border:1px solid #40ace1;
+	border-radius:8px 8px 40px 8px;
+	margin-right:30px;
+	background:#eee;
+	margin-bottom:30px;
+}
+.bangdinka h3{
+	text-align:center;
+	height:38px;
+	line-height:38px;
+	font-size:14px;
+	color:#1b77a5;
+	cursor:pointer;
+}
+.header_bangd{
+	height:44px;
+	border-bottom:1px solid #528096;
+	background:#fff;
+	border-radius:8px 8px 0 0;
+	position:relative;
+}
+.header_bangd p{
+	float:left;
+	font-size:16px;
+	color:#000;
+	line-height:44px;
+	padding-left:53px;
+}
+.header_bangd .one_pic{
+	float:left;
+	position:absolute;
+	top:10px;
+	left:10px;
+}
+.header_bangd .two_pic{
+	float:right;
+	position:absolute;
+	right:10px;
+	top:14px;
+}
+.yinghangka01  .text{
+	height:90px;
+	padding-top:16px;
+	padding-left:10px;
+	background:#fff;
+}
+.yinghangka01  .text p{
+	font-size:12px;
+	color:#666;
+	line-height:24px;
+}
+.yinghangka01  .text p span{
+	font-size:16px;
+	color:#000;
+	line-height:24px;
+}
+.bangdinka .tianjia_ka{
+	/*background:url(../images/biankuang.png) no-repeat center center;*/
+	background:#fff;
+	position:relative;
+	border:1px solid #40ace1;
+	/*border-width:1px;
+	boeder-color:#40ace1;
+	border-style:dotted dotted dotted dotted;*/ 
+	text-align:center;
+	margin-bottom:50px;
+	cursor:pointer;
+}
+.tianjia_ka img{
+	position:absolute;
+	top:62px;
+	left:122px;
+}
+.bangdinka .tianjia_ka p{
+	padding-top:106px;
+	font-size:16px;
+	color:#40ace1;
+}
+

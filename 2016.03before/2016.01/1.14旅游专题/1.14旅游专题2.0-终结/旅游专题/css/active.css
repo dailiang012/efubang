@@ -1,0 +1,112 @@
+@charset "utf-8";
+/* CSS Document */
+
+	.box{
+    	/*width: 1350px;
+    	height: 600px;*/
+    	overflow: hidden;
+    	position: relative;
+    }
+
+    .box .box-con{
+    	width: 1350px;
+    	height: 600px;
+    	position: relative;
+		
+		margin:0 auto;                   /*新加*/
+		overflow:hidden;
+
+    }
+
+    .box .box-con li{
+	    width: 334px;
+	    height: 334px;
+	    background: #fff;
+	    position: absolute;
+	    left: 888px;
+	    top: 74px;
+	    z-index: 30;
+		border-radius:92px;
+		border-radius:61px;
+	       
+    }
+
+    .box .box-con li img{
+    	cursor: pointer;
+    	width: 100%;
+		border-radius:61px;
+    }
+
+
+   .box span{
+   	width: 433px;
+   	height: 433px;
+   	display: block;
+   	position: absolute;
+   	top: 35px;
+   	z-index: 51;
+   	cursor: pointer;
+   }
+
+   .prev{
+   	left: 0;
+   }
+   .next{
+   right: 0;
+   }
+   
+   
+   
+/*b轮播*/ 
+   .box1{
+    	/*width: 1350px;
+    	height: 600px;*/
+    	overflow: hidden;
+    	position: relative;
+    }
+
+    .box1 .box-con{
+    	width: 1350px;
+    	height: 600px;
+    	position: relative;
+		
+		margin:0 auto;
+		overflow:hidden;
+
+    }
+
+    .box1 .box-con li{
+	    width: 334px;
+	    height: 334px;
+	    background: #fff;
+	    position: absolute;
+	    left: 888px;
+	    top: 74px;
+	    z-index: 30;
+		border-radius:60px;
+	       
+    }
+
+    .box1 .box-con li img{
+    	cursor: pointer;
+    	width: 100%;
+		border-radius:60px;
+    }
+
+
+   .box1 span{
+   	width: 433px;
+   	height: 433px;
+   	display: block;
+   	position: absolute;
+   	top: 35px;
+   	z-index: 51;
+   	cursor: pointer;
+   }
+
+   .prev{
+   	left: 0;
+   }
+   .next{
+   right: 0;
+   }

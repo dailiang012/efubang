@@ -1,0 +1,186 @@
+@font-face {
+    font-family:fangzheng ;
+    src:url("../font/FZY3JW.TTF");
+}
+
+body {
+    font-family: "fangzheng";
+}
+#main {
+    height: 4946px;
+    background: url("../images/main_bj.jpg") no-repeat center center;
+}
+#banner {
+    height: 657px;
+    position: relative;
+    z-index: 2;
+}
+.banner_img {
+    height: 780px;
+    background: url("../images/banner_bj.png") no-repeat center center;
+}
+.content_inner {
+    width: 1200px;
+    margin: 0 auto;
+    background: #e0423f;
+    box-shadow: 0 0 0 40px #e0423f inset, /*ie9以上支持*/
+                0 0 0 69px #1b3550 inset,
+                0 0 0 84px #fff inset;
+}
+.active_detail .text_bj {
+    width: 221px;
+    height: 66px;
+    margin: 0 auto;
+}
+.active_detail p {
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding-top: 35px;
+    line-height: 100%;
+}
+.active_time {
+    padding-top: 173px;
+}
+.active_time .text_bj {
+    background: url("../images/text-bj.png") no-repeat 0 0;
+}
+.active_object {
+    padding-top: 88px;
+}
+.active_object .text_bj {
+    background: url("../images/text-bj.png") no-repeat 0 -76px;
+}
+/*活动规则开始*/
+.active_rule {
+    padding-top: 88px;
+    text-align: center;
+}
+.active_rule .text_bj {
+    width: 221px;
+    height: 66px;
+    margin: 0 auto;
+    background: url("../images/text-bj.png") no-repeat 0 -152px;
+}
+.rule_list{
+    padding-top: 70px;
+}
+.color_round {
+    width: 30px;
+    height: 30px;
+    background: #fbb925;
+    border-radius: 15px;
+    display: inline-block;
+}
+.rule_list>p{
+    padding-top: 10px;
+    font-size: 18px;
+    color: #fff;
+    letter-spacing: 3px;
+    line-height: 40px;
+}
+.rule_list>p span{
+    color: #fbb925;
+    font-size: 30px;
+}
+.active_rule .two_code{
+    width: 339px;
+    height: 384px;
+    margin-left:auto;
+    margin-right: auto;
+    background: url("../images/two_code.png") no-repeat center center;
+    margin-top: 25px;
+}
+.two_color_round{
+    width: 73px;
+    height: 30px;
+    margin-left:auto;
+    margin-right: auto;
+}
+.two_color_round>div{
+    width: 30px;
+    height: 30px;
+    background: #fbb925;
+    border-radius: 15px;
+    float: left;
+}
+.joker{
+    height: 191px;
+    background: url("../images/list_bj.png") no-repeat center center;
+    margin-top: 34px;
+}
+.three-color-round{
+    width: 116px;
+    margin: 0 auto;
+}
+.three-color-round>div{
+    width: 30px;
+    height: 30px;
+    background: #fbb925;
+    border-radius: 15px;
+    float: left;
+}
+.prize{
+    padding-left: 198px;
+    padding-top: 30px;
+}
+.prize li{
+    width: 200px;
+    float: left;
+    padding: 0 100px;
+}
+.prize_pic{
+    height: 160px;
+}
+.prize_one .prize_pic{
+    background: url("../images/prize01.png") no-repeat center center;
+}
+.prize_two .prize_pic{
+    background: url("../images/prize02.png") no-repeat center center;
+}
+.prize_three .prize_pic{
+    background: url("../images/prize03.png") no-repeat center center;
+}
+.prize_four .prize_pic{
+    background: url("../images/prize04.png") no-repeat center center;
+}
+.prize_five .prize_pic{
+    background: url("../images/prize05.png") no-repeat center center;
+}
+.prize p{
+    font-size: 24px;
+    color: #fff;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+.prize p span{
+    font-size: 36px;
+    line-height: 54px;
+}
+.special_version{
+    width: 780px;
+    margin: 0 auto;
+    padding-top: 88px;
+}
+.special_version .text_bj{
+    background: url("../images/text-bj.png") no-repeat 0 -228px;
+}
+.special_version ol{                     /*4月5号ul改为ol*/
+    padding-top: 50px;
+    padding-bottom: 262px;
+}
+.special_version li{
+    font-size: 18px;
+    color: #fff;
+    line-height: 27px;
+    padding-bottom: 15px;
+    letter-spacing: 2px;
+
+}
+/*活动规则结束*/
+/*ol样式（4月5号加）*/
+ol li{
+    list-style-type: decimal;
+    list-style-position: outside;   /*这里用outside会更好*/
+}
+/*ol样式结束*/

@@ -1,0 +1,199 @@
+@charset "utf-8";
+ /*CSS Document*/
+
+/*选中的导航样式*/
+.nav_02 .shezhi{
+	color:#e1d373;
+	background:url(../images/icon04_true.png) no-repeat 28px 60px;
+}
+.nav_02 .shezhi{
+	background-color:#40ace1;
+}
+.renzheng{
+	background:rgba(0,0,0,0.3);
+}
+#main{
+	background:#f5f6f7;
+	padding-top:50px;
+	padding-bottom:100px;
+}
+/*提示开始*/
+.tixian{
+	border:1px solid #cfcfcf;
+	background:#fff;
+}
+.tishi{
+	height:113px;
+	background:#f8f2d6;
+	position:relative;
+}
+.tishi .text_l{
+	float:left;
+	padding-left:106px;
+}
+.tishi .text_r{
+	height:81px;
+	width:231px;
+	float: right;
+	padding-top:32px;
+}
+.tishi .pic{
+	position:absolute;
+	top:24px;
+	left:20px;
+}
+.tishi .text_l h2{
+	font-size: 16px;
+	color: #ff6600;
+	line-height: 24px;
+	padding-top: 30px;
+	font-weight: bold;
+}
+.tishi .text_l p{
+	font-size:14px;
+	line-height:24px;
+	color:#eb843f;
+	padding-left:35px;
+}
+.tishi .text_l p span{
+	color: #ff6600;
+	font-weight: bold;
+}
+/*提示结束*/
+/*选项卡开始*/
+.xuanxiang{
+	height: 45px;
+	width: 840px;
+	padding-left: 100px;
+	margin:0 auto;
+	border-bottom: 1px solid #40ace1;
+	padding-top:50px;
+}
+.xuanxiang  li a{
+	margin-right:20px;
+	width:158px;
+	float:left;
+	text-align:center;
+	border:1px solid #d1d1d1;
+	cursor:pointer;
+	color:#999;
+	font-size:16px;
+	line-height:44px;
+	border-bottom:none;
+}
+/*选项卡结束*/
+/*选卡1内容开始*/
+.neirong{
+	width:450px;
+	margin:0 auto;
+	padding-top: 65px;
+}
+.neirong form{
+	margin-bottom:30px;
+}
+.neirong lable, .uplead{
+	line-height:30px;
+	font-size:16px;
+	color:#333;
+	float:left;
+}
+.uplead{
+	padding-bottom:30px;
+}
+.uplead button{
+	padding-right:10px;
+	padding-left:36px;
+	height:30px;
+	color:#fff;
+	font-size:16px;
+	border:none;
+	border-radius:4px;
+	background:#bebebe url(../images/change_pic_03.jpg) no-repeat 8px 10px;
+	box-shadow:1px 1px 0 1px rgba(0,0,0,0.2);
+	cursor:pointer;
+}
+.uplead span{
+	font-size:12px;
+	color:#666;
+}
+.write_txt textarea{
+	width:327px;
+	height:97px;
+	border:1px solid #bdbdbd;
+	border-radius:6px;
+}
+.neirong .jine{
+	padding:0 10px;
+	width:163px;
+	height:30px;
+	border:1px solid #c6c6c6;
+	border-radius:4px;
+}
+.yanzhenma{
+	margin-top:30px;
+	height:53px;
+}
+.yanzhenma .yanzhen{
+	float:left;
+}
+.yanzhenma .yanzhenshu{
+	float:left;
+	width:90px;
+	height:28px;
+	padding:0 10px;
+	border:1px solid #c6c6c6;
+	border-radius:4px 0px 0px 4px;
+}
+.yanzhen_pic{
+	float:left;
+	width:72px;
+	height:26px;
+	border:1px solid #c6c6c6;
+	border-radius:0px 4px 4px 0px;
+	border-left:none;
+	text-align:center;
+	padding-top:2px;
+}
+.tijiao_niu{
+	font-family:"微软雅黑";
+	width: 130px;
+	height: 44px;
+	border-radius:6px;
+	background: #40ace1;
+	font-size: 16px;
+	color: #fff;
+	line-height: 30px;
+	text-align: center;
+	border: none;
+	margin-left:82px;
+	margin-bottom:100px;
+	cursor:pointer;
+}
+.tijiao_niu:hover{
+	background:#FF7F00;
+}
+/*选卡1内容结束*/
+/*选项2内容开始*/
+#list02 p, #list03 p{
+	text-align:center;
+	font-size:16px;
+	line-height:76px;
+	color:#333;
+}
+#list02 .tijiao_niu, #list03 .tijiao_niu{
+	margin-left:160px;
+}
+/*选卡2内容结束*/
+
+/*动效样式开始*/
+.xuanxiang .dangqian{
+	background:#40ace1;
+	color:#fff;
+}
+.neirong>div{
+	display:none;
+}
+#list01{
+	display:block;
+}
+/*动效样式结束*/

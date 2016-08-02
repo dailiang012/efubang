@@ -1,0 +1,19 @@
+
+			<a href="renzhengyem.html" class="uploading"><input type="button" value="上传资料证明"></a>
+.uploading{
+	display:block;
+	float:right;
+	clear:both;
+	margin-right:90px;
+	margin-bottom:30px;
+}
+.uploading input{
+	padding-left:40px;
+	padding-right:14px;
+	height:45px;
+	box-shadow:1px 1px 1px 0 rgba(0,0,0,0.5);
+	background:#40ace1 url(../images/uploading_icon.png) no-repeat 12px 10px ;
+	color:#fff;
+	font-size:16px;
+	border:none;
+}

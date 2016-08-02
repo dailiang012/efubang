@@ -1,0 +1,319 @@
+@charset "UTF-8";
+$font-color-first: #666;
+/*黑字色*/
+$font-color-second: #8d8b8b;
+/*灰字色*/
+$font-size-normal: 14px;
+/*正常字体*/
+$font-size-title: 20px;
+/*标题字体*/
+
+$blue: #4cb0ae;
+/*蓝色*/
+$red: #f53030;
+/*红色*/
+$bj-color: #f5f5f5;
+/*背景色*/
+$border-color: #e3e3e3;
+
+/*边框色*/
+
+.party-group {
+  height: 4841px;
+  background: url("../images/content-bj.jpg")  no-repeat center top;
+}
+
+.main-party-inner {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.party-box {
+  position: absolute;
+  cursor: pointer;
+  img {
+    display: inline-block;
+  }
+}
+.box-pic {
+  width: 184px;
+  height: 116px;
+  background: url("../images/close.png") no-repeat center top;
+}
+.box-text {
+  text-align: center;
+  padding-left: 40px;
+}
+
+.party-rule {
+  height: 543px;
+  padding-top: 32px;
+  background: #081b14;
+}
+
+.party-rule-inner {
+  width: 930px;
+  margin: 0 auto;
+}
+
+.party-rule li {
+  font-size: 16px;
+  line-height: 30px;
+  color: #beffc1;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#party-popup {
+  display: none;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.popup-content {
+  .box-open{
+    height:230px;
+    img{
+      height:514px;
+      width:580px;
+      margin:0 auto;
+    }
+  }
+
+  .name {
+    text-align: center;
+    span {
+      background: url("../images/active-name.png") no-repeat center top;
+      background-size:100% 100%;
+      display: inline-block;
+      font-size: 30px;
+      font-weight: bolder;
+      line-height:60px;
+      color: #fff;
+      padding:0 40px;
+    }
+
+  }
+
+  .time {
+    text-align: center;
+    padding-top: 25px;
+    span{
+    font-size: 16px;
+    color: #762617;
+    background:url("../images/time-bj.png") no-repeat center top;
+    background-size:100% 100%;
+    padding:0 40px;
+    line-height:14px;
+    }
+  }
+
+  .popup-rule {
+    padding-top: 48px;
+    width: 500px;
+    margin: 0 auto;
+
+    li {
+      font-size: 14px;
+      line-height: 24px;
+      color: #762617;
+    }
+
+  }
+
+  .popup-close {
+    position: absolute;
+    width: 56px;
+    height: 56px;
+    right: -38px;
+    top: -38px;
+    cursor: pointer;
+    z-index:6;
+    background:url("../images/close-popup.png") no-repeat center center;
+  }
+
+  .get-detail {
+    text-align: center;
+    padding-top: 60px;    
+    padding-bottom: 80px;
+
+    img {
+      display: inline;
+    }
+
+  }
+
+}
+
+.party01 {
+  left: 219px;
+  top: 987px;
+}
+
+.party02 {
+  left: 689px;
+  top: 944px;
+}
+
+.party03 {
+  left: 853px;
+  top: 1260px;
+}
+
+.party04 {
+  left: 424px;
+  top: 1335px;
+}
+
+.party05 {
+  left: 151px;
+  top: 1573px;
+}
+
+.party06 {
+  left: 483px;
+  top: 1725px;
+}
+
+.party07 {
+  left: 867px;
+  top: 1802px;
+}
+
+.party08 {
+  left: 750px;
+  top: 2115px;
+}
+
+.party09 {
+  left: 854px;
+  top: 2439px;
+}
+
+.party10 {
+  left: 508px;
+  top: 2598px;
+}
+
+.party11 {
+  left: 102px;
+  top: 2758px;
+}
+
+.party12 {
+  left: 391px;
+  top: 3067px;
+}
+
+.party13 {
+  left: 771px;
+  top: 3026px;
+}
+
+.party14 {
+  left: 1002px;
+  top: 3280px;
+}
+
+.party15 {
+  left: 693px;
+  top: 3479px;
+}
+
+.party16 {
+  left: 227px;
+  top: 3423px;
+}
+
+.party17 {
+  left: 97px;
+  top: 3691px;
+}
+
+.party18 {
+  left: 493px;
+  top: 3822px;
+}
+
+.party19 {
+  left: 898px;
+  top: 3945px;
+}
+
+.party20 {
+  left: 843px;
+  top: 4326px;
+}
+
+.party21 {
+  left: 315px;
+  top: 4277px;
+}
+
+/* 新加奖品和二维码 */
+.add01{
+  width:500px;
+  margin:0 auto;
+  padding-top:10px;
+  position:relative;
+  font-weight:bolder;
+  h3{
+    font-size: 14px;
+    line-height: 30px;
+    color: #762617;
+  font-weight:bolder;
+  }
+  .prize-list{
+    width:175px;
+    margin-right:100px;
+    font-size: 14px;
+    line-height: 30px;
+    color: #762617;
+    float:left;
+    .right{
+      float:right;
+    }
+  }
+  .two-code{
+    float:left;
+    .two-code-pic{
+      width:120px;
+      height:120px;
+      border:5px solid #ffac4c;
+      border-radius:5px;
+    }
+  }
+}
+
+/* 修改边框 */
+.popup-content{
+  background:#fffe9b;
+  border:15px solid #ffac4c;
+  border-radius:16px;
+  position: relative;
+  font-weight: bolder;
+}
+.popup-content02{
+  border:12px solid #fffe9b;
+  border-radius:20px;
+  background:#fffe9b;
+
+}
+.popup-content03{
+  border:8px solid #fff;
+  border-radius:30px;
+    background:#fff;
+}
+.popup-content04{
+  border:5px solid #762617;
+  border-radius:35px;
+  background:#762617;
+  width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
+}

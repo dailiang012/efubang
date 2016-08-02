@@ -1,0 +1,348 @@
+.invest-body{
+	background:#fff !important;
+}
+.invest-logo{
+	height:80px;
+	background:url(../images/invest/invest-logo.PNG) no-repeat left center !important;
+}
+.invest-nav{
+	background:#40ACE1 !important;height:80px;width:100%;
+	position: relative;
+}
+.invest-nav .banner_list{
+	position: absolute; top:80px; height: 250px; width: 100%;
+	background: #ccc;
+}
+.invest-navlist li a{
+	border-top:2px solid #40ace1 !important;
+}
+.invest-navlist li a:hover{
+	border-top:2px solid #e1d373 !important;
+}
+.invest-top{
+	height:365px; margin-bottom:50px;
+}
+.invest-top-l{
+	width:557px;
+}
+.invest-proname{
+	height:24px; color:#333; font-size:20px; padding-top:46px; padding-bottom:20px; text-indent:9px;
+}
+.invest-proname img{
+	height:24px; width:24px; margin-right:14px;
+}
+.invest-details{
+	position:relative;
+	width:555px; height:271px; border-radius:8px; border:1px solid #cccccc;
+}
+.invest-what{
+	height:303px; width:84px; position:absolute;left:0; top:0; background:url(../images/invest/what.png) no-repeat center center; margin-left:-150px; margin-top:-30px;
+}
+.invest-details-center{
+	width:481px; margin:0 auto;height:242px;
+}
+.three-invest{
+	overflow: hidden;
+	height:calc(80px);margin-top:29px; margin-bottom:17px; padding-bottom: 18px;
+	border-bottom: 1px solid #999;
+}
+.first-invest{
+	width:160px; height:80px; border-right:1px solid #40ace1; background:url(../images/invest/icoa.jpg) no-repeat left center; text-indent:60px; margin-right:20px;
+}
+.first-invest p{
+	font-size:14px; color:#40ace1; height:18px;
+}
+.first-invest p span{
+	font-size:24px ;
+}
+.first-invest-p{
+	margin-top:18px; margin-bottom:10px;
+}
+
+.second-invest{
+	width:140px; height:80px; border-right:1px solid #40ace1; background:url(../images/invest/ico-limit.jpg) no-repeat left center; text-indent:60px; margin-right:20px;
+}
+.second-invest p{
+	font-size:14px; color:#40ace1; height:18px;
+}
+.second-invest p span{
+	font-size:24px ;
+}
+.second-invest-p{
+	margin-top:18px; margin-bottom:10px;
+}
+
+.third-invest{
+	width:120px; height:80px; background:url(../images/invest/ico-money.jpg) no-repeat left center; text-indent:60px;
+}
+.third-invest p{
+	font-size:14px; color:#40ace1; height:18px;
+}
+.third-invest p span{
+	font-size:24px ;
+}
+.third-invest-p{
+	margin-top:18px; margin-bottom:10px;
+}
+.invest-data{
+	color:#555; margin-bottom:30px; font-size:16px;
+}
+.invest-data-margin{
+	margin-right:50px;
+}
+.prodect_w {
+    background: #e5e5e5 none repeat scroll 0 0;
+    border-radius: 4px;
+    float: left;
+    height: 6px;
+    width: 240px;
+}
+.prodect_n {
+    background: #40ace1 none repeat scroll 0 0;
+    border-radius: 4px;
+    height: 6px;
+}
+.prodect_span {
+    color: #333;
+    float: left;
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+.prodect_dt {
+    height: 20px;
+    margin-bottom: 10px;
+}
+
+.invest-mark{color:#555; font-size:16px;}
+.invest-top-r{
+	width:402px; height:271px;
+}
+.investbox{
+	width:402px; height:271px; border:1px solid #cccccc; border-radius:8px;
+}
+.investbox-center{
+	width:290px; height:251px; margin:0 auto;position:relative;
+}
+.investbox-center p{
+	font-size:15px; color:#333333;
+}
+.investbox-center p span{ margin-left:5px;}
+.investbox-p1{
+	margin-top:20px;
+}
+.investbox-p3{
+	margin-bottom:25px;
+}
+.investbox-p3_1{
+	margin-bottom:65px !important;
+}
+.investbox-text{
+	float:left;
+	height:47px; border-radius:8px; width:212px; border:1px solid #ccc; font-size:16px; color:#cccccc; text-indent:5px;
+	padding:0 5px;
+}
+.investbox-center .pic{
+	float:right;
+}
+.input_hongbao{
+	position:relative;
+}
+.investbox-center #hongbao{
+	padding-top:17px;
+	width:50px;
+	height:26px;
+	text-align:center;
+	position:absolute;
+	font-size:12px;
+	color:#fdf54c;
+	top:0;
+	right:0;
+	line-height:26px;
+	cursor:pointer;
+}
+.xiala_hongbao{
+	width:290px;
+	border:1px solid #ccc;
+	border-radius:10px;
+	position:absolute;
+	top:150px;
+	left:0;
+	z-index:1000;
+	background:#fff;
+	display:none;
+}
+.xiala_hongbao li{
+	cursor:pointer;
+}
+.xiala_hongbao .pic3{
+	padding-left:25px;
+	
+}
+.xiala_hongbao li:hover{
+	background:#efefef;
+}
+.xiala_hongbao .biankuang{
+	border-bottom:1px dotted #a0a0a0;
+	padding:20px 10px;
+}
+.xiala_hongbao .left{
+	float:left;
+	height:50px;
+	width:182px;
+}
+.xiala_hongbao li img{
+	padding-left:25px;
+}
+.xiala_hongbao .padleft .time{
+	padding-left:16px;
+}
+.xiala_hongbao .left h2{
+	float:left;
+	font-size:24px;
+	color:#df3121;
+	line-height:26px;
+	padding-right:18px;
+	font-weight:bold;
+}
+.xiala_hongbao .left .time{
+	float:left;
+	font-size:12px;
+	color:#333;
+	line-height:14px;
+}
+.xiala_hongbao .p2{
+	float:left;
+	line-height:18px;
+	font-size:12px;
+	color:#666;
+}
+.xiala_hongbao .p3{
+	text-align:center;
+	line-height:38px;
+	font-size:12px;
+	color:#333;
+	font-weight:bold;
+}
+.xiala_hongbao .jiantou_pic img{
+	position:absolute;
+	top:-6px;
+	left:255px;
+	z-index:5000;
+}
+.xiala_hongbao .last{
+	border-radius:0 0 10px 10px;
+}
+.xiala_hongbao .first{
+	border-radius:10px 10px 0 0;
+}
+.investbox-p4{
+	float:left;
+	height:40px; line-height:30px; text-align:right; color:#333; font-size:16px;
+}
+.investbox-btn{
+	border:none; border-radius:8px; color:#fff; height:49px;background:#d74e4d; width:100%; font-size:16px; cursor:pointer;
+}
+.investbox-btn1{
+	border:none; border-radius:8px; color:#fff; height:49px;background:#999999; width:100%; font-size:16px; cursor:pointer;
+}
+.investcc-list{
+	width:978px; border:1px solid #ccc; overflow:auto; margin-bottom:50px; padding-bottom:25px;
+}
+.investcc-tt{
+	height:53px;  border-bottom:1px solid #ccc; background:#efefef; text-indent:58px;
+}
+.investcc-nav1{
+	display:block; cursor:pointer; height:53px; line-height:53px; width:162px; background:url(../images/invest/invest-info.png) no-repeat left 23px center; color:#999999; font-size:20px;
+}
+.investcc-nav1:hover{
+	display:block; height:53px; line-height:53px; width:162px; background:url(../images/invest/invest-info1.png) no-repeat left 23px center;  color:#333333;
+}
+.investcc-nav1_1{
+	display:block;  cursor:pointer; height:53px; line-height:53px; width:162px; background:#fff url(../images/invest/invest-info1.png) no-repeat left 23px center; color:#333333; border-bottom:1px solid #fff;font-size:20px;
+}
+.investcc-nav2{
+	display:block;  cursor:pointer; height:53px; line-height:53px; width:162px; background:url(../images/invest/invest-list.png) no-repeat left 23px center; color:#999999; font-size:20px;
+}
+.investcc-nav2:hover{
+	display:block; height:53px; line-height:53px; width:162px; background:url(../images/invest/invest-list1.png) no-repeat left 23px center;  color:#333333;
+}
+.investcc-nav2_1{
+	display:block;  cursor:pointer; height:53px; line-height:53px; width:162px; background:#fff url(../images/invest/invest-list1.png) no-repeat left 23px center; color:#333333; border-bottom:1px solid #fff;font-size:20px;
+}
+.investcc-table{
+	width:958px; margin:0 auto;
+}
+.investcc-table table{
+	width:100%; 
+	border-collapse:collapse;margin-bottom:50px;
+}
+.investcc-table table tr{
+	height:56px;
+}
+.investcc-table table tr th{
+	 border-bottom:1px solid #999999;
+}
+.investcc-table table tr td{
+	 border-bottom:1px solid #999999; text-align:center; 
+}
+.page{
+	width:220px; margin:0 auto; height:25px;
+}
+.page a{
+	cursor:pointer;
+}
+.page-pre{
+	display:block; height:25px; margin-right:10px; width:55px; background:url(../images/invest/invest-pre.png) no-repeat center center;
+}
+.page-first{
+	height:23px; width:23px;margin-right:10px; display:block;border-radius:6px; border:1px solid #bdbdbd;line-height:23px; text-align:center;
+}
+.page-second{
+	height:23px; width:23px;margin-right:10px; display:block;border-radius:6px;line-height:23px; text-align:center;
+}
+.page-next{
+	display:block; height:25px; width:55px; background:url(../images/invest/invest-next.png) no-repeat center center;
+}
+.invest-info-tt{
+	height:65px; line-height:75px; color:#333; border-bottom:1px solid #999; width:958px; margin:0 auto; text-indent:46px; font-size:16px;
+}
+.invest-infocc{
+	width:830px; margin:0 auto; padding-top:10px; color:#666666; line-height:25px;
+} 
+.invest-infocc p{
+	
+}
+.invest-footer{
+	height:305px !important; 
+	background:#363636 !important;
+}
+.investfooter-center{
+	height:305px !important;
+}
+.investfooter-l{
+	margin-top:80px !important;
+}
+.investfooter-r{
+	margin-top:80px !important;
+}
+.investfooter-b{
+	border-top:1px solid #7d7d7d; padding-top:15px;
+}
+.invest-imgcenter{
+	text-align:center; padding-top:50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

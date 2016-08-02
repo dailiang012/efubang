@@ -1,0 +1,203 @@
+@charset "UTF-8";
+
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+//字体设置开始
+@mixin font-dpr($font-size){
+  font-size: $font-size/2;
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+
+.clear{
+	clear:both;
+}
+
+#box{
+	width:100%;
+	height:100%;
+	background:#8b6d57;
+}
+
+.pop_up{
+	width:100%;
+	height:100%;
+	padding-top:26%;               /*调*/
+	position:fixed;
+	background:rgba(0,0,0,0.5)
+}
+.pop_inner{
+	width:86%;
+	height:77%;
+	margin:0 auto;
+	position:relative;
+}
+.main_bj{
+	position:absolute;
+	width:100%;
+	height:100%;
+	left:0;
+	top:0;
+	img{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+}
+.red_list{
+	position:absolute;
+	width:94%;
+	height:37%;
+	padding-top:10%;
+	border-radius:10px;
+	background:#edd5c2;
+	top:22%;
+	left:3.2%;
+	border-bottom:1px solid #adadad;
+	overflow:auto;
+}
+.red_list li{
+	width:93%;
+	margin-left:auto;
+	margin-right:auto;
+	border:1px solid #b3937a;
+	border-radius:8px;
+	position:relative;
+	cursor:pointer;
+	margin-bottom:5.5%;
+	padding:0.7% 0 0.7% 1.7%;
+}
+
+
+.red_money{
+	height:83%;
+	width:17%;
+	float:left;
+	position:relative;
+
+	@include px2rem(margin-right,30px,64px,false);
+}
+.red_list h4{
+	float:left;
+	@include font-dpr(22px);
+	@include px2rem(line-height,30px,64px,false);
+	color:#aa9c8f;
+}
+.pic{
+	width:100%;
+	height:100%;
+	img{
+		width:100%;
+		height:100%;
+		display:block;
+	}
+}
+.red_ture{
+	width:35%;
+	height:53%;
+	position:absolute;
+	@include px2rem(top,-10px,64px,false);
+	@include px2rem(left,-10px,64px,false);
+	img{
+		width:100%;
+		height:100%;
+	}
+}
+.red_list li h3{
+	width:100%;
+	text-align:center;
+	position:absolute;
+	left:1.7%;
+	bottom:0;
+	@include font-dpr(20px);
+	@include px2rem(line-height,28px,64px,false);
+	color:#e9dc33;
+}
+.red_list .last h3{
+	color:#fff;
+	padding-bottom:5%;
+	@include font-dpr(16px);
+	@include px2rem(line-height,28px,64px,false);
+	// line-height:100%;
+}
+
+
+.main_b>h3{
+	width:97%;
+	margin:0 auto;
+	text-align:center;
+	@include font-dpr(30px);
+	color:#585858;
+	padding-top:5.4%;
+	line-height:100%;
+}
+.button{
+	padding-top:5.8%;
+	width:80%;
+	margin:0 auto;
+}
+.button .input{
+	border-radius:8px;
+	width:40%;
+	text-align:center;
+	@include font-dpr(28px);
+	color:#fff;
+	cursor:pointer;
+	padding:4% 4%;
+}
+.button .input a{
+	display:block;
+	color:#fff;
+}
+.false_moy{
+	float:left;
+	background:#81d6fd;
+}
+.true_moy{
+	float:right;
+	background:#41c0fb;
+}
+.main_b{
+	position:absolute;
+	top:70%;
+	left:0;
+	width:100%;
+	padding:5% 0;
+}
+.main_b h3{
+	text-align:center;
+}
+
+.red_ture{
+	opacity:0;
+}

@@ -1,0 +1,205 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*main开始*/
+/*选项卡*/
+#main{
+	padding-top:67px;
+}
+#main h4{
+	font-size:16px;
+	line-height:41px;
+	color:#40ace1;	
+}
+#main  h3{  
+	width:160px;
+	text-align:center;
+	cursor:pointer;
+	font-size:16px;
+	line-height:44px;
+	background:#40ace1;
+	color:#fff;
+	border:1px solid #40ace1;
+}
+.content{
+	border:1px solid #ccc;
+	width:942px;
+	height:585px;
+	background:#fff;
+	margin-bottom:100px;
+	padding-left:20px;
+}
+/*收件箱*/
+.content_top{
+	height:35px;
+	border-bottom:1px solid #40ace1;
+	padding-top:10px;
+}
+.button{
+	font-size:12px;
+	color:#fff;
+	height:25px;
+	background:#999;                
+	border-radius:4px;
+	padding:0 16px;
+	margin-right:10px;
+	border:none;
+	cursor:pointer;
+}
+.button_box .button2{                /*background:#40ace1;图标点点亮时的样式*/
+	background:#40ace1;
+}
+.button_box{
+	float:left;
+	padding-left:20px;
+}
+.xuankuan1{
+	float:left;
+	margin-top:7px;
+}
+.xuankuan2{
+	float:left;
+	margin-top:24px;
+	margin-right:10px;
+	cursor:pointer;
+}
+.xuanxiang{
+	float:left;
+	width:397px;
+	overflow:auto;
+	height:529px;
+	padding-top:10px;
+}
+.email_simple{
+	float:left;
+	width:320px;
+	padding-left:10px;
+	height:60px;
+	border-left:5px solid #40ace1;      /*看过的邮件颜色#fff;*/
+}
+.email_simple:hover{
+	background:#f2f2f2;
+}
+.xuanxiang li{
+	height:60px;
+	margin-bottom:20px;
+	cursor:pointer;
+}
+.xuanxiang a{
+	display:block;
+}
+.xuanxiang p{
+	font-size:12px;
+	color:#333;
+	line-height:16px;
+}
+.xuanxiang .mail{
+	padding-bottom:6px;
+}
+.xuanxiang .yidu p{     /*已经阅读后的邮件的状态   加class=“yidu”*/
+	color:#808080;
+}
+.mail p{
+	margin-right:78px;
+	width:60px;
+	background:url(../images/youjian.png) no-repeat right top;
+}
+.button_box2 .button_fasong{
+	width:90px;
+	height:25px;
+	text-align:center;
+	background:#7cc379;
+}
+.button_box2{
+	float:left;
+}
+.email_time{
+	float:left;
+	padding-top:5px;
+}
+.email_time p{
+	float:left;
+}
+.email_time .time{
+	padding-left:18px;
+	color:#333;
+}
+.neirong{
+	width:535px;
+	float:left;
+	margin-left:10px;
+	position:relative;
+}
+.neirong .pic_neirong{
+	display:block;
+}
+.pic_neirong{
+	width:545px;
+	height:539px;
+	position:absolute;
+	left:-10px;
+	top:0;
+}
+.pic_neirong img{
+	width:100%;
+	height:100%;
+}
+.neirong>div{
+	display:none;
+}
+.neirong #list01{
+	display:block;
+}
+.tianxie_mail{
+	background:#cdefff;
+	padding:20px 0 0 10px;
+}
+.tianxie_mail li{
+	padding-bottom:10px;
+}
+.tianxie_mail input{
+	margin-left:10px;
+	padding:0 10px;
+	height:22px;
+	border-radius:11px;
+	border:1px solid #ccc;
+	font-size:12px;
+	color:#333;
+	line-height:22px;
+}
+.tianxie_mail .text01{
+	width:180px;	
+}
+.tianxie_mail .text02{
+	width:300px;
+}
+.tianxie_mail .time{
+	padding-left:16px;
+	font-size:12px;
+	line-height:22px;
+	color:#333;
+	float:left;
+}
+.tianxie_mail label {
+    float: left;
+    font-size: 12px;
+    color: #333;
+    line-height: 22px;
+}
+.tianxie_mail .time span{
+	color:#a6a6a6;
+}
+.text_mail{
+	height:149px;
+	padding:20px 10px 0 10px;
+}
+.text_mail textarea{
+	height:350px;
+	width:518px;
+	text-indent:28px;
+	font-size:14px;
+	color:#333;
+	line-height:24px;
+	border:none;
+	overflow:auto;
+}

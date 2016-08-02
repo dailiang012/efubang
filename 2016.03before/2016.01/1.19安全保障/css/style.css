@@ -1,0 +1,163 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+li{
+	list-style:none;
+}
+a{
+	text-decoration:none;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+}
+input,textarea,select{
+	outline:none;
+}
+textarea{
+	resize:none;
+}
+img{
+	border:none;
+}
+.clear{
+	clear:both;
+}
+body{
+	font-family:Arial,"微软雅黑", Helvetica, sans-serif;
+}
+
+#main_text{
+	padding:80px 0 149px 0;
+}
+.inner{
+	width:881px;
+	margin:0 auto;
+}
+.section_one,.section_two,section_three,.section_four{
+	border-bottom:1px solid #d5d5d5; 
+}
+.section_one .inner{
+	background:url(../images/pic_01.jpg) no-repeat 582px 0;	
+	padding-bottom:85px;	
+}
+#main_text h1{
+	font-size:36px;
+	color:#3f3f3f;
+	line-height:80px;	
+	padding-top:37px;
+}
+
+#main_text p{
+	text-indent:24px;
+	font-size:14px;
+	color:#666;
+	line-height:24px;
+}
+
+.section_two{
+	padding-bottom:60px;
+}
+.section_two .inner{
+	background:url(../images/pic_02.jpg) no-repeat left 24px;	
+}
+.two_l{
+	width:441px;
+	padding-top:308px;
+	float:left;
+}
+.two_l p{
+	text-indent:24px;
+}
+.xian{
+	float:left;
+	width:1px;
+	height:420px;
+	margin-top:100px;
+	background:#d5d5d5;
+}
+.two_r{
+	padding-top:80px;
+	padding-left:100px;
+	width:339px;
+	float:left;
+}
+.two_top h3 a{
+	font-size:18px;
+	line-height:57px;
+	color:#404040;
+}
+.two_top h3 a:hover{
+	text-decoration:underline;      /*          新加*/
+}
+.two_top p{
+	text-indent:24px;
+	padding-bottom:17px;
+}
+#main_text .section_three h1{
+	padding-top:73px;
+}
+#main_text .section_three .inner{
+	background:url(../images/pic_03.jpg) no-repeat 621px 78px;
+}
+.section_four{
+	padding-bottom:100px;
+}
+.section_four h1{
+	text-align:center;
+	font-size:36px;
+	color:#3f3f3f;
+	line-height:118px;	
+	padding-bottom:37px;
+}
+.list{
+	border:1px solid #1a80cb;
+}
+.list li{
+	padding-top:15px;
+	padding-bottom:33px;
+	border-bottom:1px solid #1a80cb;
+	
+}
+.list li h4{
+	padding:0 45px 0 40px;
+	font-size:18px;
+	color:#404040;
+	line-height:48px;
+}
+.list li p{
+	padding:0 45px 0 40px;
+}
+
+
+.section_five h1{
+	text-align:center;
+	font-size:36px;
+	color:#3f3f3f;
+	line-height:118px;	
+	padding-bottom:37px;
+}
+.list_two li{
+	float:left;
+	margin-right:71px;
+	width:215px;
+	height:228px;
+	padding:20px 13px 0 16px;
+	border:1px solid #1a80cb;
+	border-radius:14px;
+	position:relative;
+}
+.list_two .padd{
+	margin-right:0;
+}
+.list_two li h3{
+	width:107px;
+	text-align:center;
+	background:#fff;
+	position:absolute;
+	left:70px;
+	top:-10px;
+}

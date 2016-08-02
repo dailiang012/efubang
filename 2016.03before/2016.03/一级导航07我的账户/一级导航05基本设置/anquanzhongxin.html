@@ -1,0 +1,225 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>安全中心</title>
+<link href="css/anquanzhongxin.css" rel="stylesheet" type="text/css">
+<link href="css/header_footer_public.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+<div>
+	<div id="header_top">
+		<div class="inner"> <img src="images/header_icon.png" title="home_icon" alt="home_icon">
+			<p>欢迎来到e富邦</p>
+			<img src="images/phono.png" title="phone_icon" alt="phone_icon">
+			<p>4000-33-7997</p>
+			<p class="denglu"><a href="">登陆</a><span>|</span><a href="">注册</a></p>
+		</div>
+	</div>
+	<div id="header_b">
+		<div class="inner">
+			<div class="logo"><a href="#"><img src="images/logo.png" title="logo" alt="logo"></a></div>
+			<ul class="nav_02">
+				<li class="zhanghao">我的账号
+					<div class="nav_xia">
+						<ul class="list_nav">
+							<li><a href="1.0zhanghuxiangqing.html">账户详情</a></li>
+							<li><a href="1.1zijinjilu.html">资金记录</a></li>
+							<li class="zhanghutixian"><a href="#">账户提现</a></li>
+							<li><a href="1.3zhanghuchongzhi.html">账户充值</a></li>
+							<li><a href="1.4hongbao.html">红包</a></li>
+							<li><a href="1.5yinghangka.html">银行卡管理</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="people people02">
+					<div class="pic"><img src="images/Koala.jpg" title="个人头像" alt="个人头像"></div>
+					<div class="nav_xia click_xia">
+						<h3>钱多多账户：<span>1138068</span></h3>
+						<div class="botton"><a href="#">进入钱多多</a></div>
+						<ul class="icon_list">
+							<li class="one_icon">
+								<div><a href="#"><img src="images/phone.png" title="手机认证" alt="手机认证图标"></a></div>
+							</li>
+							<li class="two_icon">
+								<div><a href="#"><img src="images/vip.png" title="VIP"  alt="VIP图标"></a></div>
+							</li>
+							<li class="three_icon">
+								<div><a href="#"><img src="images/mail.png" title="邮箱验证"  alt="邮箱验证图标"></a></div>
+							</li>
+							<li class="border01 four_icon">
+								<div><a href="#"><img src="images/yuan.png" title="收件箱" alt="收件箱图标"></a></div>
+							</li>
+							<li class="border02 five_icon">
+								<div class="yanse"><a href="#"><img src="images/people_icon.png" title="实名认证" alt="实名认证图标"></a></div>
+							</li>
+							<li class="border02 seven_icon">
+								<div class="yanse"><a href="#"><img src="images/money.png" title="红包" alt="红包图标"></a></div>
+							</li>
+							<div class="clear"></div>
+						</ul>
+					</div>
+				</li>
+				<li class="licai">理财管理</li>
+				<li class="shezhi">基本设置
+					<div class="nav_xia">
+						<ul class="list_nav">
+							<li><a href="gerenziliao.html">个人资料</a></li>
+							<li><a href="touxianggengxin.html">头像更新</a></li>
+							<li><a href="renzhengzhongxin.html">认证中心</a></li>
+							<li class="anquanzhongxin"><a href="#">安全中心</a></li>
+							<li><a href="yaoqinghaoyou.html">邀请好友</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!--                      main-star                          -->
+<div id="main">
+	<div class="inner">
+		<div class="tixian">
+			<div class="tishi">
+				<div class="pic"><img src="images/jingao.png"></div>
+				<div class="text_l">
+					<h2>温馨提示</h2>
+					<p>我们将严格对用户的所有资料进行保密。<span>更换邮箱，必须正确填写身份证、原来激活的邮箱、真实姓名，缺一不可。</span></p>
+				</div>
+			</div>
+			<ul class="xuanxiang">
+				<li><a href="#list01" class="dangqian">修改密码</a></li>
+				<li><a href="#list02">更换手机号</a></li>
+				<li><a href="#list03">更换邮箱</a></li>
+			</ul>
+			<div class="neirong">
+				<div id="list01">
+					<form>
+						<p>
+							<lable for="old_password">原始密码：</lable>
+							<input type="text" value="">
+						</p>
+						<p class="new_password">
+							<lable for="new_password">新密码：</lable>
+							<input type="text" value="">
+						</p>
+						<p>
+							<lable for="affirm_password">确认密码：</lable>
+							<input type="text" value="">
+						</p>
+						<p>
+							<label for="tijiao_niu"></label>
+							<button type="submit" value="确认提交" class="tijiao_niu">确认提交</button>
+						</p>
+					</form>
+				</div>
+				<div id="list02">
+					<form id="step_one">
+						<p>
+							<lable>原始手机号：</lable>
+							<input type="text" value="">
+						</p>
+						<p class="phone_code">
+							<lable>验证码：</lable>
+							<button type="button" id="get_phonecode">获取验证码</button>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p class="web_code">
+							<lable>验证码：</lable>
+							<span class="yanzhen_pic"><img src="images/yanzhenga.png"></span>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p><button type="submit" value="确认提交" class="tijiao_niu">确认提交</button></p>
+					</form>
+					<form id="step_two">
+						<p>
+							<lable>变更手机号：</lable>
+							<input type="text" value="">
+						</p>
+						<p class="phone_code">
+							<lable>验证码：</lable>
+							<button type="button" id="get_phonecode">获取验证码</button>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p class="web_code">
+							<lable>验证码：</lable>
+							<span class="yanzhen_pic"><img src="images/yanzhenga.png"></span>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p><button type="submit" value="确认提交" class="tijiao_niu">确认提交</button></p>
+					</form>
+				</div>
+				<div id="list03">
+					<form id="step_one">
+						<p>
+							<lable>原始邮箱：</lable>
+							<input type="text" value="">
+						</p>
+						<p class="web_code">
+							<lable>验证码：</lable>
+							<span class="yanzhen_pic"><img src="images/yanzhenga.png"></span>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p><button type="submit" value="确认提交" class="tijiao_niu">确认提交</button></p>
+					</form>
+					<form id="step_two">
+						<p>
+							<lable>变更手机号：</lable>
+							<input type="text" value="">
+						</p>
+						<p class="phone_code">
+							<lable>验证码：</lable>
+							<button type="button" id="get_phonecode">获取验证码</button>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p class="web_code">
+							<lable>验证码：</lable>
+							<span class="yanzhen_pic"><img src="images/yanzhenga.png"></span>
+							<input type="text" value="" class="yanzhenshu">
+						</p>
+						<p><button type="submit" value="确认提交" class="tijiao_niu">确认提交</button></p>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--                                      footer-star                    -->
+<div id="footer">
+	<div class="inner">
+		<div class="footer_l">
+			<ul class="one">
+				<li class="eeee"><a href="">关于我们</a></li>
+				<li class="eeee"><a href="">媒体报道</a></li>
+				<li class="eeee"><a href="">公司简介</a></li>
+				<li class="eeee"><a href="">帮助中心</a></li>
+				<li><a href="">加入我们</a></li>
+			</ul>
+			<ul class="two">
+				<li><a href="">友情链接：</a></li>
+				<li><a href="">网贷中心</a></li>
+				<li><a href="">投友贷</a></li>
+				<li><a href="">网贷天眼</a></li>
+				<li><a href="">融途网</a>
+					</dd>
+				<li><a href="">网贷俱乐部</a></li>
+			</ul>
+		</div>
+		<div class="footer_r">
+			<h3>人工服务</h3>
+			<div class="phone">
+				<p>客服电话：400-33-7997</p>
+				<p class="qiye">企业QQ：3252730453</p>
+				<p class="guanfang">官方QQ群：329985666</p>
+				<p>客服邮箱：kf@efubang.com</p>
+			</div>
+			<div class="clear"></div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</div>
+<div id="copy">©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1</div>
+<script type="text/javascript" src="js/anquanzhongxin.js"></script>
+</body>
+</html>
