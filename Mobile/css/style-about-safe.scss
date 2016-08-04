@@ -10,7 +10,7 @@
   //if there is only one (numeric) value, return the property/value line for it.
   @if type-of($px-values) == "number" {
     #{$property}: $px-values / $baseline-rem;
-  } @else {
+    } @else {
     //Create an empty list that we can dump values into
     $rem-values: ();
     @each $value in $px-values {
@@ -165,10 +165,10 @@ body {
   @include px2rem(line-height,90px,64px,false);
 }
 .safe-text p{
-    @include font-dpr(24px);
-    @include px2rem(line-height,40px,64px,false);
-    @include px2rem(text-indent,60px,64px,false);
-    color:$normal;
+  @include font-dpr(24px);
+  @include px2rem(line-height,40px,64px,false);
+  @include px2rem(text-indent,60px,64px,false);
+  color:$normal;
 }
 .safe-text h2{
   text-align: center;

@@ -10,7 +10,7 @@
   //if there is only one (numeric) value, return the property/value line for it.
   @if type-of($px-values) == "number" {
     #{$property}: $px-values / $baseline-rem;
-  } @else {
+    } @else {
     //Create an empty list that we can dump values into
     $rem-values: ();
     @each $value in $px-values {
@@ -176,10 +176,10 @@ html {
   }
 }
 .news-footer{
+ width: 100%;
+ img{
    width: 100%;
-   img{
-     width: 100%;
-     height: auto;
-   }
+   height: auto;
  }
+}
 /*wrapper-end*/

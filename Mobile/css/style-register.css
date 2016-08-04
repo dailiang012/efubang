@@ -270,6 +270,7 @@ body {
     color: #e84a4a;
     line-height: 100%;
     padding-top: 0.15625rem;
+    padding-bottom: 0.15625rem;
     height: 0.46875rem;
 }
 [data-dpr="1"] .prompt-text {

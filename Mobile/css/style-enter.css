@@ -242,9 +242,10 @@ body {
 .prompt-text {
     padding-left: 3%;
     color: #e84a4a;
-    line-height: 100%;
     padding-top: 0.15625rem;
+    padding-bottom: 0.15625rem;  /*新加*/
     height: 0.46875rem;
+    line-height: 100%;
 }
 [data-dpr="1"] .prompt-text {
     font-size: 12px;
@@ -256,6 +257,29 @@ body {
 [data-dpr="3"] .prompt-text {
     font-size: 36px;
 }
+
+.prompt-text img{
+    float: left;
+    display: block;
+    vertical-align: middle;
+    margin-right:0.15625rem;
+}
+
+ [data-dpr="1"] .prompt-text img {
+    width:12px;
+    height:12px;
+}
+[data-dpr="2"] .prompt-text img {
+    width:24px;
+    height:24px;
+}
+
+[data-dpr="3"] .prompt-text img {
+    width:36px;
+    height:36px;
+} 
+
+
 .prompt-img{
     float: left;
 }
