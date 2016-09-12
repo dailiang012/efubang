@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+	/*
+		function Box(){};
+		Box.prototype.name="dailiang";
+
+		var one=new Box();
+		console.log(one.name);
+
+		console.log(Box.prototype.constructor);
+		*//*
+	function Box(){};
+	Box.prototype={
+		// constructor:Box,
+		name:"dailiang"
+	}
+	var one=new Box();
+	console.log(one.name);
+	console.log(Box.prototype.constructor);*/
+
+/*	function Box(name,age){
+		this.name=name;
+		this.age=age;
+		this.run=function(){
+			return this.name+this.age+"运行中...";
+		}	
+	}
+
+	function Desk(name,age){
+		Box.call(this,name,age);
+	}
+
+	var desk=new Desk("dailiang",25);
+	var desk2=new Desk("jeck",25);
+	console.log(desk.name);
+	console.log(desk.run());
+	*/
+//原型式继承,借助原型,基于已有的对象创建新的对象
+/*
+	function object(o){
+		function F(){}
+		F.prototype=o;
+		return new F();
+	}
+	var person={
+		name:"dailiang",
+		friends:["Jeck","Tom","Marry"]
+	}
+
+	var anotherPerson=object(person);
+	console.log(anotherPerson.name);
+	anotherPerson.friends.push("Rob");
+	console.log(person.friends);
+	*/
+
+//寄生式继承
+function object(o){
+	function F(){}
+	F.prototype=o;
+	return new F();
+}
+
+function createAnother(origunal){
+	var clone=object(origunal);
+	clone.sayhi=function(){
+		alert("hi");
+	};
+	return clone;
+}
+
+var person={
+	name:"dailiang",
+	friends:["Jeck","Tom","Marry"]
+}
+var anotherPerson=createAnother(person);
+anotherPerson.sayhi();
+</script>
+</body>
+</html>

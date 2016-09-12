@@ -2,66 +2,60 @@
   font-family: 'Conv_LCDN';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/LCDN/LCDN.eot");
-  src: url("../fonts/LCDN/LCDN.ttf"), url("../fonts/LCDN/LCDN.woff"), url("../fonts/LCDN/LCDN.svg");
+  src: url('../fonts/LCDN/LCDN.eot');
+  src: url('../fonts/LCDN/LCDN.ttf'), url('../fonts/LCDN/LCDN.woff'), url('../fonts/LCDN/LCDN.svg');
 }
 @font-face {
   font-family: 'fzxs12regular';
   font-weight: normal;
   font-style: normal;
-  src: url("../fonts/FangZhen/12.woff2") format("woff2"), url("../fonts/FangZhen/12.woff") format("woff");
+  src: url('../fonts/FangZhen/12.woff2') format('woff2'), url('../fonts/FangZhen/12.woff') format('woff');
 }
-
 #main {
+  font-family: 'fzxs12regular', 'Microsoft YaHei';
   height: 914px;
   padding-top: 667px;
-  background: url("../images/risk_submit_bj.jpg") no-repeat center top;
-  font-family: 'fzxs12regular',"Microsoft YaHei";
+  background: url('../images/risk_submit_bj.jpg') no-repeat center top;
 }
-
 .result_total {
   width: 1249px;
   height: 778px;
   margin: 0 auto;
   color: #fffbd3;
-  background-image: url("../images/risk_submit_txt.png");
+  background-image: url('../images/risk_submit_txt.png');
   background-repeat: no-repeat;
   background-position: center top;
 }
-
 .result_total .title {
-  padding-top: 80px;
-  text-align: center;
   font-size: 24px;
   line-height: 100%;
-}
-
-#grade_num {
+  padding-top: 80px;
   text-align: center;
-  font-family: 'Conv_LCDN',"Microsoft YaHei";
+}
+#grade_num {
+  font-family: 'Conv_LCDN', 'Microsoft YaHei';
   font-size: 264px;
   line-height: 100%;
-}
-
-#grade_txt h2 {
-  padding-bottom: 33px;
   text-align: center;
+}
+#grade_txt h2 {
   font-size: 40px;
   line-height: 100%;
+  padding-bottom: 33px;
+  text-align: center;
 }
-
 #grade_txt p {
-  padding-left: 535px;
   font-size: 18px;
   line-height: 50px;
+  padding-left: 535px;
 }
-
-.explan {
+.explain {
+  font-size: 18px;
+  line-height: 32px;
   width: 890px;
   margin: 0 auto;
   padding-top: 20px;
   text-indent: 36px;
-  font-size: 18px;
-  line-height: 32px;
 }
+
 /*# sourceMappingURL=style_risk_submit.css.map */

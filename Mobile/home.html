@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
@@ -99,6 +99,9 @@
                 </a>
             </div>
         </div>
+        <!--9.06add-start-->
+        <div class="pic_active"></div>
+        <!--9.06add-end-->
         <div class="project">
             <div class="project-title">推荐项目</div>
             <div class="project-list">
@@ -268,22 +271,22 @@
     $('.prg-cont canvas').css('width', '80%');
 </script>-->
 <script>
-//    var chartElement=$("div[id^='indicatorContainer']");
+    //    var chartElement=$("div[id^='indicatorContainer']");
     var $chartElement=$(".project-progress>div");
 
     $chartElement.each(function(){
         diyChart(this,30);
     });
 
-function diyChart(element,number){
-    $(element).radialIndicator({
-        percentage: true,
-        initValue: number,
-        fontColor: '#76787d',
-        barColor: '#ff5151'
-    });
-    $('.prg-cont canvas').css('width', '80%');
-}
+    function diyChart(element,number){
+        $(element).radialIndicator({
+            percentage: true,
+            initValue: number,
+            fontColor: '#76787d',
+            barColor: '#ff5151'
+        });
+        $('.prg-cont canvas').css('width', '80%');
+    }
 </script>
 <!--进度条结束-->
 <!--滑屏类开始-->

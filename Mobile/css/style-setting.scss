@@ -435,4 +435,21 @@ html {
     background-color: #419695;
   }
 }
+
+
+/* 8.11-add */
+.email-content{
+  display:block;
+  width:98%;
+  height:100%;
+  margin-right:2%;
+  background: url("../images/right-icon.png") no-repeat right top;
+  background-size: auto 100%;
+}
+.email-content .left{
+  color: #76787d;
+}
+.email-content .right{
+  color: #76787d;
+}
 /*wrapper-end*/

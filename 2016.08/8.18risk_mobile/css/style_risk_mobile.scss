@@ -1,0 +1,365 @@
+@charset "UTF-8";
+//px转rem
+@mixin px2rem($property,$px-values,$baseline-px,$support-for-ie:false) {
+  //Conver the baseline into rems
+  $baseline-rem: $baseline-px / 1rem * 1;
+  //Print the first line in pixel values
+  @if $support-for-ie {
+    #{$property}: $px-values;
+  }
+  //if there is only one (numeric) value, return the property/value line for it.
+  @if type-of($px-values) == "number" {
+    #{$property}: $px-values / $baseline-rem;
+  } @else {
+    //Create an empty list that we can dump values into
+    $rem-values: ();
+    @each $value in $px-values {
+      // If the value is zero or not a number, return it
+      @if $value == 0 or type-of($value) != "number" {
+        $rem-values: append($rem-values, $value / $baseline-rem);
+      }
+    }
+    // Return the property and its list of converted values
+    #{$property}: $rem-values;
+  }
+}
+
+$background: #f9f9f9;
+$blue: #4cb0ae; //蓝色
+$red: #f53030; //红色
+$normal: #76787d; //正常字体
+$gray: #adb2bf; //辅助字体
+$title-font:#56575b;//标题字体
+$border: 1px solid #ddd; //边框
+//字体设置开始
+@mixin font-dpr($font-size){
+  [data-dpr="1"] &{
+    font-size: $font-size/2;
+  }
+
+  [data-dpr="2"] & {
+    font-size: $font-size;
+  }
+
+  [data-dpr="3"] & {
+    font-size: $font-size * 1.5;
+  }
+}
+
+/*整体结构开始*/
+html {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+.clear{
+  clear: both;
+}
+#header {
+  width: 100%;
+  background-color: $blue;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: 2;
+}
+[data-dpr="1"] #header {
+  height: (88px/2);
+}
+
+[data-dpr="2"] #header {
+  height: (88px);
+}
+
+[data-dpr="3"] #header {
+  height: (88px*1.5);
+}
+#wrapper{
+  width: 100%;
+}
+
+[data-dpr="1"] #wrapper {
+  padding-top: (88px/2);
+}
+
+[data-dpr="2"] #wrapper {
+  padding-top: (88px);
+}
+
+[data-dpr="3"] #wrapper {
+  padding-top: (88px*1.5);
+}
+/*整体结构开始*/
+/*header-start*/
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0;
+}
+.nav-return a{
+  height: inherit;
+  display: block;
+}
+.nav-return a:active{
+  background: #419695;
+}
+.nav-return img {
+  height: 100%;
+  width: auto;
+}
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+  font-size: 18px;
+  line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+  font-size: 36px;
+  line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+  font-size: 54px;
+  line-height: 132px;
+}
+/*header-end*/
+/*wrapper-start*/
+.risk-banner{
+  width: 100%;
+  img{
+    width: 100%;
+    height: auto;
+  }
+}
+
+input[type="radio"]{
+	float:left;
+	width:0;
+	height:0;
+	visibility:hidden;
+	-webkit-appearance:none;
+	-moz-appearance:none;
+	appearance:none;
+}
+.choice_pic{
+  @include px2rem(width,26px,64px,false);
+  @include px2rem(height,18px,64px,false);
+  @include px2rem(margin-top,38px,64px,false);
+  @include px2rem(margin-right,20px,64px,false);
+	float:left;
+  background-image: url("../images/click_false.png");
+  background-position: center center;;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.option_text{
+	float:left;
+  color:#76787d;
+  @include font-dpr(28px);
+  @include px2rem(line-height,47px,64px,false);
+  @include px2rem(padding-top,20px,64px,false);
+  @include px2rem(padding-bottom,20px,64px,false);
+  @include px2rem(max-width,500px,64px,false);
+}
+.ask{
+  @include px2rem(width,557px,64px,false);
+  margin: 0 auto;
+  @include font-dpr(28px);
+  @include px2rem(line-height,40px,64px,false);
+  @include px2rem(padding-top,24px,64px,false);
+  @include px2rem(padding-bottom,24px,64px,false);
+  color:#76787d;
+  text-align: center;
+}
+.list_total label {
+  //@include px2rem(width,557px,64px,false);
+  //margin: 0 auto;
+  display: block;
+  cursor: pointer;
+}
+.border_img{
+  width: 100%;
+  height: 1px;
+  background: url("../images/border_img.jpg") no-repeat center top;
+  background-size: 100% 100%;
+}
+.button_group{
+    @include px2rem(width,557px,64px,false);
+    @include px2rem(padding-top,60px,64px,false);
+    @include px2rem(padding-bottom,40px,64px,false);
+    margin: 0 auto;
+    button{
+      text-align: center;
+      color: #fff;
+      border-radius: 6px;
+      @include font-dpr(28px);
+      @include px2rem(line-height,90px,64px,false);
+      border:none;
+      outline: none;
+      background-color: $blue;
+    }
+}
+button.replace_btn{
+  width: 100%;
+}
+button.up{
+  float: left;
+  width:0%;
+}
+button.next{
+  float: right;
+  width:100%;
+}
+button[name=btn_submit]{
+  width:0;
+  float: left;
+}
+.question{
+  display: none;
+}
+.list_total .question1{
+  display: block;
+}
+
+/*question-position-前方高能*/
+.question1 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question2 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question3 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question4 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question5 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question6 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question7 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question8 label{
+  @include px2rem(padding-left,174px,64px,false);
+}
+.question9 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question10 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question11 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question12 label{
+  @include px2rem(padding-left,174px,64px,false);
+}
+.question13 label{
+  @include px2rem(padding-left,200px,64px,false);
+}
+.question14 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question15 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question16 label{
+  @include px2rem(padding-left,92px,64px,false);
+}
+.question17 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question18 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question19 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+.question20 label{
+  @include px2rem(padding-left,40px,64px,false);
+}
+
+/*popup-start*/
+.popup{
+  background: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top:0;
+  display: none;
+}
+.popup-content{
+  @include px2rem(width,400px,64px,false);
+  margin: 0 auto;
+  text-align: center;
+  background-color: #fff;
+  position: absolute;
+  @include px2rem(left,113px,64px,false);
+  top:40%;
+  z-index: 10000;
+  .sure{
+    @include font-dpr(24px);
+    color: $normal;
+    @include px2rem(line-height,42px,64px,false);
+    @include px2rem(padding-top,20px,64px,false);
+    @include px2rem(padding-bottom,20px,64px,false);
+  }
+  .choice{
+    border-top: $border;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -moz-box-orient: horizontal;
+    -moz-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    @include font-dpr(24px);
+    @include px2rem(line-height,82px,64px,false);
+    .no{
+      color: $blue;
+    }
+  }
+  .yes{
+    border-right: $border;
+    a{
+      display: block;
+      color: $normal;
+      text-decoration: none;
+      &:active{
+        background-color: $background;
+      }
+    }
+  }
+  .yes,.no{
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -ms-flex: 1;
+    -webkit-flex: 1;
+    flex: 1;
+    text-align: center;
+    color: $normal;
+  }
+}
+/*popup-end*/

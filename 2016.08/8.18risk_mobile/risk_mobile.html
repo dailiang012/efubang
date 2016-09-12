@@ -1,0 +1,873 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+    <meta name="apple-itunes-app" content="app-id=myAppStoreID, affiliate-data=myAffiliateData, app-argument=myURL">
+    <meta name="format-detection" content="telephone=no, email=no"/>
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Cache-Control" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <title>个人风险承受能力评估</title>
+    <script src="./js/flexible_css.debug.js"></script>
+    <script src="./js/flexible.debug.js"></script>
+    <link rel="stylesheet" href="css/style_risk_mobile.css">
+</head>
+<body>
+
+<div class="popup">
+    <div class="popup-content">
+        <div class="sure">退出后已答过的题将无效，<br/>您确认要退出吗？</div>
+        <div class="choice">
+            <div class="yes"><a href="#">确认</a></div>
+            <div class="no">取消</div>
+        </div>
+    </div>
+</div>
+    <div id="header">
+        <div class="nav-return">
+            <a href="javascript:void(0)"><img src="./images/return.png" alt="<返回"></a>
+        </div>
+        <div class="nav-title">个人风险承受能力评估</div>
+    </div>
+    <div id="wrapper">
+        <div class="risk-banner"><img src="./images/risk_banner.jpg" alt="安全保障"></div>
+        <!-- 选项开始 -->
+        <div class="list_total">
+            <div class="question-total">
+                <div class="question question1">
+                    <p class="ask">1、请问您的年龄处于哪个阶段？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_01" value="A、18-30岁" id="answer_list02_01_a">
+                            <label for="answer_list02_01_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、18-30岁</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_01" value="B、31-40岁" id="answer_list02_01_b">
+                            <label for="answer_list02_01_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、31-40岁</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_01" value="C、41-50岁" id="answer_list02_01_c">
+                            <label for="answer_list02_01_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、41-50岁</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_01" value="D、51-60岁" id="answer_list02_01_d">
+                            <label for="answer_list02_01_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、51-60岁</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_01" value="E、60岁以上" id="answer_list02_01_e">
+                            <label for="answer_list02_01_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、60岁以上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question2">
+                    <p class="ask">2、您家庭的就业情况是？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_02" value="A、您和配偶（如有）均没有稳定收入的工作/已退休" id="answer_list02_02_a">
+                            <label for="answer_list02_02_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、您和配偶（如有）均没有稳定收入的工作/已退休</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_02" value="B、您和配偶（如有）其中一人有稳定工作" id="answer_list02_02_b">
+                            <label for="answer_list02_02_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、您和配偶（如有）其中一人有稳定工作</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_02" value="C、您和配偶（如有）均有稳定收入的工作" id="answer_list02_02_c">
+                            <label for="answer_list02_02_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、您和配偶（如有）均有稳定收入的工作</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question3">
+                    <p class="ask">3、您的家庭年收入为？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_03" value="A、5万元以下" id="answer_list02_03_a">
+                            <label for="answer_list02_03_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、5万元以下</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_03" value="B、5-20万元" id="answer_list02_03_b">
+                            <label for="answer_list02_03_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、5-20万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_03" value="C、20-50万元" id="answer_list02_03_c">
+                            <label for="answer_list02_03_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、20-50万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_03" value="D、50-100万元" id="answer_list02_03_d">
+                            <label for="answer_list02_03_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、50-100万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_03" value="E、100万元以上" id="answer_list02_03_e">
+                            <label for="answer_list02_03_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、100万元以上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question4">
+                    <p class="ask">4、在您的家庭总支出中，生活必须占比为多少？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_04" value="A、100%" id="answer_list02_04_a">
+                            <label for="answer_list02_04_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、100%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_04" value="B、51-70%" id="answer_list02_04_b">
+                            <label for="answer_list02_04_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、51-70%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_04" value="C、31-50%" id="answer_list02_04_c">
+                            <label for="answer_list02_04_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、31-50%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_04" value="D、11-30%" id="answer_list02_04_d">
+                            <label for="answer_list02_04_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、11-30%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_04" value="E、10%以下" id="answer_list02_04_e">
+                            <label for="answer_list02_04_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、10%以下</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question5">
+                    <p class="ask">5、在您的家庭总资产中，理财资金占比是多少？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_05" value="A、10%以下" id="answer_list02_05_a">
+                            <label for="answer_list02_05_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、10%以下</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_05" value="B、10%-25%" id="answer_list02_05_b">
+                            <label for="answer_list02_05_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、10%-25%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_05" value="C、26%-35%" id="answer_list02_05_c">
+                            <label for="answer_list02_05_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、26%-35%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_05" value="D、36%-50%" id="answer_list02_05_d">
+                            <label for="answer_list02_05_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、36%-50%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list02_05" value="E、50%以上" id="answer_list02_05_e">
+                            <label for="answer_list02_05_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、50%以上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question6">
+                    <p class="ask">6、您曾经或现在进行过哪些类型投资？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_06" value="A、家里全是现金，连到银行存钱也懒得去" id="answer_list03_06_a">
+                            <label for="answer_list03_06_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、家里全是现金，连到银行存钱也懒得去</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_06" value="B、除了银行活期存款和定期存款，我几乎没有任何的投资经验" id="answer_list03_06_b">
+                            <label for="answer_list03_06_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、除了银行活期存款和定期存款，我几乎没有任何的投资经验</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_06" value="C、购买过一些银行风险系数较小的理财产品、国债和保险" id="answer_list03_06_c">
+                            <label for="answer_list03_06_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、购买过一些银行风险系数较小的理财产品、国债和保险</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_06" value="D、对基金、信托类产品有所了解并已参与其中" id="answer_list03_06_d">
+                            <label for="answer_list03_06_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、对基金、信托类产品有所了解并已参与其中</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_06" value="E、热衷投资股票、外汇、期货、期权等产品，并已有一定经验" id="answer_list03_06_e">
+                            <label for="answer_list03_06_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、热衷投资股票、外汇、期货、期权等产品，并已有一定经验</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question7 ">
+                    <p class="ask">7、您有多少年投资股票、外汇、期货期权、金融衍生品等风险投资的经验？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_07" value="A、没有经验" id="answer_list03_07_a">
+                            <label for="answer_list03_07_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、没有经验</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_07" value="B、少于两年" id="answer_list03_07_b">
+                            <label for="answer_list03_07_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、少于两年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_07" value="C、2-5年" id="answer_list03_07_c">
+                            <label for="answer_list03_07_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、2-5年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_07" value="D、5-8年" id="answer_list03_07_d">
+                            <label for="answer_list03_07_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、5-8年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_07" value="E、8年以上" id="answer_list03_07_e">
+                            <label for="answer_list03_07_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、8年以上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question8">
+                    <p class="ask">8、假设有两种不同的投资：投资A预期获得10%的收益，承担的风险较小；投资B预期获得20%的收益，但有可能 会发生30%甚至更高的亏损。您的选择是：</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_08" value="A、全部投资于A" id="answer_list03_08_a">
+                            <label for="answer_list03_08_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、全部投资于A</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_08" value="B、大部分投资于A" id="answer_list03_08_b">
+                            <label for="answer_list03_08_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、大部分投资于A</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_08" value="C、平均投资于A、B" id="answer_list03_08_c">
+                            <label for="answer_list03_08_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、平均投资于A、B</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_08" value="D、大部分投资于B" id="answer_list03_08_d">
+                            <label for="answer_list03_08_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、大部分投资于B</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_08" value="E、全部投资于B" id="answer_list03_08_e">
+                            <label for="answer_list03_08_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、全部投资于B</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question9">
+                    <p class="ask">9、假如您前期用25元购入一只股票，该股现在升到30元，而根据预测该股近期有50%的可能会升到35元，50% 的机会跌回25元，您的选择是？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_09" value="A、立即卖出" id="answer_list03_09_a">
+                            <label for="answer_list03_09_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、立即卖出</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_09" value="B、部分卖出" id="answer_list03_09_b">
+                            <label for="answer_list03_09_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、部分卖出</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_09" value="C、继续持有" id="answer_list03_09_c">
+                            <label for="answer_list03_09_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、继续持有</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_09" value="D、继续买入" id="answer_list03_09_d">
+                            <label for="answer_list03_09_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、继续买入</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question10">
+                    <p class="ask">10、假如您有100万元，现在有一个投资项目，有80%的可能性盈利高达200%，但也有80%的可能性出现血本无 归。您会投资多少？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_10" value="A、0-10万元" id="answer_list03_10_a">
+                            <label for="answer_list03_10_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、0-10万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_10" value="B、10-30万元" id="answer_list03_10_b">
+                            <label for="answer_list03_10_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、10-30万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_10" value="C、30-50万元" id="answer_list03_10_c">
+                            <label for="answer_list03_10_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、30-50万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_10" value="D、50-80万元" id="answer_list03_10_d">
+                            <label for="answer_list03_10_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、50-80万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_10" value="E、100万元" id="answer_list03_10_e">
+                            <label for="answer_list03_10_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、100万元</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question11">
+                    <p class="ask">11、以下哪项描述最符合您的投资态度？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_11" value="A、厌恶风险，不希望本金损失，希望获得稳定回报" id="answer_list03_11_a">
+                            <label for="answer_list03_11_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、厌恶风险，不希望本金损失，希望获得稳定回报</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_11" value="B、保守投资，不希望本金损失，愿意承担一定幅度的收益波动" id="answer_list03_11_b">
+                            <label for="answer_list03_11_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、保守投资，不希望本金损失，愿意承担一定幅度的收益波动</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_11" value="C、寻求资金的较高收益和成长性，愿意为此承担有限的本金损失" id="answer_list03_11_c">
+                            <label for="answer_list03_11_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、寻求资金的较高收益和成长性，愿意为此承担有限的本金损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list03_11" value="D、希望赚取高回报，愿意为此承担较大的本金损失" id="answer_list03_11_d">
+                            <label for="answer_list03_11_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、希望赚取高回报，愿意为此承担较大的本金损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question12">
+                    <p class="ask">12、您的投资理财目的是什么？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_12" value="A、避免财产损失" id="answer_list04_12_a">
+                            <label for="answer_list04_12_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、避免财产损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_12" value="B、资产稳健增长" id="answer_list04_12_b">
+                            <label for="answer_list04_12_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、资产稳健增长</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_12" value="C、资产迅速增长" id="answer_list04_12_c">
+                            <label for="answer_list04_12_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、资产迅速增长</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question13">
+                    <p class="ask">13、您计划投资的期限是多久？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_13" value="A、1年以下" id="answer_list04_13_a">
+                            <label for="answer_list04_13_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、1年以下</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_13" value="B、1-3年" id="answer_list04_13_b">
+                            <label for="answer_list04_13_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、1-3年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_13" value="C、3-5年" id="answer_list04_13_c">
+                            <label for="answer_list04_13_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、3-5年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_13" value="D、5-8年" id="answer_list04_13_d">
+                            <label for="answer_list04_13_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、5-8年</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_13" value="E、8年以上" id="answer_list04_13_e">
+                            <label for="answer_list04_13_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、8年以上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question14">
+                    <p class="ask">14、若您的投资经验为0，但您又想投资，你选择？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_14" value="A、自己随便学习一些皮毛，就去投资" id="answer_list04_14_a">
+                            <label for="answer_list04_14_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、自己随便学习一些皮毛，就去投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_14" value="B、学习一定的投资基础，边学习边投资" id="answer_list04_14_b">
+                            <label for="answer_list04_14_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、学习一定的投资基础，边学习边投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list04_14" value="C、在完全弄懂投资的概念后，再去投资" id="answer_list04_14_c">
+                            <label for="answer_list04_14_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、在完全弄懂投资的概念后，再去投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question15">
+                    <p class="ask">15、若您的专人理财顾问为您设计理财方案，但由于种种原因，导致配置了比较多的高风险投资产品，收益也 不太好，您会？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_15" value="A、马上解雇他" id="answer_list05_15_a">
+                            <label for="answer_list05_15_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、马上解雇他</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_15" value="B、对其有所质疑，但依然会继续聘用他" id="answer_list05_15_b">
+                            <label for="answer_list05_15_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、对其有所质疑，但依然会继续聘用他</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_15" value="C、完全对他的能力放心，觉得只是现在市场环境不好" id="answer_list05_15_c">
+                            <label for="answer_list05_15_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、完全对他的能力放心，觉得只是现在市场环境不好</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question16">
+                    <p class="ask">16、您的投资出现何种程度的波动时，您会呈现明显的焦虑？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_16" value="A、本金无损失，但收益未达预期" id="answer_list05_16_a">
+                            <label for="answer_list05_16_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、本金无损失，但收益未达预期</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_16" value="B、出现轻微本金损失" id="answer_list05_16_b">
+                            <label for="answer_list05_16_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、出现轻微本金损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_16" value="C、出现本金10%以内的损失" id="answer_list05_16_c">
+                            <label for="answer_list05_16_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、出现本金10%以内的损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_16" value="D、出现本金11%-30%的损失" id="answer_list05_16_d">
+                            <label for="answer_list05_16_d">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">D、出现本金11%-30%的损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_16" value="E、出现本金50%甚至以上的损失" id="answer_list05_16_e">
+                            <label for="answer_list05_16_e">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">E、出现本金50%甚至以上的损失</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question17">
+                    <p class="ask">17、假设您有100万元人民币建立投资组合，您会选择：</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_17" value="A、低风险（如银行存款、国债、货币市场基金）占10%，中等风险（如债券基金、投资连接险等）占40%，
+                            高风险（股票、期货及外汇交易等）占50%" id="answer_list05_17_a">
+                            <label for="answer_list05_17_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、低风险（如银行存款、国债、货币市场基金）占10%，中等风险（如债券基金、投资连接险等）占40%， 高风险（股票、期货及外汇交易等）占50%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_17" value="B、低风险占30%，中等风险占40%，高风险占30%" id="answer_list05_17_b">
+                            <label for="answer_list05_17_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、低风险占30%，中等风险占40%，高风险占30%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_17" value="C、低风险占60%，中等风险占30%，高风险占10%" id="answer_list05_17_c">
+                            <label for="answer_list05_17_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、低风险占60%，中等风险占30%，高风险占10%</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question18">
+                    <p class="ask">18、假如有一个项目有可能让您一夜暴富，但具有很大不确定性，而且拿到该项目的成本较高，您会？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_18" value="A、不惜一切代价拿下来" id="answer_list05_18_a">
+                            <label for="answer_list05_18_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、不惜一切代价拿下来</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_18" value="B、衡量各方面因素，该拿就拿，不该拿就放弃" id="answer_list05_18_b">
+                            <label for="answer_list05_18_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、衡量各方面因素，该拿就拿，不该拿就放弃</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_18" value="C、由于不确定性太大，直接放弃" id="answer_list05_18_c">
+                            <label for="answer_list05_18_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、由于不确定性太大，直接放弃</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question19">
+                    <p class="ask">19、某一天您停车的时候，发现了车位隔壁的停车计时表好像准备倒下，您会？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_19" value="A、直接忽视不管，依然停在该车位上" id="answer_list05_19_a">
+                            <label for="answer_list05_19_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、直接忽视不管，依然停在该车位上</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_19" value="B、走过去查看一下，假如确定真的有问题，就找人来处理" id="answer_list05_19_b">
+                            <label for="answer_list05_19_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、走过去查看一下，假如确定真的有问题，就找人来处理</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_19" value="C、直接找另一个车位停放" id="answer_list05_19_c">
+                            <label for="answer_list05_19_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、直接找另一个车位停放</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="question question20">
+                    <p class="ask">20、您如何看待我公司的产品？</p>
+                    <div class="choice">
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_20" value="A、很不错，值得投资" id="answer_list05_20_a">
+                            <label for="answer_list05_20_a">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">A、很不错，值得投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_20" value="B、比较不错，考虑一下应该会投资" id="answer_list05_20_b">
+                            <label for="answer_list05_20_b">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">B、比较不错，考虑一下应该会投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                        <div class="border_img"></div>
+                        <div class="option_item">
+                            <input type="radio" name="answer_list05_20" value="C、觉得风险太高，不适合投资" id="answer_list05_20_c">
+                            <label for="answer_list05_20_c">
+                                <div class="choice_pic"></div>
+                                <div class="option_text">C、觉得风险太高，不适合投资</div>
+                                <div class="clear"></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button_group">
+            <button type="button" name="btn_submit">提交</button>
+            <button type="button" name="up" class="up">上一题</button>
+            <button type="button" name="next" class="next">下一题</button>
+            <div class="clear"></div>
+        </div>
+        <!-- 选项结束 -->
+    </div>
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/active_risk_mobile.js"></script>
+</body>
+</html>

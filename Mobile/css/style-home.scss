@@ -142,18 +142,15 @@ html, body {
   right: 0;
   top: 0;
 }
-
 .my img {
   height: 100%;
   width: auto;
 }
-
 /*          header结束            */
 /*          banner开始            */
 #banner {
   height: 3.859375rem;
 }
-
 .slideBox {
   position: relative;
   overflow: hidden;
@@ -215,7 +212,6 @@ html, body {
   border-bottom: 1px solid #ebebeb;
   background-color: #fff;
 }
-
 .flex {
   -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
   -moz-box-flex: 1; /* OLD - Firefox 19- */
@@ -224,16 +220,13 @@ html, body {
   flex: 1;
   background-color: #fff;
 }
-
 .flex:active {
   background-color: #f9f9f9;
 }
-
 .flex a{
   display: block;
   text-decoration: none;
 }
-
 .flex2 {
   -webkit-box-flex: 1; /* OLD - iOS 6-, Safari 3.1-6 */
   -moz-box-flex: 1; /* OLD - Firefox 19- */
@@ -243,17 +236,14 @@ html, body {
   border-left: 1px solid #ebebeb;
   border-right: 1px solid #ebebeb;
 }
-
 .flex-box img {
   display: inline-block;
   height: 0.71875rem;
   padding-top: 0.546875rem;
 }
-
 .flex-box {
   text-align: center;
 }
-
 .flex-box span {
   display: block;
   line-height: 0.9375rem;
@@ -261,7 +251,6 @@ html, body {
   text-decoration: none;
   @include font-dpr(28px)
 }
-
 .project-title {
   line-height: 0.90625rem;
   color: #76787d;
@@ -277,7 +266,6 @@ html, body {
   background-color: #fff;
   @include px2rem(height,158px,64px,false);
 }
-
 .list-left {
   width: 75%;
   height: 100%;
@@ -288,36 +276,30 @@ html, body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-
 .list-left div[class^="project"] {
   float: left;
 }
-
 .project-rate {
   width: 2.125rem;
   border-right: 1px dashed #ebebeb;
   @include px2rem(margin-top,25px,64px,false);
   text-align: center;
 }
-
 .rate-number {
   color: #ff5151;
   line-height: 1.09375rem;
   @include font-dpr(48px);
 }
-
 .rate-txt {
   color: #76787d;
   line-height: 100%;
   @include font-dpr(16px);
 }
-
 .project-name {
   margin-top: 0.28125rem;
   padding-left: 0.34375rem;
   @include px2rem(width,220px,64px,false);
 }
-
 .project-progress {
   width: 1.46875rem;
   padding-top: 0.671875rem;
@@ -362,7 +344,6 @@ html, body {
   z-index: 30;
   display: none;
 }
-
 .close-side {
   width: 30%;
   height: 100%;
@@ -374,7 +355,6 @@ html, body {
   text-align: center;
   padding-top: 50%;
 }
-
 .close-side span{
   @include font-dpr(32px)
 }
@@ -389,12 +369,10 @@ html, body {
   z-index: 33;
   left: -6.65625rem;
 }
-
 .diy-pic {
   padding-top: 0.90625rem;
   padding-bottom: 0.546875rem;
 }
-
 .my-photo {
   width: 1.78125rem;
   height: 1.78125rem;
@@ -407,7 +385,6 @@ html, body {
     border-radius: 50%;
   }
 }
-
 .welcome-text {
   float: left;
   padding-left: 0.46875rem;
@@ -450,3 +427,11 @@ html, body {
   @include font-dpr(20px);
 }
 /*company-copy结束*/
+/*9.06add*/
+.pic_active{
+  @include px2rem(height,160px,64px,false);
+  img{
+    width: 100%;
+    height: 100%;
+  }
+}

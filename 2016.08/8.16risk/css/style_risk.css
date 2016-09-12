@@ -86,7 +86,7 @@
 }
 
 input[type="radio"] {
-  visibility: none;
+  visibility: hidden;
   float: left;
   width: 0;
   height: 0;
@@ -130,6 +130,7 @@ input[type="radio"] {
   float: left;
   max-width: 860px;
   line-height: 50px;
+  visibility: hidden;
 }
 
 .submit_btn a {

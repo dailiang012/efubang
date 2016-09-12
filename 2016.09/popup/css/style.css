@@ -1,0 +1,45 @@
+.risk_popup_box {
+    display: none;
+}
+
+.risk_popup {
+    position: relative;
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.risk_popup_content {
+    position: absolute;
+    width: 1024px;
+    height: 563px;
+    background: url("../images/risk_popup.png") no-repeat center center;
+    z-index: 200;
+    top: 100px;
+    text-align: center;
+}
+
+.back_bj {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup_btn {
+    position: absolute;
+    bottom: 100px;
+    left: 0;
+}
+
+.risk_popup_content a {
+    display: inline-block;
+    color: #d8d4b3;
+    line-height: 36px;
+    width: 154px;
+    height: 36px;
+    border-radius: 4px;
+    border: 1px solid #0f0f2f;
+    margin-top: 465px;
+}

@@ -1,0 +1,209 @@
+@charset "utf-8";
+/*公共代码开始*/
+* {
+    vertical-align: baseline;
+    font-weight: inherit;
+    font-style: inherit;
+    padding: 0;
+    margin: 0;
+    border: none
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+    -webkit-text-size-adjust: none
+}
+
+li {
+    list-style: none
+}
+
+img {
+    border: none;
+    text-decoration: none;
+    display: block
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal
+}
+
+a {
+    text-decoration: none
+}
+
+a img, :link img, :visited img {
+    border: 0
+}
+
+input, textarea, select {
+    outline: none;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+textarea {
+    resize: none
+}
+
+.clear {
+    clear: both
+}
+
+a, button, input { /*去掉手持设备点击是出现的透明层*/
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0); /*去掉点击时候的透明层*/
+    -webkit-tap-highlight-color: transparent;
+}
+
+input { /*去掉input在ios下的默认效果*/
+    resize: none; /*禁止调整元素的尺寸*/
+    -webkit-appearance: none;
+    background: none;
+}
+
+button { /*去掉button在ios上的默认样式*/
+    -webkit-appearance: none;
+    border-radius: 0
+}
+
+html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { /*阻止旋转屏幕时自动调整字体大小*/
+    -webkit-text-size-adjust: 100%;
+}
+
+element::-webkit-scrollbar { /*去掉webkit的滚动条*/
+    display: none;
+}
+
+/*公共代码结束*/
+/*header开始*/
+html {
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    background-color: #f9f9f9;
+}
+#header {
+    width: 100%;
+    background-color: #4cb0ae;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-bottom: 1px solid #ddd;
+}
+
+[data-dpr="1"] #header {
+    height: 44px;
+}
+
+[data-dpr="2"] #header {
+    height: 88px;
+}
+
+[data-dpr="3"] #header {
+    height: 132px;
+}
+
+.nav-return {
+    position: absolute;
+    height: inherit;
+    left: 0;
+    top: 0;
+}
+
+.nav-return a {
+    height: inherit;
+    display: block;
+}
+
+.nav-return a:active {
+    background: #419695;
+}
+
+.nav-return img {
+    height: 100%;
+    width: auto;
+}
+
+.nav-title {
+    text-align: center;
+    color: #fff;
+}
+
+[data-dpr="1"] .nav-title {
+    font-size: 18px;
+    line-height: 44px;
+}
+
+[data-dpr="2"] .nav-title {
+    font-size: 36px;
+    line-height: 88px;
+}
+
+[data-dpr="3"] .nav-title {
+    font-size: 54px;
+    line-height: 132px;
+}
+
+/*header结束*/
+/*main开始*/
+.name,.papers,.papers-number{
+    width: 96%;
+    padding: 0 2%;
+    border-bottom: 1px solid #ddd;
+    height: 1.34375rem;
+    line-height: 1.34375rem;
+    background: #fff;
+    color: #76787d;
+}
+
+[data-dpr="1"] .name, [data-dpr="1"] .papers, [data-dpr="1"] .papers-number {
+    font-size: 14px;
+}
+
+[data-dpr="2"] .name, [data-dpr="2"] .papers, [data-dpr="2"] .papers-number {
+    font-size: 28px;
+}
+
+[data-dpr="3"] .name, [data-dpr="3"] .papers, [data-dpr="3"] .papers-number {
+    font-size: 42px;
+}
+
+
+[data-dpr="1"] .name{
+    margin-top:10px;
+}
+
+[data-dpr="2"] .name{
+    margin-top:20px;
+}
+
+[data-dpr="3"] .name{
+    margin-top:30px;
+}
+.name .left, .papers .left, .papers-number .left {
+    float: left;
+    width: 25%;
+}
+
+.name .right, .papers .right, .papers-number .right {
+    float: left;
+}
+
+
+.prompt-money {
+  background-color: #4b4c4f;
+  line-height: 0.46875rem;
+  padding-top: 0.21875rem;
+  padding-bottom: 0.21875rem;
+  padding-left: 2%;
+  padding-right: 2%;
+  color: #f2f2f2; }
+  [data-dpr="1"] .prompt-money {
+    font-size: 12px; }
+  [data-dpr="2"] .prompt-money {
+    font-size: 24px; }
+  [data-dpr="3"] .prompt-money {
+    font-size: 36px; }
+
