@@ -1,0 +1,120 @@
+#main {
+    height: 1667px;
+    background: url('../images/main_bj.jpg') no-repeat center top;
+}
+
+.video_box {
+    width: 1024px;
+    padding-top: 430px;
+    margin: 0 auto;
+}
+
+.video_content {
+    height: 460px;
+    /*background: red;*/
+}
+
+.personal div {
+    margin-bottom: 100px;
+}
+
+.personal {
+    width: 1024px;
+    margin: 0 auto;
+    padding-top: 132px;
+}
+
+.personal h2 {
+    font-size: 30px;
+    color: #ffba00;
+    line-height: 100%;
+    margin-bottom: 54px;
+    margin-left: 114px;
+}
+
+.personal p {
+    text-indent: 28px;
+    font-size: 14px;
+    color: #3c3c3c;
+    line-height: 25px;
+    font-weight: bold;
+}
+
+.last_text {
+    margin-top: 22px;
+}
+
+.video_left {
+    float: left;
+}
+
+.video_left embed {
+    border: 3px solid #626262;
+}
+
+.list_right {
+    position: relative;
+    margin-left: 1px;
+    float: left;
+    width: 254px;
+    height: 460px;
+    background: #626262;
+}
+
+.ago {
+    width: 130px;
+    line-height: 55px;
+    text-align: center;
+    color: #ffbc0b;
+    border-bottom: 2px solid #ffbc0b;
+}
+
+.time_change {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    left: 0;
+    bottom: 0;
+}
+
+.time_change li {
+    color: #ffbc0b;
+    width: 50px;
+    text-align: center;
+    float: left;
+    line-height: 30px;
+    background: #757474;
+}
+
+.time_change {
+    border-right: 1px solid #626262;
+    cursor: pointer;
+}
+
+.time_change li a {
+    display: block;
+    color: #ffbc0b;
+}
+
+.video_list {
+    width: 100%;
+    height: 395px;
+    overflow: auto;
+}
+
+.video_list li {
+    margin: 8px 0;
+    color: #dfdfdf;
+    cursor: pointer;
+    line-height: 55px;
+    padding-left: 98px;
+    background: url("../images/play_bj.png") no-repeat left top;
+}
+
+.video_list li:hover {
+    color: #ffbc0b;
+}
+
+.video_list ul {
+    padding-left: 10px;
+}
