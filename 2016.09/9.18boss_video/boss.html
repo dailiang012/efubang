@@ -55,6 +55,7 @@
                     <div class="time_change">
                         <ul>
                             <li>9月</li>
+                            <li>8月</li>
                             <li><a href="http://www.youku.com/show_page/id_z98f131c5610011e69e06.html">更多</a></li>
                         </ul>
                     </div>
@@ -81,29 +82,48 @@
     <script src="js/jquery-1.11.1.min.js"></script>
     <script>
         //存储每期节目的名称和地址,每次只需在这里添加节目的信息,信息在从上面开始添加
-        var embed_src = [{
-            "title": "01创响中国160827",
-            "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
-        }, {
-            "title": "01第二期5分钟",
-            "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
-        }, {
-            "title": "01第三期3分钟",
-            "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-        }, {
-            "title": "01第三期3分钟",
-            "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-        }]
+        var embed_src = [
+            [{
+                "title": "01创响中国160827",
+                "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
+            }, {
+                "title": "01第二期5分钟",
+                "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
+            }, {
+                "title": "01第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }, {
+                "title": "01第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }],
+            [{
+                "title": "02创响中国160827",
+                "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
+            }, {
+                "title": "02第二期5分钟",
+                "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
+            }, {
+                "title": "02第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }, {
+                "title": "02第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }],
+        ]
         var $video_box = $(".video_left"); //视屏外结构
+        var num = 0; //状态控制 
         //创建节目列表
-        var li_length = embed_src.length; //总共有多少期节目
-        var fragment = document.createDocumentFragment(); //创建文档片段
-        for (var i = 0; i < li_length; i++) {
-            var li = document.createElement("li");
-            li.innerHTML = embed_src[i].title;
-            fragment.appendChild(li);
+        function video_list_f(j) {
+            var li_length = embed_src[j].length; //总共有多少期节目
+            var fragment = document.createDocumentFragment(); //创建文档片段
+            for (var i = 0; i < li_length; i++) {
+                var li = document.createElement("li");
+                li.innerHTML = embed_src[j][i].title;
+                fragment.appendChild(li);
+            }
+            $(".video_list li").html("");
+            $('.list_right ul').get(0).appendChild(fragment); //将文档片段加入页面
         }
-        $('.list_right ul').get(0).appendChild(fragment); //将文档片段加入页面
 
         //节目操做
         $(".video_list li").each(function(n) {
@@ -124,7 +144,13 @@
         $(".time_change li:not(li:last-child)").css({
             "border-right": "1px solid #626262"
         });
-        //日期操做
+        //月份选择
+        $(".time_change li").each(function(j) {
+            $(this).click(function() {
+                num = j;
+                video_list_f(j)
+            });
+        });
     </script>
 </body>
 
