@@ -108,7 +108,7 @@
             }, {
                 "title": "02第三期3分钟",
                 "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-            }],
+            }]
         ]
         var $video_box = $(".video_left"); //视屏外结构
         var num = 0; //状态控制 
@@ -119,7 +119,7 @@
                 video_list_f(j)
             });
         });
-        $(".time_change li:first-child").click();
+        $(".time_change li:nth-child(2)").click();
         //创建节目列表
         function video_list_f(j) {
             var li_length = embed_src[j].length; //总共有多少期节目
