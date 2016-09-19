@@ -82,35 +82,19 @@
         <script src="js/jquery-1.11.1.min.js"></script>
         <script>
             //存储每期节目的名称和地址,每次只需在这里添加节目的信息,信息在从上面开始添加
-            var embed_src = [
-                [{
-                    "title": "01创响中国160827",
-                    "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
-                }, {
-                    "title": "01第二期5分钟",
-                    "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
-                }, {
-                    "title": "01第三期3分钟",
-                    "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-                }, {
-                    "title": "01第三期3分钟",
-                    "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-                }],
-
-                // [{
-                //     "title": "02创响中国160827",
-                //     "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
-                // }, {
-                //     "title": "02第二期5分钟",
-                //     "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
-                // }, {
-                //     "title": "02第三期3分钟",
-                //     "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-                // }, {
-                //     "title": "02第三期3分钟",
-                //     "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
-                // }]
-            ]
+            var embed_src = [{
+                "title": "01创响中国160827",
+                "src": "http://player.youku.com/player.php/sid/XMTcyMDU4OTc4MA==/v.swf"
+            }, {
+                "title": "01第二期5分钟",
+                "src": "http://player.youku.com/player.php/sid/XODAzNTY1NzY0/v.swf"
+            }, {
+                "title": "01第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }, {
+                "title": "01第三期3分钟",
+                "src": "http://player.youku.com/player.php/sid/XNjM2MDkyNDk2/v.swf"
+            }]
             var $video_box = $(".video_left"); //视屏外结构
             //创建节目列表
             var li_length = embed_src.length; //总共有多少期节目
@@ -141,6 +125,7 @@
             $(".time_change li:not(li:last-child)").css({
                 "border-right": "1px solid #626262"
             });
+            //日期操做
         </script>
 </body>
 
