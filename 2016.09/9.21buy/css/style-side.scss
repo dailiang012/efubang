@@ -1,0 +1,76 @@
+$blue:#4cb0ae;
+$block:#666;
+$gray:#8d8b8b;
+.aside {
+  width: 230px;
+  float: left;
+}
+
+.content {
+  width: 785px;
+  float: right;
+}
+
+.choose_buy {
+  height: 335px;
+  border: 1px solid $blue;
+  background: #fff;
+  overflow: hidden;
+  h3 {
+    height: 70px;
+    text-align: center;
+    background: url("../images/choose_bj.png") no-repeat center top;
+    line-height: 44px;
+    color: #fff;
+    font-size: 12px;
+  }
+}
+
+.buy_nav {
+  height: 335-65+px;
+  overflow: hidden;
+  dl {
+    padding: 18px 0 15px 11px;
+    &:hover {
+      background: #eee;
+    }
+  }
+  dt {
+    color: $block;
+    font-size: 16px;
+    line-height: 100%;
+    padding-bottom: 10px;
+  }
+  dd a {
+    display: block;
+    float: left;
+    color: $gray;
+    padding-right: 24px;
+    line-height: 22px;
+    font-size: 12px;
+    transition: all 1s;
+    &:hover {
+      color: $blue;
+    }
+  }
+}
+.active{
+  padding-top:20px;
+  padding-bottom: 20px;
+}
+.active_rule{
+  padding:33px 12px 17px 12px;
+  background: url("../images/active_rule.png") no-repeat center center;
+  background-size: 100% 100%;
+  h2{
+    text-align: center;
+    font-size: 16px;
+    color: #318987;
+    padding-bottom: 17px;
+  }
+  p{
+    font-size: 12px;
+    color: $block;
+    line-height: 23px;
+  }
+}

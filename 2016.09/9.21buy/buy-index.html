@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="css/public-head-footer.css">
     <link rel="stylesheet" href="css/style-buy-index.css">
+    <link rel="stylesheet" href="css/banner.css">
+    <link rel="stylesheet" href="css/style-side.css">
 </head>
 <body>
 <!--公共头部开始-->
@@ -24,7 +26,9 @@
 </div>
 <div id="header">
     <div class="header-container">
-        <div id="bang-log"><a href="#"><img src="images/public-head/logo.png" alt="e富邦企业标志"></a></div>
+        <div id="bang-log">
+            <a href="#"><img src="images/public-head/logo.png" alt="e富邦企业标志"></a>
+        </div>
         <ul id="bang-nav">
             <li><a href="#" class="nav-active">首页</a></li>
             <li><a href="#">我要理财</a></li>
@@ -37,15 +41,192 @@
 </div>
 <!--公共头部结束-->
 <div id="main">
-    <div class="aside">
-        <div class="choose_buy">
-
+    <div class="main_inner">
+        <div class="aside">
+            <div class="choose_buy">
+                <h3>赚积分 赢奖品</h3>
+                <div class="buy_nav">
+                    <dl>
+                        <dt>百货超市</dt>
+                        <dd>
+                            <a href="#">家用百货</a>
+                            <a href="#">超市优惠劵</a>
+                            <a href="#">食品</a>
+                            <a href="#">数码产品</a>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <dl class="box">
+                        <dt>虚拟商品</dt>
+                        <dd>
+                            <a href="#">VIP兑换</a>
+                            <a href="#">话费充值</a>
+                            <a href="#">VIP兑换</a>
+                            <a href="#">话费充值</a>
+                            <a href="#">VIP兑换</a>
+                            <a href="#">话费充值</a>
+                            <a href="#">话费充值</a>
+                            <a href="#">VIP兑换</a>
+                            <a href="#">话费充值</a>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>兑换现金</dt>
+                        <dd>
+                            <a href="#">现金</a>
+                            <div class="clear"></div>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="active"><img src="./images/active_pic.png" alt=""></div>
+            <div class="active_rule">
+                <h2>积分规则</h2>
+                <p>1.注册、邮箱认证、实名认证各可获得
+                    50积分；</p>
+                <p>2.用户投资按投资比例获得积分；
+                    计算公式：投资金额*项目天数/1000
+                    （投标认证后发放）；</p>
+                <p> 3.申请VIP审核通过后可获得100积分；</p>
+                <p> 4.推荐好友成功投资后可获得200积分
+                    （满标审核通过后发放）；</p>
+                <p> 5.用户经好友推荐，成功注册后可获得
+                    50积分。</p>
+            </div>
         </div>
-        <div class="active"></div>
-        <div class="active_rule"></div>
+        <div class="content">
+            <div class="content_top">
+                <div class="banner">
+                    <div id="slideBox" class="slideBox">
+                        <div class="hd">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="bd">
+                            <ul>
+                                <li><a href=""><img src="images/pic2.jpg" /></a></li>
+                                <li><a href=""><img src="images/pic3.jpg" /></a></li>
+                                <li><a href=""><img src="images/pic4.jpg"/></a></li>
+                            </ul>
+                        </div>
+                        <a class="prev" href="javascript:void(0)"></a>
+                        <a class="next" href="javascript:void(0)"></a>
+                    </div>
+                </div>
+                <div class="user_login">
+                    <div class="login_false">
+                        <div class="top"><a href="#">用户登录</a></div>
+                        <div class="bottom">
+                            <a href="#">了解积分</a>
+                            <a href="#">赚取积分</a>
+                        </div>
+                    </div>
+                    <div class="login_true">
+                        <div class="top">
+                            <div class="photo"><img src="./images/user_pho.png" alt=""></div>
+                            <div class="user_id">67149</div>
+                            <div class="user_num">
+                                <div class="num"><span>5000</span>积分</div>
+                                <a href="#">消费记录</a>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="bottom">
+                            <a href="#">了解积分</a>
+                            <a href="#">赚取积分</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="content_bottom">
+                <div class="search">
+                    <form>
+                        <label>积分范围:</label>
+                        <input type="text" name="start" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+                        <span>-</span>
+                        <input type="text" name="stop" onkeyup="this.value=this.value.replace(/[^0-9]/g,'');">
+                        <input type="button" value="搜索">
+                    </form>
+                </div>
+                <div class="commodity">
+                    <ul>
+                        <li class="list">
+                            <a href="#">
+                                <div class="pic"><img src="./images/buy_pic.png" alt=""></div>
+                                <dl>
+                                    <dt>笔记本电脑</dt>
+                                    <dd>商品价值3999元</dd>
+                                </dl>
+                                <div class="list_num">
+                                    <div class="num"><span>350</span>积分</div>
+                                    <button type="button">兑换</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <div class="pic"><img src="./images/buy_pic.png" alt=""></div>
+                                <dl>
+                                    <dt>笔记本电脑</dt>
+                                    <dd>商品价值3999元</dd>
+                                </dl>
+                                <div class="list_num">
+                                    <div class="num"><span>350</span>积分</div>
+                                    <button type="button">兑换</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <div class="pic"><img src="./images/buy_pic.png" alt=""></div>
+                                <dl>
+                                    <dt>笔记本电脑</dt>
+                                    <dd>商品价值3999元</dd>
+                                </dl>
+                                <div class="list_num">
+                                    <div class="num"><span>350</span>积分</div>
+                                    <button type="button">兑换</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <div class="pic"><img src="./images/buy_pic.png" alt=""></div>
+                                <dl>
+                                    <dt>笔记本电脑</dt>
+                                    <dd>商品价值3999元</dd>
+                                </dl>
+                                <div class="list_num">
+                                    <div class="num"><span>350</span>积分</div>
+                                    <button type="button">兑换</button>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#">
+                                <div class="pic"><img src="./images/buy_pic.png" alt=""></div>
+                                <dl>
+                                    <dt>笔记本电脑</dt>
+                                    <dd>商品价值3999元</dd>
+                                </dl>
+                                <div class="list_num">
+                                    <div class="num"><span>350</span>积分</div>
+                                    <button type="button">兑换</button>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+        <div class="clear"></div>
     </div>
-    <div class="content"></div>
-    <div class="clear"></div>
 </div>
 <!--公共footer开始-->
 <div id="footer">
@@ -80,13 +261,27 @@
             </ul>
         </div>
         <div class="clear"></div>
-        <div class="footer-pic"><a href="#"><img src="images/public-head/footer-pic01.png" alt="行业验证"></a> <a
-                href="#"><img src="images/public-head/footer-pic02.png" alt="360验证"></a>
+        <div class="footer-pic">
+            <a href="#"><img src="images/public-head/footer-pic01.png" alt="行业验证"></a>
+            <a href="#"><img src="images/public-head/footer-pic02.png" alt="360验证"></a>
             <div class="clear"></div>
         </div>
         <div class="copy">©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1</div>
     </div>
 </div>
-<!--公共footer结束-->
+<script src="js/jquery-1.11.1.min.js"></script>
+<script src="js/jquery.SuperSlide.2.1.1.js"></script>
+<script src="js/side.js"></script>
+<script type="text/javascript">
+    //焦点图功能
+    jQuery(".slideBox").slide({mainCell:".bd ul",autoPlay:true});
+    //搜索框
+    $(".search input[type=text]").on({
+        focus:function(){ $(this).css("border-color","#4cb0ae");},
+        blur:function(){ $(this).css("border-color","#e3e3e3");}
+    })
+
+</script>
 </body>
+
 </html>

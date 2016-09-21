@@ -1,10 +1,198 @@
-.box {
-    background: #fff;
+#main {
+  background: #f5f5f5;
+  padding-bottom: 100px;
 }
 
-.box .box02 {
-    background: #ccc;
+.main_inner {
+  width: 1024px;
+  margin: 0 auto;
 }
 
+.banner {
+  float: left;
+}
+
+.user_login {
+  width: 194px;
+  height: 337px;
+  padding: 0 17px;
+  float: left;
+  background: #4cb0ae;
+}
+
+.login_false {
+  display: none;
+}
+.login_false .top {
+  padding-top: 90px;
+  padding-bottom: 83px;
+  border-bottom: 1px solid #fff;
+}
+.login_false .top a {
+  display: block;
+  width: 137px;
+  height: 40px;
+  background: #fff;
+  text-align: center;
+  font-weight: bold;
+  outline: none;
+  color: #4cb0ae;
+  font-size: 18px;
+  line-height: 39px;
+  border-radius: 20px;
+  margin: 0 auto;
+}
+.login_false .bottom {
+  margin-top: 32px;
+}
+.login_false .bottom a {
+  display: block;
+  text-align: center;
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.login_true .top {
+  padding-top: 50px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #fff;
+}
+.login_true .photo {
+  width: 96px;
+  height: 96px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.login_true .user_id {
+  text-align: center;
+  font-size: 12px;
+  color: #fefefe;
+  padding-top: 21px;
+  padding-bottom: 47px;
+}
+.login_true .user_num .num {
+  float: left;
+  color: #fff;
+  font-size: 14px;
+  line-height: 100%;
+}
+.login_true .user_num .num span {
+  font-size: 24px;
+  padding-right: 10px;
+}
+.login_true .user_num a {
+  display: block;
+  float: right;
+  color: #fff;
+  font-size: 14px;
+  line-height: 100%;
+}
+.login_true .bottom {
+  margin-top: 10px;
+}
+.login_true .bottom a {
+  display: block;
+  text-align: center;
+  color: #fefefe;
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration: none;
+}
+
+.search {
+  width: 750px;
+  border: 1px solid #e3e3e3;
+  padding: 16px;
+  background: #fff;
+}
+.search label {
+  font-size: 14px;
+  color: #666;
+  line-height: 28px;
+}
+.search span {
+  color: #666;
+}
+.search input[type=text] {
+  width: 51px;
+  padding: 0 5px;
+  height: 26px;
+  font-size: 14px;
+  color: #666;
+  border: 1px solid #e3e3e3;
+}
+.search input[type=button] {
+  margin-left: 47px;
+  width: 63px;
+  height: 28px;
+  color: #fff;
+  font-size: 14px;
+  background: #4cb0ae;
+  line-height: 26px;
+  cursor: pointer;
+}
+
+.commodity {
+  border-left: 1px solid #e3e3e3;
+}
+.commodity .list {
+  float: left;
+  overflow: hidden;
+  background: #fff;
+}
+.commodity .list a {
+  display: block;
+  padding: 13px 17px;
+  width: 226px;
+  height: 251px;
+  border-bottom: 1px solid #e3e3e3;
+  border-right: 1px solid #e3e3e3;
+}
+
+.list .pic {
+  width: 226px;
+  height: 173px;
+}
+.list .pic img {
+  width: 100%;
+  height: 100%;
+}
+.list dt {
+  font-size: 14px;
+  color: #666;
+  line-height: 100%;
+}
+.list dd {
+  font-size: 12px;
+  line-height: 100%;
+  padding-top: 8px;
+  color: #8d8b8b;
+}
+
+.list_num {
+  margin-top: 15px;
+}
+.list_num .num {
+  float: left;
+  font-size: 18px;
+  line-height: 28px;
+  color: #666;
+}
+.list_num .num span {
+  color: #f53030;
+  padding-right: 16px;
+}
+.list_num button {
+  float: right;
+  width: 63px;
+  height: 28px;
+  color: #fff;
+  font-size: 16px;
+  background: #4cb0ae;
+  line-height: 26px;
+  cursor: pointer;
+}
 
 /*# sourceMappingURL=style-buy-index.css.map */

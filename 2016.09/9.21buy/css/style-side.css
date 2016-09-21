@@ -1,0 +1,77 @@
+.aside {
+  width: 230px;
+  float: left;
+}
+
+.content {
+  width: 785px;
+  float: right;
+}
+
+.choose_buy {
+  height: 335px;
+  border: 1px solid #4cb0ae;
+  background: #fff;
+  overflow: hidden;
+}
+.choose_buy h3 {
+  height: 70px;
+  text-align: center;
+  background: url("../images/choose_bj.png") no-repeat center top;
+  line-height: 44px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.buy_nav {
+  height: 270px;
+  overflow: hidden;
+}
+.buy_nav dl {
+  padding: 18px 0 15px 11px;
+}
+.buy_nav dl:hover {
+  background: #eee;
+}
+.buy_nav dt {
+  color: #666;
+  font-size: 16px;
+  line-height: 100%;
+  padding-bottom: 10px;
+}
+.buy_nav dd a {
+  display: block;
+  float: left;
+  color: #8d8b8b;
+  padding-right: 24px;
+  line-height: 22px;
+  font-size: 12px;
+  transition: all 1s;
+}
+.buy_nav dd a:hover {
+  color: #4cb0ae;
+}
+
+.active {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.active_rule {
+  padding: 33px 12px 17px 12px;
+  background: url("../images/active_rule.png") no-repeat center center;
+  background-size: 100% 100%;
+}
+.active_rule h2 {
+  text-align: center;
+  font-size: 16px;
+  color: #318987;
+  padding-bottom: 17px;
+}
+.active_rule p {
+  font-size: 12px;
+  color: #666;
+  line-height: 23px;
+}
+
+/*# sourceMappingURL=style-side.css.map */
