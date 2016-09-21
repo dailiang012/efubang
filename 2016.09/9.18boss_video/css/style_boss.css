@@ -1,5 +1,5 @@
 #main {
-    height: 1667px;
+    height: 2279px;
     background: url('../images/main_bj.jpg') no-repeat center top;
 }
 
@@ -21,18 +21,19 @@
 .personal {
     width: 1024px;
     margin: 0 auto;
-    padding-top: 132px;
 }
 
 .personal h2 {
-    font-size: 30px;
-    color: #ffba00;
+    font-size: 18px;
+    color: #fb3242;
     line-height: 100%;
-    margin-bottom: 54px;
-    margin-left: 114px;
+    text-align: center;
+    font-weight: bold;
 }
 
 .personal p {
+    width: 948px;
+    margin: 0 auto;
     text-indent: 28px;
     font-size: 14px;
     color: #3c3c3c;
@@ -124,4 +125,20 @@
     left: 0;
     height: 100%;
     background: #626262;
+}
+.list p {
+    padding-top: 140px;
+}
+
+.list01 {
+    padding-top: 111px;
+}
+
+
+.list02 {
+    padding-top: 38px;
+}
+
+.list03 {
+    padding-top: 39px;
 }

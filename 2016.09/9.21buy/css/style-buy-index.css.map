@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACA,IAAI;EACF,UAAU,EAAE,IAAI;EAChB,WAAM;IACJ,UAAU,EAAE,IAAI",
+"sources": ["style-buy-index.scss"],
+"names": [],
+"file": "style-buy-index.css"
+}
