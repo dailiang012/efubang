@@ -1,0 +1,175 @@
+$blue:#4cb0ae;
+$block:#666;
+$gray:#8d8b8b;
+#main {
+  background: #f5f5f5;
+  padding-bottom: 100px;
+}
+
+.main_inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+.number_log{
+  margin-left: 20px;
+  padding-top:20px;
+  dl{
+    height: 36px;
+    padding-left:50px;
+    background: url("../images/number_log.png") no-repeat left top;
+    color: $block;
+  }
+  dt{
+    font-size: 16px;
+    padding-bottom: 7px;
+    line-height: 100%;
+  }
+  dd{
+    font-size: 12px;
+    line-height: 100%;
+    span{
+      color: $blue;
+    }
+  }
+}
+.shopping_log{
+  padding-top: 20px;
+  .title{
+    height: 48px;
+    border:1px solid #e3e3e3;
+    text-align: center;
+    line-height: 48px;
+    color: #8d8b8b;
+    font-size: 14px;
+    background: #eee;
+    margin-bottom: 20px;
+    li{
+      float: left;
+    }
+    .name_title{
+      width: 118px;
+      padding-right: 45px;
+    }
+    .many_title{
+      width: 64px;
+    }
+    .money_title{
+      width: 134px;
+    }
+    .where_title{
+      width: 184px;
+    }
+    .status_title{
+      width: 106px;
+    }
+    .time_title{
+      width: 132px;
+    }
+  }
+}
+
+.shopping_list_total li{
+  height: 198px;
+  margin-bottom: 20px;
+}
+.shopping_list{
+  background: #fff;
+  &:hover{
+    border:1px solid $blue;
+  }
+  .list_name{
+    color: #666;
+    font-size: 12px;
+    line-height: 50px;
+    padding-left: 20px;
+  }
+  p{
+    color: #666;
+    font-size: 12px;
+    float: left;
+    line-height: 22px;
+    text-align: center;
+    padding-top:47px;
+  }
+  .name{
+    padding:20px 45px 20px 18px;
+    span{
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+  }
+  .many{
+    text-align: center;
+    width: 64px;
+  }
+  .money{
+    width: 134px;
+  }
+  .where{
+    width: 184-40+px;
+    padding-left:20px;
+    padding-right:20px;
+  }
+  .status{
+    width: 106px;
+    color:$blue;
+  }
+  .time{
+    width: 132px;
+  }
+}
+.shopping_true{
+  border:1px solid #edd5b2;
+  .list_name{
+    background: #fff3e1;
+  }
+}
+.shopping_false{
+  border:1px solid #e3e3e3;
+  .list_name{
+    background: #eee;
+  }
+}
+.pagination{
+  padding-top: 40px;
+  height: 20px;
+  width: 340px;
+  margin: 0 auto;
+}
+.pagination li{
+  float: left;
+  cursor: pointer;
+  width: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 5px;
+  color: #666;
+  a{
+    color: #666;
+  }
+}
+.control-pic{
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 6px;
+}
+.page-top{
+  background-image: url("../images/page-top.png");
+}
+.page-up{
+  background-image: url("../images/page-up.png");
+}
+.page-down{
+  background-image: url("../images/page-down.png");
+}
+.page-bottom{
+  background-image: url("../images/page-bottom.png");
+}
+.pagination .pagination-active{
+  border-radius: 10px;
+  background-color: #4cb0ae;
+  color: #fff;
+  display: block;
+}

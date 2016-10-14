@@ -1,0 +1,173 @@
+#banner{
+  background: url("../images/banner.jpg") no-repeat center top;
+  height: 945-803+px;
+  padding-top: 803px;
+  text-align: center;
+  font-size: 18px;
+  color: #ffefd7;
+  line-height: 100%;
+  span{
+    font-size: 24px;
+    line-height: 68px;
+  }
+}
+#main_active{
+  background: url("../images/main_bj.jpg") no-repeat center top;
+  height: 2844px;
+}
+.active01{
+  padding-top: 203px;
+}
+.title{
+  background: url("../images/title_bj.png") no-repeat center bottom;
+  width: 927px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 100%;
+  color: #ff2533;
+  padding: 90px 0;
+  text-align: center;
+  font-weight: bold;
+}
+.active_part{
+  height: 134px;
+  width: 634px;
+  margin: 0 auto;
+  font-weight: bold;
+  padding-top:125px;
+  .list{
+    width: 98px;
+    padding-right: 6px;
+    text-align: center;
+    float: left;
+    line-height: 100%;
+    font-size: 16px;
+    color: #be8349;
+    padding-top:62px;
+    padding-bottom: 56px;
+    background: url("../images/active_rule.png") no-repeat center top;
+  }
+  span{
+    background: url("../images/add.jpg") no-repeat center top;
+    width: 29px;
+    height: 29px;
+    margin:55px 17px 0 17px;
+    float: left;
+  }
+  .right_go{
+    float: left;
+    background: url("../images/right_go.png") no-repeat center bottom;
+    width: 104px;
+    padding-left: 8px;
+    height: 44px;
+    margin-top: 47px;
+    margin-left: 90px;
+    font-size: 16px;
+    color: #ff2533;
+    line-height: 100%;
+  }
+  .red_pack{
+    padding-top:65px;
+    padding-bottom:38px;
+    font-size: 30px;
+    line-height: 100%;
+    color: #fef23b;
+    font-weight: bolder;
+    text-align: center;
+    float: right;
+    width: 84px;
+    background: url("../images/red_pack.png") no-repeat center bottom;
+  }
+}
+.btn_invest a{
+  display: block;
+  background: url("../images/btn_bj.jpg") no-repeat center top;
+  width: 199px;
+  height: 117px;
+  margin: 66px auto 0;
+}
+.active01 .active_rule{
+  margin: 96px auto 0;
+}
+.active_rule{
+  width: 776px;
+  h1{
+    font-size: 18px;
+    padding-bottom: 8px;
+    color: #be8349;
+    line-height: 100%;
+  }
+  li{
+    font-size: 14px;
+    color: #be8349;
+    line-height: 25px;
+  }
+}
+.active02{
+  margin-top: 190px;
+}
+.time_money{
+  width: 632px;
+  height: 690px;
+  margin: 40px auto 98px;
+  .time{
+    background: url("../images/mouth_bj.jpg") no-repeat center top;
+    width: 88px;
+    font-size: 18px;
+    color: #fefefe;
+    line-height: 100%;
+    padding-top:96px;
+    padding-bottom: 76px;
+    margin:0 auto;
+    text-align: center;
+  }
+  span{
+    font-size: 36px;
+    color: #ff2533;
+    line-height: 100%;
+  }
+  .top span{
+    margin-top: 20px;
+  }
+  .bottom span{
+    margin-bottom: 20px;
+  }
+}
+.upright{
+  width: 114px;
+  margin: 0 auto;
+  span{
+    display: block;
+    text-align: center;
+  }
+}
+.across{
+  span{
+    display: inline-block;
+  }
+}
+.across_left{
+  float: left;
+  .time{
+    float: left;
+  }
+  span{
+    float: left;
+    padding-top: 91px;
+    padding-left:40px;
+  }
+}
+.across_right{
+  float: right;
+  .time{
+    float: right;
+  }
+  span{
+    float: right;
+    padding-top: 91px;
+    padding-right:40px;
+  }
+}
+.active02 .active_rule{
+  margin: 82px auto 0;
+}

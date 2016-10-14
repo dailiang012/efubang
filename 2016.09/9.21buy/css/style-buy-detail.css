@@ -1,32 +1,300 @@
 #main {
-  background: #f5f5f5;
-  padding-bottom: 100px;
+    background: #f5f5f5;
+    padding-bottom: 100px;
 }
 
 .main_inner {
-  width: 1024px;
-  margin: 0 auto;
+    width: 1024px;
+    margin: 0 auto;
 }
 
 .content .history_nav {
-  background: #eee;
-  padding: 17px;
-  font-size: 14px;
+    background: #eee;
+    padding: 17px;
+    font-size: 14px;
 }
+
 .content .history_nav span a {
-  color: #8d8b8b;
-  cursor: pointer;
+    color: #8d8b8b;
+    cursor: pointer;
+}
+
+.content .history_nav span a:hover {
+    color: #4cb0ae;
 }
 
 .buy_control {
-  padding: 27px 17px 43px 17px;
-  border-left: 1px solid #e3e3e3;
-  border-right: 1px solid #e3e3e3;
+    padding: 27px 17px 43px 17px;
+    border-left: 1px solid #e3e3e3;
+    border-right: 1px solid #e3e3e3;
+    background: #fff;
 }
 
-.box {
-  width: 258px;
-  height: 258px;
+.picture {
+    width: 258px;
+    float: left;
+    height: 207px;
 }
+
+.control_right {
+    width: 419px;
+    float: right;
+}
+
+.control_right .buy_name {
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: #4cb0ae;
+    line-height: 100%;
+}
+
+.control_right .buy_name span {
+    font-size: 20px;
+    color: #666;
+    line-height: 100%;
+    padding-left: 10px;
+    padding-right: 20px;
+}
+
+.control_right .money {
+    background: #eee;
+    padding-left: 10px;
+    padding-top: 14px;
+}
+
+.control_right .money p {
+    font-size: 12px;
+    color: #8d8b8b;
+    line-height: 100%;
+    padding-bottom: 18px;
+}
+
+.control_right .money p span {
+    padding-left: 20px;
+}
+
+.control_right .money p span b {
+    font-size: 24px;
+    color: #f53030;
+}
+
+.control_right button {
+    background: #4cb0ae;
+    width: 109px;
+    height: 40px;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.many_num {
+    height: 27px;
+    padding: 20px 10px;
+    color: #8d8b8b;
+}
+
+.many_num label {
+    font-size: 14px;
+    line-height: 27px;
+    float: left;
+    display: block;
+    padding-right: 12px;
+}
+
+.many_num span {
+    line-height: 25px;
+    border: 1px solid #e3e3e3;
+    font-size: 20px;
+    width: 25px;
+    text-align: center;
+    display: block;
+    float: left;
+    cursor: pointer;
+    moz-user-select: -moz-none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.many_num input {
+    height: 25px;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+    width: 40px;
+    color: #8d8b8b;
+    padding: 0 5px;
+    float: left;
+    text-align: center;
+}
+
+.information {
+    border: 1px solid #e3e3e3;
+    background: #fff;
+}
+
+.information .top {
+    position: relative;
+}
+
+.information .top h2 {
+    position: absolute;
+    left: 0;
+    top: -1px;
+    border-top: 4px solid #4cb0ae;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    color: #666;
+    line-height: 40px;
+}
+
+.information .top ul {
+    padding-top: 80px;
+}
+
+.information .top li {
+    padding-left: 16px;
+    float: left;
+    width: 240px;
+    font-size: 12px;
+    line-height: 23px;
+    color: #666;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.information .bottom {
+    width: 750px;
+    margin: 30px auto 20px auto;
+    border-top: 1px solid #e3e3e3;
+}
+
+.information .bottom .pic {
+    padding-top: 40px;
+}
+
+.information .bottom img {
+    width: 100%;
+    height: 100%;
+}
+
+.buy_popup_box {
+    display: none;
+}
+
+.buy_popup {
+    position: relative;
+    width: 640px;
+    margin: 0 auto;
+}
+
+.buy_popup_content {
+    position: absolute;
+    z-index: 200;
+    top: 100px;
+    width: 640px;
+    border-radius: 20px;
+    border: 1px solid #9a7b1d;
+    background: #fefdf7;
+    padding-bottom: 18px;
+}
+
+.buy_popup_content .top {
+    background: url("../images/popup_buy.png") no-repeat center bottom;
+    height: 60px;
+    position: relative;
+    font-size: 16px;
+    line-height: 60px;
+    color: #fff;
+    padding-left: 30px;
+}
+
+.buy_popup_content .top .buy_popup_close {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 23px;
+    top: 23px;
+    background: url("../images/close_buy.png") no-repeat center center;
+    cursor: pointer;
+}
+
+.buy_popup_content .bottom {
+    padding: 0 33px;
+}
+
+.buy_popup_content .bottom li {
+    float: left;
+    width: 145px;
+    line-height: 100%;
+    padding: 35px 0 35px 45px;
+}
+
+.buy_popup_content .bottom li dt {
+    font-size: 14px;
+    color: #a48e35;
+    padding-bottom: 10px;
+}
+
+.buy_popup_content .bottom li dd {
+    height: 16px;
+    font-size: 16px;
+    color: #68581b;
+}
+
+.buy_popup_content .sure_buy {
+    width: 121px;
+    height: 36px;
+    display: block;
+    text-decoration: none;
+    border: 1px solid #9a7b1d;
+    text-align: center;
+    color: #68581b;
+    font-size: 16px;
+    line-height: 36px;
+    border-radius: 18px;
+    margin: 0 auto;
+}
+
+.you_where {
+    margin-bottom: 20px;
+}
+
+.you_where textarea {
+    height: 60px;
+    width: 544px;
+    border: 1px solid #9a7b1d;
+    border-radius: 20px;
+    padding: 15px;
+    font-size: 12px;
+    color: #8d8b8b;
+    overflow: hidden;
+}
+
+.back_bj {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10;
+}
+
+#prompt {
+    color: #4cb0ae;
+    font-size: 12px;
+    line-height: 27px;
+    float: left;
+    display: block;
+    padding-left: 12px;
+}
+
 
 /*# sourceMappingURL=style-buy-detail.css.map */

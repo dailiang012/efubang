@@ -1,0 +1,187 @@
+#main {
+  background: #f5f5f5;
+  padding-bottom: 100px;
+}
+
+.main_inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.number_log {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+.number_log dl {
+  height: 36px;
+  padding-left: 50px;
+  background: url("../images/number_log.png") no-repeat left top;
+  color: #666;
+}
+.number_log dt {
+  font-size: 16px;
+  padding-bottom: 7px;
+  line-height: 100%;
+}
+.number_log dd {
+  font-size: 12px;
+  line-height: 100%;
+}
+.number_log dd span {
+  color: #4cb0ae;
+}
+
+.shopping_log {
+  padding-top: 20px;
+}
+.shopping_log .title {
+  height: 48px;
+  border: 1px solid #e3e3e3;
+  text-align: center;
+  line-height: 48px;
+  color: #8d8b8b;
+  font-size: 14px;
+  background: #eee;
+  margin-bottom: 20px;
+}
+.shopping_log .title li {
+  float: left;
+}
+.shopping_log .title .name_title {
+  width: 118px;
+  padding-right: 45px;
+}
+.shopping_log .title .many_title {
+  width: 64px;
+}
+.shopping_log .title .money_title {
+  width: 134px;
+}
+.shopping_log .title .where_title {
+  width: 184px;
+}
+.shopping_log .title .status_title {
+  width: 106px;
+}
+.shopping_log .title .time_title {
+  width: 132px;
+}
+
+.shopping_list_total li {
+  height: 198px;
+  margin-bottom: 20px;
+}
+
+.shopping_list {
+  background: #fff;
+}
+.shopping_list:hover {
+  border: 1px solid #4cb0ae;
+}
+.shopping_list .list_name {
+  color: #666;
+  font-size: 12px;
+  line-height: 50px;
+  padding-left: 20px;
+}
+.shopping_list p {
+  color: #666;
+  font-size: 12px;
+  float: left;
+  line-height: 22px;
+  text-align: center;
+  padding-top: 47px;
+}
+.shopping_list .name {
+  padding: 20px 45px 20px 18px;
+}
+.shopping_list .name span {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.shopping_list .many {
+  text-align: center;
+  width: 64px;
+}
+.shopping_list .money {
+  width: 134px;
+}
+.shopping_list .where {
+  width: 144px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.shopping_list .status {
+  width: 106px;
+  color: #4cb0ae;
+}
+.shopping_list .time {
+  width: 132px;
+}
+
+.shopping_true {
+  border: 1px solid #edd5b2;
+}
+.shopping_true .list_name {
+  background: #fff3e1;
+}
+
+.shopping_false {
+  border: 1px solid #e3e3e3;
+}
+.shopping_false .list_name {
+  background: #eee;
+}
+
+.pagination {
+  padding-top: 40px;
+  height: 20px;
+  width: 340px;
+  margin: 0 auto;
+}
+
+.pagination li {
+  float: left;
+  cursor: pointer;
+  width: 20px;
+  font-size: 12px;
+  line-height: 20px;
+  text-align: center;
+  margin: 0 5px;
+  color: #666;
+}
+.pagination li a {
+  color: #666;
+}
+
+.control-pic {
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 6px;
+}
+
+.page-top {
+  background-image: url("../images/page-top.png");
+}
+
+.page-up {
+  background-image: url("../images/page-up.png");
+}
+
+.page-down {
+  background-image: url("../images/page-down.png");
+}
+
+.page-bottom {
+  background-image: url("../images/page-bottom.png");
+}
+
+.pagination .pagination-active {
+  border-radius: 10px;
+  background-color: #4cb0ae;
+  color: #fff;
+  display: block;
+}
+
+/*# sourceMappingURL=style-shopping.css.map */
