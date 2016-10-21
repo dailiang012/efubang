@@ -1,0 +1,436 @@
+@charset 'utf-8';
+
+/*CSS Document*/
+
+
+/*选中的导航样式*/
+
+.nav_02 .zhanghao {
+    color: #e1d373;
+    background: url(../images/icon02_true.png) no-repeat 28px 60px;
+}
+
+.nav_02 .zhanghao {
+    background-color: #4cb0ae;
+}
+
+.zhanghutixian {
+    background: rgba(0, 0, 0, .3);
+}
+
+#main {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #f5f6f7;
+}
+
+
+/*提示开始*/
+
+.tixian {
+    border: 1px solid #cfcfcf;
+    background: #fff;
+}
+
+.tishi {
+    position: relative;
+    height: 113px;
+    background: #f8f2d6;
+}
+
+.tishi .text_l {
+    float: left;
+    padding-left: 106px;
+}
+
+.tishi .text_r {
+    float: right;
+    width: 231px;
+    height: 81px;
+    padding-top: 32px;
+}
+
+.tishi .pic {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.tishi .text_l h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 17px;
+    color: #f60;
+}
+
+.tishi .text_l p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 35px;
+    color: #eb843f;
+}
+
+.tishi .text_l p span {
+    font-weight: bold;
+    color: #f60;
+}
+
+.tishi .text_r img {
+    float: left;
+    padding-top: 5px;
+    padding-right: 18px;
+}
+
+.tishi .text_r h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    float: left;
+    color: #f60;
+}
+
+.tishi .text_r h2 span {
+    font-weight: normal;
+    padding-left: 36px;
+}
+
+
+/*提示结束*/
+
+
+/*选项卡开始*/
+
+.xuanxiang {
+    width: 840px;
+    height: 45px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 100px;
+    border-bottom: 1px solid #4cb0ae;
+}
+
+.xuanxiang li a {
+    font-size: 16px;
+    line-height: 44px;
+    float: left;
+    width: 158px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #999;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+}
+
+
+/*选项卡结束*/
+
+
+/*选卡1内容开始*/
+
+#list01 {
+    padding-top: 65px;
+    padding-bottom: 90px;
+}
+
+.box {
+    font-size: 16px;
+    line-height: 30px;
+    height: 40px;
+    color: #333;
+}
+
+.box_l {
+    float: left;
+    width: 404px;
+    text-align: right;
+}
+
+.box_r {
+    float: left;
+    width: 500px;
+    text-align: left;
+}
+
+form>div {
+    height: 50px;
+}
+
+#list01 select {
+    font-family: '微软雅黑';
+    font-size: 16px;
+    height: 32px;
+    color: #666;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+}
+
+#list01 form {
+    font-size: 16px;
+    color: #333;
+}
+
+#list01 input {
+    width: 133px;
+    height: 30px;
+    padding: 0 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+}
+
+#list01 #auth_code {
+    float: left;
+    width: 55px;
+    border-radius: 4px 0 0 4px;
+}
+
+.code_pic {
+    float: left;
+    width: 76px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    border: 1px solid #c6c6c6;
+    border-left: none;
+    border-radius: 0 4px 4px 0;
+}
+
+.code_pic img {
+    height: 30px;
+}
+
+.submit_yes {
+    font-family: '微软雅黑';
+    font-size: 16px;
+    line-height: 30px;
+    width: 95px;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    background: #4cb0ae;
+}
+
+.submit_yes:hover {
+    background: #ff7f00;
+}
+
+
+/*选卡1内容结束*/
+
+
+/*选项2内容开始*/
+
+table {
+    width: 940px;
+    margin: 0 auto;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+thead tr {
+    height: 44px;
+    color: #fff;
+    border-bottom: 1px solid #ccc;
+    background: #4cb0ae;
+}
+
+tbody tr {
+    height: 53px;
+    border-bottom: 1px solid #ccc;
+}
+
+thead td {
+    font-size: 16px;
+    width: 188px;
+    /* 自定义宽度*/
+    text-align: center;
+}
+
+tbody td {
+    font-size: 12px;
+    width: 188px;
+    text-align: center;
+}
+
+tbody .bank {
+    color: #666;
+}
+
+tbody .number {
+    color: #269d30;
+}
+
+tbody .money {
+    color: #4cb0ae;
+}
+
+tbody .time {
+    color: #666;
+}
+
+tbody .condition {
+    color: #666;
+}
+
+tbody .bgcolor_two {
+    background: #efefef;
+}
+
+tbody .bgcolor_two .condition {
+    color: #f60;
+}
+
+
+/*选卡2内容结束*/
+
+
+/*xiayiye-star*/
+
+.xiayiye {
+    width: 605px;
+    height: 30px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+.xiayiye a {
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    color: #666;
+}
+
+.xiayiye li {
+    font-size: 16px;
+    line-height: 30px;
+    float: left;
+    padding-right: 5px;
+    color: #666;
+}
+
+.xiayiye .one {
+    color: #484848;
+}
+
+.xiayiye .shuru {
+    width: 18px;
+    height: 23px;
+    margin: 3px 13px 3px 9px;
+    padding: 0 6px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+}
+
+.xiayiye .last {
+    width: 73px;
+    height: 28px;
+    margin-left: 17px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background: #4cb0ae;
+}
+
+.xiayiye .last:hover {
+    border: 1px solid #bdbdbd;
+    background: #ff7f00;
+}
+
+
+/*动效样式开始*/
+
+.xuanxiang .dangqian {
+    color: #fff;
+    background: #4cb0ae;
+}
+
+.neirong>div {
+    display: none;
+}
+
+#list01 {
+    display: block;
+}
+
+
+/*动效样式结束*/
+
+
+/*10.18start*/
+
+.ticket_box {
+    font-size: 14px;
+    width: 133px;
+    height: 30px;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #333;
+    border: 1px solid #c6c6c6;
+    border-radius: 4px;
+    background: url('../images/select_bj.jpg') no-repeat 133px 0;
+}
+
+.change_ticket .box_r {
+    position: relative;
+}
+
+.ticket_list {
+    position: absolute;
+    top: 29px;
+    left: 0;
+    display: none;
+    width: 153px;
+    border: 1px solid #c6c6c6;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    background: #fff;
+}
+
+.ticket_list li {
+    width: 153px;
+    height: 38px;
+    margin-bottom: 3px;
+    cursor: pointer;
+    background: url('../images/ticket.jpg') no-repeat center top;
+}
+
+.ticket_list li .left {
+    font-size: 16px;
+    line-height: 37px;
+    float: left;
+    width: 51px;
+    margin-right: 17px;
+    text-align: center;
+    color: #fff;
+}
+
+.ticket_list li .right {
+    font-size: 12px;
+    line-height: 17px;
+    padding-top: 3px;
+    float: left;
+    width: 64px;
+    text-align: center;
+    color: #fff;
+}
+
+.ticket_list li:last-child {
+    font-size: 12px;
+    line-height: 24px;
+    height: 24px;
+    margin: 0;
+    text-align: center;
+    color: #7d7dc9;
+    border-top: 1px solid #c6c6c6;
+    background: none;
+}
+
+
+/*10.18end*/

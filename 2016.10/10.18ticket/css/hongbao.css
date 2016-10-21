@@ -1,0 +1,261 @@
+@charset 'utf-8';
+
+/* CSS Document */
+
+
+/*选中的导航样式*/
+
+.nav_02 .zhanghao {
+    color: #e1d373;
+    background: url(../images/icon02_true.png) no-repeat 28px 60px;
+}
+
+.nav_02 .zhanghao {
+    background-color: #4cb0ae;
+}
+
+.hongbao {
+    background: rgba(0, 0, 0, .3);
+}
+
+
+/*main开始*/
+
+#main {
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background: #f5f6f7;
+}
+
+.tixian {
+    border: 1px solid #cfcfcf;
+    background: #fff;
+}
+
+.tishi {
+    position: relative;
+    height: 113px;
+    background: #f8f2d6;
+}
+
+.tishi .text_l {
+    float: left;
+    padding-left: 106px;
+}
+
+.tishi .pic {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+}
+
+.tishi .text_l h2 {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px;
+    padding-top: 17px;
+    color: #f60;
+}
+
+.tishi .text_l p {
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 35px;
+    color: #eb843f;
+}
+
+
+/*neirong开始*/
+
+.xuanxiang {
+    width: 840px;
+    height: 45px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-left: 100px;
+    border-bottom: 1px solid #4cb0ae;
+}
+
+.xuanxiang a {
+    font-size: 16px;
+    line-height: 44px;
+    float: left;
+    width: 158px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-align: center;
+    color: #999;
+    border: 1px solid #d1d1d1;
+    border-bottom: none;
+}
+
+
+/*选项一开始*/
+
+.neirong #list01 {
+    display: block;
+}
+
+.content {
+    width: 822px;
+    margin: 0 auto;
+    padding-top: 74px;
+    padding-bottom: 50px;
+}
+
+.ticket_true {
+    padding-bottom: 30px;
+}
+
+.ticket_true>li {
+    position: relative;
+}
+
+.ticket_true .yuandian {
+    position: absolute;
+    top: 33px;
+    left: 80px;
+    width: 12px;
+    height: 12px;
+    border-radius: 6px;
+    background: #fad400;
+}
+
+.ticket_true li {
+    display: inline-block;
+    width: 249px;
+    height: 138px;
+    padding: 0 11px;
+    background: url('../images/ticket_list_bj.jpg') no-repeat center center;
+}
+
+.ticket_false li {
+    display: inline-block;
+    width: 249px;
+    height: 138px;
+    padding: 0 11px;
+    background: url('../images/ticket_list_bj.jpg') no-repeat center center;
+}
+
+.ticket_true li {
+    color: #565599;
+}
+
+.ticket_false li {
+    color: #828282;
+}
+
+.content li .left {
+    font-size: 38px;
+    line-height: 48px;
+    float: left;
+    width: 80px;
+    padding-top: 12px;
+    text-align: right;
+}
+
+.content li .right {
+    float: left;
+    width: 126px;
+    margin-left: 8px;
+    padding-top: 21px;
+    text-align: center;
+}
+
+.content li .name {
+    font-size: 20px;
+    line-height: 100%;
+}
+
+.content li p {
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.content li .time {
+    font-size: 10px;
+    line-height: 20px;
+    color: #fff;
+    border-radius: 4px;
+}
+
+.ticket_true .time {
+    background-color: #5d5da4;
+}
+
+.ticket_false .time {
+    background-color: #828282;
+}
+
+
+/*xiayiye-star*/
+
+.xiayiye {
+    width: 605px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.xiayiye a {
+    font-size: 16px;
+    line-height: 30px;
+    display: block;
+    color: #666;
+}
+
+.xiayiye li {
+    font-size: 16px;
+    line-height: 30px;
+    float: left;
+    padding-right: 5px;
+    color: #666;
+}
+
+.xiayiye .one {
+    color: #484848;
+}
+
+.xiayiye .shuru {
+    width: 18px;
+    height: 23px;
+    margin: 3px 13px 3px 9px;
+    padding: 0 6px;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+}
+
+.xiayiye .last {
+    width: 73px;
+    height: 28px;
+    margin-left: 17px;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    border: 1px solid #bdbdbd;
+    border-radius: 4px;
+    background: #4cb0ae;
+}
+
+.xiayiye .last:hover {
+    border: 1px solid #bdbdbd;
+    background: #ff7f00;
+}
+
+
+/*选项卡切换动效开始*/
+
+.xuanxiang .dangqian {
+    color: #fff;
+    background: #4cb0ae;
+}
+
+.neirong>div {
+    display: none;
+}
+
+#list01 {
+    display: block;
+}
+
+
+/*选项卡动效样式结束*/
