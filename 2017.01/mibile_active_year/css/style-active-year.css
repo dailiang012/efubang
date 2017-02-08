@@ -1,0 +1,139 @@
+@charset "UTF-8";
+@media screen and (max-width: 321px) {
+    .m-navlist {
+        font-size: 15px;
+    }
+}
+@media screen and (min-width: 321px) and (max-width: 400px) {
+    .m-navlist {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 400px) {
+    .m-navlist {
+        font-size: 18px;
+    }
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body,
+html {
+    height: 100%;
+    width: 100%;
+    outline: 0;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: transparent;
+    background-color: #f8ebda;
+}
+.clear {
+    clear: both;
+}
+ul {
+    list-style-type: none;
+}
+/*header-start*/
+#header {
+    width: 100%;
+    background-color: #4cb0ae;
+    height: 0.88rem;
+    position: fixed;
+}
+.nav-return {
+    position: absolute;
+    height: inherit;
+    left: 0;
+    top: 0;
+}
+.nav-return a {
+    height: inherit;
+    display: block;
+}
+.nav-return a:active {
+    background: #419695;
+}
+.nav-return img {
+    height: 100%;
+    width: auto;
+    display: block;
+}
+.nav-title {
+    text-align: center;
+    color: #fff;
+    font-size: 0.36rem;
+    line-height: 0.88rem;
+}
+/*main-start*/
+#main {
+    width: 100%;
+    padding-top: 0.88rem;
+    background: url('../images/active_yaer_bj.jpg') no-repeat center 0.88rem;
+    background-size: 100% auto;
+}
+.active_content {
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 6.22rem;
+    font-size: 0.16rem;
+    line-height: 0.26rem;
+    color: #fb3a25;
+    font-weight: bolder;
+}
+.active_content p {
+    margin-bottom: 0.2rem;
+}
+.active_content span {
+    display: inline-block;
+    /*float: left;*/
+}
+.active_content .right {
+    width: 76%;
+}
+.active_content .left {
+    vertical-align: top;
+}
+.active_content strong {
+    font-size: 0.24rem;
+    padding: 0 0.14rem;
+}
+.active_rule {
+    width: 94%;
+    margin: 0 auto;
+    padding-top: 0.02rem;
+    padding-bottom: 0.3rem;
+    font-size: 0.16rem;
+    color: #fb3a25;
+    font-weight: bolder;
+}
+.active_rule p {
+    line-height: 1rem;
+}
+.active_rule li {
+    line-height: 0.3rem;
+}
+#button_invest {
+    padding-bottom: 0.7rem;
+}
+#button_invest a {
+    position: relative;
+    display: block;
+    width: 3.17rem;
+    height: 0.8rem;
+    margin: 0 auto;
+    background: url('../images/button_bj.png') no-repeat center top;
+    background-size: 100% 100%;
+}
+#button_invest p {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+#button_invest a:active p {
+    display: block;
+}

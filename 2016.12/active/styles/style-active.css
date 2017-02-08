@@ -1,0 +1,249 @@
+@media screen and (max-width: 321px) {
+  .m-navlist {
+    font-size: 15px; } }
+@media screen and (min-width: 321px) and (max-width: 400px) {
+  .m-navlist {
+    font-size: 16px; } }
+@media screen and (min-width: 400px) {
+  .m-navlist {
+    font-size: 18px; } }
+* {
+  vertical-align: baseline;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  font-family: Arial, "Microsoft YaHei", Helvetica, sans-serif; }
+
+html {
+  -webkit-text-size-adjust: none; }
+
+li {
+  list-style: none; }
+
+img {
+  border: none;
+  text-decoration: none;
+  display: block; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+a img,
+:link img,
+:visited img {
+  border: 0; }
+
+.clear {
+  clear: both; }
+
+input,
+textarea,
+select {
+  outline: none; }
+
+textarea {
+  resize: none; }
+
+html {
+  height: 100%;
+  width: 100%;
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent; }
+
+body {
+  width: 6.4rem;
+  background-color: #fff; }
+
+.clear {
+  clear: both; }
+
+/*header-start*/
+#header {
+  width: 100%;
+  background-color: #4cb0ae;
+  height: 0.88rem;
+  position: fixed;
+  z-index: 10; }
+
+.nav-return {
+  position: absolute;
+  height: inherit;
+  left: 0;
+  top: 0; }
+
+.nav-return a {
+  height: inherit;
+  display: block; }
+
+.nav-return a:active {
+  background: #419695; }
+
+.nav-return img {
+  height: 100%;
+  width: auto;
+  display: block; }
+
+.nav-title {
+  text-align: center;
+  color: #fff;
+  font-size: 0.36rem;
+  line-height: 0.88rem; }
+
+/*wrapper-start*/
+#wrapper {
+  width: 100%;
+  padding-top: 0.88rem; }
+
+#active-main {
+  padding-top: 0.88rem; }
+
+.active-content {
+  background: url("../images/main-bj.jpg") no-repeat center top;
+  background-size: 100% 100%;
+  padding-top: 4.48rem; }
+
+.middle-text {
+  position: relative;
+  line-height: 100%;
+  color: #d79c0e;
+  width: 6rem;
+  margin: 0 auto; }
+  .middle-text p {
+    font-size: 0.18rem;
+    position: relative;
+    line-height: 0.32rem;
+    z-index: 2;
+    padding-left: 1.12rem;
+    font-weight: bold; }
+    .middle-text p span {
+      color: #f01210; }
+  .middle-text img {
+    position: absolute;
+    top: -0.1rem;
+    width: 0.7rem;
+    height: 0.6rem; }
+  .middle-text .pic-left {
+    left: 0; }
+  .middle-text .pic-right {
+    right: 0; }
+
+.red-packet-group {
+  margin-top: 0.6rem; }
+
+.red-packet {
+  width: 6rem;
+  height: 2.8rem;
+  margin: 0 auto;
+  position: relative; }
+  .red-packet .money {
+    position: absolute;
+    font-size: 0.2rem;
+    color: #fff;
+    top: 1.4rem;
+    line-height: 100%; }
+    .red-packet .money span {
+      font-size: 0.4rem;
+      text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.3);
+      vertical-align: bottom; }
+
+.project-explain {
+  position: absolute;
+  top: 0.7rem; }
+  .project-explain .project-time {
+    float: left;
+    width: 0.79rem;
+    height: 0.85rem;
+    background: url("../images/time-bj.png") no-repeat center top;
+    background-size: 100% 100%;
+    margin-right: 0.18rem; }
+  .project-explain .project-text {
+    float: left;
+    font-size: 0.18rem;
+    color: #a87e1a;
+    line-height: 0.3rem;
+    padding-top: 0.1rem;
+    font-weight: bold;
+    width: 2.4rem; }
+  .project-explain p {
+    font-size: 0.2rem;
+    line-height: 0.85rem;
+    color: #a87e1a;
+    font-weight: bolder;
+    text-align: center; }
+
+.red01 .money {
+  left: 0.65rem; }
+.red01 .project-explain {
+  left: 2.44rem; }
+
+.red02 .money {
+  left: 4.1rem; }
+.red02 .project-explain {
+  left: 0.2rem; }
+
+.red03 .money {
+  left: 0.5rem;
+  top: 1.5rem; }
+.red03 .project-explain {
+  left: 2.1rem; }
+
+.red04 .money {
+  top: 1.5rem;
+  left: 4.1rem; }
+.red04 .project-explain {
+  left: 0.2rem;
+  top: 0.9rem; }
+
+.red05 .money {
+  top: 1.5rem;
+  left: 0.65rem; }
+.red05 .project-explain {
+  left: 2.3rem; }
+
+.register {
+  width: 2.64rem;
+  height: 1.26rem;
+  margin: 0 auto;
+  padding-bottom: 0.9rem; }
+  .register a {
+    background: url("../images/explain-bj.png") no-repeat center top;
+    text-align: center;
+    background-size: 100% 100%;
+    display: block;
+    font-size: 0.3rem;
+    line-height: 1.26rem;
+    color: #a87e1a;
+    font-weight: bold; }
+
+.active-explain {
+  width: 6rem;
+  margin: 0 auto;
+  padding-bottom: 0.26rem; }
+  .active-explain h1 {
+    font-size: 0.2rem;
+    color: #a87e1a;
+    line-height: 100%;
+    font-weight: bold;
+    margin-bottom: 0.2rem; }
+  .active-explain li {
+    color: #a87e1a;
+    font-size: 0.14rem;
+    line-height: 0.28rem; }
+
+.active-explain {
+  background-color: #fff; }
+
+/*# sourceMappingURL=style-active.css.map */

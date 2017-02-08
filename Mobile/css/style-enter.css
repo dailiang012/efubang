@@ -1,12 +1,15 @@
 @charset "utf-8";
 /*公共代码开始*/
 * {
+    margin: 0;
+    padding: 0;
+
     vertical-align: baseline;
+
+    border: none
+
     font-weight: inherit;
     font-style: inherit;
-    padding: 0;
-    margin: 0;
-    border: none
 }
 
 body {
@@ -22,9 +25,11 @@ li {
 }
 
 img {
-    border: none;
-    text-decoration: none;
     display: block
+
+    text-decoration: none;
+
+    border: none;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +46,7 @@ a img, :link img, :visited img {
 
 input, textarea, select {
     outline: none;
+
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
@@ -59,13 +65,16 @@ a, button, input { /*去掉手持设备点击是出现的透明层*/
 
 input { /*去掉input在ios下的默认效果*/
     resize: none; /*禁止调整元素的尺寸*/
-    -webkit-appearance: none;
+
     background: none;
+
+    -webkit-appearance: none;
 }
 
-button { /*去掉button在ios上的默认样式*/
+button {
+    border-radius: 0 /*去掉button在ios上的默认样式*/
+
     -webkit-appearance: none;
-    border-radius: 0
 }
 
 html, body, form, fieldset, p, div, h1, h2, h3, h4, h5, h6 { /*阻止旋转屏幕时自动调整字体大小*/
@@ -80,22 +89,27 @@ element::-webkit-scrollbar { /*去掉webkit的滚动条*/
 /*header开始*/
 html {
     height: 100%;
+
     outline: 0;
+
     -webkit-text-size-adjust: none;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
     height: 100%;
+
     background-color: #f9f9f9;
 }
 
 #header {
-    width: 100%;
-    background-color: #4cb0ae;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
-    z-index: 2;
+
+    width: 100%;
+
+    background-color: #4cb0ae;
 }
 
 [data-dpr="1"] #header {
@@ -112,24 +126,27 @@ body {
 
 .nav-return {
     position: absolute;
-    height: inherit;
-    left: 0;
     top: 0;
+    left: 0;
+
+    height: inherit;
 }
 .nav-return a{
-    height: inherit;
     display: block;
+
+    height: inherit;
 }
 .nav-return a:active{
     background: #419695;
 }
 .nav-return img {
+    width: auto;
     height: 100%;
-    width: auto;
 }
 
 .nav-title {
     text-align: center;
+
     color: #fff;
 }
 
@@ -163,25 +180,30 @@ body {
 }
 
 #wrapper input {
+    width: 94%;
+
     border: none;
     border-bottom: 1px solid #f6f6f6;
     outline: none;
-    width: 94%;
     background: #fff;
+
     line-height: 100%;
 }
 [data-dpr="1"] #wrapper input {
-    font-size: 15px;
     padding: 15px 3%;
+
+    font-size: 15px;
 }
 [data-dpr="2"] #wrapper input {
-    font-size: 30px;
     padding: 30px 3%;
+
+    font-size: 30px;
 }
 
 [data-dpr="3"] #wrapper input {
-    font-size: 45px;
     padding: 45px 3%;
+
+    font-size: 45px;
 }
 
 .button-input {
@@ -191,11 +213,12 @@ body {
 
 #wrapper input[type="submit"] {
     width: 100%;
-    background: #4cb0ae;
-    border-radius: 4px;
-    border: none;
-    outline: none;
+
     color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    background: #4cb0ae;
 }
 [data-dpr="1"] #wrapper input[type="submit"] {
     margin-top: 20px;
@@ -225,8 +248,10 @@ body {
 
 .help a {
     display: block;
-    line-height: 0.9375rem;
+
     color: #4cb0ae;
+
+    line-height: 0.9375rem;
 }
 [data-dpr="1"] .help a {
     font-size: 12px;
@@ -240,11 +265,13 @@ body {
 
 /*2016.6.22-change*/
 .prompt-text {
-    padding-left: 3%;
-    color: #e84a4a;
-    padding-top: 0.15625rem;
-    padding-bottom: 0.15625rem;  /*新加*/
     height: 0.46875rem;
+    padding-top: 0.15625rem;
+    padding-bottom: 0.15625rem;  /*新加*/
+    padding-left: 3%;
+
+    color: #e84a4a;
+
     line-height: 100%;
 }
 [data-dpr="1"] .prompt-text {
@@ -259,10 +286,12 @@ body {
 }
 
 .prompt-text img{
+    display: block;
     float: left;
-    display: block;
-    vertical-align: middle;
+
     margin-right:0.15625rem;
+
+    vertical-align: middle;
 }
 
  [data-dpr="1"] .prompt-text img {
@@ -277,7 +306,7 @@ body {
 [data-dpr="3"] .prompt-text img {
     width:36px;
     height:36px;
-} 
+}
 
 
 .prompt-img{
@@ -307,6 +336,7 @@ body {
 
 ::-webkit-input-placeholder {
     color: #d1d1d1;
+
     font-size: 15px;
 }
 [data-dpr="1"] ::-webkit-input-placeholder {
@@ -325,19 +355,23 @@ body {
 /*2015.06.22-add*/
 .code-input {
     position: relative;
-    border-bottom: 1px solid #f6f6f6;
-    border-top: 1px solid #f6f6f6;
-    background: #fff;
-    text-align: left;
+
     margin-top: 0.40625rem;
+
+    text-align: left;
+
+    border-top: 1px solid #f6f6f6;
+    border-bottom: 1px solid #f6f6f6;
+    background: #fff;
 }
 
 .get-code-img{
     position: absolute;
     top: 0;
     right: 0;
-    margin-right: 3%;
+
     margin-top: 0.15575rem;
+    margin-right: 3%;
 }
 [data-dpr="1"] .get-code-img {
     height: 34px;
@@ -351,20 +385,24 @@ body {
 
 .change-pic{
     float: right;
-    border-bottom: 1px solid #c2c3c4;
+
     color: #76787d;
+    border-bottom: 1px solid #c2c3c4;
 }
 [data-dpr="1"] .change-pic {
-    font-size: 10px;
     margin-top: 10px;
+
+    font-size: 10px;
 }
 [data-dpr="2"] .change-pic {
-    font-size: 20px;
     margin-top: 20px;
+
+    font-size: 20px;
 }
 [data-dpr="3"] .change-pic {
-    font-size: 30px;
     margin-top: 30px;
+
+    font-size: 30px;
 }
 
 .code-pic{

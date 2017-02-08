@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>积分记录</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/public-head-footer.css">
+    <link rel="stylesheet" href="styles/active_year.css">
+    <script src="script/jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            var $num = $('.rank_table .num');
+            var length = $num.length;
+            for (var i = 0; i < length; i++) {
+                if (i < 3) {
+                    $($num[i]).css("background-image", "url('./images/user" + (i + 1) + ".png')");
+
+                } else {
+                    $($num[i]).css("background-image", "url('./images/user4.png')");
+                }
+                $($num[i]).text("" + (i + 1));
+            }
+
+            $(".year_popup").hide();
+            $(".log").on('click', function() {
+                $(".year_popup").show();
+            })
+            $(".year_popup_close").on('click', function() {
+                $(".year_popup").hide();
+            })
+        })
+    </script>
+</head>
+
+<body>
+    <div class="year_popup">
+        <div class="year_popup_content">
+            <div class="year_popup_close"><img src="./images/year_popup_close.png" alt="X关闭"></div>
+            <div class="pop_title">我的投资明细以及累计分数记录</div>
+            <div class="table_log">
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="time">交易日期</th>
+                            <th class="name">投资标名</th>
+                            <th class="money">投资金额</th>
+                            <th class="integral">获得积分</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <!--<tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>
+                        <tr>
+                            <td>2016-11-21 15:27:09</td>
+                            <td>e担保-HSX-MJ-161129</td>
+                            <td>¥500,000</td>
+                            <td>¥500,000</td>
+                        </tr>-->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+    <!--start-->
+    <div id="year_main">
+        <div class="year_ranking">
+            <div class="year_ranking_inner">
+                <ul class="rank_total">
+                    <li class="rank01">
+                        <img src="images/momo.png" alt="头像" class="photo_user">
+                        <h3>第一周冠军</h3>
+                        <p>累计投资分数：<span>18,000,000</span></p>
+                        <div class="yellow_crown"></div>
+                    </li>
+                    <li class="rank02">
+                        <img src="images/momo.png" alt="头像" class="photo_user">
+                        <h3>第二周冠军</h3>
+                        <p>累计投资分数：<span>18,000,000</span></p>
+                    </li>
+                    <li class="rank03">
+                        <img src="images/momo.png" alt="头像" class="photo_user">
+                        <h3>第三周冠军</h3>
+                        <p>累计投资分数：<span>18,000,000</span></p>
+                    </li>
+                    <li class="rank04">
+                        <img src="images/momo.png" alt="头像" class="photo_user">
+                        <h3>第四周冠军</h3>
+                        <p>累计投资分数：<span>18,000,000</span></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="active_list active_one">
+            <div class="list_number">1</div>
+            <img src="./images/list01_text.png" alt="红包奖励活动" class="list_title_text">
+            <div class="active_time">
+                <p>活动时间：<span>2016年12月16日--2017年1月15日</span></p>
+                <p>活动对象：完成实名注册用户</p>
+                <p>活动规则：活动期间，投资累计分数排名前十名用户即可获得现金红包奖励，分数排名每周更换一次！投资越多，分数越多，红包更多！</p>
+            </div>
+            <ul class="award_list">
+                <li>
+                    <p>288</p>
+                    <h2>第1名: 288元现金红包</h2>
+                </li>
+                <li>
+                    <p>188</p>
+                    <h2>第2名: 188元现金红包</h2>
+                </li>
+                <li>
+                    <p>188</p>
+                    <h2>第3名: 88元现金红包</h2>
+                </li>
+                <li>
+                    <p>28</p>
+                    <h2>第4~10名: 28元现金红包</h2>
+                </li>
+            </ul>
+            <div class="active_rank">
+                <h2>活动排行榜</h2>
+                <ul>
+                    <li class="active">第一周</li>
+                    <li>第二周</li>
+                    <li>第三周</li>
+                    <li>第四周</li>
+                </ul>
+                <div class="rank_table">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="number"></th>
+                                <th class="user"></th>
+                                <th class="invest_money"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <!--<tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>
+                            <tr>
+                                <td class="num"></td>
+                                <td>用户：efubang155****5555</td>
+                                <td>投资累计分数：18,000,000</td>
+                            </tr>-->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="invest_box">
+                <p>本周我的投资累计分数：1,000,000</p>
+                <div class="invest_button"><a href="#">立即投资</a></div>
+                <div class="clear"></div>
+            </div>
+            <div class="log">查看我的投资明细以及累计分数记录</div>
+            <div class="active_detail active_one_detail">
+                <p>特别说明：</p>
+                <p>1、活动期间，投资之后即可获得相应投资分数，分数计算方式（投资金额×投资天数÷1000=投资分数）。</p>
+                <p>2、投资任何标的任意金额（100元起投），即可获得相应分数。在活动页面可以查看个人分数以及总排行榜前十名。</p>
+                <p>3、本活动每周进行一次分数统计，2016年12月16日00:00开始--12月22日23:59结束分数将会自动清零，12月22日00:00开始下一轮投资分数计数。</p>
+                <p>4、本活动奖励在每一轮积分统计结束之后1-5个工作日发放至e富邦账户。</p>
+                <p>5、此项优惠活动只在活动期间有效，每周刷新一次排行榜，活动时间2016年12月16日--2017年1月15日期间内排行榜有四轮刷新。</p>
+                <p>6、活动期间产生的任何提现费用均由用户自理。</p>
+                <p>7、本活动最终解释权归e富邦所有，如有疑问请拨打客服电话4000-33-7997</p>
+            </div>
+        </div>
+
+        <div class="active_list active_two">
+            <div class="list_number">2</div>
+            <img src="./images/list02_text.png" alt="红包奖励活动" class="list_title_text">
+            <div class="active_time">
+                <img src="./images/text_bj.png" alt="加到你欲罢不能" class="time_img01">
+                <p>活动时间：<span>2016年12月16日--2017年1月15日</span></p>
+                <p>活动对象：完成实名注册用户</p>
+                <p>活动规则：活动期间，全场标的均加息</p>
+                <img src="./images/number_bj.png" alt="2%" class="time_img02">
+            </div>
+            <div class="active_detail active_one_detail">
+                <p>特别说明：</p>
+                <p>1、此项优惠活动只在活动期间有效。</p>
+                <p>2、活动期间，全场标的均加息2%。</p>
+                <p>3、凡是e富邦注册用户即可参加，100元起投。</p>
+                <p>4、活动期间产生的任何提现费用均由用户自理。</p>
+                <p>5、本活动最终解释权归e富邦所有，如有疑问请拨打客服电话4000-33-7997。</p>
+            </div>
+        </div>
+    </div>
+
+    <!--end-->
+
+
+    <div id="footer">
+        <div class="footer-inner">
+            <div class="footer_l">
+                <ul class="company-map">
+                    <li>
+                        <a href="#">
+                            关于我们
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            媒体报道
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            公司简介
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            帮助中心
+                        </a>
+                    </li>
+                    <li style="border:none;">
+                        <a href="#">
+                            加入我们
+                        </a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+                <ul class="back-links">
+                    <li>
+                        <a href="#">
+                            友情链接：
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            网贷中心
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            投友贷
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            网贷天眼
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            融途网
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            网贷俱乐部
+                        </a>
+                    </li>
+                </ul>
+                <div class="clear"></div>
+            </div>
+            <div class="footer_r">
+                <h3>
+                    人工服务
+                </h3>
+                <ul class="contact">
+                    <li>
+                        客服电话：400-33-7997
+                    </li>
+                    <li>
+                        官方QQ群1：3252730453
+                    </li>
+                    <li>
+                        官方QQ群2：329985666
+                    </li>
+                    <li>
+                        客服邮箱：kf@efubang.com
+                    </li>
+                    <li>
+                        在线客服（9:00-18:00）
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <div class="footer-pic">
+                <a href="#">
+                    <img src="images/public-head/footer-pic01.png" alt="行业验证"></a>
+                <a href="#">
+                    <img src="images/public-head/footer-pic02.png" alt="360验证"></a>
+                <div class="clear"></div>
+            </div>
+            <div class="copy">
+                ©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

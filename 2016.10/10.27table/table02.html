@@ -1,0 +1,172 @@
+<!DOCTYPE HTML>
+<html class="no-js" lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>表格02</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: "微软雅黑";
+        }
+        
+        .box {
+            width: 934px;
+            margin: 0 auto;
+        }
+        
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+        
+        tr {
+            border: 1px solid #e3e3e3;
+        }
+        
+        th {
+            font-size: 18px;
+            line-height: 45px;
+            color: #666;
+            font-weight: normal;
+            width: 228px;
+            padding-left: 20px;
+            text-align: left;
+        }
+        
+        td {
+            font-size: 18px;
+            line-height: 45px;
+            color: #666;
+            font-weight: normal;
+            width: 776px;
+            text-align: left;
+        }
+        
+        tr th[rowspan] {
+            width: 156px;
+            padding: 0;
+            text-align: center;
+        }
+        
+        .box {
+            margin-bottom: 34px;
+        }
+        
+        .title {
+            width: 194px;
+            height: 52px;
+            background-color: #4cb0ae;
+            border-radius: 10px 10px 0 0;
+            line-height: 52px;
+            text-align: center;
+            color: #fff;
+            font-weight: bold;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="title">
+            项目信息
+        </div>
+        <table>
+            <tr>
+                <!--<th  rowspan="6">项目信息</th>-->
+                <th>预期年化收益率</th>
+                <td>12%</td>
+            </tr>
+            <tr>
+                <th>最低投资</th>
+                <td>100</td>
+            </tr>
+            <tr>
+                <th>还款方式</th>
+                <td>一次性还本付息</td>
+            </tr>
+            <tr>
+                <th>计息日</th>
+                <td>投资满额次日起计息</td>
+            </tr>
+            <tr>
+                <th>项目类型</th>
+                <td>债权转让</td>
+            </tr>
+            <tr>
+                <th>债权人</th>
+                <td>成**</td>
+            </tr>
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">
+            借款人信息
+        </div>
+        <table>
+            <tr>
+                <!--<th rowspan="11">用户信息</th>-->
+                <th>姓名</th>
+                <td>邵**</td>
+            </tr>
+            <tr>
+                <th>性别</th>
+                <td>男</td>
+            </tr>
+            <tr>
+                <th>籍贯</th>
+                <td>河南省</td>
+            </tr>
+            <tr>
+                <th>不良记录</th>
+                <td>无</td>
+            </tr>
+
+        </table>
+    </div>
+    <div class="box">
+        <div class="title">
+            抵押物信息
+        </div>
+        <table>
+            <tr>
+                <th>车辆品牌</th>
+                <td>宾利汽车</td>
+            </tr>
+            <tr>
+                <th>型号</th>
+                <td>小型轿车</td>
+            </tr>
+            <tr>
+                <th>数量</th>
+                <td>1 辆</td>
+            </tr>
+            <tr>
+                <th>车牌号</th>
+                <td>京QR***</td>
+            </tr>
+            <tr>
+                <th>发动机号</th>
+                <td>CKH*********</td>
+            </tr>
+            <tr>
+                <th>抵押信息</th>
+                <td>双押</td>
+            </tr>
+
+        </table>
+    </div>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("table tr:odd").css("background-color", "#e4e4e4")
+        })
+    </script>
+</body>
+
+</html>
