@@ -1,0 +1,106 @@
+#love_main {
+    height: 2500px;
+    background: url('../images/love_main_bj.jpg') no-repeat center top;
+}
+
+.love_active_rule {
+    width: 755px;
+    margin: 0 auto;
+    padding-top: 1202px;
+}
+
+dt,
+dd {
+    display: inline-block;
+    max-width: 593px;
+    font-size: 28px;
+    line-height: 43px;
+    color: #e30056;
+    vertical-align: top;
+    letter-spacing: 2px;
+}
+
+.love_active_rule span {
+    font-family: "宋体";
+    font-style: italic;
+}
+
+.love_explain {
+    padding-top: 60px;
+    width: 755px;
+    margin: 0 auto;
+    padding-bottom: 146px;
+}
+
+.love_explain p {
+    font-size: 24px;
+    line-height: 100%;
+    color: #e30056;
+    text-align: left;
+    font-weight: bold;
+}
+
+.love_explain dl {
+    margin-top: 6px;
+    margin-left: 152px;
+}
+
+.love_explain dt,
+.love_explain dd {
+    display: inline-block;
+    font-size: 24px;
+    line-height: 36px;
+    color: #e30056;
+    max-width: 550px;
+}
+
+.button_invest {
+    width: 345px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.flower {
+    background: url(../images/flower.png) no-repeat center top;
+    width: 156px;
+    height: 172px;
+    position: absolute;
+    left: 79px;
+    top: 0;
+    z-index: 10;
+}
+
+.flower_bj {
+    position: absolute;
+    top: 25px;
+    left: 112px;
+    width: 97px;
+    height: 98px;
+    border-radius: 50%;
+    box-shadow: 0 0 5px 2px rgba(228, 121, 149, 0.5);
+    animation: flower_open 2s infinite ease-in-out;
+}
+
+@keyframes flower_open {
+    0% {
+        box-shadow: 0 0 5px 2px rgba(228, 121, 149, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 176px 2px rgba(228, 121, 149, 0.9);
+    }
+    100% {
+        box-shadow: 0 0 5px 2px rgba(228, 121, 149, 0.5);
+    }
+}
+
+.button_invest a {
+    position: absolute;
+    display: block;
+    text-align: center;
+    font-family: "宋体";
+    font-size: 40px;
+    color: #e30056;
+    z-index: 11;
+    line-height: 172px;
+    font-weight: bolder;
+}
