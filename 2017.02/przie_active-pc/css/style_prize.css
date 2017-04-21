@@ -1,0 +1,455 @@
+@charset 'utf-8';
+#prize_banner {
+    height: 848px;
+    background: url(../images/banner.png) no-repeat center top;
+}
+
+
+/* active1-start */
+
+.active1 {
+    height: 636px;
+    background: url('../images/active1_bj.png') no-repeat center top;
+}
+
+.active1 h1 {
+    width: 223px;
+    height: 57px;
+    margin-bottom: 43px;
+    background: url(../images/active1_title.png) no-repeat center center;
+}
+
+.active1 .text {
+    width: 190px;
+    height: 44px;
+    margin: 0 auto;
+    margin-bottom: 56px;
+}
+
+.active_inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.interest {
+    height: 437px;
+}
+
+.interest dl {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+
+.interest dt {
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background-color: #3f5686;
+}
+
+.interest dd {
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    color: #fff;
+    background-color: #476094;
+}
+
+.interest dd span {
+    font-size: 48px;
+    line-height: 88px;
+    color: #fffe99;
+}
+
+
+/* active2-start */
+
+.active2 {
+    background-color: #1f2d4d;
+}
+
+.active2 h1 {
+    width: 223px;
+    height: 57px;
+    margin-bottom: 43px;
+    background: url(../images/active2_title.png) no-repeat center center;
+}
+
+.active2_content {
+    height: 790px;
+}
+
+.active2_content .left {
+    float: left;
+}
+
+.active2_content .right {
+    position: relative;
+    float: right;
+    width: 385px;
+}
+
+#msg_box {
+    position: absolute;
+    top: 85px;
+    right: -260px;
+}
+
+.prize_rote {
+    width: 590px;
+    height: 590px;
+}
+
+.active2_content .left button {
+    display: block;
+    width: 444px;
+    height: 68px;
+    margin: 0 auto;
+    margin-top: 37px;
+    cursor: pointer;
+    outline: none;
+    background: url(../images/ten_bj.png) no-repeat center top;
+}
+
+.active2_content .left p {
+    font-size: 18px;
+    line-height: 54px;
+    text-align: center;
+    color: #fffaac;
+}
+
+.time_log {
+    font-size: 24px;
+    line-height: 54px;
+    width: 366px;
+    height: 52px;
+    margin-bottom: 38px;
+    padding-left: 19px;
+    color: #fffddc;
+    background: url(../images/title_bj.png) no-repeat center top;
+}
+
+.time_log span {
+    font-size: 30px;
+    padding: 0 5px;
+    color: #dd4545;
+}
+
+.integral_convert p {
+    font-size: 18px;
+    line-height: 100%;
+    margin-top: 54px;
+    text-align: right;
+    color: #fffddc;
+}
+
+.input_box label {
+    font-size: 18px;
+    line-height: 43px;
+    margin-right: 13px;
+    color: #fffddc;
+}
+
+.input_box input {
+    font-size: 18px;
+    line-height: 43px;
+    width: 270px;
+    padding-left: 10px;
+    color: #fffddc;
+    border: none;
+    outline: none;
+    background-color: #476094;
+}
+
+.input_box button {
+    display: block;
+    float: right;
+    width: 121px;
+    height: 46px;
+    margin-top: 40px;
+    cursor: pointer;
+    outline: none;
+    background: url(../images/sure.png) no-repeat center top;
+}
+
+.input_box {
+    text-align: right;
+}
+
+.przie_log .title {
+    width: 443px;
+    margin: 0 auto;
+}
+
+.prize_list {
+    height: 228px;
+    margin-top: 43px;
+}
+
+.left_control {
+    float: left;
+    background: url(../images/left.png) no-repeat 20px 30px;
+}
+
+.prize_list .control {
+    width: 77px;
+    height: 100px;
+    cursor: pointer;
+}
+
+.right_control {
+    float: left;
+    background: url(../images/right.png) no-repeat 20px 30px;
+}
+
+.prize_list .list {
+    position: relative;
+    float: left;
+    overflow: hidden;
+    width: 870px;
+    height: 151px;
+}
+
+.prize_list ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.prize_list li {
+    float: left;
+    width: 174px;
+    text-align: center;
+}
+
+.prize_list li .img_bj {
+    width: 174px;
+    height: 115px;
+}
+
+.prize_list li img {
+    display: inline-block;
+    text-align: center;
+}
+
+.prize_list li span {
+    font-size: 14px;
+    line-height: 18px;
+    display: block;
+    color: #fff;
+}
+
+.prize_rule {
+    height: 206px;
+}
+
+.prize_rule dl {
+    float: left;
+    width: 49%;
+    margin-right: 1px;
+}
+
+.prize_rule dt {
+    font-size: 18px;
+    line-height: 46px;
+    text-align: center;
+    color: #fff;
+    background-color: #3f5686;
+}
+
+.prize_rule dd {
+    font-size: 14px;
+    line-height: 34px;
+    height: 119px;
+    padding-left: 20px;
+    color: #fff;
+    background-color: #476094;
+}
+
+.explain {
+    font-weight: bold;
+    padding-bottom: 112px;
+}
+
+.explain p {
+    font-size: 16px;
+    line-height: 58px;
+    color: #fff;
+}
+
+.explain li {
+    font-size: 16px;
+    line-height: 36px;
+    color: #fff;
+}
+
+
+/* prize_popup-start */
+
+#prize_popup {
+    position: fixed;
+    z-index: 10;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+
+/* ten */
+
+.prize_popup_content_ten {
+    /*background: red;*/
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 880px;
+    height: 622px;
+    margin-top: -310px;
+    margin-left: -440px;
+    background: url(../images/popup.png) no-repeat center center;
+}
+
+.close_popup_ten {
+    position: absolute;
+    /*background: red;*/
+    z-index: 10;
+    top: 163px;
+    right: 36px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.prize_popup_content_ten .popup_list {
+    height: 292px;
+    padding-top: 300px;
+}
+
+.prize_popup_content_ten .popup_list ul {
+    float: left;
+    width: 600px;
+    height: 292px;
+    padding-left: 65px;
+}
+
+.prize_popup_content_ten .popup_list li {
+    float: left;
+    min-height: 140px;
+    margin-right: 20px;
+}
+
+.prize_popup_content_ten .popup_list .other {
+    float: left;
+    padding-left: 40px;
+}
+
+.prize_popup_content_ten .popup_list .other p {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 53px;
+    margin-bottom: 10px;
+    color: #e3022f;
+}
+
+
+/* one */
+
+.prize_popup_content_one {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 673px;
+    height: 622px;
+    margin-top: -310px;
+    margin-left: -336px;
+    background: url(../images/popup_one.png) no-repeat center center;
+}
+
+.close_popup_one {
+    position: absolute;
+    /*background: red;*/
+    z-index: 10;
+    top: 169px;
+    right: 23px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.prize_popup_content_one .popup_list {
+    height: 292px;
+    padding-top: 340px;
+    padding-left: 30px;
+    text-align: center;
+}
+
+.prize_popup_content_one .prize_img {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+
+
+/*没有奖励消息弹窗*/
+
+.prize_popup_content_msg {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    width: 438px;
+    min-height: 136px;
+    margin-top: -108px;
+    margin-left: -219px;
+    border: 3px solid #000;
+    border-radius: 4px;
+    background-color: #ffd600;
+    background-size: 100% 100%;
+}
+
+.close_popup_msg {
+    position: absolute;
+    z-index: 10;
+    top: 5px;
+    right: 7px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: url('../images/close_popup.png') no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.prize_popup_content_msg .popup_list {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 40px;
+    text-align: center;
+    color: #010101;
+}
+
+.prize_popup_content_msg .popup_list a {
+    text-align: center;
+}
+/* 气泡2.20 */
+.packet {
+    width: 86px;
+    height: 98px;
+    position: relative;
+    left: 383px;
+    top: -223px;
+}
+.packet_img{
+    position: relative;
+    z-index: 10;
+    cursor:pointer;
+}
+.packet_text{
+    width: 0px;
+    height: 96px;
+    background: url(../images/packet_text.png) no-repeat center top;
+    position: absolute;
+    right:43px;
+    top: 0;
+}

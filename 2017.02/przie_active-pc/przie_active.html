@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>幸运大抽奖</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/public-head-footer.css">
+    <link rel="stylesheet" href="css/style_prize.css">
+    <!-- 转盘css -->
+    <link rel="stylesheet" href="css/prize_rotate.css">
+</head>
+
+<body>
+    <div id="prize_popup">
+    </div>
+    </div>
+    <div id="doc-container">
+        <div id="prize_banner"></div>
+        <div id="prize_main">
+            <div class="active1">
+                <div class="active_inner">
+                    <h1></h1>
+                    <img src="images/text.png" alt="全场加息" class="text">
+                    <div class="interest">
+                        <dl>
+                            <dt>1月标</dt>
+                            <dd>原收益8.4%+1%
+                                <br><span>9.4%</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>3月标</dt>
+                            <dd>原收益9.6%+1%
+                                <br><span>10.6%</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>6月标</dt>
+                            <dd>原收益8.4%+1%
+                                <br><span>9.4%</span></dd>
+                        </dl>
+                        <dl>
+                            <dt>12月标</dt>
+                            <dd>原收益9.6%+1%
+                                <br><span>10.6%</span></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+            <div class="active2">
+                <div class="active_inner">
+                    <h1></h1>
+                    <div class="active2_content">
+                        <div class="left">
+                            <div class="prize_rote">
+                                <div class="db_zhuan-cc">
+                                    <div id="outer" class="db_zhuan">
+                                        <img alt="" src="./images/e-zhuan.png">
+                                    </div>
+                                    <div id="inner" class="db_zhuan_center">
+                                        <img alt="" src="./images/e-zhi.png">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" id="ten_button"></button>
+                            <p>（每获取一次十连抽机会，再额外赠送一次抽奖机会。）</p>
+                        </div>
+                        <div class="right">
+                            <p class="time_log">您目前拥有抽奖机会<span id="time_num">0</span>次</p>
+                            <img src="images/number_rule.png" alt="积分兑换规则">
+                            <div class="integral_convert">
+                                <p>当前拥有<span id="integral_number">520</span>积分</p>
+                                <div class="input_box">
+                                    <label for="num">兑换数量</label>
+                                    <input type="text" name="num" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
+                                    <button type="button"></button>
+                                </div>
+                            </div>
+                            <div class="packet">
+                                <img src="images/packet.png" alt="锦囊" class="packet_img">
+                                <div class="packet_text"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="przie_log">
+                        <img src="images/prize_log.png" alt="中奖记录" class="title">
+                        <div class="prize_list">
+                            <span class="left_control control"></span>
+                            <div class="list">
+                                <ul>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_10.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_20.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_500.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_200.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_huan.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_20.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                    <li>
+                                        <div class="img_bj">
+                                            <img src="images/prize_20.png" alt="奖品"></div>
+                                        <span>2017/02/16<br>12:25:05</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <span class="right_control control"></span>
+                        </div>
+                    </div>
+                    <div class="prize_rule">
+                        <dl>
+                            <dt>抽奖分数获得方式</dt>
+                            <dd>投资即可获得投资分数，分数可进行累计。投资分数每满36分即可抽奖一次。
+                                <br>（投资分数=[投资金额*投资天数]÷1000），
+                                <br>（月标以1个月为30天为计算单位）。
+                            </dd>
+                        </dl>
+                        <dl>
+                            <dt>抽奖次数获得方式</dt>
+                            <dd>投资完成后，在活动页面可查看当前投资分数，点击兑换抽奖按钮，
+                                <br> 输入抽奖次数，确认兑换即可进行抽奖。
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="explain">
+                        <p>特别说明</p>
+                        <ul>
+                            <li>1、此项优惠活动仅限活动期间有效。此项优惠活动仅限月标有效。</li>
+                            <li>2、加息活动和大转盘活动可同时参加，但不与其他任何活动叠加。如有在投资过程中使用红包进行投资，则该笔投资金额分数为0。</li>
+                            <li>3、100元起投，不限制投资金额。</li>
+                            <li>4、活动期间，现金、红包奖励直接发放至获奖账户，实物奖励以邮寄的方式寄送给用户（中奖之后的3个工作日内客服联系用户获得配送地址）。</li>
+                            <li>5、红包使用规则：投资金额大于等于1500元即可使用（不限标的）。红包有效期30天。</li>
+                            <li>6、活动期间产生的任何提现费用及手续费均由用户自理。</li>
+                            <li>7、刷奖、冒用他人身份证、银行卡者一经核实，取消活动资格，e富邦有权在不事前通知的情况下对其所得奖励不予承兑。</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src='./lib/jquery-1.11.1.min.js'></script>
+    <script src='js/prize_popup.js'></script>
+    <script src='js/prize.js'></script>
+</body>
+
+</html>

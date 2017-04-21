@@ -1,0 +1,21 @@
+@charset 'utf-8';
+.db_zhuan-cc {
+    position: relative;
+}
+
+.db_zhuan {
+    width: 589px;
+    height: 589px;
+}
+
+.db_zhuan_center {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 108px;
+    height: 146px;
+    margin-top: -94px;
+    margin-left: 237px;
+    cursor: pointer;
+}
+
