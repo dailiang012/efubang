@@ -1,0 +1,492 @@
+/*第一步*/
+
+#banner {
+    height: 437px;
+    background: url('../../images/borrow/borrow-banner.png') no-repeat center top;
+}
+
+.step-one {
+    width: 1024px;
+    margin: 0 auto;
+    height: 439px;
+}
+
+.step-one-content {
+    width: 530px;
+    float: right;
+    margin-top: 15px;
+    height: 404px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 18px;
+    .left-side {
+        display: inline-block;
+        width: 120px;
+        font-size: 28px;
+        color: #007aff;
+        line-height: 46px;
+        font-weight: bolder;
+        padding-top: 112px;
+        text-align: center;
+        span {
+            font-size: 50px;
+            color: #fff;
+        }
+    }
+    .right-side {
+        width: 404px;
+        display: inline-block;
+        vertical-align: top;
+        padding-top: 27px;
+        input {
+            width: 0;
+            height: 0;
+            opacity: 0;
+        }
+    }
+    .choice_pic {
+        float: left;
+        width: 16px;
+        height: 16px;
+        margin-top: 22px;
+        margin-right: 7px;
+        border: 2px solid #024996;
+        border-radius: 50%;
+        .choice_true {
+            display: none;
+            width: 16px;
+            height: 16px;
+            margin: 0 auto;
+            border-radius: 50%;
+            background-color: #007aff;
+        }
+    }
+    .ask {
+        font-size: 24px;
+        color: #007aff;
+        line-height: 100%;
+    }
+    .option_text {
+        font-size: 22px;
+        color: #fff;
+        line-height: 100%;
+        cursor: pointer;
+    }
+}
+
+.question-type {
+    padding-top: 24px;
+    .option_item {
+        min-width: 130px;
+        display: inline-block;
+    }
+}
+
+#main {
+    padding-top: 30px;
+}
+
+.step-where {
+    height: 50px;
+    background-color: #e6e6e6;
+    .step-where-inner {
+        width: 1142px;
+        margin: 0 auto;
+    }
+}
+
+
+/*第二步*/
+
+.form-part {
+    padding-top: 60px;
+}
+
+.step-two-content {
+    width: 1024px;
+    margin: 0 auto;
+    height: 808px;
+}
+
+.step-two .step-where-inner {
+    height: 100%;
+    background: url('../../images/borrow/step.png') no-repeat 0 0;
+}
+
+.step-two-content {
+    margin-top: 30px;
+}
+
+.step-title-public {
+    .step-title {
+        text-align: center;
+        width: 100%;
+        line-height: 100px;
+        color: #fff;
+        font-size: 30px;
+        text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+        background-color: #007aff;
+        letter-spacing: 25px;
+    }
+    p {
+        text-align: center;
+        font-size: 18px;
+        color: #999;
+        line-height: 100%;
+        padding-top: 33px;
+    }
+}
+
+.step-two {
+    padding-top: 77px;
+    span {
+        display: inline-block;
+        vertical-align: top;
+    }
+    .left {
+        min-width: 149px;
+    }
+    .verticalMiddle {
+        vertical-align: middle;
+        vertical-align: -webkit-baseline-middle;
+        width: 244px;
+    }
+    .form-part-left {
+        width: 50%;
+        float: left;
+    }
+    .form-part-right {
+        float: right;
+        padding-left: 16px;
+    }
+    label {
+        font-size: 18px;
+        color: #1a1a1a;
+        line-height: 40px;
+    }
+    input[type='text'],
+    input[type='number'] {
+        border-bottom: 1px solid #b3b3b3;
+        width: 315px;
+        padding: 0 10px;
+        height: 40px;
+        font-size: 18px;
+        color: #1a1a1a;
+        line-height: 40px;
+    }
+    textarea {
+        border: 1px solid #b3b3b3;
+        width: 323px;
+        padding: 5px;
+        height: 100px;
+        font-size: 18px;
+        color: #1a1a1a;
+    }
+    span[class='right'] {
+        a {
+            color: #fff;
+            background-color: #007aff;
+            width: 238px;
+            height: 38px;
+            display: block;
+            text-align: center;
+            line-height: 38px;
+        }
+    }
+    .left {
+        font-size: 18px;
+        color: #1a1a1a;
+        line-height: 40px;
+    }
+}
+
+.form-part-left>div,
+.form-part-right>div {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.step-submit {
+    text-align: center;
+    margin-bottom: 30px;
+    input {
+        width: 346px;
+        height: 36px;
+        text-align: center;
+        background-color: #007aff;
+        color: #fff;
+        line-height: 36px;
+        font-size: 18px;
+        cursor: pointer;
+    }
+}
+
+.form-part-right {
+    .upFile {
+        width: 345px;
+        height: 36px;
+        position: relative;
+        background-color: #007aff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 36px;
+        color: #fff;
+    }
+    #file {
+        width: 345px;
+        height: 36px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+#preview {
+    border: 1px solid #999;
+    margin-top: -25px;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.file-up {
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+    .hint {
+        color: #007aff;
+        line-height: 36px;
+        font-size: 16px;
+        text-align: right;
+    }
+}
+
+#fileName {
+    height: 20px;
+    width: 100%;
+    line-height: 20px;
+    font-size: 16px;
+    color: #1a1a1a;
+}
+
+#deleteFile {
+    margin-top: 10px;
+    width: 109px;
+    height: 27px;
+    background-color: #007aff;
+    color: #fff;
+    font-size: 16px;
+    line-height: 27px;
+}
+
+
+/*第三步*/
+
+.step-three {
+    height: 1122px;
+    .step-where-inner {
+        height: 100%;
+        background: url('../../images/borrow/step.png') no-repeat 0 -50px;
+    }
+    .step-three-content {
+        width: 1024px;
+        margin: 0 auto;
+        padding-top: 30px;
+    }
+    .form-part-left {
+        width: 50%;
+        float: left;
+        .label-key-lang {
+            width: 148px;
+        }
+    }
+    .form-part-right {
+        width: 50%;
+        float: right;
+        .label-key-special-width {
+            width: 100px;
+        }
+    }
+    .label-key {
+        font-size: 18px;
+        line-height: 40px;
+        color: #1a1a1a;
+        width: 130px;
+        display: inline-block;
+    }
+    .font-style-public {
+        font-size: 18px;
+        line-height: 26px;
+        color: #666;
+    }
+    input[type='text'] {
+        font-size: 18px;
+        color: #666;
+        line-height: 40px;
+        border-bottom: 1px solid #666;
+    }
+    textarea {
+        font-size: 18px;
+        color: #666;
+        line-height: 24px;
+        border: 1px solid #666;
+    }
+    label {
+        vertical-align: top;
+    }
+    .next-level {
+        width: 349px;
+        display: inline-block;
+        vertical-align: top;
+        input {
+            width: 243px;
+        }
+    }
+    .next-level>div {
+        margin-bottom: 20px;
+        position: relative;
+    }
+    input[name='item-time'] {
+        width: 42px;
+        padding: 0 5px;
+    }
+    .long-text {
+        width: 342px;
+        display: inline-block;
+        vertical-align: top;
+    }
+    textarea[name='hint'] {
+        padding: 5px;
+        width: 319px;
+        height: 86px;
+    }
+    textarea[name='money-msg'] {
+        padding: 5px;
+        width: 232px;
+        height: 137px;
+    }
+    input[name='first-repay'],
+    input[name='second-repay'] {
+        padding: 0 5px;
+        width: 202px;
+        height: 40px;
+    }
+    .role-btn {
+        display: inline-block;
+        text-align: center;
+        width: 350px;
+        height: 36px;
+        background-color: #007aff;
+        font-size: 18px;
+        color: #fff;
+        line-height: 36px;
+    }
+}
+
+.step-two .tip {
+    min-width: 327px;
+    height: 20px;
+    position: absolute;
+    left: 153px;
+    bottom: -20px;
+    color: red;
+    font-size: 12px;
+    line-height: 20px; // background: red;
+}
+
+.step-three .tip {
+    min-width: 327px;
+    height: 20px;
+    position: absolute;
+    left: 134px;
+    bottom: -20px;
+    color: red;
+    font-size: 12px;
+    line-height: 20px; // background: red;
+}
+
+.step-three .hint-textarea .tip {
+    min-width: 327px;
+    height: 20px;
+    position: absolute;
+    left: 153px;
+    bottom: -20px;
+    color: red;
+    font-size: 12px;
+    line-height: 20px; // background: red;
+}
+
+.step-three .next-level .tip {
+    min-width: 242px;
+    height: 20px;
+    position: absolute;
+    left: 105px;
+    bottom: -20px;
+    color: red;
+    font-size: 12px;
+    line-height: 20px; // background: red;
+}
+
+.step-three .money-from .tip {
+    min-width: 213px;
+    height: 20px;
+    position: absolute;
+    left: 134px;
+    bottom: -20px;
+    color: red;
+    font-size: 12px;
+    line-height: 20px;
+    // background: red;
+}
+
+
+/*完成*/
+
+.step-complete .step-where-inner {
+    height: 100%;
+    background: url('../../images/borrow/step.png') no-repeat 0 -100px;
+}
+
+.step-complete-content {
+    width: 610px;
+    height: 111px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #007aff;
+    color: #fff;
+    font-size: 30px;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+    letter-spacing: 25px;
+    margin-top: 80px;
+    line-height: 111px;
+    margin-bottom: 137px;
+    position: relative;
+}
+
+.seal-none {
+    width: 173px;
+    height: 144px;
+    background: url('../../images/borrow/complete.png') no-repeat left top;
+    display: none;
+    position: absolute;
+    right: -105px;
+    top: 15px;
+}
+
+.seal-block {
+    width: 173px;
+    height: 144px;
+    background: url('../../images/borrow/complete.png') no-repeat left top;
+    display: block;
+    position: absolute;
+    right: -105px;
+    top: 15px;
+}

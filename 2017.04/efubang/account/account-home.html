@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>我的账户</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/account-menu.css">
+    <link rel="stylesheet" type="text/css" href="../css/account/account-home.css">
+</head>
+
+<body>
+    <!--bang-bar-->
+    <div id="bang-bar">
+        <div class="bang-bar-container">
+            <div class="left-content">
+                <div class="mobile"><span></span>咨询热线 : 4000-33-7997</div>
+                <div class="weChat"><span></span>微信公众账号</div>
+            </div>
+            <div class="right-content">
+                <div id="login-register">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <div id="header">
+        <div class="header-container">
+            <div id="bang-logo">
+                <a href="#"></a>
+            </div>
+            <ul id="bang-nav">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">我要理财</a>
+                </li>
+                <li>
+                    <a href="#">我要借款</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-active">我的账户</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+
+        <div class="main-inner">
+            <div id="account-menu">
+                <div class="page-title">
+                    我的e富邦首页
+                </div>
+                <ul class="menu-list">
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                我的账户
+                            </div>
+                            <!--"active-logo-close"和"active-logo-close"-->
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li class="on"><span><a href="#">资金记录</a></span></li>
+                                <li><span><a href="#">借款记录</a></span></li>
+                                <li><span><a href="#">银行账户</a></span></li>
+                                <li><span><a href="#">账户充值</a></span></li>
+                                <li><span><a href="#">账户提现</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                资金管理
+                            </div>
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li class="on"><span><a href="#">招标中</a></span></li>
+                                <li><span><a href="#">未还款</a></span></li>
+                                <li><span><a href="#">已收款</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu red-pack">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                <a href="#">红包</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                基本设置
+                            </div>
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li class="on"><span><a href="#">个人资料</a></span></li>
+                                <li><span><a href="#">安全中心</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu ivite">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                <a href="#">邀请好友</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="user">
+
+                    <div class="user-information">
+                        <div class="pic"></div>
+                        <div class="log-list">
+                            <div class="name">efb13520267552
+                            </div>
+                            <div class="sign">
+                                <button type="">进入钱多多</button>
+                                <ul class="sign-list">
+                                    <li class="vip-true"></li>
+                                    <li class="phone-true"></li>
+                                    <li class="email-true"></li>
+                                    <li class="person-true"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="msg-false">
+                    </div>
+                </div>
+                <div class="money-information">
+                    <div class="money-total">
+
+                        <div class="money-total-title">
+                            <div class="item-title">
+                                <span></span> 账户总额
+                            </div>
+                            <div class="total-num">
+                                ¥100000.00
+                            </div>
+                        </div>
+
+                        <div class="shuju">
+                            <div class="shuji_l">
+                                <div id="canvas-holder">
+                                    <canvas id="chart-area" width="212" height="212" style="width: 212px; height: 212px;">
+                                    </canvas>
+                                </div>
+                            </div>
+                            <ul class="shuji_r">
+                                <li class="balance">
+                                    <h4>可用余额：￥<span id="sp1">10</span></h4>
+                                </li>
+                                <li class="freeze">
+                                    <h4>冻结总额：￥<span id="sp2">20</span></h4>
+                                </li>
+                                <li class="await">
+                                    <h4>待收总额：￥<span id="sp3">30</span></h4>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="total-right">
+                        <div class="earnings">
+                            <div class="earnings-total">
+
+                                <div class="item-title">
+                                    <span></span> 累计收益
+                                </div>
+                                <div class="earning-num">¥100000.00</div>
+                            </div>
+                            <div class="await-earnings">
+
+                                <div class="item-title">
+                                    <span></span> 待收收益
+                                </div>
+                                <div class="earning-num">¥100000.00</div>
+                            </div>
+                        </div>
+                        <div class="use-balance">
+                            <p>可用余额：<span>￥10000.00</span></p>
+                            <div class="btn-grout">
+                                <button type="button" class="push-money">充值</button>
+                                <button type="button" class="pop-money">提现</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="money-log earning-log">
+                    <div class="money-title">
+                        <div class="item-title">
+                            <span></span> 收益记录
+                        </div>
+                        <button type="button">去投资</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>产品名称</th>
+                                <th>投资金额</th>
+                                <th>投资时间</th>
+                                <th>总收益</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>e担保-HSX-MJ-170310</td>
+                                <td>1000</td>
+                                <td>2017/01/20</td>
+                                <td>2000</td>
+                            </tr>
+                            <tr>
+                                <td>e担保-HSX-MJ-170310</td>
+                                <td>1000</td>
+                                <td>2017/01/20</td>
+                                <td>2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="corner">
+                        <a href="#">理财记录</a>
+                    </div>
+                </div>
+                <div class="money-log lend-log">
+                    <div class="money-title">
+                        <div class="item-title">
+                            <span></span> 借款记录
+                        </div>
+                        <button type="button">去借款</button>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>借款名称</th>
+                                <th>借款金额</th>
+                                <th>借款时间</th>
+                                <th>还款日期</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>e担保-HSX-MJ-170310</td>
+                                <td>1000</td>
+                                <td>2017/01/20</td>
+                                <td>2000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="corner">
+                        <a href="#">借款记录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-left">
+                    <ul class="company-map">
+                        <li>
+                            <a href="#">关于我们</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">公司动态</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站公告</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">服务协议</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站声明</a>
+                        </li>
+                    </ul>
+                    <div class="back-links">
+                        <p>友情链接：</p>
+                        <ul>
+                            <li>
+                                <a href="#">和讯p2p</a>
+                            </li>
+                            <li>
+                                <a href="#">民生银行</a>
+                            </li>
+                            <li>
+                                <a href="#">双乾支付</a>
+                            </li>
+                            <li>
+                                <a href="#">剃刀金融</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷之家</a>
+                            </li>
+                            <li>
+                                <a href="#">极客网</a>
+                            </li>
+                            <li>
+                                <a href="#">融途网</a>
+                            </li>
+                            <li>
+                                <a href="#">投友界</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷中心</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <span>人工服务</span>
+                    <ul class="contact">
+                        <li>客服电话：400-33-7997</li>
+                        <li>官方QQ群1：3252730453</li>
+                        <li>官方QQ群2：329985666</li>
+                        <li>客服邮箱：kf@efubang.com</li>
+                        <li>在线客服（9:00-18:00）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-pic">
+                <a href="#" class="pic0"></a>
+                <a href="#" class="pic1"></a>
+            </div>
+            <p class="copyright">©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1</p>
+        </div>
+    </div>
+    <script src="../js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../js/lib/jquery.SuperSlide.2.1.1.js"></script>
+    <script src="../js/lib/char.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/account-common.js"></script>
+
+    <script src="../js/account/account-home.js"></script>
+</body>
+
+</html>

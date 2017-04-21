@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>我要借款</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/borrow/borrow.css">
+</head>
+
+<body>
+    <!--bang-bar-->
+    <div id="bang-bar">
+        <div class="bang-bar-container">
+            <div class="left-content">
+                <div class="mobile"><span></span>咨询热线 : 4000-33-7997</div>
+                <div class="weChat"><span></span>微信公众账号</div>
+            </div>
+            <div class="right-content">
+                <div id="login-register">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <div id="header">
+        <div class="header-container">
+            <div id="bang-logo">
+                <a href="#"></a>
+            </div>
+            <ul id="bang-nav">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">我要理财</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-active">我要借款</a>
+                </li>
+                <li>
+                    <a href="#">我的账户</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main">
+        <form action="" id="step-form" method="POST" enctype="multipart/form-data">
+            <div id="banner">
+                <div class="step-one">
+                    <div class="step-one-content">
+                        <div class="left-side">
+                            第
+                            <br><span>1</span>
+                            <br>步
+                        </div>
+                        <div class="right-side">
+                            <div class="question">
+                                <p class="ask">请选择借款人身份</p>
+                                <div class="choice">
+                                    <div class="option_item">
+                                        <input type="radio" name="identity" value="我是自然人，我要借款" id="identity1">
+                                        <label for="identity1">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">我是自然人，我要借款</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="identity" value="我是法人/其他组织，我要借款" id="identity2">
+                                        <label for="identity2">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">我是法人/其他组织，我要借款</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="question question-type">
+                                <p class="ask">请选择借款标类型</p>
+                                <div class="choice">
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="抵押标" id="type1">
+                                        <label for="type1">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">抵押标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="信用标" id="type2">
+                                        <label for="type2">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">信用标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="担保标" id="type3">
+                                        <label for="type3">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">担保标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="净值标" id="type4">
+                                        <label for="type4">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">净值标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="秒还标" id="type5">
+                                        <label for="type5">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">秒还标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                    <div class="option_item">
+                                        <input type="radio" name="type" value="流转标" id="type6">
+                                        <label for="type6">
+                                            <div class="choice_pic">
+                                                <div class="choice_true"></div>
+                                            </div>
+                                            <div class="option_text">流转标</div>
+                                            <div class="clear"></div>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-two">
+                <div class="step-where">
+                    <div class="step-where-inner"></div>
+                </div>
+                <div class="step-two-content">
+                    <div class="step-title-public">
+                        <div class="step-title">借款人信息表</div>
+                        <p>以下内容均为必填项，请如实填写您的信息！</p>
+                    </div>
+                    <div class="form-part">
+                        <div class="form-part-left">
+                            <div>
+                                <span class="left"><label for="userName">借款人姓名：</label></span>
+                                <span class="right"><input type="text" name="userName" value="" placeholder="请输入姓名"></span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div>
+                                <span class="left"><label for="use">借款用途：</label></span>
+                                <span class="right"><textarea placeholder="请如实填写您的借款用途" name="use"></textarea></span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div>
+                                <span class="left"><label for="money-msg">资产信息：</label></span>
+                                <span class="right"><textarea  placeholder="如收入来源、房产、车产等资产" name="money-msg"></textarea></span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div>
+                                <span class="left verticalMiddle">借款人在本平台逾期次数：</span>
+                                <span class="right"><a href="#">点击查询我的逾期次数</a></span>
+                            </div>
+                            <div>
+                                <span class="left verticalMiddle">借款人在本平台逾期总金额：</span>
+                                <span class="right"><a href="#">点击查询我的逾期总金额</a></span>
+                            </div>
+                        </div>
+                        <div class="form-part-right">
+                            <div>
+                                <span class="left"><label for="userId">借款人证件号码：</label></span>
+                                <span class="right"><input type="text" name="userId" value="" placeholder="请输入身份证号" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')"></span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div>
+                                <span class="left"><label for="borrow-msg">其他借款信息：</label></span>
+                                <span class="right"><textarea rows="10" cols="30" placeholder="如银行贷款等" name="borrow-msg"></textarea></span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div class="file-up">
+                                <div class="left">
+                                    <label for="credit">信用信息：</label>
+                                </div>
+                                <div class="right">
+                                    <div class="upFile">
+                                        上传信用凭证
+                                        <input type="file" id="file" multiple="multiple">
+                                    </div>
+                                    <div class="hint">*支持.pdf、.jpg格式</div>
+                                    <div id="preview"></div>
+                                    <div id="fileName"></div>
+                                    <div>
+                                        <input type="button" name="" value="删除上传" id="deleteFile">
+                                    </div>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-three">
+                <div class="step-where">
+                    <div class="step-where-inner"></div>
+                </div>
+                <div class="step-three-content">
+                    <div class="step-title-public">
+                        <div class="step-title">项目信息表</div>
+                        <p>以下内容均为必填项，请如实填写您的信息！</p>
+                    </div>
+                    <div class="form-part">
+                        <div class="form-part-left">
+                            <div>
+                                <span class="label-key">项目名称：</span>
+                                <span class="font-style-public">e房贷-GSY-BTE-161017</span>
+                            </div>
+                            <div>
+                                <span class="label-key">项目金额：</span>
+                                <span class="font-style-public">2,000,000 元</span>
+                            </div>
+                            <div>
+                                <label for="item-time" class="label-key">项目期限：</label>
+                                <span class="font-style-public"><input type="text" name="item-time" value="" placeholder="0">个月</span>
+                                <span class="font-style-public">（按天<input type="text" name="item-time" value="" placeholder="0">天）</span>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                            <div>
+                                <span class="label-key">预计起息日：</span>
+                                <span class="font-style-public">满标复审后计息</span>
+                            </div>
+                            <div>
+                                <span class="label-key">还款方式：</span>
+                                <span class="font-style-public">一次性还本付息</span>
+                            </div>
+                            <div>
+                                <span class="label-key">借款用途：</span>
+                                <span class="font-style-public long-text">请填写您的资金使用用途及使用计划请填写您的资金使用用途及使用计划请填写您的资金使用用途及使用计划</span>
+                            </div>
+                            <div>
+                                <span class="label-key">相关费用：</span>
+                                <span class="font-style-public">投资人投资该项目可能会被收取提现手续费</span>
+                            </div>
+                            <div>
+                                <span class="label-key">合同模板：</span>
+                                <span><a href="#" class="role-btn">点击查看合同模板</a></span>
+                            </div>
+                            <div class="hint-textarea">
+                                <label for="money-msg" class="label-key label-key-lang">适当性管理提示：</label>
+                                <textarea placeholder="提供出借人与投资人风险提示，最低出借或起投金额等" name="hint"></textarea>
+                                <div class="tip">输入有误！！！！</div>
+                            </div>
+                        </div>
+                        <div class="form-part-right">
+                            <div>
+                                <span class="label-key">项目介绍：</span>
+                                <div class="next-level">
+                                    <div>
+                                        <label for="where" class="label-key label-key-special-width">地点：</label>
+                                        <input type="text" name="where" value="" placeholder="请输入具体地点">
+                                        <div class="tip">输入有误！！！！</div>
+                                    </div>
+                                    <div>
+                                        <label for="time" class="label-key label-key-special-width">时间：</label>
+                                        <!--<input type="text" name="time" value="" placeholder="请选择具体日期">-->
+                                        <input class="Wdate" type="text" onClick="WdatePicker()" name="time" value="" placeholder="请选择具体日期">
+                                        <div class="tip">输入有误！！！！</div>
+                                    </div>
+                                    <div>
+                                        <label for="where" class="label-key label-key-special-width">资金用途：</label>
+                                        <textarea placeholder="提供出借人与投资人风险提示，最低出借或起投金额等" name="money-msg"></textarea>
+                                        <div class="tip">输入有误！！！！</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="label-key">起投金额：</span>
+                                <span class="font-style-public">100 元（出借人对本项目的最低出借额度）</span>
+                            </div>
+                            <div>
+                                <span class="label-key">预计收益率：</span>
+                                <span class="font-style-public">12%（年化收益率）</span>
+                            </div>
+                            <div class="money-from">
+                                <span class="label-key">还款保障措施：</span>
+                                <div class="next-level">
+                                    <div>
+                                        <label for="first-repay" class="label-key">第一还款来源：</label>
+                                        <input type="text" name="first-repay" value="" placeholder="请输入还款来源">
+                                        <div class="tip">输入有误！！！！</div>
+                                    </div>
+                                    <div>
+                                        <label for="second-repay" class="label-key">第二还款来源：</label>
+                                        <input type="text" name="second-repay" value="" placeholder="请输入还款来源">
+                                        <div class="tip">输入有误！！！！</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <span class="label-key">限额管理：</span>
+                                <span class="font-style-public long-text">该自然人在本平台借款余额未超过人民币20万元。在不同网络信贷中介机构平台借款总金额未超过人民币100万元。<br>该法人或其他组织在本平台借款余额未超过人民币100万元。在不同网络信贷中介机构平台借款总金额未超过人民币500万元。</span>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="step-submit">
+                <input type="button" value="提交">
+            </div>
+        </form>
+    </div>
+    <!--<div class="step-complete">
+            <div class="step-where">
+                <div class="step-where-inner"></div>
+            </div>
+            <div class="step-complete-content">恭喜您已完成借款申请
+                <div class="seal-block">
+
+                </div>
+            </div>
+        </div>-->
+    <!--footer-->
+    <div id="footer">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-left">
+                    <ul class="company-map">
+                        <li>
+                            <a href="#">关于我们</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">公司动态</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站公告</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">服务协议</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站声明</a>
+                        </li>
+                    </ul>
+                    <div class="back-links">
+                        <p>友情链接：</p>
+                        <ul>
+                            <li>
+                                <a href="#">和讯p2p</a>
+                            </li>
+                            <li>
+                                <a href="#">民生银行</a>
+                            </li>
+                            <li>
+                                <a href="#">双乾支付</a>
+                            </li>
+                            <li>
+                                <a href="#">剃刀金融</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷之家</a>
+                            </li>
+                            <li>
+                                <a href="#">极客网</a>
+                            </li>
+                            <li>
+                                <a href="#">融途网</a>
+                            </li>
+                            <li>
+                                <a href="#">投友界</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷中心</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <span>人工服务</span>
+                    <ul class="contact">
+                        <li>客服电话：400-33-7997</li>
+                        <li>官方QQ群1：3252730453</li>
+                        <li>官方QQ群2：329985666</li>
+                        <li>客服邮箱：kf@efubang.com</li>
+                        <li>在线客服（9:00-18:00）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-pic">
+                <a href="#" class="pic0"></a>
+                <a href="#" class="pic1"></a>
+            </div>
+            <p class="copyright">©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1</p>
+        </div>
+    </div>
+    <script src="js/lib/jquery-1.11.1.min.js"></script>
+    <script src="js/lib/My97DatePicker/WdatePicker.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/borrow/borrow.js"></script>
+</body>
+
+</html>

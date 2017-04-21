@@ -1,0 +1,479 @@
+@charset "UTF-8";
+/*τ¼¼Σ╕Çµ¡Ñ*/
+#banner {
+  height: 437px;
+  background: url("../../images/borrow/borrow-banner.png") no-repeat center top;
+}
+
+.step-one {
+  width: 1024px;
+  margin: 0 auto;
+  height: 439px;
+}
+
+.step-one-content {
+  width: 530px;
+  float: right;
+  margin-top: 15px;
+  height: 404px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 18px;
+}
+.step-one-content .left-side {
+  display: inline-block;
+  width: 120px;
+  font-size: 28px;
+  color: #007aff;
+  line-height: 46px;
+  font-weight: bolder;
+  padding-top: 112px;
+  text-align: center;
+}
+.step-one-content .left-side span {
+  font-size: 50px;
+  color: #fff;
+}
+.step-one-content .right-side {
+  width: 404px;
+  display: inline-block;
+  vertical-align: top;
+  padding-top: 27px;
+}
+.step-one-content .right-side input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.step-one-content .choice_pic {
+  float: left;
+  width: 16px;
+  height: 16px;
+  margin-top: 22px;
+  margin-right: 7px;
+  border: 2px solid #024996;
+  border-radius: 50%;
+}
+.step-one-content .choice_pic .choice_true {
+  display: none;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+  border-radius: 50%;
+  background-color: #007aff;
+}
+.step-one-content .ask {
+  font-size: 24px;
+  color: #007aff;
+  line-height: 100%;
+}
+.step-one-content .option_text {
+  font-size: 22px;
+  color: #fff;
+  line-height: 100%;
+  cursor: pointer;
+}
+
+.question-type {
+  padding-top: 24px;
+}
+.question-type .option_item {
+  min-width: 130px;
+  display: inline-block;
+}
+
+#main {
+  padding-top: 30px;
+}
+
+.step-where {
+  height: 50px;
+  background-color: #e6e6e6;
+}
+.step-where .step-where-inner {
+  width: 1142px;
+  margin: 0 auto;
+}
+
+/*τ¼¼Σ║îµ¡Ñ*/
+.form-part {
+  padding-top: 60px;
+}
+
+.step-two-content {
+  width: 1024px;
+  margin: 0 auto;
+  height: 808px;
+}
+
+.step-two .step-where-inner {
+  height: 100%;
+  background: url("../../images/borrow/step.png") no-repeat 0 0;
+}
+
+.step-two-content {
+  margin-top: 30px;
+}
+
+.step-title-public .step-title {
+  text-align: center;
+  width: 100%;
+  line-height: 100px;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  background-color: #007aff;
+  letter-spacing: 25px;
+}
+.step-title-public p {
+  text-align: center;
+  font-size: 18px;
+  color: #999;
+  line-height: 100%;
+  padding-top: 33px;
+}
+
+.step-two {
+  padding-top: 77px;
+}
+.step-two span {
+  display: inline-block;
+  vertical-align: top;
+}
+.step-two .left {
+  min-width: 149px;
+}
+.step-two .verticalMiddle {
+  vertical-align: middle;
+  vertical-align: -webkit-baseline-middle;
+  width: 244px;
+}
+.step-two .form-part-left {
+  width: 50%;
+  float: left;
+}
+.step-two .form-part-right {
+  float: right;
+  padding-left: 16px;
+}
+.step-two label {
+  font-size: 18px;
+  color: #1a1a1a;
+  line-height: 40px;
+}
+.step-two input[type='text'],
+.step-two input[type='number'] {
+  border-bottom: 1px solid #b3b3b3;
+  width: 315px;
+  padding: 0 10px;
+  height: 40px;
+  font-size: 18px;
+  color: #1a1a1a;
+  line-height: 40px;
+}
+.step-two textarea {
+  border: 1px solid #b3b3b3;
+  width: 323px;
+  padding: 5px;
+  height: 100px;
+  font-size: 18px;
+  color: #1a1a1a;
+}
+.step-two span[class='right'] a {
+  color: #fff;
+  background-color: #007aff;
+  width: 238px;
+  height: 38px;
+  display: block;
+  text-align: center;
+  line-height: 38px;
+}
+.step-two .left {
+  font-size: 18px;
+  color: #1a1a1a;
+  line-height: 40px;
+}
+
+.form-part-left > div,
+.form-part-right > div {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.step-submit {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.step-submit input {
+  width: 346px;
+  height: 36px;
+  text-align: center;
+  background-color: #007aff;
+  color: #fff;
+  line-height: 36px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.form-part-right .upFile {
+  width: 345px;
+  height: 36px;
+  position: relative;
+  background-color: #007aff;
+  text-align: center;
+  font-size: 18px;
+  line-height: 36px;
+  color: #fff;
+}
+.form-part-right #file {
+  width: 345px;
+  height: 36px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#preview {
+  border: 1px solid #999;
+  margin-top: -25px;
+  width: 100px;
+  height: 100px;
+  background-color: #ccc;
+}
+#preview img {
+  width: 100%;
+  height: 100%;
+}
+
+.file-up .left {
+  float: left;
+}
+.file-up .right {
+  float: right;
+}
+.file-up .hint {
+  color: #007aff;
+  line-height: 36px;
+  font-size: 16px;
+  text-align: right;
+}
+
+#fileName {
+  height: 20px;
+  width: 100%;
+  line-height: 20px;
+  font-size: 16px;
+  color: #1a1a1a;
+}
+
+#deleteFile {
+  margin-top: 10px;
+  width: 109px;
+  height: 27px;
+  background-color: #007aff;
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+/*τ¼¼Σ╕ëµ¡Ñ*/
+.step-three {
+  height: 1122px;
+}
+.step-three .step-where-inner {
+  height: 100%;
+  background: url("../../images/borrow/step.png") no-repeat 0 -50px;
+}
+.step-three .step-three-content {
+  width: 1024px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+.step-three .form-part-left {
+  width: 50%;
+  float: left;
+}
+.step-three .form-part-left .label-key-lang {
+  width: 148px;
+}
+.step-three .form-part-right {
+  width: 50%;
+  float: right;
+}
+.step-three .form-part-right .label-key-special-width {
+  width: 100px;
+}
+.step-three .label-key {
+  font-size: 18px;
+  line-height: 40px;
+  color: #1a1a1a;
+  width: 130px;
+  display: inline-block;
+}
+.step-three .font-style-public {
+  font-size: 18px;
+  line-height: 26px;
+  color: #666;
+}
+.step-three input[type='text'] {
+  font-size: 18px;
+  color: #666;
+  line-height: 40px;
+  border-bottom: 1px solid #666;
+}
+.step-three textarea {
+  font-size: 18px;
+  color: #666;
+  line-height: 24px;
+  border: 1px solid #666;
+}
+.step-three label {
+  vertical-align: top;
+}
+.step-three .next-level {
+  width: 349px;
+  display: inline-block;
+  vertical-align: top;
+}
+.step-three .next-level input {
+  width: 243px;
+}
+.step-three .next-level > div {
+  margin-bottom: 20px;
+  position: relative;
+}
+.step-three input[name='item-time'] {
+  width: 42px;
+  padding: 0 5px;
+}
+.step-three .long-text {
+  width: 342px;
+  display: inline-block;
+  vertical-align: top;
+}
+.step-three textarea[name='hint'] {
+  padding: 5px;
+  width: 319px;
+  height: 86px;
+}
+.step-three textarea[name='money-msg'] {
+  padding: 5px;
+  width: 232px;
+  height: 137px;
+}
+.step-three input[name='first-repay'],
+.step-three input[name='second-repay'] {
+  padding: 0 5px;
+  width: 202px;
+  height: 40px;
+}
+.step-three .role-btn {
+  display: inline-block;
+  text-align: center;
+  width: 350px;
+  height: 36px;
+  background-color: #007aff;
+  font-size: 18px;
+  color: #fff;
+  line-height: 36px;
+}
+
+.step-two .tip {
+  min-width: 327px;
+  height: 20px;
+  position: absolute;
+  left: 153px;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.step-three .tip {
+  min-width: 327px;
+  height: 20px;
+  position: absolute;
+  left: 134px;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.step-three .hint-textarea .tip {
+  min-width: 327px;
+  height: 20px;
+  position: absolute;
+  left: 153px;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.step-three .next-level .tip {
+  min-width: 242px;
+  height: 20px;
+  position: absolute;
+  left: 105px;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.step-three .money-from .tip {
+  min-width: 213px;
+  height: 20px;
+  position: absolute;
+  left: 134px;
+  bottom: -20px;
+  color: red;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+/*σ«îµêÉ*/
+.step-complete .step-where-inner {
+  height: 100%;
+  background: url("../../images/borrow/step.png") no-repeat 0 -100px;
+}
+
+.step-complete-content {
+  width: 610px;
+  height: 111px;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #007aff;
+  color: #fff;
+  font-size: 30px;
+  text-shadow: 0 2px 0 rgba(0, 0, 0, 0.8);
+  letter-spacing: 25px;
+  margin-top: 80px;
+  line-height: 111px;
+  margin-bottom: 137px;
+  position: relative;
+}
+
+.seal-none {
+  width: 173px;
+  height: 144px;
+  background: url("../../images/borrow/complete.png") no-repeat left top;
+  display: none;
+  position: absolute;
+  right: -105px;
+  top: 15px;
+}
+
+.seal-block {
+  width: 173px;
+  height: 144px;
+  background: url("../../images/borrow/complete.png") no-repeat left top;
+  display: block;
+  position: absolute;
+  right: -105px;
+  top: 15px;
+}
+
+/*# sourceMappingURL=borrow.css.map */

@@ -1,0 +1,61 @@
+body,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form {
+    margin: 0;
+    font-family: Arial, "Microsoft YaHei", Helvetica, sans-serif;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+img {
+    border: none;
+    text-decoration: none;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img,
+:link img,
+:visited img {
+    border: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+input,
+textarea,
+select,
+button {
+    outline: none;
+    border: none;
+    padding: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+.clear {
+    clear: both;
+}
