@@ -1,5 +1,4 @@
 (function () {
-    /*环形数据图开始*/
     var doughnutData = [{
             value: 0,
             color: "#40ace1",
@@ -30,6 +29,5 @@
             responsive: true
         });
     };
-    /*环形数据图结束*/
 
 })();
