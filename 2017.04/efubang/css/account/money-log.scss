@@ -32,29 +32,32 @@ $tableBorderColor: #ddedff;
 
 .input-little {
     line-height: 36px;
-    width: 96px;
+    width: 96-5px;
     height: 36px;
     border: 1px solid $blue;
     border-radius: 4px;
     background-color: #f5f5f5;
+    padding-left: 5px;
 }
 
 .input-middle {
     line-height: 36px;
-    width: 117px;
+    width: 117-5px;
     height: 36px;
     border: 1px solid $blue;
     border-radius: 4px;
     background-color: #f5f5f5;
+    padding-left: 5px;
 }
 
 .input-big {
     line-height: 36px;
-    width: 168px;
+    width: 168-5px;
     height: 36px;
     border: 1px solid $blue;
     border-radius: 4px;
     background-color: #f5f5f5;
+    padding-left: 5px;
 }
 
 .select-little {
@@ -107,7 +110,7 @@ input {
 .main-content {
     display: inline-block;
     width: 817-16px;
-    padding: 0 8px;
+    padding: 0 8px 30px 8px;
     vertical-align: top;
     border-top: 1px solid $blue;
     background-color: #fff;
@@ -195,7 +198,7 @@ input {
 .pagination {
     font-size: 0;
     width: 340px;
-    height: 95px;
+    height: 20px;
     margin: 0 auto;
 }
 
