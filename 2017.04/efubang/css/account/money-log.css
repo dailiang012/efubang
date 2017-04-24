@@ -1,61 +1,62 @@
+@charset "UTF-8";
 .input-little {
+  line-height: 36px;
   width: 96px;
   height: 36px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 .input-middle {
+  line-height: 36px;
   width: 117px;
   height: 36px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 .input-big {
+  line-height: 36px;
   width: 168px;
   height: 36px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 .select-little {
+  line-height: 36px;
   width: 96px;
   height: 38px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 .select-middle {
+  line-height: 36px;
   width: 117px;
   height: 38px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 .select-big {
+  line-height: 36px;
   width: 168px;
   height: 38px;
   border: 1px solid #017aff;
-  background-color: #f5f5f5;
   border-radius: 4px;
-  line-height: 36px;
+  background-color: #f5f5f5;
 }
 
 #main-account {
-  background: #f5f5f5;
   padding-top: 10px;
   padding-bottom: 30px;
+  background: #f5f5f5;
 }
 
 .main-inner {
@@ -73,18 +74,18 @@ input {
 }
 
 .main-content {
+  display: inline-block;
   width: 801px;
   padding: 0 8px;
-  display: inline-block;
   vertical-align: top;
-  background-color: #fff;
   border-top: 1px solid #017aff;
+  background-color: #fff;
 }
 .main-content .page-path {
-  height: 63px;
   font-size: 14px;
-  color: #666;
   line-height: 34px;
+  height: 63px;
+  color: #666;
 }
 
 .time-choice {
@@ -93,36 +94,36 @@ input {
 }
 .time-choice span {
   font-size: 14px;
-  color: #666;
   padding-right: 46px;
+  color: #666;
 }
 .time-choice .time {
   display: inline-block;
-  vertical-align: top;
   margin-right: 46px;
+  vertical-align: top;
 }
 .time-choice .choice-type {
-  display: inline-block;
-  vertical-align: top;
   position: relative;
+  display: inline-block;
   margin-right: 46px;
+  vertical-align: top;
 }
 .time-choice .choice-type span {
   position: absolute;
+  top: 15px;
+  right: -41px;
   width: 9px;
   height: 8px;
-  background: url(../../images/account/select-bj.jpg) no-repeat 0px 0px;
-  right: -41px;
-  top: 15px;
+  background: url(../../images/account/select-bj.jpg) no-repeat 0 0;
 }
 .time-choice button {
+  font-size: 14px;
+  line-height: 38px;
   width: 79px;
   height: 38px;
-  background-color: #017aff;
-  font-size: 14px;
   color: #fff;
-  line-height: 38px;
   border-radius: 4px;
+  background-color: #017aff;
 }
 
 .money-log {
@@ -131,15 +132,16 @@ input {
 .money-log table {
   width: 795px;
   margin: 0 auto;
-  border-collapse: collapse;
   border-spacing: 0;
+  border-collapse: collapse;
 }
 .money-log table th,
 .money-log table td {
-  text-align: center;
   font-size: 14px;
-  padding: 10px 0;
   line-height: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #666;
 }
 .money-log thead th {
   color: #017aff;
@@ -152,6 +154,73 @@ input {
 }
 .money-log tbody tr:hover {
   background-color: #f5f5f5;
+}
+
+/*σêåΘí╡*/
+.pagination {
+  font-size: 0;
+  width: 340px;
+  height: 95px;
+  margin: 0 auto;
+}
+
+.pagination li {
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+}
+.pagination li a {
+  color: #666;
+}
+
+.control-pic {
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 6px;
+}
+
+.page-top {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -51px;
+}
+
+.page-up {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.page-down {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 -17px;
+}
+
+.page-bottom {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -34px;
+}
+
+.pagination .pagination-active {
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #017aff;
+}
+
+.data-title a {
+  color: #666;
 }
 
 /*# sourceMappingURL=money-log.css.map */

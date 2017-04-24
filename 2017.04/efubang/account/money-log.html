@@ -12,7 +12,6 @@
     <link rel="stylesheet" href="../css/common.css">
     <!--自用的css-->
     <link rel="stylesheet" type="text/css" href="../css/account/money-log.css">
-
 </head>
 
 <body>
@@ -126,16 +125,90 @@
                 <div class="time-choice">
                     <span>起止时间</span>
                     <div class="time-start time">
-                        <input id="d4311" class="Wdate  input-middle" type="text" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'d4312\')||\'3020-10-01\'}'})"
-                        />
+                        <input id="d4311" class="Wdate  input-middle" type="text" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'d4312\')||\'3020-10-01\'}'})" />
                     </div>
                     <div class="end-time time">
-                        <input id="d4312" class="Wdate  input-middle" type="text" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')}',maxDate:'3020-10-01'})"
-                        />
-
+                        <input id="d4312" class="Wdate  input-middle" type="text" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')}',maxDate:'3020-10-01'})" />
                     </div>
                     <div class="choice-type">
-                        <select name="account_type" class="select-middle" autocomplete="off" id="account_type"><option value="0">全部</option><option value="recharge">用户充值</option><option value="borrow_fee">交易手续费</option><option value="cash_cancel">取消提现</option><option value="cash_frost">提现冻结</option><option value="tender">投标</option><option value="borrow_success">借款入帐</option><option value="margin">保证金</option><option value="invest">扣除冻结款</option><option value="fee">充值手续费</option><option value="award_deduct">扣除投标奖励</option><option value="award_add">投标奖励</option><option value="repaid">还款</option><option value="invest_false">投标失败资金返回</option><option value="recharge_fee">提现手续费</option><option value="borrow_frost">解冻借款担保金</option><option value="prepaid">提前还款</option><option value="vip_fee">vip会员费</option><option value="realname">实名认证费用</option><option value="recharge_success">充值成功</option><option value="recharge_false">充值失败</option><option value="system_repayment">逾期系统还款</option><option value="late_deduct">逾期利息扣除</option><option value="late_repayment">逾期还款</option><option value="ticheng">投标提成</option><option value="late_collection">逾期收入</option><option value="scene_account">现场认证费用</option><option value="vouch_advanced">担保垫付扣费</option><option value="borrow_kouhui">借款人罚金扣回</option><option value="vouch_awardpay">担保奖励支付</option><option value="vouch_award">担保奖励接收</option><option value="margin_vouch">担保成功冻结5%</option><option value="video">视频认证费用</option><option value="manage_fee">网站服务费</option><option value="freeze">冻结资金</option><option value="unfreeze">解冻资金</option><option value="borrow_succcess">借款成功</option><option value="vouch_repaid">担保支付</option><option value="borrow_fail">借款失败</option><option value="wait_interest">待收利息</option><option value="cash_success">提现成功</option><option value="cash_fail">提现失败</option><option value="account_back">扣款</option><option value="capital_collect">还款-本金收回</option><option value="interest_collect">还款-利息收回</option><option value="repaid_captial">还款-扣除本金</option><option value="repaid_interest">还款-扣除利息</option><option value="websitepay">网站垫付</option><option value="riskreserve_fee">风险备用金</option><option value="borrow_contract">合同登记费</option><option value="web_recharge">网站充值</option><option value="prior_repaid_captial">提前还款-本金</option><option value="prior_repaid_interest">提前还款-利息</option><option value="prior_repaid_compen">提前还款-补偿金</option><option value="goods_expense_money">积分兑换</option><option value="repay_web_captial">还款给网站-本金</option><option value="repay_web_interest">还款给网站-利息</option><option value="repay_web_lateinterest">还款给网站-逾期罚息</option><option value="account_type">投标奖励</option><option value="web_manage_fee">平台管理费</option><option value="small_loan_fee">小贷审核费</option><option value="warrant_fee">担保公司担保费</option><option value="introduce_fee">服务公司推荐费</option><option value="tender_reward">投标奖励</option><option value="reward_tomoney">红包兑现</option><option value="invite_vip_reward">推荐人VIP提成</option><option value="invite_interest_reward">推荐人利息管理费提成</option><option value="web_deduct">网站扣款</option><option value="prize_give_money">中奖奖励</option><option value="compensation_repaid">扣除补偿金</option><option value="compensation_collect">收回补偿金</option><option value="compensation_site_pay">垫付补偿金</option><option value="compensation_repay_site">还款给网站</option><option value="compensation_site_late_pay">垫付逾期补偿金</option><option value="register_reward">注册奖励</option><option value="cash_account_back">取现资金退回</option></select>
+                        <select name="account_type" class="select-middle" autocomplete="off" id="account_type">
+                            <option value="0">全部</option>
+                            <option value="recharge">用户充值</option>
+                            <option value="borrow_fee">交易手续费</option>
+                            <option value="cash_cancel">取消提现</option>
+                            <option value="cash_frost">提现冻结</option>
+                            <option value="tender">投标</option>
+                            <option value="borrow_success">借款入帐</option>
+                            <option value="margin">保证金</option>
+                            <option value="invest">扣除冻结款</option>
+                            <option value="fee">充值手续费</option>
+                            <option value="award_deduct">扣除投标奖励</option>
+                            <option value="award_add">投标奖励</option>
+                            <option value="repaid">还款</option>
+                            <option value="invest_false">投标失败资金返回</option>
+                            <option value="recharge_fee">提现手续费</option>
+                            <option value="borrow_frost">解冻借款担保金</option>
+                            <option value="prepaid">提前还款</option>
+                            <option value="vip_fee">vip会员费</option>
+                            <option value="realname">实名认证费用</option>
+                            <option value="recharge_success">充值成功</option>
+                            <option value="recharge_false">充值失败</option>
+                            <option value="system_repayment">逾期系统还款</option>
+                            <option value="late_deduct">逾期利息扣除</option>
+                            <option value="late_repayment">逾期还款</option>
+                            <option value="ticheng">投标提成</option>
+                            <option value="late_collection">逾期收入</option>
+                            <option value="scene_account">现场认证费用</option>
+                            <option value="vouch_advanced">担保垫付扣费</option>
+                            <option value="borrow_kouhui">借款人罚金扣回</option>
+                            <option value="vouch_awardpay">担保奖励支付</option>
+                            <option value="vouch_award">担保奖励接收</option>
+                            <option value="margin_vouch">担保成功冻结5%</option>
+                            <option value="video">视频认证费用</option>
+                            <option value="manage_fee">网站服务费</option>
+                            <option value="freeze">冻结资金</option>
+                            <option value="unfreeze">解冻资金</option>
+                            <option value="borrow_succcess">借款成功</option>
+                            <option value="vouch_repaid">担保支付</option>
+                            <option value="borrow_fail">借款失败</option>
+                            <option value="wait_interest">待收利息</option>
+                            <option value="cash_success">提现成功</option>
+                            <option value="cash_fail">提现失败</option>
+                            <option value="account_back">扣款</option>
+                            <option value="capital_collect">还款-本金收回</option>
+                            <option value="interest_collect">还款-利息收回</option>
+                            <option value="repaid_captial">还款-扣除本金</option>
+                            <option value="repaid_interest">还款-扣除利息</option>
+                            <option value="websitepay">网站垫付</option>
+                            <option value="riskreserve_fee">风险备用金</option>
+                            <option value="borrow_contract">合同登记费</option>
+                            <option value="web_recharge">网站充值</option>
+                            <option value="prior_repaid_captial">提前还款-本金</option>
+                            <option value="prior_repaid_interest">提前还款-利息</option>
+                            <option value="prior_repaid_compen">提前还款-补偿金</option>
+                            <option value="goods_expense_money">积分兑换</option>
+                            <option value="repay_web_captial">还款给网站-本金</option>
+                            <option value="repay_web_interest">还款给网站-利息</option>
+                            <option value="repay_web_lateinterest">还款给网站-逾期罚息</option>
+                            <option value="account_type">投标奖励</option>
+                            <option value="web_manage_fee">平台管理费</option>
+                            <option value="small_loan_fee">小贷审核费</option>
+                            <option value="warrant_fee">担保公司担保费</option>
+                            <option value="introduce_fee">服务公司推荐费</option>
+                            <option value="tender_reward">投标奖励</option>
+                            <option value="reward_tomoney">红包兑现</option>
+                            <option value="invite_vip_reward">推荐人VIP提成</option>
+                            <option value="invite_interest_reward">推荐人利息管理费提成</option>
+                            <option value="web_deduct">网站扣款</option>
+                            <option value="prize_give_money">中奖奖励</option>
+                            <option value="compensation_repaid">扣除补偿金</option>
+                            <option value="compensation_collect">收回补偿金</option>
+                            <option value="compensation_site_pay">垫付补偿金</option>
+                            <option value="compensation_repay_site">还款给网站</option>
+                            <option value="compensation_site_late_pay">垫付逾期补偿金</option>
+                            <option value="register_reward">注册奖励</option>
+                            <option value="cash_account_back">取现资金退回</option>
+                        </select>
                         <span class="select-bj"></span>
                     </div>
                     <button type="button">搜索</button>
@@ -163,11 +236,24 @@
                                 <td>￥100.85</td>
                                 <td>￥100.85</td>
                                 <td>￥100.85</td>
-                                <td>2016-05-11 <br>09:22:12</td>
+                                <td>2016-05-11
+                                    <br>09:22:12</td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
+                <ul class="pagination">
+                    <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-up control-pic"></li>
+                    <li><a href="#" class="pagination-active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li style="cursor:default; color: #017aff;">...</li>
+                    <li class="page-down control-pic"> <a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-bottom control-pic"> <a href="#">&nbsp;&nbsp; </a></li>
+                </ul>
             </div>
         </div>
     </div>
