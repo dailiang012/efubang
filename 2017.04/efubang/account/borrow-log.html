@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>借款记录</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--公用的css-->
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <!--自用的css-->
+    <link rel="stylesheet" type="text/css" href="../css/account/borrow-log.css">
+</head>
+
+<body>
+    <!--bang-bar-->
+    <div id="bang-bar">
+        <div class="bang-bar-container">
+            <div class="left-content">
+                <div class="mobile"><span></span>咨询热线 : 4000-33-7997</div>
+                <div class="weChat"><span></span>微信公众账号</div>
+            </div>
+            <div class="right-content">
+                <div id="login-register">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#">帮助中心</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--header-->
+    <div id="header">
+        <div class="header-container">
+            <div id="bang-logo">
+                <a href="#"></a>
+            </div>
+            <ul id="bang-nav">
+                <li>
+                    <a href="#">首页</a>
+                </li>
+                <li>
+                    <a href="#">我要理财</a>
+                </li>
+                <li>
+                    <a href="#">我要借款</a>
+                </li>
+                <li>
+                    <a href="#" class="nav-active">我的账户</a>
+                </li>
+                <li>
+                    <a href="#">关于我们</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="main-account">
+        <div class="main-inner">
+            <div id="account-menu">
+                <div class="page-title">
+                    我的e富邦首页
+                </div>
+                <ul class="menu-list">
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                我的账户
+                            </div>
+                            <!--"active-logo-close"和"active-logo-close"-->
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li><span><a href="#">资金记录</a></span></li>
+                                <li class="on"><span><a href="#">借款记录</a></span></li>
+                                <li><span><a href="#">银行账户</a></span></li>
+                                <li><span><a href="#">账户充值</a></span></li>
+                                <li><span><a href="#">账户提现</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                资金管理
+                            </div>
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li class="on"><span><a href="#">招标中</a></span></li>
+                                <li><span><a href="#">未还款</a></span></li>
+                                <li><span><a href="#">已收款</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu red-pack">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                <a href="#">红包</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="first-menu">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                基本设置
+                            </div>
+                            <span class="active-default"></span>
+                            <ul class="second-menu">
+                                <li class="on"><span><a href="#">个人资料</a></span></li>
+                                <li><span><a href="#">安全中心</a></span></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="first-menu ivite">
+                        <div class="close-out">
+                            <div class="first-menu-name">
+                                <a href="#">邀请好友</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="main-content">
+                <div class="page-path">我的账户＜借款记录</div>
+                <div class="time-choice">
+                    <span>起止时间</span>
+                    <div class="time-start time">
+                        <input id="d4311" class="Wdate  input-middle" type="text" onFocus="WdatePicker({maxDate:'#F{$dp.$D(\'d4312\')||\'3020-10-01\'}'})" />
+                    </div>
+                    <div class="end-time time">
+                        <input id="d4312" class="Wdate  input-middle" type="text" onFocus="WdatePicker({minDate:'#F{$dp.$D(\'d4311\')}',maxDate:'3020-10-01'})" />
+                    </div>
+                    <button type="button">搜索</button>
+                </div>
+                <div class="money-log">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>借款金额</th>
+                                <th>借款时间</th>
+                                <th>借款周期</th>
+                                <th>还款金额</th>
+                                <th>还款时间</th>
+                                <th>还款利息</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>￥100.85</td>
+                                <td>2016-05-11
+                                    <br> 09:22:12
+                                </td>
+                                <td>1月</td>
+                                <td>￥150</td>
+                                <td>2016-05-11
+                                    <br> 09:22:12
+                                </td>
+                                <td>12%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <ul class="pagination">
+                    <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-up control-pic"></li>
+                    <li><a href="#" class="pagination-active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li style="cursor:default; color: #017aff;">...</li>
+                    <li class="page-down control-pic"> <a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-bottom control-pic"> <a href="#">&nbsp;&nbsp; </a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--footer-->
+    <div id="footer">
+        <div class="footer-inner">
+            <div>
+                <div class="footer-left">
+                    <ul class="company-map">
+                        <li>
+                            <a href="#">关于我们</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">公司动态</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站公告</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">服务协议</a>
+                            <span>|</span>
+                        </li>
+                        <li>
+                            <a href="#">网站声明</a>
+                        </li>
+                    </ul>
+                    <div class="back-links">
+                        <p>友情链接：</p>
+                        <ul>
+                            <li>
+                                <a href="#">和讯p2p</a>
+                            </li>
+                            <li>
+                                <a href="#">民生银行</a>
+                            </li>
+                            <li>
+                                <a href="#">双乾支付</a>
+                            </li>
+                            <li>
+                                <a href="#">剃刀金融</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷之家</a>
+                            </li>
+                            <li>
+                                <a href="#">极客网</a>
+                            </li>
+                            <li>
+                                <a href="#">融途网</a>
+                            </li>
+                            <li>
+                                <a href="#">投友界</a>
+                            </li>
+                            <li>
+                                <a href="#">网贷中心</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <span>人工服务</span>
+                    <ul class="contact">
+                        <li>客服电话：400-33-7997</li>
+                        <li>官方QQ群1：3252730453</li>
+                        <li>官方QQ群2：329985666</li>
+                        <li>客服邮箱：kf@efubang.com</li>
+                        <li>在线客服（9:00-18:00）</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-pic">
+                <a href="#" class="pic0"></a>
+                <a href="#" class="pic1"></a>
+            </div>
+            <p class="copyright">©2015e富邦All rights reserved | 北京财富邦投资服务有限公司 京 ICP备15034642号-1</p>
+        </div>
+    </div>
+    <!--公用的js-->
+    <script src="../js/lib/jquery-1.11.1.min.js"></script>
+    <script src="../js/common.js"></script>
+    <script src="../js/lib/My97DatePicker/WdatePicker.js"></script>
+</body>
+
+</html>
