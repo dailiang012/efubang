@@ -1,129 +1,8 @@
-$gray:#e9e9e9;
-$blue:#017aff;
-$fontColor:#666;
-$tableBorderColor:#ddedff;
-@mixin img {
-    background: url('../../images/account/account.png') no-repeat;
-}
-
-@mixin hover-true {
-    height: 9px;
-    width: 8px;
-    background-position: 0 0;
-}
-
-@mixin hover-false {
-    height: 9px;
-    width: 8px;
-    background-position: 0 -9px;
-}
-
-@mixin close {
-    height: 8px;
-    width: 9px;
-    background-position: 0 -18px;
-}
-
-@mixin open {
-    height: 8px;
-    width: 9px;
-    background-position: 0 -26px;
-}
-
-@mixin lend-log {
-    height: 15px;
-    width: 13px;
-    background-position: 0 -34px;
-}
-
-@mixin money-total {
-    height: 17px;
-    width: 14px;
-    background-position: 0 -49px;
-}
-
-@mixin earnings-log {
-    height: 15px;
-    width: 14px;
-    background-position: 0 -66px;
-}
-
-@mixin earnings {
-    height: 17px;
-    width: 17px;
-    background-position: 0 -81px;
-}
-
-@mixin earnings-total {
-    height: 17px;
-    width: 17px;
-    background-position: 0 -98px;
-}
-
-@mixin phone-false {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -115px;
-}
-
-@mixin person-true {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -137px;
-}
-
-@mixin phone-true {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -159px;
-}
-
-@mixin vip-true {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -181px;
-}
-
-@mixin vip-false {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -203px;
-}
-
-@mixin email-false {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -225px;
-}
-
-@mixin email-true {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -247px;
-}
-
-@mixin person-false {
-    height: 22px;
-    width: 22px;
-    background-position: 0 -269px;
-}
-
-@mixin msg-true {
-    height: 26px;
-    width: 25px;
-    background-position: 0 -291px;
-}
-
-@mixin msg-false {
-    height: 26px;
-    width: 25px;
-    background-position: 0 -317px;
-}
-
+@import 'accout-public';
 #main-account {
     background: #f5f5f5;
     padding-top: 10px;
-    padding-bottom: 30px;
+    padding-bottom: 30px;    min-height: 500px;
 }
 
 .main-inner {
@@ -142,13 +21,13 @@ button {
 }
 
 
-/*user*/
+//user
 
 .user {
     padding: 24px 48px;
     background: url('../../images/account/user-msg-bj.png') repeat-x;
     .msg-false {
-        @include img;
+        @include account;
         @include msg-false;
         float: right;
         margin-top: 30px;
@@ -156,7 +35,7 @@ button {
     .msg-true {
         margin-top: 30px;
         float: right;
-        @include img;
+        @include account;
         @include msg-true;
     }
 }
@@ -210,41 +89,41 @@ button {
         margin-left: 10px;
     }
     .vip-true {
-        @include img;
+        @include account;
         @include vip-true;
     }
     .vip-false {
-        @include img;
+        @include account;
         @include vip-false;
     }
     .phone-true {
-        @include img;
+        @include account;
         @include phone-true;
     }
     .phone-false {
-        @include img;
+        @include account;
         @include phone-false;
     }
     .email-true {
-        @include img;
+        @include account;
         @include email-true;
     }
     .email-false {
-        @include img;
+        @include account;
         @include email-false;
     }
     .person-true {
-        @include img;
+        @include account;
         @include person-true;
     }
     .person-false {
-        @include img;
+        @include account;
         @include person-false;
     }
 }
 
 
-/*money-information*/
+// money-information
 
 .money-information {
     min-height: 334px;
@@ -327,7 +206,7 @@ button {
     font-size: 16px;
     span {
         display: inline-block;
-        @include img;
+        @include account;
         vertical-align: top;
     }
 }
@@ -463,28 +342,6 @@ button {
             color: #fff;
             background-color: $blue;
             margin-top: 10px;
-        }
-    }
-    table {
-        width: 795px;
-        margin: 0 auto;
-        border-collapse: collapse;
-        border-spacing: 0;
-        th,
-        td {
-            text-align: center;
-            font-size: 14px;
-            padding: 10px 0;
-            line-height: 100%;
-        }
-    }
-    thead tr {
-        border-bottom: 2px solid $tableBorderColor;
-    }
-    tbody tr {
-        border-bottom: 1px solid $gray;
-        &:hover {
-            background-color: #f5f5f5;
         }
     }
     .corner {

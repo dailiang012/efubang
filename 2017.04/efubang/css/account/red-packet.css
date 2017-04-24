@@ -195,65 +195,69 @@ input {
   color: #666;
 }
 
-.time-choice {
-  font-size: 0;
+.red-packet {
   margin-bottom: 30px;
 }
-.time-choice span {
-  font-size: 14px;
-  padding-right: 46px;
-  color: #666;
+.red-packet .tab > ul li {
+  width: 267px;
 }
-.time-choice .time {
+.red-packet .tab-content {
+  font-size: 0;
+}
+.red-packet .tab-content > div {
+  display: none;
+}
+.red-packet .tab-content .red-useable {
+  display: block;
+}
+.red-packet .tab-content .red-pack-list {
   display: inline-block;
-  margin-right: 46px;
   vertical-align: top;
+  margin: 31px 56px;
 }
-.time-choice .time input {
-  line-height: 36px;
-  width: 112px;
-  height: 36px;
-  padding-left: 5px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  color: #666;
+.red-packet .tab-content h3 {
+  padding-top: 84px;
 }
-.time-choice .choice-type {
-  position: relative;
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
-}
-.time-choice .choice-type span {
-  position: absolute;
-  top: 15px;
-  right: -41px;
-  width: 9px;
-  height: 8px;
-  background: url("../../images/account/menu.png") no-repeat 0 -18px;
-}
-.time-choice .choice-type select {
-  line-height: 36px;
-  width: 117px;
-  height: 38px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  color: #666;
-}
-.time-choice button {
-  font-size: 14px;
-  line-height: 38px;
-  width: 79px;
-  height: 38px;
-  color: #fff;
-  border-radius: 4px;
-  background-color: #017aff;
+.red-packet .tab-content p {
+  padding-left: 21px;
 }
 
-.money-log {
-  margin-bottom: 40px;
+.useable {
+  height: 223px;
+  width: 155px;
+  background-position: 0 0;
+  background: url("../../images/account/red-packet.png") no-repeat;
+}
+.useable p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #fcff01;
+}
+.useable h3 {
+  color: #fcff01;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 14px;
 }
 
-/*# sourceMappingURL=borrow-log.css.map */
+.disable {
+  background: url("../../images/account/red-packet.png") no-repeat;
+  height: 223px;
+  width: 155px;
+  background-position: 0 -223px;
+}
+.disable p {
+  font-size: 12px;
+  line-height: 16px;
+  color: #666;
+}
+.disable h3 {
+  color: #666;
+  text-align: center;
+  font-size: 24px;
+  line-height: 40px;
+  margin-bottom: 14px;
+}
+
+/*# sourceMappingURL=red-packet.css.map */

@@ -47,5 +47,5 @@
         //设置radio的checked属性
         $(this).parents(".choice").find("input:radio").removeAttr("checked");
         $(this).siblings('input:radio').attr("checked", "true");
-    })
+    });
 })();

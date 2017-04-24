@@ -1,7 +1,168 @@
+/*
+* @Author: pc
+* @Date:   2017-04-24 09:56:37
+ * @Last Modified by:   pc
+ * @Last Modified time: 2017-04-24 16:50:06
+*/
+form {
+  font-size: 0;
+}
+form input {
+  margin-left: 10px;
+  vertical-align: top;
+}
+form select {
+  margin-left: 10px;
+}
+form > div {
+  margin-bottom: 25px;
+}
+form label,
+form .role-label {
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  line-height: 38px;
+  display: inline-block;
+  min-width: 70px;
+}
+form .tip {
+  color: red;
+  font-size: 14px;
+  line-height: 38px;
+  display: inline-block;
+  padding-left: 10px;
+}
+form input[type='button'] {
+  width: 106px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #017aff;
+  cursor: pointer;
+}
+
+.tab > ul {
+  height: 48px;
+  border-bottom: 1px solid #017aff;
+  width: 100%;
+  font-size: 0;
+}
+.tab > ul li {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  line-height: 48px;
+  color: #017aff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tab > ul li.tab-on {
+  background-color: #017aff;
+  color: #fff;
+}
+
+table {
+  width: 795px;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  font-size: 14px;
+  line-height: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #666;
+}
+table thead th {
+  color: #017aff;
+}
+table thead tr {
+  border-bottom: 2px solid #ddedff;
+}
+table tbody tr {
+  border-bottom: 1px solid #e9e9e9;
+}
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  font-size: 0;
+  width: 340px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.pagination li {
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+}
+.pagination li a {
+  color: #666;
+}
+
+.control-pic {
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 6px;
+}
+
+.page-top {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -51px;
+}
+
+.page-up {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.page-down {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 -17px;
+}
+
+.page-bottom {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -34px;
+}
+
+.pagination .pagination-active {
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #017aff;
+}
+
+.data-title a {
+  color: #666;
+}
+
 #main-account {
   background: #f5f5f5;
   padding-top: 10px;
   padding-bottom: 30px;
+  min-height: 500px;
 }
 
 .main-inner {
@@ -19,7 +180,6 @@ button {
   vertical-align: top;
 }
 
-/*user*/
 .user {
   padding: 24px 48px;
   background: url("../../images/account/user-msg-bj.png") repeat-x;
@@ -28,7 +188,7 @@ button {
   background: url("../../images/account/account.png") no-repeat;
   height: 26px;
   width: 25px;
-  background-position: 0 -317px;
+  background-position: 0 -288px;
   float: right;
   margin-top: 30px;
 }
@@ -38,7 +198,7 @@ button {
   background: url("../../images/account/account.png") no-repeat;
   height: 26px;
   width: 25px;
-  background-position: 0 -291px;
+  background-position: 0 -314px;
 }
 
 .user-information {
@@ -94,52 +254,51 @@ button {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -181px;
+  background-position: 0 -249px;
 }
 .sign-list .vip-false {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -203px;
+  background-position: 0 -227px;
 }
 .sign-list .phone-true {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -159px;
+  background-position: 0 -139px;
 }
 .sign-list .phone-false {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -115px;
+  background-position: 0 -161px;
 }
 .sign-list .email-true {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -247px;
+  background-position: 0 -205px;
 }
 .sign-list .email-false {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -225px;
+  background-position: 0 -183px;
 }
 .sign-list .person-true {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -137px;
+  background-position: 0 -95px;
 }
 .sign-list .person-false {
   background: url("../../images/account/account.png") no-repeat;
   height: 22px;
   width: 22px;
-  background-position: 0 -269px;
+  background-position: 0 -117px;
 }
 
-/*money-information*/
 .money-information {
   min-height: 334px;
   border: 1px solid #e9e9e9;
@@ -232,7 +391,7 @@ button {
 .money-total-title .item-title span {
   height: 17px;
   width: 14px;
-  background-position: 0 -49px;
+  background-position: 0 -15px;
 }
 .money-total-title .total-num {
   margin-left: 50px;
@@ -273,7 +432,7 @@ button {
 .earnings-total .item-title span {
   height: 17px;
   width: 17px;
-  background-position: 0 -98px;
+  background-position: 0 -64px;
 }
 
 .await-earnings {
@@ -284,7 +443,7 @@ button {
 .await-earnings .item-title span {
   height: 17px;
   width: 17px;
-  background-position: 0 -81px;
+  background-position: 0 -47px;
 }
 
 .use-balance {
@@ -322,13 +481,13 @@ button {
 .earning-log .item-title span {
   height: 15px;
   width: 14px;
-  background-position: 0 -66px;
+  background-position: 0 -32px;
 }
 
 .lend-log .item-title span {
   height: 15px;
   width: 13px;
-  background-position: 0 -34px;
+  background-position: 0 0;
 }
 
 .money-log {
@@ -356,28 +515,6 @@ button {
   color: #fff;
   background-color: #017aff;
   margin-top: 10px;
-}
-.money-log table {
-  width: 795px;
-  margin: 0 auto;
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-.money-log table th,
-.money-log table td {
-  text-align: center;
-  font-size: 14px;
-  padding: 10px 0;
-  line-height: 100%;
-}
-.money-log thead tr {
-  border-bottom: 2px solid #ddedff;
-}
-.money-log tbody tr {
-  border-bottom: 1px solid #e9e9e9;
-}
-.money-log tbody tr:hover {
-  background-color: #f5f5f5;
 }
 .money-log .corner {
   text-align: right;

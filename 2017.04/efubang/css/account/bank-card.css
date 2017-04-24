@@ -194,24 +194,31 @@ input {
   height: 63px;
   color: #666;
 }
+.main-content .item-title {
+  padding-left: 30px;
+  padding-bottom: 60px;
+}
 
-.time-choice {
-  font-size: 0;
-  margin-bottom: 30px;
-}
-.time-choice span {
-  font-size: 14px;
-  padding-right: 46px;
+.item-title {
+  line-height: 17px;
   color: #666;
+  font-size: 16px;
 }
-.time-choice .time {
+.item-title span {
   display: inline-block;
-  margin-right: 46px;
+  background: url("../../images/account/account.png") no-repeat;
   vertical-align: top;
 }
-.time-choice .time input {
+
+.bind-card .item-title span {
+  background: url("../../images/account/account.png") no-repeat;
+  height: 17px;
+  width: 23px;
+  background-position: 0 -271px;
+}
+.bind-card input {
   line-height: 36px;
-  width: 112px;
+  width: 163px;
   height: 36px;
   padding-left: 5px;
   border: 1px solid #017aff;
@@ -219,21 +226,16 @@ input {
   background-color: #f5f5f5;
   color: #666;
 }
-.time-choice .choice-type {
-  position: relative;
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
+.bind-card .bank select {
+  line-height: 36px;
+  width: 168px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
 }
-.time-choice .choice-type span {
-  position: absolute;
-  top: 15px;
-  right: -41px;
-  width: 9px;
-  height: 8px;
-  background: url("../../images/account/menu.png") no-repeat 0 -18px;
-}
-.time-choice .choice-type select {
+.bind-card .card-where select {
   line-height: 36px;
   width: 117px;
   height: 38px;
@@ -242,18 +244,111 @@ input {
   background-color: #f5f5f5;
   color: #666;
 }
-.time-choice button {
-  font-size: 14px;
-  line-height: 38px;
-  width: 79px;
-  height: 38px;
-  color: #fff;
+.bind-card label {
+  width: 234px;
+}
+
+/*yet-bind-card*/
+.yet-bind-card {
+  margin-top: 30px;
+  font-size: 0;
+}
+.yet-bind-card .item-title span {
+  background: url("../../images/account/account.png") no-repeat;
+  height: 14px;
+  width: 19px;
+  background-position: 0 -81px;
+}
+.yet-bind-card ul {
+  width: 660px;
+  margin: 0 auto;
+  margin-top: -24px;
+}
+
+.yet-bind-card li {
+  display: inline-block;
+  vertical-align: top;
+  width: 278px;
+  height: 188px;
+  border: 1px solid #017aff;
   border-radius: 4px;
-  background-color: #017aff;
+  background: #eee;
+  margin: 25px;
 }
 
-.money-log {
-  margin-bottom: 40px;
+.yet-bind-card h3 {
+  text-align: center;
+  height: 38px;
+  line-height: 38px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.yet-bind-card h3 a {
+  color: #666;
 }
 
-/*# sourceMappingURL=borrow-log.css.map */
+.header_bangd {
+  height: 44px;
+  border-bottom: 1px solid #528096;
+  background: #fff;
+  border-radius: 8px 8px 0 0;
+  position: relative;
+  font-size: 16px;
+  color: #000;
+  line-height: 44px;
+  text-align: center;
+}
+
+.header_bangd .one_pic {
+  float: left;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.header_bangd .two_pic {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 14px;
+}
+
+.yet-bind-card li .text {
+  height: 90px;
+  padding-top: 16px;
+  padding-left: 10px;
+  background: #fff;
+}
+.yet-bind-card li .text p {
+  font-size: 12px;
+  color: #666;
+  line-height: 24px;
+}
+.yet-bind-card li .text p span {
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+}
+
+.bangdinka .tianjia_ka {
+  background: #fff;
+  position: relative;
+  border: 1px solid #40ace1;
+  text-align: center;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.tianjia_ka img {
+  position: absolute;
+  top: 62px;
+  left: 122px;
+}
+
+.bangdinka .tianjia_ka p {
+  padding-top: 106px;
+  font-size: 16px;
+  color: #40ace1;
+}
+
+/*# sourceMappingURL=bank-card.css.map */

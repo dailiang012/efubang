@@ -195,23 +195,33 @@ input {
   color: #666;
 }
 
-.time-choice {
-  font-size: 0;
-  margin-bottom: 30px;
+.tab-content > div {
+  display: none;
 }
-.time-choice span {
-  font-size: 14px;
-  padding-right: 46px;
+.tab-content .pop {
+  display: block;
+}
+
+.pop {
+  font-size: 0;
+  margin-top: 36px;
+}
+.pop label,
+.pop .role-label {
+  width: 263px;
+}
+.pop span {
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 36px;
+  min-width: 30px;
+  font-size: 16px;
+  vertical-align: top;
   color: #666;
 }
-.time-choice .time {
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
-}
-.time-choice .time input {
+.pop .pop-num input {
   line-height: 36px;
-  width: 112px;
+  width: 163px;
   height: 36px;
   padding-left: 5px;
   border: 1px solid #017aff;
@@ -219,41 +229,66 @@ input {
   background-color: #f5f5f5;
   color: #666;
 }
-.time-choice .choice-type {
-  position: relative;
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
-}
-.time-choice .choice-type span {
-  position: absolute;
-  top: 15px;
-  right: -41px;
-  width: 9px;
-  height: 8px;
-  background: url("../../images/account/menu.png") no-repeat 0 -18px;
-}
-.time-choice .choice-type select {
+.pop .bank select {
   line-height: 36px;
-  width: 117px;
+  width: 168px;
   height: 38px;
   border: 1px solid #017aff;
   border-radius: 4px;
   background-color: #f5f5f5;
   color: #666;
 }
-.time-choice button {
-  font-size: 14px;
-  line-height: 38px;
-  width: 79px;
-  height: 38px;
-  color: #fff;
+
+.pop-money .tab > ul li {
+  width: 50%;
+}
+
+.security-code input {
+  line-height: 36px;
+  width: 91px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
   border-radius: 4px;
-  background-color: #017aff;
+  background-color: #f5f5f5;
+  color: #666;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
+}
+.security-code .code-img {
+  width: 73px;
+  height: 26px;
+  padding: 5px;
+  border: 1px solid #017aff;
+  border-radius: 0 4px 4px 0;
+  vertical-align: top;
+  background-color: #fff;
+}
+.security-code .code-img img {
+  width: 100%;
+  height: 100%;
+}
+.security-code div {
+  display: inline-block;
 }
 
-.money-log {
-  margin-bottom: 40px;
+.pact {
+  width: 793px;
+}
+.pact input {
+  display: inline-block;
+}
+.pact span {
+  font-size: 14px;
+  line-height: 14px;
+  color: #666;
+  display: inline-block;
+  width: 717px;
 }
 
-/*# sourceMappingURL=borrow-log.css.map */
+.pop-log .pop-log-table {
+  margin-top: 36px;
+  margin-bottom: 30px;
+}
+
+/*# sourceMappingURL=pop-money.css.map */

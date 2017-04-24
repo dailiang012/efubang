@@ -4,12 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>我的账户</title>
+    <title>招标中</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--公用的css-->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
-    <link rel="stylesheet" type="text/css" href="../css/account/account-home.css">
+    <!--自用的css-->
+    <link rel="stylesheet" type="text/css" href="../css/account/money-manage.css">
 </head>
 
 <body>
@@ -55,7 +57,6 @@
         </div>
     </div>
     <div id="main-account">
-
         <div class="main-inner">
             <div id="account-menu">
                 <div class="page-title">
@@ -85,7 +86,7 @@
                             </div>
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li><span><a href="#">招标中</a></span></li>
+                                <li class="on"><span><a href="#">招标中</a></span></li>
                                 <li><span><a href="#">未还款</a></span></li>
                                 <li><span><a href="#">已收款</a></span></li>
                             </ul>
@@ -105,7 +106,7 @@
                             </div>
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li><span><a href="#">个人资料</a></span></li>
+                                <li class="on"><span><a href="#">个人资料</a></span></li>
                                 <li><span><a href="#">安全中心</a></span></li>
                             </ul>
                         </div>
@@ -120,149 +121,45 @@
                 </ul>
             </div>
             <div class="main-content">
-                <div class="user">
-
-                    <div class="user-information">
-                        <div class="pic"></div>
-                        <div class="log-list">
-                            <div class="name">efb13520267552
-                            </div>
-                            <div class="sign">
-                                <button type="">进入钱多多</button>
-                                <ul class="sign-list">
-                                    <li class="vip-true"></li>
-                                    <li class="phone-true"></li>
-                                    <li class="email-true"></li>
-                                    <li class="person-true"></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="msg-false">
-                    </div>
-                </div>
-                <div class="money-information">
-                    <div class="money-total">
-
-                        <div class="money-total-title">
-                            <div class="item-title">
-                                <span></span> 账户总额
-                            </div>
-                            <div class="total-num">
-                                ¥100000.00
-                            </div>
-                        </div>
-
-                        <div class="shuju">
-                            <div class="shuji_l">
-                                <div id="canvas-holder">
-                                    <canvas id="chart-area" width="212" height="212" style="width: 212px; height: 212px;">
-                                    </canvas>
-                                </div>
-                            </div>
-                            <ul class="shuji_r">
-                                <li class="balance">
-                                    <h4>可用余额：￥<span id="sp1">10</span></h4>
-                                </li>
-                                <li class="freeze">
-                                    <h4>冻结总额：￥<span id="sp2">20</span></h4>
-                                </li>
-                                <li class="await">
-                                    <h4>待收总额：￥<span id="sp3">30</span></h4>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="total-right">
-                        <div class="earnings">
-                            <div class="earnings-total">
-
-                                <div class="item-title">
-                                    <span></span> 累计收益
-                                </div>
-                                <div class="earning-num">¥100000.00</div>
-                            </div>
-                            <div class="await-earnings">
-
-                                <div class="item-title">
-                                    <span></span> 待收收益
-                                </div>
-                                <div class="earning-num">¥100000.00</div>
-                            </div>
-                        </div>
-                        <div class="use-balance">
-                            <p>可用余额：<span>￥10000.00</span></p>
-                            <div class="btn-grout">
-                                <button type="button" class="push-money">充值</button>
-                                <button type="button" class="pop-money">提现</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="money-log earning-log">
-                    <div class="money-title">
-                        <div class="item-title">
-                            <span></span> 收益记录
-                        </div>
-                        <button type="button">去投资</button>
-                    </div>
+                <div class="page-path">资金管理＜招标中</div>
+                <div class="money-manage-log">
                     <table>
                         <thead>
                             <tr>
-                                <th>产品名称</th>
-                                <th>投资金额</th>
-                                <th>投资时间</th>
-                                <th>总收益</th>
+                                <th>标题</th>
+                                <th>标题金额</th>
+                                <th>有效金额</th>
+                                <th>投标时间</th>
+                                <th>进度</th>
+                                <th>状态</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td>e担保-HSX-MJ-170310</td>
-                                <td>1000</td>
-                                <td>2017/01/20</td>
-                                <td>2000</td>
-                            </tr>
-                            <tr>
-                                <td>e担保-HSX-MJ-170310</td>
-                                <td>1000</td>
-                                <td>2017/01/20</td>
-                                <td>2000</td>
+                                <td>e富宝-QLC-</td>
+                                <td>￥100.85</td>
+                                <td>￥100</td>
+                                <td>2016-05-11
+                                    <br> 09:22:12
+                                </td>
+                                <td>进度数据</td>
+                                <td>正常</td>
                             </tr>
                         </tbody>
                     </table>
-                    <div class="corner">
-                        <a href="#">理财记录</a>
-                    </div>
                 </div>
-                <div class="money-log lend-log">
-                    <div class="money-title">
-                        <div class="item-title">
-                            <span></span> 借款记录
-                        </div>
-                        <button type="button">去借款</button>
-                    </div>
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>借款名称</th>
-                                <th>借款金额</th>
-                                <th>借款时间</th>
-                                <th>还款日期</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>e担保-HSX-MJ-170310</td>
-                                <td>1000</td>
-                                <td>2017/01/20</td>
-                                <td>2000</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <div class="corner">
-                        <a href="#">借款记录</a>
-                    </div>
-                </div>
+                <ul class="pagination">
+                    <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-up control-pic"></li>
+                    <li><a href="#" class="pagination-active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#">4</a></li>
+                    <li><a href="#">5</a></li>
+                    <li style="cursor:default; color: #017aff;">...</li>
+                    <li class="page-down control-pic"> <a href="#">&nbsp;&nbsp;</a></li>
+                    <li class="page-bottom control-pic"> <a href="#">&nbsp;&nbsp; </a></li>
+                </ul>
             </div>
         </div>
     </div>
@@ -346,9 +243,6 @@
     <!--公用的js-->
     <script src="../js/lib/jquery-1.11.1.min.js"></script>
     <script src="../js/common.js"></script>
-    <!--自用的js-->
-    <script src="../js/lib/char.js"></script>
-    <script src="../js/account/account-home.js"></script>
 </body>
 
 </html>

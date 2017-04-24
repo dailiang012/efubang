@@ -195,23 +195,33 @@ input {
   color: #666;
 }
 
-.time-choice {
-  font-size: 0;
-  margin-bottom: 30px;
+.tab-content > div {
+  display: none;
 }
-.time-choice span {
-  font-size: 14px;
-  padding-right: 46px;
+.tab-content .push {
+  display: block;
+}
+
+.push {
+  font-size: 0;
+  margin-top: 36px;
+}
+.push label,
+.push .role-label {
+  width: 263px;
+}
+.push span {
+  display: inline-block;
+  margin-left: 10px;
+  line-height: 36px;
+  min-width: 30px;
+  font-size: 16px;
+  vertical-align: top;
   color: #666;
 }
-.time-choice .time {
-  display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
-}
-.time-choice .time input {
+.push .push-num input {
   line-height: 36px;
-  width: 112px;
+  width: 163px;
   height: 36px;
   padding-left: 5px;
   border: 1px solid #017aff;
@@ -219,41 +229,92 @@ input {
   background-color: #f5f5f5;
   color: #666;
 }
-.time-choice .choice-type {
-  position: relative;
+.push .push-type {
+  font-size: 14px;
+}
+.push .push-type input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+.push .push-type div {
   display: inline-block;
-  margin-right: 46px;
-  vertical-align: top;
 }
-.time-choice .choice-type span {
-  position: absolute;
-  top: 15px;
-  right: -41px;
-  width: 9px;
-  height: 8px;
-  background: url("../../images/account/menu.png") no-repeat 0 -18px;
+.push .push-type label {
+  width: 70px;
+  height: 32px;
+  text-align: center;
+  color: #017aff;
+  background-color: #fff;
+  border: 1px solid #017aff;
+  line-height: 32px;
+  font-size: 14px;
+  cursor: pointer;
 }
-.time-choice .choice-type select {
+.push .push-type label.on {
+  background-color: #017aff;
+  color: #fff;
+}
+.push .push-type-choice {
+  font-size: 0;
+}
+.push .push-type-choice > div {
+  margin-left: 10px;
+}
+.push .push-type-choice input {
+  padding: 0;
+}
+
+.push-money .tab > ul li {
+  width: 50%;
+}
+
+.security-code input {
   line-height: 36px;
-  width: 117px;
-  height: 38px;
+  width: 91px;
+  height: 36px;
+  padding-left: 5px;
   border: 1px solid #017aff;
   border-radius: 4px;
   background-color: #f5f5f5;
   color: #666;
+  border-right: none;
+  border-radius: 4px 0 0 4px;
 }
-.time-choice button {
+.security-code .code-img {
+  width: 73px;
+  height: 26px;
+  padding: 5px;
+  border: 1px solid #017aff;
+  border-radius: 0 4px 4px 0;
+  vertical-align: top;
+  background-color: #fff;
+}
+.security-code .code-img img {
+  width: 100%;
+  height: 100%;
+}
+.security-code div {
+  display: inline-block;
+}
+
+.pact {
+  width: 793px;
+}
+.pact input {
+  display: inline-block;
+}
+.pact span {
   font-size: 14px;
-  line-height: 38px;
-  width: 79px;
-  height: 38px;
-  color: #fff;
-  border-radius: 4px;
-  background-color: #017aff;
+  line-height: 14px;
+  color: #666;
+  display: inline-block;
+  width: 717px;
 }
 
-.money-log {
-  margin-bottom: 40px;
+.push-log .push-log-table {
+  margin-top: 36px;
+  margin-bottom: 30px;
 }
 
-/*# sourceMappingURL=borrow-log.css.map */
+/*# sourceMappingURL=push-money.css.map */
