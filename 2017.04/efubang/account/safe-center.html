@@ -4,14 +4,14 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>银行账户</title>
+    <title>安全中心</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--公用的css-->
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/common.css">
     <!--自用的css-->
-    <link rel="stylesheet" type="text/css" href="../css/account/bank-card.css">
+    <link rel="stylesheet" type="text/css" href="../css/account/safe-center.css">
 </head>
 
 <body>
@@ -60,7 +60,7 @@
         <div class="main-inner">
             <div id="account-menu">
                 <div class="page-title">
-                    <a href="./account-home.html">我的e富邦首页</a>
+                                         <a href="./account-home.html">我的e富邦首页</a>
                 </div>
                 <ul class="menu-list">
                     <li class="first-menu">
@@ -71,9 +71,9 @@
                             <!--"active-logo-close"和"active-logo-close"-->
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li><span><a href="./money-log.html">资金记录</a></span></li>
-                                <li><span><a href="./borrow-log.html">借款记录</a></span></li>
-                                <li class="on"><span><a href="#">银行账户</a></span></li>
+                                <li><span><a href="#">资金记录</a></span></li>
+                                <li><span><a href="#">借款记录</a></span></li>
+                                <li><span><a href="#">银行账户</a></span></li>
                                 <li><span><a href="#">账户充值</a></span></li>
                                 <li><span><a href="#">账户提现</a></span></li>
                             </ul>
@@ -86,7 +86,7 @@
                             </div>
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li class="on"><span><a href="#">招标中</a></span></li>
+                                <li><span><a href="#">招标中</a></span></li>
                                 <li><span><a href="#">未还款</a></span></li>
                                 <li><span><a href="#">已收款</a></span></li>
                             </ul>
@@ -106,8 +106,8 @@
                             </div>
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li class="on"><span><a href="#">个人资料</a></span></li>
-                                <li><span><a href="#">安全中心</a></span></li>
+                                <li><span><a href="#">个人资料</a></span></li>
+                                <li class="on"><span><a href="#">安全中心</a></span></li>
                             </ul>
                         </div>
                     </li>
@@ -121,117 +121,39 @@
                 </ul>
             </div>
             <div class="main-content">
-                <div class="page-path">我的账户＜资金记录</div>
-                <div class="bind-card">
-                    <div class="item-title">
-                        <span></span> 绑定银行卡
+                <div class="page-path">基本设置＜安全中心</div>
+                <div class="safe-center">
+                    <div class="tab">
+                        <ul>
+                            <li class="on">修改密码</li>
+                        </ul>
+                        <div class="tab-content">
+
+                            <div class="change-password">
+                                <form>
+                                    <div>
+                                        <label for="">原始密码：</label>
+                                        <input type="text" name="" value="">
+                                        <div class="tip"></div>
+                                    </div>
+                                    <div>
+                                        <label for="">新密码：</label>
+                                        <input type="text" name="" value="">
+                                        <div class="tip"></div>
+                                    </div>
+                                    <div>
+                                        <label for="">确认密码：</label>
+                                        <input type="text" name="" value="">
+                                        <div class="tip"></div>
+                                    </div>
+                                    <div>
+                                        <label for=""></label>
+                                        <input type="button" name="" value="确认提交">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                    <form action="" enctype="multipart/form-data" method="post">
-                        <div class="bank">
-                            <label>开户银行：</label>
-                            <select name="drawBank">
-                                <option name="" value="">请选择银行
-                                </option>
-                                <option name="drawBank" value="1">中国银行借记卡
-                                </option>
-                                <option name="drawBank" value="2">工商银行借记卡
-                                </option>
-                                <option name="drawBank" value="3">农业银行借记卡
-                                </option>
-                            </select>
-                            <div class="tip">提示文字</div>
-                        </div>
-                        <div class="bank-num">
-                            <label>银行卡号：</label>
-                            <input type="text" name="bank-num">
-                            <div class="tip"></div>
-                        </div>
-                        <div class="sure-bank-num">
-                            <label>确认银行卡号：</label>
-                            <input type="text" name="sure-bank-num">
-                            <div class="tip"></div>
-                        </div>
-                        <div class="card-where">
-                            <label>银行办卡地：</label>
-                            <select name="province" id="province-bank">
-                                <option value="0">请选择</option><option value="1">北京市</option><option value="2">天津市</option><option value="3">河北省</option>
-                            </select>
-                            <select name="city" id="city">
-                                <option value="0">请选择</option><option value="1">海淀区</option><option value="2">丰台区</option><option value="3">朝阳区</option>
-                            </select>
-                            <select name="area" id="area1">
-                                <option value="0">请选择</option><option value="1">张郭庄</option><option value="2">唐家坟</option><option value="3">光华村</option>
-                            </select>
-                            <div class="tip"></div>
-                        </div>
-                        <div class="btn-submit">
-                            <label></label>
-                            <input type="button" name="" value="确认提交">
-                        </div>
-                    </form>
-                </div>
-                <div class="yet-bind-card">
-                    <div class="item-title">
-                        <span></span> 已绑定银行卡
-                    </div>
-                    <ul>
-                        <li>
-                            <div class="header_bangd">
-                                华夏银行借记卡
-                            </div>
-                            <div class="text">
-                                <p><span>卡号：</span> 000
-                                </p>
-                                <p><span>地点：</span>河南省 </p>
-                                <p><span>时间：</span>2016-04-15 14:55:19</p>
-                            </div>
-                            <h3>
-                                <a href="#">取消绑定</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <div class="header_bangd">
-                                华夏银行借记卡
-                            </div>
-                            <div class="text">
-                                <p><span>卡号：</span> 000
-                                </p>
-                                <p><span>地点：</span>河南省 </p>
-                                <p><span>时间：</span>2016-04-15 14:55:19</p>
-                            </div>
-                            <h3>
-                                <a href="#">取消绑定</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <div class="header_bangd">
-                                华夏银行借记卡
-                            </div>
-                            <div class="text">
-                                <p><span>卡号：</span> 000
-                                </p>
-                                <p><span>地点：</span>河南省 </p>
-                                <p><span>时间：</span>2016-04-15 14:55:19</p>
-                            </div>
-                            <h3>
-                                <a href="#">取消绑定</a>
-                            </h3>
-                        </li>
-                        <li>
-                            <div class="header_bangd">
-                                华夏银行借记卡
-                            </div>
-                            <div class="text">
-                                <p><span>卡号：</span> 000
-                                </p>
-                                <p><span>地点：</span>河南省 </p>
-                                <p><span>时间：</span>2016-04-15 14:55:19</p>
-                            </div>
-                            <h3>
-                                <a href="#">取消绑定</a>
-                            </h3>
-                        </li>
-                    </ul>
                 </div>
             </div>
         </div>

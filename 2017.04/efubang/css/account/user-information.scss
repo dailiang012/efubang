@@ -1,0 +1,197 @@
+@import 'accout-public';
+#main-account {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: #f5f5f5;
+    min-height: 500px;
+}
+
+.main-inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.main-content {
+    display: inline-block;
+    width: 817-16px;
+    padding: 0 8px 30px 8px;
+    vertical-align: top;
+    border: 1px solid $gray;
+    border-top: 1px solid $blue;
+    background-color: #fff;
+    .page-path {
+        font-size: 14px;
+        line-height: 34px;
+        height: 63px;
+        color: #666;
+    }
+}
+
+.user-information {
+    label {
+        width: 248px;
+    }
+    label.special-label {
+        width: 141px;
+    }
+    .tab-content {
+        margin-top: 40px;
+        &>div {
+            display: none;
+        }
+        .base-information {
+            display: block;
+        }
+    }
+    .tab>ul {
+        li {
+            width: 114.4px;
+        }
+    }
+    input[type="radio"] {
+        border: none;
+        width: auto;
+        height: auto;
+    }
+}
+
+.base-information {
+    input {
+        @include input-little;
+        font-size: 14px;
+    }
+    select {
+        @include select-little;
+        font-size: 14px;
+    }
+    .nickname,
+    .birthday,
+    .social-security-card {
+        input {
+            @include input-big;
+        }
+    }
+    .income {
+        select {
+            @include select-big;
+        }
+    }
+    .sex {
+        font-size: 14px;
+        color: #666;
+        line-height: 38px;
+        input {
+            vertical-align: middle;
+        }
+    }
+}
+
+.house-information {
+    input {
+        @include input-big;
+    }
+    select {
+        @include select-big;
+    }
+    .ownership-one,
+    .ownership-two,
+    .borrow-year {
+        input {
+            @include input-middle;
+        }
+    }
+}
+
+.company-information {
+    input {
+        @include input-big;
+    }
+    select {
+        @include select-big;
+    }
+    .work-rank,
+    .work-year {
+        input {
+            @include select-middle;
+        }
+    }
+    .service-time {
+        input {
+            @include input-middle;
+        }
+    }
+    textarea {
+        width: 247-10px;
+        height: 80-10px;
+        padding: 5px;
+        border: 1px solid #017aff;
+        border-radius: 4px;
+        background-color: #f5f5f5;
+        color: #666;
+        font-size: 14px;
+        line-height: 16px;
+        vertical-align: top;
+        margin-left: 10px;
+    }
+}
+
+.finance-status {
+    input {
+        @include input-big;
+    }
+    select {
+        @include select-middle;
+    }
+}
+
+.relation-type {
+    select {
+        @include select-middle;
+    }
+    input {
+        @include input-big;
+    }
+    .zip-code,
+    .second-relation {
+        input {
+            @include input-middle;
+        }
+    }
+}
+.wife-information{
+    select {
+        @include select-big;
+    }
+    input {
+        @include input-big;
+    }
+}
+.education{
+    select{
+        @include select-middle;
+    }
+    input{
+        @include input-big;
+    }
+    .time{
+        input{
+            @include input-middle;
+        }
+        span{
+            display: inline-block;
+            font-size: 14px;
+            color: #666;
+            line-height: 38px;
+            margin-left: 10px;
+        }
+    }
+}

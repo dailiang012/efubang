@@ -43,4 +43,29 @@
         $('.second-menu li').removeClass();
         $(this).addClass('on');
     });
+
+    /**
+     * tab切换
+     */
+    $('.tab>ul>li').each(function (index) {
+        $(this).on('click', function () {
+            $('.tab-content>div').hide().eq(index).show();
+            $('.tab li').removeClass('on');
+            $(this).removeClass().addClass('on');
+        });
+    });
+
+    /**
+     * 分页选中动效
+     */
+    var $DomPagination=$('.pagination');
+    for(var i=0;i<$DomPagination.length;i++){
+        //神过滤，勿动
+        $($DomPagination[i]).children('li.page-up').nextUntil($('li.page-down').prev()).each(function(){
+             $(this).on('click', function () {
+                 $(this).parent().children('li').removeClass('pagination-active');
+                 $(this).removeClass().addClass('pagination-active');
+             });
+        });
+    }
 })();

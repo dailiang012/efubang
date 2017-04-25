@@ -257,7 +257,8 @@
   display: inline-block;
 }
 
-#account-menu .page-title {
+#account-menu .page-title a{
+  display: block;
   font-size: 14px;
   color: #017AFF;
   padding-left: 10px;
