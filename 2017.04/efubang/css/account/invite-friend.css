@@ -194,163 +194,50 @@ input {
   height: 63px;
   color: #666;
 }
-.main-content .item-title {
-  padding-left: 30px;
-  padding-bottom: 60px;
-}
 
-.item-title {
-  line-height: 17px;
-  color: #666;
-  font-size: 16px;
+.invite-friend .tab > ul li {
+  width: 50%;
 }
-.item-title span {
+.invite-friend .invite label {
+  width: 261px;
   display: inline-block;
-  background: url("../../images/account/account.png") no-repeat;
-  vertical-align: top;
-}
-
-.bind-card .item-title span {
-  background: url("../../images/account/account.png") no-repeat;
-  height: 17px;
-  width: 23px;
-  background-position: 0 -271px;
-}
-.bind-card input {
-  line-height: 36px;
-  width: 163px;
-  height: 36px;
-  padding-left: 5px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background-color: #f5f5f5;
+  text-align: right;
   color: #666;
-}
-.bind-card .bank select {
-  line-height: 36px;
-  padding-left: 5px;
-  width: 163px;
-  height: 38px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  color: #666;
-}
-.bind-card .card-where select {
-  line-height: 36px;
-  width: 112px;
-  height: 38px;
-  padding-left: 5px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background-color: #f5f5f5;
-  color: #666;
-}
-.bind-card label {
-  width: 234px;
-}
-
-/*yet-bind-card*/
-.yet-bind-card {
-  margin-top: 30px;
-  font-size: 0;
-}
-.yet-bind-card .item-title span {
-  background: url("../../images/account/account.png") no-repeat;
-  height: 14px;
-  width: 19px;
-  background-position: 0 -81px;
-}
-.yet-bind-card ul {
-  width: 660px;
-  margin: 0 auto;
-  margin-top: -24px;
-}
-
-.yet-bind-card li {
-  display: inline-block;
-  vertical-align: top;
-  width: 278px;
-  height: 188px;
-  border: 1px solid #017aff;
-  border-radius: 4px;
-  background: #eee;
-  margin: 25px;
-}
-
-.yet-bind-card h3 {
-  text-align: center;
-  height: 38px;
   line-height: 38px;
+  font-size: 16px;
+  vertical-align: top;
+}
+.invite-friend .invite input {
+  height: 38px;
   font-size: 14px;
-  cursor: pointer;
+  color: #017aff;
+  width: 506px;
+  vertical-align: top;
+  margin-left: 10px;
 }
-.yet-bind-card h3 a {
-  color: #666;
+.invite-friend .invite button {
+  margin-left: 10px;
+  width: 106px;
+  height: 36px;
+  background-color: #017aff;
+  font-size: 14px;
+  color: #fff;
+  border-radius: 4px;
 }
-
-.header_bangd {
-  height: 44px;
-  border-bottom: 1px solid #528096;
-  background: #fff;
-  border-radius: 8px 8px 0 0;
-  position: relative;
-  font-size: 16px;
-  color: #000;
-  line-height: 44px;
-  text-align: center;
+.invite-friend .invite > div {
+  margin-bottom: 25px;
 }
-
-.header_bangd .one_pic {
-  float: left;
-  position: absolute;
-  top: 10px;
-  left: 10px;
+.invite-friend .tab-content > div {
+  display: none;
 }
-
-.header_bangd .two_pic {
-  float: right;
-  position: absolute;
-  right: 10px;
-  top: 14px;
+.invite-friend .tab-content {
+  margin-top: 40px;
+}
+.invite-friend .tab-content .invite {
+  display: block;
+}
+.invite-friend .friend-list table {
+  margin-bottom: 30px;
 }
 
-.yet-bind-card li .text {
-  height: 90px;
-  padding-top: 16px;
-  padding-left: 10px;
-  background: #fff;
-}
-.yet-bind-card li .text p {
-  font-size: 12px;
-  color: #666;
-  line-height: 24px;
-}
-.yet-bind-card li .text p span {
-  font-size: 16px;
-  color: #000;
-  line-height: 24px;
-}
-
-.bangdinka .tianjia_ka {
-  background: #fff;
-  position: relative;
-  border: 1px solid #40ace1;
-  text-align: center;
-  margin-bottom: 50px;
-  cursor: pointer;
-}
-
-.tianjia_ka img {
-  position: absolute;
-  top: 62px;
-  left: 122px;
-}
-
-.bangdinka .tianjia_ka p {
-  padding-top: 106px;
-  font-size: 16px;
-  color: #40ace1;
-}
-
-/*# sourceMappingURL=bank-card.css.map */
+/*# sourceMappingURL=invite-friend.css.map */

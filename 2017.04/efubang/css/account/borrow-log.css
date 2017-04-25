@@ -1,8 +1,8 @@
 /*
 * @Author: pc
 * @Date:   2017-04-24 09:56:37
- * @Last Modified by:   pc
- * @Last Modified time: 2017-04-24 16:50:06
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2017-04-25 10:40:22
 */
 form {
   font-size: 0;
@@ -60,7 +60,7 @@ form input[type='button'] {
   font-size: 16px;
   cursor: pointer;
 }
-.tab > ul li.tab-on {
+.tab > ul li.on {
   background-color: #017aff;
   color: #fff;
 }
@@ -147,7 +147,7 @@ table tbody tr:hover {
   background-position: 0 -34px;
 }
 
-.pagination .pagination-active {
+.pagination .pagination-active a {
   display: block;
   color: #fff;
   border-radius: 10px;
@@ -235,8 +235,9 @@ input {
 }
 .time-choice .choice-type select {
   line-height: 36px;
-  width: 117px;
+  width: 112px;
   height: 38px;
+  padding-left: 5px;
   border: 1px solid #017aff;
   border-radius: 4px;
   background-color: #f5f5f5;

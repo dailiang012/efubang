@@ -60,7 +60,7 @@
         <div class="main-inner">
             <div id="account-menu">
                 <div class="page-title">
-                    我的e富邦首页
+                                         <a href="./account-home.html">我的e富邦首页</a>
                 </div>
                 <ul class="menu-list">
                     <li class="first-menu">
@@ -88,7 +88,7 @@
                             <ul class="second-menu">
                                 <li><span><a href="#">招标中</a></span></li>
                                 <li><span><a href="#">未还款</a></span></li>
-                                <li class="on"><span><a href="#">已收款</a></span></li>
+                                <li><span><a href="#">已收款</a></span></li>
                             </ul>
                         </div>
                     </li>
@@ -106,7 +106,7 @@
                             </div>
                             <span class="active-default"></span>
                             <ul class="second-menu">
-                                <li class="on"><span><a href="#">个人资料</a></span></li>
+                                <li><span><a href="#">个人资料</a></span></li>
                                 <li><span><a href="#">安全中心</a></span></li>
                             </ul>
                         </div>
@@ -125,7 +125,7 @@
                 <div class="red-packet">
                     <div class="tab">
                         <ul>
-                            <li class="tab-on">可用红包</li>
+                            <li class="on">可用红包</li>
                             <li>已用红包</li>
                             <li>过期红包</li>
                         </ul>
@@ -161,7 +161,7 @@
                                 <ul class="pagination">
                                     <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
                                     <li class="page-up control-pic"></li>
-                                    <li><a href="#" class="pagination-active">1</a></li>
+                                    <li class="pagination-active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -193,7 +193,7 @@
                                 <ul class="pagination">
                                     <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
                                     <li class="page-up control-pic"></li>
-                                    <li><a href="#" class="pagination-active">1</a></li>
+                                    <li class="pagination-active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -225,7 +225,7 @@
                                 <ul class="pagination">
                                     <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
                                     <li class="page-up control-pic"></li>
-                                    <li><a href="#" class="pagination-active">1</a></li>
+                                    <li class="pagination-active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -321,15 +321,6 @@
     <!--公用的js-->
     <script src="../js/lib/jquery-1.11.1.min.js"></script>
     <script src="../js/common.js"></script>
-    <script>
-        $('.tab>ul>li').each(function (index) {
-            $(this).on('click', function () {
-                $('.tab-content>div').hide().eq(index).show();
-                $('.tab li').removeClass('tab-on');
-                $(this).removeClass().addClass('tab-on');
-            });
-        });
-    </script>
 </body>
 
 </html>

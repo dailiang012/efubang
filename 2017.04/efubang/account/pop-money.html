@@ -60,7 +60,7 @@
         <div class="main-inner">
             <div id="account-menu">
                 <div class="page-title">
-                    我的e富邦首页
+                                         <a href="./account-home.html">我的e富邦首页</a>
                 </div>
                 <ul class="menu-list">
                     <li class="first-menu">
@@ -125,7 +125,7 @@
                 <div class="pop-money">
                     <div class="tab">
                         <ul>
-                            <li class="tab-on">立即提现</li>
+                            <li class="on">立即提现</li>
                             <li>提现记录</li>
                         </ul>
                         <div class="tab-content">
@@ -206,7 +206,7 @@
                                 <ul class="pagination">
                                     <li class="page-top control-pic"><a href="#">&nbsp;&nbsp;</a></li>
                                     <li class="page-up control-pic"></li>
-                                    <li><a href="#" class="pagination-active">1</a></li>
+                                    <li class="pagination-active"><a href="#">1</a></li>
                                     <li><a href="#">2</a></li>
                                     <li><a href="#">3</a></li>
                                     <li><a href="#">4</a></li>
@@ -303,22 +303,14 @@
     <script src="../js/lib/jquery-1.11.1.min.js"></script>
     <script src="../js/common.js"></script>
     <script>
-    /*tab切换*/
-    $('.tab li').each(function(index) {
-        $(this).on('click', function() {
-            $('.tab-content>div').hide().eq(index).show();
-            $('.tab li').removeClass('tab-on');
-            $(this).removeClass().addClass('tab-on');
+        /*充值类型选择*/
+        $(".push-type label").click(function () {
+            $(".push-type label").removeClass('on');
+            $(this).addClass('on');
+            //设置radio的checked属性
+            $(this).parents('.push-type').find("input:radio").removeAttr("checked");
+            $(this).siblings('input:radio').attr("checked", "true");
         });
-    });
-    /*充值类型选择*/
-    $(".push-type label").click(function() {
-        $(".push-type label").removeClass('on');
-        $(this).addClass('on');
-        //设置radio的checked属性
-        $(this).parents('.push-type').find("input:radio").removeAttr("checked");
-        $(this).siblings('input:radio').attr("checked", "true");
-    });
     </script>
 </body>
 

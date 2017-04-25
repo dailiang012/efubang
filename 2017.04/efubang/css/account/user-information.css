@@ -1,0 +1,475 @@
+/*
+* @Author: pc
+* @Date:   2017-04-24 09:56:37
+ * @Last Modified by: mikey.zhaopeng
+ * @Last Modified time: 2017-04-25 10:40:22
+*/
+form {
+  font-size: 0;
+}
+form input {
+  margin-left: 10px;
+  vertical-align: top;
+}
+form select {
+  margin-left: 10px;
+}
+form > div {
+  margin-bottom: 25px;
+}
+form label,
+form .role-label {
+  font-size: 16px;
+  color: #666;
+  text-align: right;
+  line-height: 38px;
+  display: inline-block;
+  min-width: 70px;
+}
+form .tip {
+  color: red;
+  font-size: 14px;
+  line-height: 38px;
+  display: inline-block;
+  padding-left: 10px;
+}
+form input[type='button'] {
+  width: 106px;
+  height: 36px;
+  line-height: 36px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #017aff;
+  cursor: pointer;
+}
+
+.tab > ul {
+  height: 48px;
+  border-bottom: 1px solid #017aff;
+  width: 100%;
+  font-size: 0;
+}
+.tab > ul li {
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  line-height: 48px;
+  color: #017aff;
+  font-size: 16px;
+  cursor: pointer;
+}
+.tab > ul li.on {
+  background-color: #017aff;
+  color: #fff;
+}
+
+table {
+  width: 795px;
+  margin: 0 auto;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+table th,
+table td {
+  font-size: 14px;
+  line-height: 100%;
+  padding: 10px 0;
+  text-align: center;
+  color: #666;
+}
+table thead th {
+  color: #017aff;
+}
+table thead tr {
+  border-bottom: 2px solid #ddedff;
+}
+table tbody tr {
+  border-bottom: 1px solid #e9e9e9;
+}
+table tbody tr:hover {
+  background-color: #f5f5f5;
+}
+
+.pagination {
+  font-size: 0;
+  width: 340px;
+  height: 20px;
+  margin: 0 auto;
+}
+
+.pagination li {
+  font-size: 12px;
+  line-height: 20px;
+  display: inline-block;
+  width: 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  text-align: center;
+  vertical-align: top;
+}
+.pagination li a {
+  color: #666;
+}
+
+.control-pic {
+  height: 20px;
+  background-repeat: no-repeat;
+  background-position: 12px 6px;
+}
+
+.page-top {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -51px;
+}
+
+.page-up {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 0;
+}
+
+.page-down {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 10px;
+  height: 17px;
+  background-position: 0 -17px;
+}
+
+.page-bottom {
+  background: url("../../images/account/pagination.png") no-repeat;
+  width: 14px;
+  height: 17px;
+  background-position: 0 -34px;
+}
+
+.pagination .pagination-active a {
+  display: block;
+  color: #fff;
+  border-radius: 10px;
+  background-color: #017aff;
+}
+
+.data-title a {
+  color: #666;
+}
+
+#main-account {
+  padding-top: 10px;
+  padding-bottom: 30px;
+  background: #f5f5f5;
+  min-height: 500px;
+}
+
+.main-inner {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+button {
+  cursor: pointer;
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.main-content {
+  display: inline-block;
+  width: 801px;
+  padding: 0 8px 30px 8px;
+  vertical-align: top;
+  border: 1px solid #e9e9e9;
+  border-top: 1px solid #017aff;
+  background-color: #fff;
+}
+.main-content .page-path {
+  font-size: 14px;
+  line-height: 34px;
+  height: 63px;
+  color: #666;
+}
+
+.user-information label {
+  width: 248px;
+}
+.user-information label.special-label {
+  width: 141px;
+}
+.user-information .tab-content {
+  margin-top: 40px;
+}
+.user-information .tab-content > div {
+  display: none;
+}
+.user-information .tab-content .base-information {
+  display: block;
+}
+.user-information .tab > ul li {
+  width: 114.4px;
+}
+.user-information input[type="radio"] {
+  border: none;
+  width: auto;
+  height: auto;
+}
+
+.base-information input {
+  line-height: 36px;
+  width: 91px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 14px;
+}
+.base-information select {
+  line-height: 36px;
+  width: 91px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  padding-left: 5px;
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 14px;
+}
+.base-information .nickname input,
+.base-information .birthday input,
+.base-information .social-security-card input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.base-information .income select {
+  line-height: 36px;
+  padding-left: 5px;
+  width: 163px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.base-information .sex {
+  font-size: 14px;
+  color: #666;
+  line-height: 38px;
+}
+.base-information .sex input {
+  vertical-align: middle;
+}
+
+.house-information input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.house-information select {
+  line-height: 36px;
+  padding-left: 5px;
+  width: 163px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.house-information .ownership-one input,
+.house-information .ownership-two input,
+.house-information .borrow-year input {
+  line-height: 36px;
+  width: 112px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.company-information input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.company-information select {
+  line-height: 36px;
+  padding-left: 5px;
+  width: 163px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.company-information .work-rank input,
+.company-information .work-year input {
+  line-height: 36px;
+  width: 112px;
+  height: 38px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.company-information .service-time input {
+  line-height: 36px;
+  width: 112px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.company-information textarea {
+  width: 237px;
+  height: 70px;
+  padding: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+  font-size: 14px;
+  line-height: 16px;
+  vertical-align: top;
+  margin-left: 10px;
+}
+
+.finance-status input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.finance-status select {
+  line-height: 36px;
+  width: 112px;
+  height: 38px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.relation-type select {
+  line-height: 36px;
+  width: 112px;
+  height: 38px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.relation-type input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.relation-type .zip-code input,
+.relation-type .second-relation input {
+  line-height: 36px;
+  width: 112px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.wife-information select {
+  line-height: 36px;
+  padding-left: 5px;
+  width: 163px;
+  height: 38px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.wife-information input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+
+.education select {
+  line-height: 36px;
+  width: 112px;
+  height: 38px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.education input {
+  line-height: 36px;
+  width: 163px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.education .time input {
+  line-height: 36px;
+  width: 112px;
+  height: 36px;
+  padding-left: 5px;
+  border: 1px solid #017aff;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  color: #666;
+}
+.education .time span {
+  display: inline-block;
+  font-size: 14px;
+  color: #666;
+  line-height: 38px;
+  margin-left: 10px;
+}
+
+/*# sourceMappingURL=user-information.css.map */
