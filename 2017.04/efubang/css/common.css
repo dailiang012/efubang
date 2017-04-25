@@ -248,7 +248,7 @@
 }
 
 /*menu*/
-.account-menu-inner {
+#account-menu {
   top: 10px;
   left: 0px;
   width: 187px;
@@ -257,7 +257,7 @@
   display: inline-block;
 }
 
-.account-menu-inner .page-title a{
+#account-menu .page-title a{
   display: block;
   font-size: 14px;
   color: #017AFF;
@@ -389,28 +389,6 @@
 .second-menu li.on span a {
   border-left: 5px solid #017AFF;
   color: #017AFF;
-}
-
-
-
-
-/*调整*/
-#account-menu,.main-content{
-  width: 1024px;
-  margin: 0 auto;
-  height: 1px;
-  background: red;
-  position: relative;
-}
-.account-menu-inner{
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.main-content-inner{
-  position: absolute;
-  left: 0;
-  top: 0;
 }
 
 /*# sourceMappingURL=common.css.map */
