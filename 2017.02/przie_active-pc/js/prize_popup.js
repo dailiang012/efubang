@@ -76,5 +76,5 @@ Popup.prototype = {
                 clearInterval(t);
             }
         }, 200);
-    },
+    }
 };
