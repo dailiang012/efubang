@@ -1,0 +1,98 @@
+@import 'accout-public';
+#main-account {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    background: #f5f5f5;
+    min-height: 500px;
+}
+
+.main-inner {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.main-content {
+    display: inline-block;
+    width: 817-16px;
+    padding: 0 8px 30px 8px;
+    vertical-align: top;
+    border: 1px solid $gray;
+    border-top: 1px solid $blue;
+    background-color: #fff;
+    .page-path {
+        font-size: 14px;
+        line-height: 34px;
+        height: 63px;
+        color: #666;
+    }
+}
+
+.authentication {
+    .tab>ul li {
+        width: (801px/3);
+    }
+}
+
+.tab-content>div{
+    display:none;
+}
+.tab-content{
+    margin-top: 40px;
+}
+// 实名认证
+.authentication {
+    input {
+        @include input-big;
+    }
+    select {
+        @include select-big;
+    }
+    label{
+        width:330px;
+    }
+    span{
+        display:inline-block;
+        font-size:16px;
+        color:$blue;
+        line-height:38px;
+        margin-left:10px;
+    }
+}
+
+// 认证成功提示
+.succeed-tip {
+    text-align: center;
+    margin:40px 0;
+    font-size: 14px;
+    color: #017aff;
+    line-height: 24px;
+    span {
+        display: inline-block;
+        @include account;
+        @include succeed;
+        vertical-align: top;
+    }
+}
+.true-content{
+    label{
+        display:inline-block;
+        width:330px;
+        text-align:right;
+    }
+    span{
+        display:inline-block;
+        font-size:16px;
+        color:$blue;
+        line-height:38px;
+        margin-left:10px;
+    }
+}

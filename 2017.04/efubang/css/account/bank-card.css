@@ -1,8 +1,8 @@
 /*
 * @Author: pc
 * @Date:   2017-04-24 09:56:37
- * @Last Modified by: mikey.zhaopeng
- * @Last Modified time: 2017-04-25 10:40:22
+ * @Last Modified by:   pc
+ * @Last Modified time: 2017-05-02 09:44:21
 */
 form {
   font-size: 0;
@@ -229,7 +229,7 @@ input {
 .bind-card .bank select {
   line-height: 36px;
   padding-left: 5px;
-  width: 163px;
+  width: 170px;
   height: 38px;
   border: 1px solid #017aff;
   border-radius: 4px;
@@ -351,6 +351,58 @@ input {
   padding-top: 106px;
   font-size: 16px;
   color: #40ace1;
+}
+
+.cancle-bind-card {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+}
+
+.cancle-bind-card .content {
+  position: absolute;
+  width: 300px;
+  height: 120px;
+  border-top: 2px solid #017aff;
+  background-color: #f5f5f5;
+  left: 50%;
+  top: 50%;
+  margin-left: -150px;
+  margin-top: -60px;
+}
+
+.cancle-bind-card p {
+  text-align: center;
+  font-size: 16px;
+  line-height: 100%;
+  margin: 20px 0;
+  color: #017aff;
+}
+
+.cancle-bind-card .btn-group {
+  font-size: 0;
+  width: 260px;
+  margin: 0 auto;
+}
+
+.cancle-bind-card .cancle {
+  margin-right: 60px;
+  border: 1px solid #017aff;
+  color: #017aff;
+}
+
+.cancle-bind-card .confirm {
+  color: #666;
+  border: 1px solid #666;
+}
+
+.cancle-bind-card .btn-group button {
+  width: 100px;
+  height: 30px;
+  display: inline-block;
+  background-color: #f5f5f5;
 }
 
 /*# sourceMappingURL=bank-card.css.map */

@@ -15,6 +15,16 @@
 </head>
 
 <body>
+    <!--取消绑定-->
+    <div class="cancle-bind-card" style="display:none;">
+        <div class="content">
+            <p>取消绑定银行卡</p>
+            <div class="btn-group">
+                <button type="button" class="cancle">放弃</button>
+                <button type="button" class="confirm">确定</button>
+            </div>
+        </div>
+    </div>
     <!--bang-bar-->
     <div id="bang-bar">
         <div class="bang-bar-container">
@@ -139,30 +149,30 @@
                                 <option name="drawBank" value="3">农业银行借记卡
                                 </option>
                             </select>
-                            <div class="tip">提示文字</div>
+                            <div class="bank-tip tip"></div>
                         </div>
                         <div class="bank-num">
                             <label>银行卡号：</label>
                             <input type="text" name="bank-num">
-                            <div class="tip"></div>
+                            <div class="tip bank-num-tip"></div>
                         </div>
                         <div class="sure-bank-num">
                             <label>确认银行卡号：</label>
                             <input type="text" name="sure-bank-num">
-                            <div class="tip"></div>
+                            <div class="tip sure-bank-num-tip"></div>
                         </div>
                         <div class="card-where">
                             <label>银行办卡地：</label>
                             <select name="province" id="province-bank">
-                                <option value="0">请选择</option><option value="1">北京市</option><option value="2">天津市</option><option value="3">河北省</option>
+                                <option value="">请选择</option><option value="1">北京市</option><option value="2">天津市</option><option value="3">河北省</option>
                             </select>
                             <select name="city" id="city">
-                                <option value="0">请选择</option><option value="1">海淀区</option><option value="2">丰台区</option><option value="3">朝阳区</option>
+                                <option value="">请选择</option><option value="1">海淀区</option><option value="2">丰台区</option><option value="3">朝阳区</option>
                             </select>
                             <select name="area" id="area1">
-                                <option value="0">请选择</option><option value="1">张郭庄</option><option value="2">唐家坟</option><option value="3">光华村</option>
+                                <option value="">请选择</option><option value="1">张郭庄</option><option value="2">唐家坟</option><option value="3">光华村</option>
                             </select>
-                            <div class="tip"></div>
+                            <div class="tip card-where-tip"></div>
                         </div>
                         <div class="btn-submit">
                             <label></label>
@@ -316,6 +326,8 @@
     <!--公用的js-->
     <script src="../js/lib/jquery-1.11.1.min.js"></script>
     <script src="../js/common.js"></script>
+    <!--表单验证-->
+    <script src="../js/verify.js"></script>
 </body>
 
 </html>

@@ -15,7 +15,7 @@
         $(this).siblings('.second-menu').toggle();
         if ($(this).siblings('.second-menu').css('display') == 'block') {
             $(this).parent().removeClass().addClass('open-in');
-            console.log('hehes');
+            // console.log('hehes');
         } else if ($(this).siblings('.second-menu').css('display') == 'none') {
             $(this).parent().removeClass().addClass('close-out');
         }
@@ -50,7 +50,7 @@
      * 根据状态打开或者关闭second-menu的内容
      */
     var $firstMenu = $('.first-menu>div');
-    console.log($firstMenu);
+    // console.log($firstMenu);
     for (var i = 0; i < $firstMenu.length; i++) {
         if ($($firstMenu[i]).hasClass('open-out') || $($firstMenu[i]).hasClass('open-in')) {
             $($firstMenu[i]).find('.second-menu').css('display', 'block');
