@@ -70,6 +70,11 @@
             $('.tab li').removeClass('on');
             $(this).removeClass().addClass('on');
         });
+        //根据“on”状态判断内容的显示隐藏
+        if($(this).hasClass('on')){
+            $('.tab-content>div').hide().eq(index).show();
+        }
+        
     });
 
     /**

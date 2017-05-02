@@ -195,13 +195,6 @@ input {
   color: #666;
 }
 
-.tab-content > div {
-  display: none;
-}
-.tab-content .pop {
-  display: block;
-}
-
 .pop {
   font-size: 0;
   margin-top: 36px;

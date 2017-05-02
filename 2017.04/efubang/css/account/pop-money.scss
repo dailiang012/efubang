@@ -36,14 +36,14 @@ input {
     }
 }
 
-.tab-content {
-    &>div {
-        display: none;
-    }
-    .pop {
-        display: block;
-    }
-}
+// .tab-content {
+//     &>div {
+//         display: none;
+//     }
+//     .pop {
+//         display: block;
+//     }
+// }
 
 .pop {
     font-size: 0;

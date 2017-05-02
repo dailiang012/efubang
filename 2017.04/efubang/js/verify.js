@@ -39,7 +39,7 @@ $(function () {
             return true;
         }
     }
-    $('input[name="sure-bank-num"]').blur(function () {
+    $('input[name="sure-bank-num"]').keyup(function () {
         if ($('input[name="sure-bank-num"]').val() != $('input[name="bank-num"]').val()) {
             $('.sure-bank-num-tip').text('两次输入不一致');
         } else if ($('input[name="sure-bank-num"]').val() === $('input[name="bank-num"]').val()) {

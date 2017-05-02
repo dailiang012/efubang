@@ -153,12 +153,12 @@
                         </div>
                         <div class="bank-num">
                             <label>银行卡号：</label>
-                            <input type="text" name="bank-num">
+                            <input type="text" name="bank-num" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
                             <div class="tip bank-num-tip"></div>
                         </div>
                         <div class="sure-bank-num">
                             <label>确认银行卡号：</label>
-                            <input type="text" name="sure-bank-num">
+                            <input type="text" name="sure-bank-num" onkeyup="this.value=this.value.replace(/\D/g,'')" onafterpaste="this.value=this.value.replace(/\D/g,'')">
                             <div class="tip sure-bank-num-tip"></div>
                         </div>
                         <div class="card-where">
