@@ -1,4 +1,4 @@
-$(function () {
+$(function() {
 
 
     // 开户银行验证
@@ -10,7 +10,7 @@ $(function () {
             return true;
         }
     }
-    $('select[name="drawBank"]').blur(function () {
+    $('select[name="drawBank"]').blur(function() {
         if ($('select[name="drawBank"]').val() !== "") {
             $('.bank-tip').text('');
         }
@@ -24,7 +24,7 @@ $(function () {
             return true;
         }
     }
-    $('input[name="bank-num"]').blur(function () {
+    $('input[name="bank-num"]').blur(function() {
         if ($('input[name="bank-num"]').val() !== "") {
             $('.bank-num-tip').text('');
         }
@@ -39,7 +39,7 @@ $(function () {
             return true;
         }
     }
-    $('input[name="sure-bank-num"]').keyup(function () {
+    $('input[name="sure-bank-num"]').keyup(function() {
         if ($('input[name="sure-bank-num"]').val() != $('input[name="bank-num"]').val()) {
             $('.sure-bank-num-tip').text('两次输入不一致');
         } else if ($('input[name="sure-bank-num"]').val() === $('input[name="bank-num"]').val()) {
@@ -62,14 +62,14 @@ $(function () {
         }
         return b;
     }
-    $('.card-where select').blur(function () {
-        if(checkBankWhere()){
-             $('.card-where-tip').text('');
+    $('.card-where select').blur(function() {
+        if (checkBankWhere()) {
+            $('.card-where-tip').text('');
         }
     });
-    
+
     //提交前的验证
-    $('input[type="button"]').on('click', function () {
+    $('input[type="button"]').on('click', function() {
         var BankName = checkBankName();
         var BankNum = checkBankNum();
         var BankNumSecond = checkBankNumSecond();
