@@ -21,9 +21,9 @@
     ];
 
     window.onload = function () {
-        $('#sp1').html('10');
-        $('#sp2').html('20');
-        $('#sp3').html('30');
+        $('#sp1').html('0');
+        $('#sp2').html('0');
+        $('#sp3').html('0');
         doughnutData[0].value = $('#sp1').html();
         doughnutData[1].value = $('#sp2').html();
         doughnutData[2].value = $('#sp3').html();

@@ -79,4 +79,35 @@ $(function() {
         }
     });
 
+    /**
+     * 弹窗
+     */
+    (function() {
+        var $DomPopupCancleBank = $('.cancle-bind-card'); //弹窗
+        var $BtnCancle = $('.cancle'); //放弃取消绑定按钮
+        var $BtnConfirm = $('.confirm'); //确认取消绑定按钮
+        console.log($BtnConfirm);
+        var $BtnTrigglePopups = $('.yet-bind-card h3'); //所有激发弹窗
+        var $DomBankCards = $('.yet-bind-card li'); //所有绑定的银行卡
+        var num; //触发哪一个银行卡的弹窗事件
+        //弹起弹窗
+        $($BtnTrigglePopups).each(function(index) {
+            //      console.log(index);
+            $($BtnTrigglePopups[index]).on('click', function() {
+                num = index;
+                $DomPopupCancleBank.css('display', 'block');
+            });
+        });
+        //放弃取消
+        $($BtnCancle).on('click', function() {
+            $DomPopupCancleBank.css('display', 'none');
+        });
+
+        //确认取消
+        $($BtnConfirm).on('click', function() {
+            console.log($DomBankCards[num]);
+            $DomPopupCancleBank.css('display', 'none');
+            $($DomBankCards[num]).css('display', 'none');
+        });
+    })();
 });
